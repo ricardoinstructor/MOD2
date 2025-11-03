@@ -2,6 +2,2778 @@
 const questionsDatabase = [
   {
     "id": 1,
+    "category": "Subsistemas del Sistema Operativo",
+    "question": "¿Cuál de los siguientes no es un subsistema del sistema operativo?",
+    "options": [
+      "Sistema de archivos",
+      "Gestor de memoria",
+      "Planificador de procesos",
+      "Compilador"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Compilador\". Un compilador es una herramienta de software externa al núcleo del sistema operativo, mientras que los subsistemas típicos incluyen gestión de archivos, memoria, E/S y procesos.",
+    "source": "https://es.wikipedia.org/wiki/Sistema_operativo"
+  },
+  {
+    "id": 2,
+    "category": "Subsistemas del Sistema Operativo",
+    "question": "¿Qué función desempeña el subsistema de gestión de archivos en un sistema operativo?",
+    "options": [
+      "Gestión de la memoria virtual",
+      "Administración de dispositivos de entrada y salida",
+      "Organización y manipulación de archivos",
+      "Control de acceso a la red"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Organización y manipulación de archivos\". El sistema de archivos gestiona cómo se almacenan, nombran, acceden y organizan los datos en dispositivos de almacenamiento.",
+    "source": "https://es.wikipedia.org/wiki/Sistema_de_archivos"
+  },
+  {
+    "id": 3,
+    "category": "Subsistemas del Sistema Operativo",
+    "question": "¿Cuál de los siguientes no es un tipo de gestión de memoria utilizado en los sistemas operativos?",
+    "options": [
+      "Paginación",
+      "Fragmentación externa",
+      "Asignación contigua",
+      "Interfaz gráfica de usuario"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Interfaz gráfica de usuario\". La interfaz gráfica no es un mecanismo de gestión de memoria; es parte del entorno de usuario. La fragmentación externa es un fenómeno, no un método, pero sí está relacionada con la gestión de memoria.",
+    "source": "https://es.wikipedia.org/wiki/Gesti%C3%B3n_de_memoria"
+  },
+  {
+    "id": 4,
+    "category": "Subsistemas del Sistema Operativo",
+    "question": "¿Qué papel desempeña el subsistema de E/S en un sistema operativo?",
+    "options": [
+      "Administración del CPU",
+      "Control del acceso a la red",
+      "Gestión de dispositivos de entrada y salida",
+      "Ejecución de aplicaciones de usuario"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Gestión de dispositivos de entrada y salida\". Este subsistema maneja la comunicación entre el sistema operativo y periféricos como teclados, ratones, impresoras, etc.",
+    "source": "https://es.wikipedia.org/wiki/Sistema_operativo#Subsistemas"
+  },
+  {
+    "id": 5,
+    "category": "Subsistemas del Sistema Operativo",
+    "question": "¿Qué función cumple el planificador de procesos en un sistema operativo?",
+    "options": [
+      "Asignar recursos de hardware a los procesos",
+      "Administrar la memoria virtual del sistema",
+      "Controlar la entrada y salida de datos",
+      "Compilar el código fuente de los programas"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Asignar recursos de hardware a los procesos\". El planificador decide qué proceso se ejecuta en la CPU y cuándo, gestionando así los recursos del sistema.",
+    "source": "https://es.wikipedia.org/wiki/Planificador"
+  },
+  {
+    "id": 6,
+    "category": "Subsistemas del Sistema Operativo",
+    "question": "¿Cuál de las siguientes afirmaciones describe mejor la función del subsistema de gestión de archivos?",
+    "options": [
+      "Administra la comunicación entre dispositivos de hardware",
+      "Gestiona la interacción entre el usuario y el sistema operativo",
+      "Organiza y almacena datos en dispositivos de almacenamiento",
+      "Controla la ejecución concurrente de múltiples procesos"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Organiza y almacena datos en dispositivos de almacenamiento\". Esta es la función esencial del sistema de archivos.",
+    "source": "https://es.wikipedia.org/wiki/Sistema_de_archivos"
+  },
+  {
+    "id": 7,
+    "category": "Subsistemas del Sistema Operativo",
+    "question": "¿Qué papel desempeña el subsistema de gestión de memoria en un sistema operativo?",
+    "options": [
+      "Coordinar la comunicación entre los usuarios y el sistema operativo",
+      "Controlar el acceso a los recursos del sistema",
+      "Administración de la asignación y liberación de memoria RAM",
+      "Regular el flujo de entrada y salida de datos en el sistema"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Administración de la asignación y liberación de memoria RAM\". Este subsistema gestiona cómo se distribuye la memoria entre los procesos activos.",
+    "source": "https://es.wikipedia.org/wiki/Gesti%C3%B3n_de_memoria"
+  },
+  {
+    "id": 8,
+    "category": "Subsistemas del Sistema Operativo",
+    "question": "¿Cuál de las siguientes tareas no es responsabilidad del subsistema de E/S en un sistema operativo?",
+    "options": [
+      "Gestionar la impresión de documentos",
+      "Coordinar la ejecución de procesos en el CPU",
+      "Controlar la transferencia de datos entre dispositivos",
+      "Administrar la entrada desde dispositivos de usuario"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Coordinar la ejecución de procesos en el CPU\". Eso es responsabilidad del planificador de procesos, no del subsistema de E/S.",
+    "source": "https://es.wikipedia.org/wiki/Sistema_operativo#Subsistemas"
+  },
+  {
+    "id": 9,
+    "category": "Planificación de Procesos",
+    "question": "¿Qué función desempeña el planificador a corto plazo en un sistema operativo?",
+    "options": [
+      "Asignar recursos a los procesos durante su ejecución",
+      "Seleccionar qué proceso se ejecutará a continuación",
+      "Gestionar la carga y descarga de programas en memoria",
+      "Coordinar la comunicación entre dispositivos de E/S"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Seleccionar qué proceso se ejecutará a continuación\". El planificador a corto plazo (o de CPU) decide qué proceso listo se ejecuta en la CPU en cada instante.",
+    "source": "https://es.wikipedia.org/wiki/Planificador#Planificaci%C3%B3n_a_corto_plazo"
+  },
+  {
+    "id": 10,
+    "category": "Subsistemas del Sistema Operativo",
+    "question": "¿Cuál de las siguientes afirmaciones describe mejor la función del subsistema de gestión de archivos en un sistema operativo?",
+    "options": [
+      "Administra la interacción entre el usuario y el hardware",
+      "Organiza y almacena datos en dispositivos de almacenamiento",
+      "Regula el flujo de entrada y salida de datos en el sistema",
+      "Controla la ejecución concurrente de múltiples procesos"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Organiza y almacena datos en dispositivos de almacenamiento\". Es la función central del sistema de archivos.",
+    "source": "https://es.wikipedia.org/wiki/Sistema_de_archivos"
+  },
+  {
+    "id": 11,
+    "category": "Subsistemas del Sistema Operativo",
+    "question": "¿Qué tarea no está asociada al subsistema de gestión de memoria en un sistema operativo?",
+    "options": [
+      "Controlar la fragmentación de la memoria",
+      "Gestionar la paginación de la memoria virtual",
+      "Coordinar la impresión de documentos",
+      "Administración del espacio de direcciones de los procesos"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Coordinar la impresión de documentos\". Eso corresponde al subsistema de E/S, no al de memoria.",
+    "source": "https://es.wikipedia.org/wiki/Gesti%C3%B3n_de_memoria"
+  },
+  {
+    "id": 12,
+    "category": "Planificación de Procesos",
+    "question": "¿Qué función cumple el planificador a largo plazo en un sistema operativo?",
+    "options": [
+      "Seleccionar qué proceso se ejecutará a continuación",
+      "Asignar recursos a los procesos durante su ejecución",
+      "Gestionar la carga y descarga de programas en memoria",
+      "Coordinar la comunicación entre dispositivos de E/S"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Gestionar la carga y descarga de programas en memoria\". El planificador a largo plazo decide qué procesos entran al sistema (cola de listos).",
+    "source": "https://es.wikipedia.org/wiki/Planificador#Planificaci%C3%B3n_a_largo_plazo"
+  },
+  {
+    "id": 13,
+    "category": "Gestión de Memoria",
+    "question": "¿Cuál de las siguientes no es una estrategia de asignación de memoria utilizada por los sistemas operativos?",
+    "options": [
+      "FIFO",
+      "LIFO",
+      "LRU",
+      "FIFO-LRU"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"FIFO-LRU\". No es una estrategia reconocida; FIFO, LIFO y LRU sí lo son (usadas en reemplazo de páginas o caché).",
+    "source": "https://es.wikipedia.org/wiki/Algoritmos_de_reemplazo_de_p%C3%A1ginas"
+  },
+  {
+    "id": 14,
+    "category": "Subsistemas del Sistema Operativo",
+    "question": "¿Qué papel desempeña el subsistema de E/S en la gestión del sistema operativo?",
+    "options": [
+      "Controlar el acceso a la red",
+      "Gestionar la comunicación entre procesos",
+      "Administración de los dispositivos de entrada y salida",
+      "Coordinar la ejecución de aplicaciones de usuario"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Administración de los dispositivos de entrada y salida\". Es la función principal del subsistema de E/S.",
+    "source": "https://es.wikipedia.org/wiki/Sistema_operativo#Subsistemas"
+  },
+  {
+    "id": 15,
+    "category": "Subsistemas del Sistema Operativo",
+    "question": "¿Cuál es la principal responsabilidad del subsistema de gestión de archivos en un sistema operativo?",
+    "options": [
+      "Organizar la ejecución de procesos en el CPU",
+      "Controlar la transferencia de datos entre dispositivos",
+      "Administración de la organización y manipulación de archivos",
+      "Coordinar la comunicación entre dispositivos de E/S"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Administración de la organización y manipulación de archivos\".",
+    "source": "https://es.wikipedia.org/wiki/Sistema_de_archivos"
+  },
+  {
+    "id": 16,
+    "category": "Planificación de Procesos",
+    "question": "¿Qué función cumple el planificador a medio plazo en un sistema operativo?",
+    "options": [
+      "Asignar recursos a los procesos durante su ejecución",
+      "Seleccionar qué proceso se ejecutará a continuación",
+      "Gestionar la carga y descarga de programas en memoria",
+      "Coordinar la comunicación entre dispositivos de E/S"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Gestionar la carga y descarga de programas en memoria\". El planificador a medio plazo suspende o reanuda procesos para equilibrar la carga.",
+    "source": "https://es.wikipedia.org/wiki/Planificador#Planificaci%C3%B3n_a_medio_plazo"
+  },
+  {
+    "id": 17,
+    "category": "Planificación de Procesos",
+    "question": "¿Cuál de las siguientes no es una técnica de planificación de procesos en los sistemas operativos?",
+    "options": [
+      "FIFO",
+      "Round-robin",
+      "LRU",
+      "Prioridad"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"LRU\". LRU (Least Recently Used) es un algoritmo de reemplazo de páginas en memoria, no de planificación de CPU.",
+    "source": "https://es.wikipedia.org/wiki/Algoritmos_de_planificaci%C3%B3n_de_procesos"
+  },
+  {
+    "id": 18,
+    "category": "Gestión de Memoria",
+    "question": "¿Qué papel desempeña el subsistema de gestión de memoria virtual en un sistema operativo?",
+    "options": [
+      "Controlar la paginación de la memoria física",
+      "Administrar la entrada y salida de datos",
+      "Gestionar la comunicación entre procesos",
+      "Organizar la transferencia de datos entre dispositivos"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Controlar la paginación de la memoria física\". La memoria virtual usa paginación para simular más memoria de la física disponible.",
+    "source": "https://es.wikipedia.org/wiki/Memoria_virtual"
+  },
+  {
+    "id": 19,
+    "category": "Subsistemas del Sistema Operativo",
+    "question": "¿Cuál de las siguientes tareas no es responsabilidad del subsistema de E/S en un sistema operativo?",
+    "options": [
+      "Controlar la ejecución de procesos en el CPU",
+      "Administrar la impresión de documentos",
+      "Coordinar la comunicación entre dispositivos",
+      "Gestionar la asignación de recursos del sistema"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Controlar la ejecución de procesos en el CPU\". Esto es tarea del planificador, no del subsistema de E/S.",
+    "source": "https://es.wikipedia.org/wiki/Sistema_operativo#Subsistemas"
+  },
+  {
+    "id": 20,
+    "category": "Subsistemas del Sistema Operativo",
+    "question": "¿Cuál es el objetivo principal del subsistema de gestión de archivos en un sistema operativo?",
+    "options": [
+      "Administrar la asignación de memoria para los procesos",
+      "Organizar y almacenar datos en dispositivos de almacenamiento",
+      "Coordinar la comunicación entre procesos en ejecución",
+      "Controlar el flujo de entrada y salida de datos en el sistema"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Organizar y almacenar datos en dispositivos de almacenamiento\".",
+    "source": "https://es.wikipedia.org/wiki/Sistema_de_archivos"
+  },
+  {
+    "id": 21,
+    "category": "Sistemas de Archivos",
+    "question": "¿Qué característica no suele ser propia de un sistema de archivos de tipo FAT32?",
+    "options": [
+      "Soporte para archivos de más de 4 GB",
+      "Estructura de tabla de asignación de archivos (FAT)",
+      "Limitación en el tamaño máximo de partición",
+      "Permiso de archivos y directorios"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Soporte para archivos de más de 4 GB\". FAT32 no permite archivos mayores a 4 GB. Tampoco tiene permisos avanzados como NTFS.",
+    "source": "https://es.wikipedia.org/wiki/File_Allocation_Table#FAT32"
+  },
+  {
+    "id": 22,
+    "category": "Sistemas de Archivos",
+    "question": "¿Cuál de las siguientes opciones describe mejor un sistema de archivos distribuido?",
+    "options": [
+      "Permite el acceso a archivos en una red de computadoras",
+      "Almacena todos los archivos en un único servidor central",
+      "Se utiliza exclusivamente en dispositivos de almacenamiento externo",
+      "No admite la compartición de archivos entre usuarios"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Permite el acceso a archivos en una red de computadoras\". Ejemplos: NFS, SMB/CIFS.",
+    "source": "https://es.wikipedia.org/wiki/Sistema_de_archivos_distribuido"
+  },
+  {
+    "id": 23,
+    "category": "Sistemas de Archivos",
+    "question": "¿Qué característica es común en un sistema de archivos NTFS (New Technology File System)?",
+    "options": [
+      "No admite permisos de archivos",
+      "Tamaño máximo de archivo limitado a 4 GB",
+      "Soporte para compresión de archivos y encriptación",
+      "Utiliza una tabla de asignación de archivos FAT"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Soporte para compresión de archivos y encriptación\". NTFS incluye EFS (Encrypting File System) y compresión transparente.",
+    "source": "https://es.wikipedia.org/wiki/NTFS"
+  },
+  {
+    "id": 24,
+    "category": "Sistemas de Archivos",
+    "question": "¿Cuál de las siguientes afirmaciones describe mejor un sistema de archivos de tipo ext4?",
+    "options": [
+      "Diseñado principalmente para su uso en sistemas operativos Windows",
+      "Permite la fragmentación excesiva de archivos para una rápida lectura",
+      "Ofrece soporte para tamaños de archivos de hasta 16 exabytes",
+      "Utiliza una tabla de asignación de archivos basada en árbol B+"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Ofrece soporte para tamaños de archivos de hasta 16 exabytes\". ext4 es el sistema de archivos por defecto en muchas distribuciones Linux.",
+    "source": "https://es.wikipedia.org/wiki/Ext4"
+  },
+  {
+    "id": 25,
+    "category": "Sistemas de Archivos",
+    "question": "¿Qué función cumple la journaling en un sistema de archivos?",
+    "options": [
+      "Permite la compresión de archivos para ahorrar espacio en disco",
+      "Mantiene un registro de cambios para facilitar la recuperación después de fallos",
+      "Limita el acceso a ciertos archivos mediante permisos de usuario",
+      "Optimiza el acceso a archivos frecuentemente utilizados"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Mantiene un registro de cambios para facilitar la recuperación después de fallos\". Es una característica de sistemas como ext3, ext4, NTFS.",
+    "source": "https://es.wikipedia.org/wiki/Journaling"
+  },
+  {
+    "id": 26,
+    "category": "Sistemas de Archivos",
+    "question": "¿Cuál de las siguientes opciones no es un sistema de archivos comúnmente utilizado en sistemas operativos Unix/Linux?",
+    "options": [
+      "NTFS",
+      "ext4",
+      "XFS",
+      "btrfs"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"NTFS\". Aunque Linux puede leerlo, NTFS es nativo de Windows, no de Unix/Linux.",
+    "source": "https://es.wikipedia.org/wiki/NTFS"
+  },
+  {
+    "id": 27,
+    "category": "Sistemas de Archivos",
+    "question": "¿Qué característica no es propia de un sistema de archivos de tipo exFAT?",
+    "options": [
+      "Soporte para archivos de más de 4 GB",
+      "Estructura de tabla de asignación de archivos (FAT)",
+      "Limitación en el tamaño máximo de partición",
+      "Permite la recuperación de archivos eliminados"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Permite la recuperación de archivos eliminados\". exFAT no incluye journaling ni mecanismos integrados de recuperación.",
+    "source": "https://es.wikipedia.org/wiki/ExFAT"
+  },
+  {
+    "id": 28,
+    "category": "Sistemas de Archivos",
+    "question": "¿Cuál de los siguientes sistemas de archivos es más adecuado para dispositivos de almacenamiento flash como memorias USB y tarjetas SD?",
+    "options": [
+      "NTFS",
+      "FAT32",
+      "ext4",
+      "HFS+"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"FAT32\". Es ampliamente compatible y ligero, ideal para dispositivos flash pequeños (aunque exFAT es mejor para archivos >4 GB).",
+    "source": "https://es.wikipedia.org/wiki/File_Allocation_Table"
+  },
+  {
+    "id": 29,
+    "category": "Sistemas de Archivos",
+    "question": "¿Qué característica no es común en un sistema de archivos de tipo ZFS (Zettabyte File System)?",
+    "options": [
+      "Integración de volúmenes y sistemas de archivos",
+      "Capacidad de realizar instantáneas (snapshots)",
+      "Utiliza una tabla de asignación de archivos FAT",
+      "Ofrece compresión de datos y encriptación integradas"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Utiliza una tabla de asignación de archivos FAT\". ZFS usa estructuras avanzadas basadas en árboles (Merkle trees), no FAT.",
+    "source": "https://es.wikipedia.org/wiki/ZFS"
+  },
+  {
+    "id": 30,
+    "category": "Sistemas de Archivos",
+    "question": "¿Qué es la fragmentación de archivos en un sistema de archivos?",
+    "options": [
+      "La división de un archivo en múltiples fragmentos para ahorrar espacio",
+      "La colocación de archivos en sectores contiguos para una lectura más rápida",
+      "La dispersión de partes de un archivo en diferentes ubicaciones del disco",
+      "La eliminación de archivos obsoletos para liberar espacio en disco"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"La dispersión de partes de un archivo en diferentes ubicaciones del disco\". Esto reduce el rendimiento en discos mecánicos.",
+    "source": "https://es.wikipedia.org/wiki/Fragmentaci%C3%B3n_de_archivos"
+  },
+  {
+    "id": 31,
+    "category": "Sistemas de Archivos",
+    "question": "¿Qué función desempeña un sistema de archivos en un sistema informático?",
+    "options": [
+      "Controlar el acceso a la red",
+      "Gestionar la impresión de documentos",
+      "Organizar y almacenar datos en dispositivos de almacenamiento",
+      "Coordinar la ejecución de aplicaciones de usuario"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Organizar y almacenar datos en dispositivos de almacenamiento\".",
+    "source": "https://es.wikipedia.org/wiki/Sistema_de_archivos"
+  },
+  {
+    "id": 32,
+    "category": "Sistemas de Archivos",
+    "question": "¿Cuál de las siguientes afirmaciones describe mejor un sistema de archivos de tipo HFS+ (Hierarchical File System Plus)?",
+    "options": [
+      "Diseñado principalmente para su uso en sistemas operativos Windows",
+      "Utiliza una tabla de asignación de archivos basada en árbol B+",
+      "Ofrece soporte para nombres de archivos de hasta 255 caracteres",
+      "No admite la compresión de archivos ni la encriptación"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Ofrece soporte para nombres de archivos de hasta 255 caracteres\". HFS+ fue el sistema de archivos de macOS hasta APFS.",
+    "source": "https://es.wikipedia.org/wiki/HFS%2B"
+  },
+  {
+    "id": 33,
+    "category": "Sistemas de Archivos",
+    "question": "¿Qué característica es común en un sistema de archivos de tipo ext3?",
+    "options": [
+      "Journaling",
+      "Soporte para archivos de más de 4 GB",
+      "Estructura de tabla de asignación de archivos (FAT)",
+      "Limitación en el tamaño máximo de partición"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Journaling\". ext3 es esencialmente ext2 con journaling añadido.",
+    "source": "https://es.wikipedia.org/wiki/Ext3"
+  },
+  {
+    "id": 34,
+    "category": "Sistemas de Archivos",
+    "question": "¿Cuál de las siguientes opciones describe mejor un sistema de archivos de red (NFS)?",
+    "options": [
+      "Almacena todos los archivos en un único servidor central",
+      "Permite el acceso a archivos en una red de computadoras",
+      "Se utiliza exclusivamente en dispositivos de almacenamiento externo",
+      "No admite la compartición de archivos entre usuarios"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Permite el acceso a archivos en una red de computadoras\". NFS es un protocolo estándar en entornos Unix/Linux.",
+    "source": "https://es.wikipedia.org/wiki/Network_File_System"
+  },
+  {
+    "id": 35,
+    "category": "Sistemas de Archivos",
+    "question": "¿Qué es el formato de un sistema de archivos?",
+    "options": [
+      "La cantidad total de espacio de almacenamiento disponible",
+      "La estructura de organización de los archivos en el disco",
+      "El número máximo de archivos que pueden almacenarse en una carpeta",
+      "La velocidad de transferencia de datos entre el disco y la memoria RAM"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"La estructura de organización de los archivos en el disco\". Formatear implica aplicar esa estructura.",
+    "source": "https://es.wikipedia.org/wiki/Formateo_de_disco"
+  },
+  {
+    "id": 36,
+    "category": "Sistemas de Archivos",
+    "question": "¿Qué característica no es propia de un sistema de archivos de tipo APFS (Apple File System)?",
+    "options": [
+      "Diseñado principalmente para su uso en sistemas operativos macOS",
+      "Utiliza una tabla de asignación de archivos basada en árbol B+",
+      "Ofrece soporte para instantáneas (snapshots) y encriptación",
+      "Limitación en el tamaño máximo de partición"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Limitación en el tamaño máximo de partición\". APFS soporta volúmenes de hasta 9 quintillones de bloques.",
+    "source": "https://es.wikipedia.org/wiki/Apple_File_System"
+  },
+  {
+    "id": 37,
+    "category": "Sistemas de Archivos",
+    "question": "¿Cuál de las siguientes afirmaciones describe mejor un sistema de archivos de tipo ReFS (Resilient File System)?",
+    "options": [
+      "Utiliza una estructura de tabla de asignación de archivos FAT",
+      "Diseñado principalmente para su uso en sistemas operativos Linux",
+      "Ofrece resistencia a la corrupción de datos y integridad avanzada",
+      "Limitación en el tamaño máximo de archivo de 4 GB"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Ofrece resistencia a la corrupción de datos y integridad avanzada\". ReFS es de Microsoft, para servidores y entornos críticos.",
+    "source": "https://es.wikipedia.org/wiki/Resilient_File_System"
+  },
+  {
+    "id": 38,
+    "category": "Sistemas de Archivos",
+    "question": "¿Cuál de los siguientes sistemas de archivos es más adecuado para sistemas operativos Windows?",
+    "options": [
+      "ext4",
+      "NTFS",
+      "HFS+",
+      "exFAT"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"NTFS\". Es el sistema de archivos predeterminado y más completo en Windows moderno.",
+    "source": "https://es.wikipedia.org/wiki/NTFS"
+  },
+  {
+    "id": 39,
+    "category": "Sistemas de Archivos",
+    "question": "¿Qué característica no es común en un sistema de archivos de tipo Btrfs (B-tree File System)?",
+    "options": [
+      "Utiliza una estructura de árbol B para la asignación de bloques",
+      "Ofrece soporte para compresión de archivos y encriptación",
+      "Limitación en el tamaño máximo de partición",
+      "Capacidad de realizar instantáneas (snapshots)"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Limitación en el tamaño máximo de partición\". Btrfs soporta volúmenes de hasta 16 exbibytes.",
+    "source": "https://es.wikipedia.org/wiki/Btrfs"
+  },
+  {
+    "id": 40,
+    "category": "Sistemas de Archivos",
+    "question": "¿Qué es la indexación en un sistema de archivos?",
+    "options": [
+      "La capacidad de buscar archivos utilizando un índice predefinido",
+      "La organización de archivos en una estructura jerárquica de directorios",
+      "La fragmentación excesiva de archivos para una rápida lectura",
+      "La compresión de archivos para ahorrar espacio en disco"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"La capacidad de buscar archivos utilizando un índice predefinido\". Mejora la velocidad de búsqueda (ej. Windows Search, Spotlight).",
+    "source": "https://es.wikipedia.org/wiki/Indexaci%C3%B3n_de_archivos"
+  },
+  {
+    "id": 41,
+    "category": "Planificación de Procesos",
+    "question": "¿Cuál es el objetivo principal del planificador de CPU en un sistema operativo?",
+    "options": [
+      "Maximizar el tiempo de ejecución de cada proceso",
+      "Minimizar el uso de la memoria RAM",
+      "Asignar recursos de CPU a los procesos de manera eficiente",
+      "Controlar el acceso a los dispositivos de E/S"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Asignar recursos de CPU a los procesos de manera eficiente\". El planificador de CPU busca maximizar el rendimiento, la equidad y la utilización del procesador.",
+    "source": "https://es.wikipedia.org/wiki/Planificador"
+  },
+  {
+    "id": 42,
+    "category": "Planificación de Procesos",
+    "question": "¿Qué tipo de algoritmo de planificación prioriza los procesos con mayor tiempo restante de ejecución?",
+    "options": [
+      "FIFO (First In, First Out)",
+      "SJF (Shortest Job First)",
+      "Round-robin",
+      "Prioridad"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"SJF (Shortest Job First)\". SJF prioriza los procesos con menor tiempo de ejecución restante (no mayor). Nota: la pregunta contiene un error conceptual; sin embargo, entre las opciones, SJF es el único que se basa en la duración del trabajo, y se interpreta que la intención era \"menor tiempo\".",
+    "source": "https://es.wikipedia.org/wiki/Shortest_Job_Next"
+  },
+  {
+    "id": 43,
+    "category": "Planificación de Procesos",
+    "question": "¿Cuál de los siguientes algoritmos de planificación utiliza un quantum de tiempo para cada proceso?",
+    "options": [
+      "FIFO",
+      "SJF",
+      "Round-robin",
+      "Prioridad"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Round-robin\". Este algoritmo asigna un intervalo de tiempo fijo (quantum) a cada proceso en la cola de listos.",
+    "source": "https://es.wikipedia.org/wiki/Planificaci%C3%B3n_por_turnos"
+  },
+  {
+    "id": 44,
+    "category": "Planificación de Procesos",
+    "question": "¿Qué característica describe mejor el algoritmo de planificación Round-robin?",
+    "options": [
+      "Asigna un tiempo de ejecución fijo a cada proceso",
+      "Prioriza los procesos de acuerdo a su tiempo restante de ejecución",
+      "Asigna prioridades estáticas a los procesos",
+      "Utiliza una cola de prioridades para planificar los procesos"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Asigna un tiempo de ejecución fijo a cada proceso\". Este es el principio básico del Round-robin.",
+    "source": "https://es.wikipedia.org/wiki/Planificaci%C3%B3n_por_turnos"
+  },
+  {
+    "id": 45,
+    "category": "Planificación de Procesos",
+    "question": "¿Qué es la inversión de prioridades en el contexto de la planificación de procesos?",
+    "options": [
+      "Un proceso con menor prioridad se ejecuta antes que uno con mayor prioridad",
+      "Un proceso bloqueado impide que procesos de mayor prioridad sean ejecutados",
+      "Un proceso hereda la prioridad de otro proceso",
+      "Un proceso es suspendido temporalmente para permitir la ejecución de otro de mayor prioridad"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un proceso bloqueado impide que procesos de mayor prioridad sean ejecutados\". Ocurre cuando un proceso de baja prioridad mantiene un recurso que necesita un proceso de alta prioridad, y un proceso de prioridad intermedia se ejecuta en su lugar.",
+    "source": "https://es.wikipedia.org/wiki/Inversi%C3%B3n_de_prioridad"
+  },
+  {
+    "id": 46,
+    "category": "Planificación de Procesos",
+    "question": "¿Cuál es una desventaja del algoritmo de planificación SJF (Shortest Job First)?",
+    "options": [
+      "Puede causar inanición de procesos largos",
+      "No garantiza un tiempo de respuesta rápido para todos los procesos",
+      "Requiere conocimiento previo de la duración de cada proceso",
+      "No es adecuado para sistemas con múltiples núcleos de CPU"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Requiere conocimiento previo de la duración de cada proceso\". Esto es impráctico en sistemas interactivos, aunque se pueden usar estimaciones.",
+    "source": "https://es.wikipedia.org/wiki/Shortest_Job_Next"
+  },
+  {
+    "id": 47,
+    "category": "Planificación de Procesos",
+    "question": "¿Qué es el tiempo de espera (waiting time) en el contexto de la planificación de procesos?",
+    "options": [
+      "El tiempo total que un proceso ha estado esperando en la cola de listos",
+      "El tiempo de ejecución total de un proceso",
+      "El tiempo transcurrido desde que se creó un proceso hasta que se termina",
+      "El tiempo que un proceso pasa realizando operaciones de E/S"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"El tiempo total que un proceso ha estado esperando en la cola de listos\".",
+    "source": "https://es.wikipedia.org/wiki/Planificaci%C3%B3n_de_procesos"
+  },
+  {
+    "id": 48,
+    "category": "Planificación de Procesos",
+    "question": "¿Cuál es una característica del algoritmo de planificación por prioridades?",
+    "options": [
+      "Todos los procesos tienen la misma prioridad",
+      "Los procesos se ejecutan en el orden en que llegan al sistema",
+      "Los procesos pueden tener diferentes niveles de prioridad",
+      "La planificación se realiza en base a la cantidad de tiempo que un proceso ha estado esperando"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Los procesos pueden tener diferentes niveles de prioridad\". Este algoritmo asigna una prioridad a cada proceso y elige el de mayor prioridad para ejecutar.",
+    "source": "https://es.wikipedia.org/wiki/Planificaci%C3%B3n_de_procesos#Planificaci%C3%B3n_por_prioridades"
+  },
+  {
+    "id": 49,
+    "category": "Planificación de Procesos",
+    "question": "¿Qué es la rotación de procesos en el contexto del algoritmo de planificación Round-robin?",
+    "options": [
+      "Cambiar la prioridad de los procesos en función de su tiempo de ejecución",
+      "Permitir que los procesos esperen en la cola de listos hasta que su turno de ejecución llegue",
+      "Asignar un tiempo de ejecución fijo a cada proceso antes de pasar al siguiente",
+      "Suspender temporalmente un proceso para dar prioridad a otro"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Asignar un tiempo de ejecución fijo a cada proceso antes de pasar al siguiente\". Esto define la rotación cíclica del Round-robin.",
+    "source": "https://es.wikipedia.org/wiki/Planificaci%C3%B3n_por_turnos"
+  },
+  {
+    "id": 50,
+    "category": "Planificación de Procesos",
+    "question": "¿Cuál de los siguientes algoritmos de planificación es más adecuado para evitar la inanición de procesos?",
+    "options": [
+      "FIFO",
+      "SJF",
+      "Round-robin",
+      "Prioridad"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Round-robin\". Al dar a todos los procesos una porción de tiempo equitativa, evita que alguno espere indefinidamente.",
+    "source": "https://es.wikipedia.org/wiki/Planificaci%C3%B3n_por_turnos"
+  },
+  {
+    "id": 51,
+    "category": "Planificación de Procesos",
+    "question": "¿Qué es la prioridad de un proceso en el contexto de la planificación de procesos?",
+    "options": [
+      "El tiempo total que un proceso ha estado en ejecución",
+      "La cantidad de recursos asignados a un proceso",
+      "El nivel de importancia relativa de un proceso en comparación con otros",
+      "El tiempo que un proceso pasa esperando en la cola de listos"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"El nivel de importancia relativa de un proceso en comparación con otros\".",
+    "source": "https://es.wikipedia.org/wiki/Planificaci%C3%B3n_de_procesos#Planificaci%C3%B3n_por_prioridades"
+  },
+  {
+    "id": 52,
+    "category": "Planificación de Procesos",
+    "question": "¿Cuál de los siguientes algoritmos de planificación es más adecuado para sistemas en tiempo real?",
+    "options": [
+      "FIFO",
+      "SJF",
+      "Round-robin",
+      "Prioridad"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Prioridad\". Los sistemas en tiempo real suelen usar planificación basada en prioridades estáticas o dinámicas para garantizar plazos.",
+    "source": "https://es.wikipedia.org/wiki/Sistema_de_tiempo_real"
+  },
+  {
+    "id": 53,
+    "category": "Planificación de Procesos",
+    "question": "¿Qué es la inanición de procesos en el contexto de la planificación de procesos?",
+    "options": [
+      "Un proceso consume todos los recursos del sistema",
+      "Un proceso bloqueado no permite que otros procesos sean ejecutados",
+      "Un proceso espera indefinidamente por recursos del sistema",
+      "Un proceso con mayor prioridad nunca es seleccionado para ejecución"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Un proceso espera indefinidamente por recursos del sistema\". Es común en algoritmos como SJF o prioridad sin envejecimiento.",
+    "source": "https://es.wikipedia.org/wiki/Inanici%C3%B3n_(inform%C3%A1tica)"
+  },
+  {
+    "id": 54,
+    "category": "Planificación de Procesos",
+    "question": "¿Qué es el quantum de tiempo en el contexto del algoritmo de planificación Round-robin?",
+    "options": [
+      "La cantidad de tiempo que un proceso ha estado en ejecución",
+      "El tiempo total que un proceso ha estado esperando en la cola de listos",
+      "El tiempo máximo permitido para la ejecución de un proceso antes de ser suspendido",
+      "La cantidad de recursos asignados a un proceso"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"El tiempo máximo permitido para la ejecución de un proceso antes de ser suspendido\".",
+    "source": "https://es.wikipedia.org/wiki/Planificaci%C3%B3n_por_turnos"
+  },
+  {
+    "id": 55,
+    "category": "Planificación de Procesos",
+    "question": "¿Cuál es una ventaja del algoritmo de planificación Round-robin?",
+    "options": [
+      "Garantiza tiempos de espera mínimos para todos los procesos",
+      "Es fácil de implementar y entender",
+      "No requiere conocimiento previo de la duración de cada proceso",
+      "Proporciona una ejecución rápida para procesos cortos"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"No requiere conocimiento previo de la duración de cada proceso\". A diferencia de SJF, Round-robin no necesita estimar tiempos de ejecución.",
+    "source": "https://es.wikipedia.org/wiki/Planificaci%C3%B3n_por_turnos"
+  },
+  {
+    "id": 56,
+    "category": "Planificación de Procesos",
+    "question": "¿Qué es la planificación preemptiva en el contexto de la planificación de procesos?",
+    "options": [
+      "Los procesos se ejecutan hasta que completan su tiempo asignado",
+      "Un proceso puede ser suspendido en cualquier momento para dar paso a otro de mayor prioridad",
+      "Los procesos solo se ejecutan cuando todos los recursos necesarios están disponibles",
+      "La prioridad de un proceso puede cambiar durante su ejecución"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un proceso puede ser suspendido en cualquier momento para dar paso a otro de mayor prioridad\". Esto permite mayor responsividad.",
+    "source": "https://es.wikipedia.org/wiki/Planificaci%C3%B3n_de_procesos#Planificaci%C3%B3n_preemptiva"
+  },
+  {
+    "id": 57,
+    "category": "Planificación de Procesos",
+    "question": "¿Cuál de las siguientes opciones describe mejor la planificación basada en eventos?",
+    "options": [
+      "Los procesos se ejecutan en un orden específico definido por el usuario",
+      "La ejecución de procesos se basa en la llegada de eventos externos",
+      "Los procesos se ejecutan en función de su tiempo restante de ejecución",
+      "La prioridad de los procesos se asigna estáticamente durante la creación"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"La ejecución de procesos se basa en la llegada de eventos externos\". Es común en sistemas embebidos y en tiempo real.",
+    "source": "https://es.wikipedia.org/wiki/Sistema_dirigido_por_eventos"
+  },
+  {
+    "id": 58,
+    "category": "Planificación de Procesos",
+    "question": "¿Qué es el tiempo de respuesta en el contexto de la planificación de procesos?",
+    "options": [
+      "El tiempo total que un proceso ha estado en ejecución",
+      "El tiempo que un proceso pasa esperando en la cola de listos",
+      "El tiempo transcurrido desde que se creó un proceso hasta que se termina",
+      "El tiempo que tarda un sistema en responder a una solicitud de usuario"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"El tiempo que tarda un sistema en responder a una solicitud de usuario\". En sistemas interactivos, es clave para la percepción de rendimiento.",
+    "source": "https://es.wikipedia.org/wiki/Tiempo_de_respuesta"
+  },
+  {
+    "id": 59,
+    "category": "Planificación de Procesos",
+    "question": "¿Cuál de los siguientes algoritmos de planificación puede causar inanición de procesos largos?",
+    "options": [
+      "FIFO",
+      "SJF",
+      "Round-robin",
+      "Prioridad"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"SJF\". Si llegan continuamente procesos cortos, los largos pueden esperar indefinidamente.",
+    "source": "https://es.wikipedia.org/wiki/Shortest_Job_Next"
+  },
+  {
+    "id": 60,
+    "category": "Planificación de Procesos",
+    "question": "¿Qué es la planificación no preemptiva en el contexto de la planificación de procesos?",
+    "options": [
+      "Los procesos pueden ser suspendidos en cualquier momento para dar paso a otros",
+      "Los procesos se ejecutan hasta que completan su tiempo asignado",
+      "La ejecución de procesos se basa en la llegada de eventos externos",
+      "La prioridad de un proceso puede cambiar durante su ejecución"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Los procesos se ejecutan hasta que completan su tiempo asignado\". En realidad, en planificación no preemptiva, un proceso se ejecuta hasta que termina o se bloquea voluntariamente.",
+    "source": "https://es.wikipedia.org/wiki/Planificaci%C3%B3n_de_procesos#Planificaci%C3%B3n_no_preemptiva"
+  },
+  {
+    "id": 61,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Cuál de las siguientes no es una función típica del subsistema de seguridad en un sistema operativo?",
+    "options": [
+      "Autenticación de usuarios",
+      "Control de acceso a recursos",
+      "Compilación de programas",
+      "Auditoría de actividades"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Compilación de programas\". Es una tarea de desarrollo, no de seguridad del sistema operativo.",
+    "source": "https://es.wikipedia.org/wiki/Seguridad_inform%C3%A1tica"
+  },
+  {
+    "id": 62,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Qué es la autenticación en el contexto de la seguridad del sistema operativo?",
+    "options": [
+      "Proceso de verificar la integridad de los archivos del sistema",
+      "Verificación de la identidad de un usuario o entidad",
+      "Control de acceso a los recursos del sistema",
+      "Encriptación de datos sensibles en la memoria RAM"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Verificación de la identidad de un usuario o entidad\". Se logra mediante contraseñas, tokens, biométricos, etc.",
+    "source": "https://es.wikipedia.org/wiki/Autenticaci%C3%B3n"
+  },
+  {
+    "id": 63,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Cuál de las siguientes opciones describe mejor la función del control de acceso en el subsistema de seguridad?",
+    "options": [
+      "Garantizar que todos los usuarios tengan los mismos privilegios de acceso",
+      "Limitar el acceso a recursos del sistema según políticas de seguridad",
+      "Asegurar que todos los archivos del sistema estén protegidos contra virus",
+      "Optimizar el rendimiento del sistema operativo mediante la asignación de recursos"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Limitar el acceso a recursos del sistema según políticas de seguridad\". Ejemplos: ACLs, DAC, MAC.",
+    "source": "https://es.wikipedia.org/wiki/Control_de_acceso"
+  },
+  {
+    "id": 64,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Qué es la autorización en el contexto de la seguridad del sistema operativo?",
+    "options": [
+      "Proceso de verificar la identidad de un usuario",
+      "Establecimiento de políticas de seguridad para el sistema",
+      "Concesión de permisos de acceso a recursos según la autenticación y el control de acceso",
+      "Protección de datos confidenciales mediante técnicas de cifrado"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Concesión de permisos de acceso a recursos según la autenticación y el control de acceso\". Autenticación = quién eres; autorización = qué puedes hacer.",
+    "source": "https://es.wikipedia.org/wiki/Autorizaci%C3%B3n"
+  },
+  {
+    "id": 65,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Qué es la auditoría en el subsistema de seguridad de un sistema operativo?",
+    "options": [
+      "Proceso de controlar y registrar eventos y actividades del sistema",
+      "Verificación de la autenticidad de los archivos del sistema",
+      "Evaluación de la seguridad del sistema mediante pruebas de penetración",
+      "Protección de la red del sistema contra intrusiones externas"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Proceso de controlar y registrar eventos y actividades del sistema\". Permite detectar comportamientos sospechosos o fallos de seguridad.",
+    "source": "https://es.wikipedia.org/wiki/Auditor%C3%ADa_inform%C3%A1tica"
+  },
+  {
+    "id": 66,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Qué es la integridad de los datos en el contexto de la seguridad del sistema operativo?",
+    "options": [
+      "Garantizar que los datos sean accesibles solo para usuarios autorizados",
+      "Verificar que los datos no hayan sido alterados o corrompidos de manera no autorizada",
+      "Controlar el acceso a los datos según su nivel de sensibilidad",
+      "Optimizar el rendimiento del sistema mediante técnicas de compresión de datos"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Verificar que los datos no hayan sido alterados o corrompidos de manera no autorizada\". Es uno de los pilares de la CIA (Confidencialidad, Integridad, Disponibilidad).",
+    "source": "https://es.wikipedia.org/wiki/Integridad_de_los_datos"
+  },
+  {
+    "id": 67,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Cuál de las siguientes opciones describe mejor la función del cifrado en el subsistema de seguridad?",
+    "options": [
+      "Verificar la autenticidad de los usuarios del sistema",
+      "Proteger los datos mediante la conversión a un formato ilegible",
+      "Controlar el acceso a los recursos del sistema",
+      "Asegurar que todos los archivos del sistema estén libres de virus"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Proteger los datos mediante la conversión a un formato ilegible\". Solo los que poseen la clave pueden descifrarlos.",
+    "source": "https://es.wikipedia.org/wiki/Cifrado"
+  },
+  {
+    "id": 68,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Qué es un cortafuegos (firewall) en el contexto de la seguridad del sistema operativo?",
+    "options": [
+      "Herramienta para proteger el sistema contra malware",
+      "Dispositivo o software que controla el tráfico de red entrante y saliente",
+      "Medida para prevenir la pérdida de datos por fallos de hardware",
+      "Método para evitar la sobrecarga del sistema mediante la asignación de recursos"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Dispositivo o software que controla el tráfico de red entrante y saliente\". Filtra paquetes según reglas de seguridad.",
+    "source": "https://es.wikipedia.org/wiki/Cortafuegos_(inform%C3%A1tica)"
+  },
+  {
+    "id": 69,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Cuál de las siguientes opciones describe mejor la función del antivirus en el subsistema de seguridad?",
+    "options": [
+      "Controlar el acceso a los recursos del sistema",
+      "Proteger los datos mediante la detección y eliminación de software malicioso",
+      "Garantizar la autenticidad de los archivos del sistema",
+      "Asegurar que todos los usuarios tengan permisos adecuados para acceder a los recursos"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Proteger los datos mediante la detección y eliminación de software malicioso\".",
+    "source": "https://es.wikipedia.org/wiki/Antivirus"
+  },
+  {
+    "id": 70,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Qué es la gestión de identidades en el contexto de la seguridad del sistema operativo?",
+    "options": [
+      "Proceso de controlar el acceso a los recursos del sistema",
+      "Verificación de la autenticidad de los usuarios del sistema",
+      "Administración de cuentas de usuario y sus privilegios",
+      "Protección de datos mediante el cifrado de archivos"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Administración de cuentas de usuario y sus privilegios\". Incluye creación, modificación, eliminación y asignación de roles.",
+    "source": "https://es.wikipedia.org/wiki/Gesti%C3%B3n_de_identidades_y_accesos"
+  },
+  {
+    "id": 71,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Cuál de las siguientes opciones describe mejor la función del control de cambios en el subsistema de seguridad?",
+    "options": [
+      "Supervisar y registrar los eventos y actividades del sistema",
+      "Verificar la autenticidad de los usuarios del sistema",
+      "Controlar el acceso a los recursos del sistema",
+      "Gestionar y auditar los cambios realizados en la configuración del sistema"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Gestionar y auditar los cambios realizados en la configuración del sistema\". Ayuda a mantener la integridad y trazabilidad.",
+    "source": "https://es.wikipedia.org/wiki/Gesti%C3%B3n_de_cambios_(ingenier%C3%ADa_de_software)"
+  },
+  {
+    "id": 72,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Qué es la prevención de intrusiones en el contexto de la seguridad del sistema operativo?",
+    "options": [
+      "Protección de la red del sistema contra ataques externos",
+      "Verificación de la integridad de los archivos del sistema",
+      "Control de acceso a los recursos del sistema",
+      "Aseguramiento de que todos los usuarios cumplan con las políticas de seguridad"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Protección de la red del sistema contra ataques externos\". Se implementa con sistemas IPS (Intrusion Prevention Systems).",
+    "source": "https://es.wikipedia.org/wiki/Sistema_de_prevenci%C3%B3n_de_intrusiones"
+  },
+  {
+    "id": 73,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Qué es la seguridad de red en el subsistema de seguridad de un sistema operativo?",
+    "options": [
+      "Protección de datos mediante el cifrado de archivos",
+      "Control del acceso a los recursos del sistema",
+      "Seguridad de la comunicación entre dispositivos en una red",
+      "Supervisión y auditoría de eventos del sistema"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Seguridad de la comunicación entre dispositivos en una red\". Incluye cifrado, autenticación y control de tráfico.",
+    "source": "https://es.wikipedia.org/wiki/Seguridad_en_redes"
+  },
+  {
+    "id": 74,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Cuál de las siguientes opciones describe mejor la función del control de privilegios en el subsistema de seguridad?",
+    "options": [
+      "Verificar la autenticidad de los usuarios del sistema",
+      "Limitar el acceso a los recursos del sistema según roles y permisos",
+      "Proteger los datos mediante el cifrado de archivos",
+      "Administración de cuentas de usuario y sus privilegios"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Limitar el acceso a los recursos del sistema según roles y permisos\". Ejemplo: principio de privilegio mínimo.",
+    "source": "https://es.wikipedia.org/wiki/Control_de_acceso_basado_en_roles"
+  },
+  {
+    "id": 75,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Qué es la detección de intrusos en el contexto de la seguridad del sistema operativo?",
+    "options": [
+      "Protección de la red del sistema contra ataques externos",
+      "Verificación de la integridad de los archivos del sistema",
+      "Identificación y respuesta ante intentos de acceso no autorizados",
+      "Control del acceso a los recursos del sistema"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Identificación y respuesta ante intentos de acceso no autorizados\". Se realiza con sistemas IDS (Intrusion Detection Systems).",
+    "source": "https://es.wikipedia.org/wiki/Sistema_de_detecci%C3%B3n_de_intrusiones"
+  },
+  {
+    "id": 76,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Qué es la encriptación en el contexto de la seguridad del sistema operativo?",
+    "options": [
+      "Proceso de controlar el acceso a los recursos del sistema",
+      "Protección de datos mediante la conversión a un formato ilegible",
+      "Verificación de la autenticidad de los usuarios del sistema",
+      "Aseguramiento de que todos los usuarios cumplan con las políticas de seguridad"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Protección de datos mediante la conversión a un formato ilegible\". Sinónimo de cifrado.",
+    "source": "https://es.wikipedia.org/wiki/Cifrado"
+  },
+  {
+    "id": 77,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Cuál de las siguientes opciones describe mejor la función del registro de eventos en el subsistema de seguridad?",
+    "options": [
+      "Controlar el acceso a los recursos del sistema",
+      "Supervisar y registrar eventos y actividades del sistema",
+      "Proteger los datos mediante el cifrado de archivos",
+      "Administración de cuentas de usuario y sus privilegios"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Supervisar y registrar eventos y actividades del sistema\". Esencial para auditoría y forense.",
+    "source": "https://es.wikipedia.org/wiki/Registro_de_eventos"
+  },
+  {
+    "id": 78,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Qué es la gestión de parches en el contexto de la seguridad del sistema operativo?",
+    "options": [
+      "Proceso de controlar el acceso a los recursos del sistema",
+      "Aplicación de actualizaciones de seguridad para corregir vulnerabilidades",
+      "Verificación de la integridad de los archivos del sistema",
+      "Protección de la red del sistema contra ataques externos"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Aplicación de actualizaciones de seguridad para corregir vulnerabilidades\".",
+    "source": "https://es.wikipedia.org/wiki/Gesti%C3%B3n_de_parches"
+  },
+  {
+    "id": 79,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Qué es el análisis de vulnerabilidades en el subsistema de seguridad de un sistema operativo?",
+    "options": [
+      "Supervisión y auditoría de eventos del sistema",
+      "Identificación y evaluación de posibles brechas de seguridad",
+      "Protección de datos mediante el cifrado de archivos",
+      "Control del acceso a los recursos del sistema"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Identificación y evaluación de posibles brechas de seguridad\". Precede a la aplicación de parches.",
+    "source": "https://es.wikipedia.org/wiki/An%C3%A1lisis_de_vulnerabilidades"
+  },
+  {
+    "id": 80,
+    "category": "Seguridad en Sistemas Operativos",
+    "question": "¿Qué es la gestión de políticas de seguridad en el contexto del subsistema de seguridad?",
+    "options": [
+      "Establecimiento y aplicación de reglas y directivas de seguridad",
+      "Verificación de la autenticidad de los usuarios del sistema",
+      "Control del acceso a los recursos del sistema",
+      "Protección de datos mediante el cifrado de archivos"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Establecimiento y aplicación de reglas y directivas de seguridad\". Define cómo se implementa la seguridad en la organización.",
+    "source": "https://es.wikipedia.org/wiki/Pol%C3%ADtica_de_seguridad"
+  },
+  {
+    "id": 81,
+    "category": "Gestión de Memoria",
+    "question": "¿Cuál es el objetivo principal del subsistema de gestión de memoria en un sistema operativo?",
+    "options": [
+      "Maximizar el rendimiento del disco duro",
+      "Garantizar que todos los procesos tengan suficiente memoria RAM",
+      "Optimizar el uso de la memoria disponible en el sistema",
+      "Limitar el acceso a los dispositivos de E/S"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Optimizar el uso de la memoria disponible en el sistema\". El subsistema de memoria gestiona la asignación, protección y reutilización eficiente de la RAM y la memoria virtual.",
+    "source": "https://es.wikipedia.org/wiki/Gesti%C3%B3n_de_memoria"
+  },
+  {
+    "id": 82,
+    "category": "Gestión de Memoria",
+    "question": "¿Qué es la fragmentación de la memoria en el contexto de la gestión de memoria?",
+    "options": [
+      "La división de la memoria principal en bloques de tamaño fijo",
+      "La dispersión de procesos en la memoria principal",
+      "La acumulación de espacios libres discontinuos en la memoria",
+      "La asignación de memoria virtual a procesos en ejecución"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"La acumulación de espacios libres discontinuos en la memoria\". Esto ocurre cuando hay suficiente memoria total libre, pero no contigua para asignar a un nuevo proceso.",
+    "source": "https://es.wikipedia.org/wiki/Fragmentaci%C3%B3n_de_memoria"
+  },
+  {
+    "id": 83,
+    "category": "Gestión de Memoria",
+    "question": "¿Cuál es la diferencia entre la memoria virtual y la memoria física en un sistema operativo?",
+    "options": [
+      "La memoria virtual es más rápida que la memoria física",
+      "La memoria física es una representación de los datos almacenados en el disco",
+      "La memoria virtual es una abstracción que permite que el sistema opere como si tuviera más memoria de la que realmente tiene",
+      "La memoria física es más grande que la memoria virtual"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"La memoria virtual es una abstracción que permite que el sistema opere como si tuviera más memoria de la que realmente tiene\". Usa espacio en disco como extensión de la RAM.",
+    "source": "https://es.wikipedia.org/wiki/Memoria_virtual"
+  },
+  {
+    "id": 84,
+    "category": "Gestión de Memoria",
+    "question": "¿Qué es la paginación en el contexto de la gestión de memoria?",
+    "options": [
+      "Un método de asignación de memoria que divide la memoria en segmentos de tamaño variable",
+      "Un proceso de transferir datos entre la memoria principal y el disco",
+      "Un método de asignación de memoria que divide la memoria en bloques de tamaño fijo",
+      "Un método de asignación de memoria que divide la memoria en páginas de tamaño fijo"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Un método de asignación de memoria que divide la memoria en páginas de tamaño fijo\". Es la base de la gestión moderna de memoria virtual.",
+    "source": "https://es.wikipedia.org/wiki/Paginaci%C3%B3n_(inform%C3%A1tica)"
+  },
+  {
+    "id": 85,
+    "category": "Gestión de Memoria",
+    "question": "¿Qué es la fragmentación externa en la gestión de memoria?",
+    "options": [
+      "La fragmentación causada por la acumulación de procesos en la memoria",
+      "La fragmentación causada por la división de la memoria en segmentos de tamaño variable",
+      "La fragmentación causada por la acumulación de espacios libres discontinuos en la memoria",
+      "La fragmentación causada por la asignación de memoria virtual a procesos en ejecución"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"La fragmentación causada por la acumulación de espacios libres discontinuos en la memoria\". Es típica en sistemas con asignación contigua.",
+    "source": "https://es.wikipedia.org/wiki/Fragmentaci%C3%B3n_de_memoria#Fragmentaci%C3%B3n_externa"
+  },
+  {
+    "id": 86,
+    "category": "Gestión de Memoria",
+    "question": "¿Qué es la segmentación en el contexto de la gestión de memoria?",
+    "options": [
+      "Un método de asignación de memoria que divide la memoria en bloques de tamaño fijo",
+      "Un método de asignación de memoria que divide la memoria en segmentos de tamaño variable",
+      "Un método de asignación de memoria que divide la memoria en páginas de tamaño fijo",
+      "Un método de asignación de memoria que divide la memoria en páginas de tamaño variable"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un método de asignación de memoria que divide la memoria en segmentos de tamaño variable\". Cada segmento corresponde a una unidad lógica (código, datos, pila, etc.).",
+    "source": "https://es.wikipedia.org/wiki/Segmentaci%C3%B3n_(inform%C3%A1tica)"
+  },
+  {
+    "id": 87,
+    "category": "Gestión de Memoria",
+    "question": "¿Qué es el swapping en la gestión de memoria?",
+    "options": [
+      "Un método de compresión de datos para ahorrar espacio en la memoria",
+      "Un método de transferencia de procesos entre la memoria principal y el disco",
+      "Un método de asignación de memoria que divide la memoria en segmentos de tamaño variable",
+      "Un método de asignación de memoria que divide la memoria en bloques de tamaño fijo"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un método de transferencia de procesos entre la memoria principal y el disco\". Se usa cuando la RAM está llena.",
+    "source": "https://es.wikipedia.org/wiki/Swapping"
+  },
+  {
+    "id": 88,
+    "category": "Gestión de Memoria",
+    "question": "¿Cuál de las siguientes afirmaciones describe mejor la función del TLB (Translation Lookaside Buffer)?",
+    "options": [
+      "Almacena los datos más utilizados para un acceso rápido",
+      "Traduce direcciones virtuales a direcciones físicas de memoria",
+      "Gestiona la transferencia de datos entre la memoria principal y el disco",
+      "Controla el acceso a los recursos del sistema"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Traduce direcciones virtuales a direcciones físicas de memoria\". El TLB es una caché del MMU que acelera la traducción de direcciones.",
+    "source": "https://es.wikipedia.org/wiki/Translation_Lookaside_Buffer"
+  },
+  {
+    "id": 89,
+    "category": "Gestión de Memoria",
+    "question": "¿Qué es la memoria compartida en la gestión de memoria?",
+    "options": [
+      "Un método de asignación de memoria que permite que múltiples procesos compartan una región de memoria",
+      "Un método de asignación de memoria que divide la memoria en segmentos de tamaño variable",
+      "Un método de asignación de memoria que divide la memoria en bloques de tamaño fijo",
+      "Un método de asignación de memoria que divide la memoria en páginas de tamaño fijo"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Un método de asignación de memoria que permite que múltiples procesos compartan una región de memoria\". Es un mecanismo común de IPC (comunicación interprocesos).",
+    "source": "https://es.wikipedia.org/wiki/Memoria_compartida"
+  },
+  {
+    "id": 90,
+    "category": "Gestión de Memoria",
+    "question": "¿Cuál es el propósito principal de la paginación de memoria en un sistema operativo?",
+    "options": [
+      "Evitar la fragmentación interna de la memoria",
+      "Facilitar la transferencia de datos entre la memoria y el disco",
+      "Proporcionar un mecanismo de protección de memoria entre procesos",
+      "Permitir la gestión eficiente de la memoria mediante la asignación de bloques de tamaño variable"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Proporcionar un mecanismo de protección de memoria entre procesos\". Cada proceso tiene su propio espacio de direcciones virtual, aislado del resto.",
+    "source": "https://es.wikipedia.org/wiki/Paginaci%C3%B3n_(inform%C3%A1tica)"
+  },
+  {
+    "id": 91,
+    "category": "Gestión de Memoria",
+    "question": "¿Qué es la memoria virtual en el contexto de la gestión de memoria?",
+    "options": [
+      "La cantidad total de memoria disponible en un sistema",
+      "Un mecanismo que permite que el espacio de almacenamiento secundario se utilice como si fuera memoria principal",
+      "La memoria que se utiliza para almacenar datos temporales durante la ejecución de un programa",
+      "Un tipo de memoria de solo lectura que almacena el código de los programas"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Un mecanismo que permite que el espacio de almacenamiento secundario se utilice como si fuera memoria principal\".",
+    "source": "https://es.wikipedia.org/wiki/Memoria_virtual"
+  },
+  {
+    "id": 92,
+    "category": "Gestión de Memoria",
+    "question": "¿Qué es el swapping de páginas en la gestión de memoria?",
+    "options": [
+      "Un proceso mediante el cual se transfieren páginas completas entre la memoria principal y el disco",
+      "Un método de compresión de datos para ahorrar espacio en la memoria",
+      "Un método de asignación de memoria que divide la memoria en segmentos de tamaño variable",
+      "Un método de asignación de memoria que divide la memoria en bloques de tamaño fijo"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Un proceso mediante el cual se transfieren páginas completas entre la memoria principal y el disco\". Es la base del reemplazo de páginas.",
+    "source": "https://es.wikipedia.org/wiki/Swapping#Paginaci%C3%B3n_y_swapping"
+  },
+  {
+    "id": 93,
+    "category": "Gestión de Memoria",
+    "question": "¿Qué es la paginación anticipada en la gestión de memoria?",
+    "options": [
+      "Un proceso mediante el cual se reservan páginas adicionales de memoria antes de que sean necesarias",
+      "Un método de transferencia de procesos entre la memoria principal y el disco",
+      "Un método de asignación de memoria que divide la memoria en segmentos de tamaño variable",
+      "Un método de asignación de memoria que divide la memoria en bloques de tamaño fijo"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Un proceso mediante el cual se reservan páginas adicionales de memoria antes de que sean necesarias\". Se usa para mejorar el rendimiento predictivo.",
+    "source": "https://es.wikipedia.org/wiki/Paginaci%C3%B3n_(inform%C3%A1tica)#Paginaci%C3%B3n_a_demand"
+  },
+  {
+    "id": 94,
+    "category": "Gestión de Memoria",
+    "question": "¿Qué es la memoria caché en la gestión de memoria?",
+    "options": [
+      "Un tipo de memoria de solo lectura que almacena el código de los programas",
+      "Un mecanismo que permite que el espacio de almacenamiento secundario se utilice como si fuera memoria principal",
+      "Una memoria de acceso rápido que almacena copias de datos frecuentemente utilizados",
+      "La cantidad total de memoria disponible en un sistema"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Una memoria de acceso rápido que almacena copias de datos frecuentemente utilizados\". Puede referirse a caché de CPU o de disco.",
+    "source": "https://es.wikipedia.org/wiki/Cach%C3%A9_(inform%C3%A1tica)"
+  },
+  {
+    "id": 95,
+    "category": "Gestión de Memoria",
+    "question": "¿Qué es la memoria física en el contexto de la gestión de memoria?",
+    "options": [
+      "Un tipo de memoria de solo lectura que almacena el código de los programas",
+      "La memoria que se utiliza para almacenar datos temporales durante la ejecución de un programa",
+      "La memoria principal del sistema, compuesta por módulos de memoria RAM",
+      "Un mecanismo que permite que el espacio de almacenamiento secundario se utilice como si fuera memoria principal"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"La memoria principal del sistema, compuesta por módulos de memoria RAM\".",
+    "source": "https://es.wikipedia.org/wiki/Memoria_principal"
+  },
+  {
+    "id": 96,
+    "category": "Gestión de Memoria",
+    "question": "¿Qué es la fragmentación interna en la gestión de memoria?",
+    "options": [
+      "La fragmentación causada por la acumulación de procesos en la memoria",
+      "La fragmentación causada por la división de la memoria en segmentos de tamaño variable",
+      "La fragmentación causada por la asignación de memoria virtual a procesos en ejecución",
+      "La fragmentación causada por la reserva de bloques de memoria más grandes de lo necesario"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"La fragmentación causada por la reserva de bloques de memoria más grandes de lo necesario\". Es común en sistemas de paginación, donde una página puede no usarse completamente.",
+    "source": "https://es.wikipedia.org/wiki/Fragmentaci%C3%B3n_de_memoria#Fragmentaci%C3%B3n_interna"
+  },
+  {
+    "id": 97,
+    "category": "Gestión de Memoria",
+    "question": "¿Cuál es el propósito principal del MMU (Memory Management Unit) en un sistema operativo?",
+    "options": [
+      "Controlar el acceso a los recursos del sistema",
+      "Traducir direcciones virtuales a direcciones físicas de memoria",
+      "Gestionar la transferencia de datos entre la memoria principal y el disco",
+      "Administrar cuentas de usuario y sus privilegios"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Traducir direcciones virtuales a direcciones físicas de memoria\". Es un componente hardware esencial para la memoria virtual.",
+    "source": "https://es.wikipedia.org/wiki/Unidad_de_gesti%C3%B3n_de_memoria"
+  },
+  {
+    "id": 98,
+    "category": "Gestión de Memoria",
+    "question": "¿Qué es la memoria paginada en la gestión de memoria?",
+    "options": [
+      "Un método de asignación de memoria que divide la memoria en bloques de tamaño fijo",
+      "Un método de asignación de memoria que divide la memoria en segmentos de tamaño variable",
+      "Un método de asignación de memoria que divide la memoria en páginas de tamaño fijo",
+      "Un método de asignación de memoria que divide la memoria en páginas de tamaño variable"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Un método de asignación de memoria que divide la memoria en páginas de tamaño fijo\".",
+    "source": "https://es.wikipedia.org/wiki/Paginaci%C3%B3n_(inform%C3%A1tica)"
+  },
+  {
+    "id": 99,
+    "category": "Gestión de Memoria",
+    "question": "¿Qué es el swapping de segmentos en la gestión de memoria?",
+    "options": [
+      "Un proceso mediante el cual se transfieren segmentos completos entre la memoria principal y el disco",
+      "Un método de transferencia de procesos entre la memoria principal y el disco",
+      "Un método de asignación de memoria que divide la memoria en segmentos de tamaño variable",
+      "Un método de asignación de memoria que divide la memoria en bloques de tamaño fijo"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Un proceso mediante el cual se transfieren segmentos completos entre la memoria principal y el disco\". Menos común que el swapping de páginas.",
+    "source": "https://es.wikipedia.org/wiki/Segmentaci%C3%B3n_(inform%C3%A1tica)"
+  },
+  {
+    "id": 100,
+    "category": "Gestión de Memoria",
+    "question": "¿Cuál es el propósito principal del TLB (Translation Lookaside Buffer) en la gestión de memoria?",
+    "options": [
+      "Almacenar datos frecuentemente utilizados para un acceso rápido",
+      "Traducir direcciones virtuales a direcciones físicas de memoria",
+      "Gestionar la transferencia de datos entre la memoria principal y el disco",
+      "Controlar el acceso a los recursos del sistema"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Traducir direcciones virtuales a direcciones físicas de memoria\". El TLB acelera esta traducción al almacenar entradas recientes del mapa de páginas.",
+    "source": "https://es.wikipedia.org/wiki/Translation_Lookaside_Buffer"
+  },
+  {
+    "id": 101,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Cuál es el propósito principal del subsistema de comunicación en un sistema operativo?",
+    "options": [
+      "Coordinar la comunicación entre diferentes dispositivos de hardware",
+      "Facilitar la interacción entre el usuario y el sistema operativo",
+      "Gestionar la transferencia de datos entre procesos y dispositivos",
+      "Optimizar el rendimiento del sistema en redes locales"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Gestionar la transferencia de datos entre procesos y dispositivos\". Incluye IPC local y comunicación en red.",
+    "source": "https://es.wikipedia.org/wiki/Comunicaci%C3%B3n_interproceso"
+  },
+  {
+    "id": 102,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Qué es un socket en el contexto del subsistema de comunicación?",
+    "options": [
+      "Un dispositivo de hardware utilizado para conectar periféricos al sistema",
+      "Un punto final de comunicación bidireccional entre procesos en una red",
+      "Una técnica de encriptación utilizada para proteger la transmisión de datos",
+      "Una unidad de almacenamiento temporal para datos en tránsito"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un punto final de comunicación bidireccional entre procesos en una red\". Es la abstracción fundamental de la programación de redes.",
+    "source": "https://es.wikipedia.org/wiki/Socket_(inform%C3%A1tica)"
+  },
+  {
+    "id": 103,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Qué es la comunicación punto a punto en el contexto del subsistema de comunicación?",
+    "options": [
+      "Un tipo de comunicación donde múltiples procesos pueden enviar datos simultáneamente",
+      "Un tipo de comunicación donde solo dos procesos pueden intercambiar datos directamente",
+      "Un método de comunicación que utiliza un único canal para la transmisión de datos",
+      "Un método de comunicación que permite la conexión de múltiples dispositivos en una red"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un tipo de comunicación donde solo dos procesos pueden intercambiar datos directamente\".",
+    "source": "https://es.wikipedia.org/wiki/Comunicaci%C3%B3n_punto_a_punto"
+  },
+  {
+    "id": 104,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Qué es la comunicación en grupo en el contexto del subsistema de comunicación?",
+    "options": [
+      "Un método de comunicación donde solo dos procesos pueden intercambiar datos directamente",
+      "Un método de comunicación que utiliza un único canal para la transmisión de datos",
+      "Un tipo de comunicación donde múltiples procesos pueden enviar datos simultáneamente",
+      "Un tipo de comunicación donde un proceso puede enviar datos a múltiples receptores"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Un tipo de comunicación donde un proceso puede enviar datos a múltiples receptores\". Ejemplo: multicast o broadcast.",
+    "source": "https://es.wikipedia.org/wiki/Comunicaci%C3%B3n_multicast"
+  },
+  {
+    "id": 105,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Qué es un FIFO (First-In, First-Out) en el contexto del subsistema de comunicación?",
+    "options": [
+      "Un tipo de canal de comunicación que prioriza los mensajes más recientes",
+      "Un método de comunicación que garantiza la entrega ordenada de los mensajes",
+      "Un tipo de tubería utilizada para la comunicación entre procesos",
+      "Un algoritmo de planificación utilizado para la asignación de recursos"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Un tipo de tubería utilizada para la comunicación entre procesos\". Es una tubería con nombre (named pipe) en sistemas Unix.",
+    "source": "https://es.wikipedia.org/wiki/FIFO_(inform%C3%A1tica)"
+  },
+  {
+    "id": 106,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Qué es una tubería (pipe) en el contexto del subsistema de comunicación?",
+    "options": [
+      "Un tipo de canal de comunicación que prioriza los mensajes más recientes",
+      "Un método de comunicación que garantiza la entrega ordenada de los mensajes",
+      "Un conducto unidireccional utilizado para la comunicación entre procesos",
+      "Un protocolo de red utilizado para la transmisión de datos entre dispositivos"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Un conducto unidireccional utilizado para la comunicación entre procesos\". Es un mecanismo básico de IPC en sistemas Unix.",
+    "source": "https://es.wikipedia.org/wiki/Tuber%C3%ADa_(inform%C3%A1tica)"
+  },
+  {
+    "id": 107,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Qué es la sincronización en el contexto del subsistema de comunicación?",
+    "options": [
+      "La coordinación de acciones entre procesos para evitar conflictos",
+      "El proceso de enviar datos a través de una red de manera eficiente",
+      "La transferencia de datos entre procesos sin la necesidad de coordinación",
+      "El proceso de recibir datos de múltiples fuentes simultáneamente"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"La coordinación de acciones entre procesos para evitar conflictos\". Es esencial para el acceso seguro a recursos compartidos.",
+    "source": "https://es.wikipedia.org/wiki/Sincronizaci%C3%B3n_de_procesos"
+  },
+  {
+    "id": 108,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Qué es un semáforo en el contexto del subsistema de comunicación?",
+    "options": [
+      "Un dispositivo de hardware utilizado para conectar periféricos al sistema",
+      "Un mecanismo de sincronización utilizado para controlar el acceso a recursos compartidos",
+      "Un tipo de tubería utilizada para la comunicación entre procesos",
+      "Una técnica de encriptación utilizada para proteger la transmisión de datos"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un mecanismo de sincronización utilizado para controlar el acceso a recursos compartidos\". Puede ser binario o de conteo.",
+    "source": "https://es.wikipedia.org/wiki/Sem%C3%A1foro_(programaci%C3%B3n)"
+  },
+  {
+    "id": 109,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Qué es la comunicación asíncrona en el contexto del subsistema de comunicación?",
+    "options": [
+      "Un tipo de comunicación donde los procesos comparten un único canal de datos",
+      "Un método de comunicación que requiere la sincronización precisa entre emisor y receptor",
+      "Un tipo de comunicación donde los procesos pueden enviar y recibir datos en momentos diferentes",
+      "Un método de comunicación que garantiza la entrega ordenada de los mensajes"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Un tipo de comunicación donde los procesos pueden enviar y recibir datos en momentos diferentes\". No bloquea al emisor.",
+    "source": "https://es.wikipedia.org/wiki/Comunicaci%C3%B3n_as%C3%ADncrona"
+  },
+  {
+    "id": 110,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Qué es el modelo cliente-servidor en el contexto del subsistema de comunicación?",
+    "options": [
+      "Un modelo de comunicación donde cada proceso puede actuar como cliente o servidor según sea necesario",
+      "Un modelo de comunicación donde un proceso controla todos los aspectos de la comunicación",
+      "Un modelo de comunicación donde un proceso solicita servicios a otro proceso dedicado (servidor)",
+      "Un modelo de comunicación donde los procesos intercambian datos de manera independiente"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Un modelo de comunicación donde un proceso solicita servicios a otro proceso dedicado (servidor)\". Es el modelo predominante en redes.",
+    "source": "https://es.wikipedia.org/wiki/Modelo_cliente-servidor"
+  },
+  {
+    "id": 111,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Qué es la comunicación en bucle cerrado en el contexto del subsistema de comunicación?",
+    "options": [
+      "Un método de comunicación donde los procesos pueden enviar y recibir datos en momentos diferentes",
+      "Un método de comunicación que requiere la sincronización precisa entre emisor y receptor",
+      "Un método de comunicación donde los procesos comparten un único canal de datos",
+      "Un método de comunicación que garantiza la entrega ordenada de los mensajes"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un método de comunicación que requiere la sincronización precisa entre emisor y receptor\". También conocida como comunicación síncrona.",
+    "source": "https://es.wikipedia.org/wiki/Comunicaci%C3%B3n_s%C3%ADncrona"
+  },
+  {
+    "id": 112,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Qué es la comunicación en bucle abierto en el contexto del subsistema de comunicación?",
+    "options": [
+      "Un método de comunicación que garantiza la entrega ordenada de los mensajes",
+      "Un método de comunicación que requiere la sincronización precisa entre emisor y receptor",
+      "Un método de comunicación donde los procesos pueden enviar y recibir datos en momentos diferentes",
+      "Un método de comunicación donde los procesos comparten un único canal de datos"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Un método de comunicación donde los procesos pueden enviar y recibir datos en momentos diferentes\". Sinónimo de comunicación asíncrona.",
+    "source": "https://es.wikipedia.org/wiki/Comunicaci%C3%B3n_as%C3%ADncrona"
+  },
+  {
+    "id": 113,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Qué es un mensaje en el contexto del subsistema de comunicación?",
+    "options": [
+      "Un método de comunicación que garantiza la entrega ordenada de los mensajes",
+      "Un paquete de datos enviado entre procesos para transmitir información",
+      "Un mecanismo de sincronización utilizado para controlar el acceso a recursos compartidos",
+      "Un protocolo de red utilizado para la transmisión de datos entre dispositivos"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un paquete de datos enviado entre procesos para transmitir información\". Es la unidad básica de comunicación en muchos IPC.",
+    "source": "https://es.wikipedia.org/wiki/Paso_de_mensajes"
+  },
+  {
+    "id": 114,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Qué es un canal en el contexto del subsistema de comunicación?",
+    "options": [
+      "Un dispositivo de hardware utilizado para conectar periféricos al sistema",
+      "Un conducto utilizado para la transferencia de datos entre procesos",
+      "Un método de comunicación que garantiza la entrega ordenada de los mensajes",
+      "Un mecanismo de sincronización utilizado para controlar el acceso a recursos compartidos"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un conducto utilizado para la transferencia de datos entre procesos\". Puede ser una tubería, socket, cola de mensajes, etc.",
+    "source": "https://es.wikipedia.org/wiki/Canal_de_comunicaci%C3%B3n"
+  },
+  {
+    "id": 115,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Qué es la comunicación en red en el contexto del subsistema de comunicación?",
+    "options": [
+      "Un método de comunicación donde los procesos pueden enviar y recibir datos en momentos diferentes",
+      "Un método de comunicación que requiere la sincronización precisa entre emisor y receptor",
+      "Un método de comunicación que se produce a través de una red de computadoras",
+      "Un método de comunicación donde los procesos comparten un único canal de datos"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Un método de comunicación que se produce a través de una red de computadoras\".",
+    "source": "https://es.wikipedia.org/wiki/Comunicaci%C3%B3n_en_red"
+  },
+  {
+    "id": 116,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Qué es un puerto en el contexto del subsistema de comunicación?",
+    "options": [
+      "Un dispositivo de hardware utilizado para conectar periféricos al sistema",
+      "Un número de identificación utilizado para direccionar datos a un proceso específico en una computadora",
+      "Un conducto utilizado para la transferencia de datos entre procesos",
+      "Un mecanismo de sincronización utilizado para controlar el acceso a recursos compartidos"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un número de identificación utilizado para direccionar datos a un proceso específico en una computadora\". Ejemplo: puerto 80 para HTTP.",
+    "source": "https://es.wikipedia.org/wiki/Puerto_(inform%C3%A1tica)"
+  },
+  {
+    "id": 117,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Qué es la comunicación síncrona en el contexto del subsistema de comunicación?",
+    "options": [
+      "Un método de comunicación que garantiza la entrega ordenada de los mensajes",
+      "Un método de comunicación que requiere la sincronización precisa entre emisor y receptor",
+      "Un método de comunicación donde los procesos pueden enviar y recibir datos en momentos diferentes",
+      "Un método de comunicación donde los procesos comparten un único canal de datos"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un método de comunicación que requiere la sincronización precisa entre emisor y receptor\". El emisor espera la confirmación del receptor.",
+    "source": "https://es.wikipedia.org/wiki/Comunicaci%C3%B3n_s%C3%ADncrona"
+  },
+  {
+    "id": 118,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Qué es un mensaje broadcast en el contexto del subsistema de comunicación?",
+    "options": [
+      "Un mensaje enviado a un único destinatario específico",
+      "Un mensaje enviado a todos los procesos en un grupo o red",
+      "Un mensaje que contiene información sobre el estado del sistema",
+      "Un mensaje enviado para solicitar una respuesta del receptor"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un mensaje enviado a todos los procesos en un grupo o red\".",
+    "source": "https://es.wikipedia.org/wiki/Broadcast"
+  },
+  {
+    "id": 119,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Qué es un protocolo de comunicación en el contexto del subsistema de comunicación?",
+    "options": [
+      "Un conjunto de reglas y convenciones que define cómo se transmiten los datos entre dispositivos",
+      "Un método de comunicación que garantiza la entrega ordenada de los mensajes",
+      "Un mecanismo de sincronización utilizado para controlar el acceso a recursos compartidos",
+      "Un dispositivo de hardware utilizado para conectar periféricos al sistema"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Un conjunto de reglas y convenciones que define cómo se transmiten los datos entre dispositivos\". Ejemplo: TCP/IP, HTTP.",
+    "source": "https://es.wikipedia.org/wiki/Protocolo_de_comunicaciones"
+  },
+  {
+    "id": 120,
+    "category": "Comunicación Interprocesos (IPC)",
+    "question": "¿Qué es la comunicación interprocesos (IPC) en el contexto del subsistema de comunicación?",
+    "options": [
+      "Un método de comunicación que garantiza la entrega ordenada de los mensajes",
+      "Un conjunto de técnicas y mecanismos utilizados para permitir la comunicación entre procesos",
+      "Un mecanismo de sincronización utilizado para controlar el acceso a recursos compartidos",
+      "Un protocolo de red utilizado para la transmisión de datos entre dispositivos"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un conjunto de técnicas y mecanismos utilizados para permitir la comunicación entre procesos\". Incluye tuberías, sockets, memoria compartida, colas de mensajes, etc.",
+    "source": "https://es.wikipedia.org/wiki/Comunicaci%C3%B3n_interproceso"
+  },
+  {
+    "id": 121,
+    "category": "Historia de Windows",
+    "question": "¿Cuál de las siguientes versiones de Windows fue la primera en presentar el menú de inicio?",
+    "options": [
+      "Windows 95",
+      "Windows 98",
+      "Windows XP",
+      "Windows 2000"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Windows 95\". Introdujo el icónico menú Inicio, la barra de tareas y el escritorio moderno.",
+    "source": "https://es.wikipedia.org/wiki/Windows_95"
+  },
+  {
+    "id": 122,
+    "category": "Historia de Windows",
+    "question": "¿Cuál de las siguientes versiones de Windows fue la primera en introducir el sistema de archivos NTFS (New Technology File System)?",
+    "options": [
+      "Windows 95",
+      "Windows NT 4.0",
+      "Windows 98",
+      "Windows 2000"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Windows NT 4.0\". NTFS fue introducido originalmente con Windows NT 3.1 en 1993, pero NT 4.0 lo popularizó en entornos empresariales.",
+    "source": "https://es.wikipedia.org/wiki/NTFS"
+  },
+  {
+    "id": 123,
+    "category": "Historia de Windows",
+    "question": "¿Cuál fue la primera versión de Windows diseñada específicamente para su uso en servidores?",
+    "options": [
+      "Windows NT 4.0 Server",
+      "Windows Server 2003",
+      "Windows Server 2008",
+      "Windows Server 2012"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Windows NT 4.0 Server\". Aunque existían versiones server desde Windows NT 3.1, NT 4.0 Server fue la primera ampliamente adoptada para servidores.",
+    "source": "https://es.wikipedia.org/wiki/Windows_NT_4.0"
+  },
+  {
+    "id": 124,
+    "category": "Historia de Windows",
+    "question": "¿Cuál de las siguientes versiones de Windows introdujo la característica Aero Glass, que proporcionaba efectos visuales mejorados como transparencias y sombras?",
+    "options": [
+      "Windows Vista",
+      "Windows 7",
+      "Windows 8",
+      "Windows 10"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Windows Vista\". Aero Glass fue una de las novedades visuales más destacadas de Windows Vista.",
+    "source": "https://es.wikipedia.org/wiki/Windows_Vista"
+  },
+  {
+    "id": 125,
+    "category": "Historia de Windows",
+    "question": "¿Cuál de las siguientes versiones de Windows fue la primera en incluir el navegador Internet Explorer?",
+    "options": [
+      "Windows 3.1",
+      "Windows 95",
+      "Windows 98",
+      "Windows 2000"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Windows 95\". Internet Explorer 1.0 se incluyó en una actualización posterior de Windows 95.",
+    "source": "https://es.wikipedia.org/wiki/Internet_Explorer"
+  },
+  {
+    "id": 126,
+    "category": "Historia de Windows",
+    "question": "¿Cuál fue la primera versión de Windows que incluyó el sistema de búsqueda integrado llamado Windows Search?",
+    "options": [
+      "Windows Vista",
+      "Windows 7",
+      "Windows 8",
+      "Windows 10"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Windows Vista\". Windows Search reemplazó al antiguo buscador de archivos y permitía indexación en tiempo real.",
+    "source": "https://es.wikipedia.org/wiki/Windows_Vista"
+  },
+  {
+    "id": 127,
+    "category": "Historia de Windows",
+    "question": "¿Qué versión de Windows introdujo por primera vez el Panel de Control?",
+    "options": [
+      "Windows 3.1",
+      "Windows 95",
+      "Windows XP",
+      "Windows 7"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Windows 3.1\". El Panel de Control ya existía en versiones anteriores de Windows, pero se consolidó en Windows 3.1.",
+    "source": "https://es.wikipedia.org/wiki/Windows_3.1x"
+  },
+  {
+    "id": 128,
+    "category": "Historia de Windows",
+    "question": "¿Cuál de las siguientes versiones de Windows fue la primera en presentar la función de Cortana, el asistente virtual de Microsoft?",
+    "options": [
+      "Windows 7",
+      "Windows 8",
+      "Windows 8.1",
+      "Windows 10"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Windows 10\". Cortana debutó en Windows Phone y luego se integró en Windows 10 en 2015.",
+    "source": "https://es.wikipedia.org/wiki/Cortana_(asistente_virtual)"
+  },
+  {
+    "id": 129,
+    "category": "Historia de Windows",
+    "question": "¿Cuál de las siguientes versiones de Windows fue la primera en incluir el famoso juego \"Solitario\"?",
+    "options": [
+      "Windows 95",
+      "Windows 98",
+      "Windows 3.0",
+      "Windows XP"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Windows 3.0\". Microsoft Solitaire se incluyó por primera vez en 1990 con Windows 3.0 para ayudar a los usuarios a familiarizarse con el ratón.",
+    "source": "https://es.wikipedia.org/wiki/Microsoft_Solitaire"
+  },
+  {
+    "id": 130,
+    "category": "Historia de Windows",
+    "question": "¿Qué versión de Windows fue la primera en incorporar el sistema de seguridad BitLocker?",
+    "options": [
+      "Windows Vista",
+      "Windows 7",
+      "Windows 8",
+      "Windows 10"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Windows Vista\". BitLocker se introdujo en la edición Enterprise y Ultimate de Windows Vista.",
+    "source": "https://es.wikipedia.org/wiki/BitLocker"
+  },
+  {
+    "id": 131,
+    "category": "Historia de Windows",
+    "question": "¿Cuál fue la primera versión de Windows en introducir el concepto de cuentas de usuario con diferentes niveles de privilegios?",
+    "options": [
+      "Windows 95",
+      "Windows NT",
+      "Windows 2000",
+      "Windows XP"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Windows NT\". Windows NT (1993) introdujo un modelo de seguridad basado en usuarios y privilegios, heredado de sistemas Unix.",
+    "source": "https://es.wikipedia.org/wiki/Windows_NT"
+  },
+  {
+    "id": 132,
+    "category": "Historia de Windows",
+    "question": "¿Qué versión de Windows fue la primera en introducir la función de restauración del sistema?",
+    "options": [
+      "Windows 98",
+      "Windows Me",
+      "Windows XP",
+      "Windows Vista"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Windows Me\". System Restore debutó en Windows Millennium Edition (Me) en 2000.",
+    "source": "https://es.wikipedia.org/wiki/Windows_Me"
+  },
+  {
+    "id": 133,
+    "category": "Historia de Windows",
+    "question": "¿Cuál de las siguientes versiones de Windows fue la primera en presentar la interfaz de usuario basada en \"ventanas\"?",
+    "options": [
+      "Windows 1.0",
+      "Windows 2.0",
+      "Windows 3.0",
+      "Windows 95"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Windows 1.0\". Lanzado en 1985, fue el primer sistema operativo gráfico de Microsoft con interfaz de ventanas.",
+    "source": "https://es.wikipedia.org/wiki/Windows_1.0"
+  },
+  {
+    "id": 134,
+    "category": "Historia de Windows",
+    "question": "¿Qué versión de Windows fue la primera en incorporar el sistema de administración de energía ACPI (Advanced Configuration and Power Interface)?",
+    "options": [
+      "Windows 95",
+      "Windows 98",
+      "Windows XP",
+      "Windows 2000"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Windows 98\". Windows 98 fue el primero en soportar ACPI de forma amplia, permitiendo funciones como suspensión e hibernación.",
+    "source": "https://es.wikipedia.org/wiki/Windows_98"
+  },
+  {
+    "id": 135,
+    "category": "Historia de Windows",
+    "question": "¿Cuál de las siguientes versiones de Windows fue la primera en introducir el sistema de notificaciones conocido como \"Action Center\"?",
+    "options": [
+      "Windows Vista",
+      "Windows 7",
+      "Windows 8",
+      "Windows 10"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Windows 7\". El Centro de Acción (Action Center) centralizaba alertas de seguridad y mantenimiento.",
+    "source": "https://es.wikipedia.org/wiki/Windows_7"
+  },
+  {
+    "id": 136,
+    "category": "Historia de Windows",
+    "question": "¿Qué versión de Windows fue la primera en incluir la función de escritorio remoto (Remote Desktop)?",
+    "options": [
+      "Windows XP Professional",
+      "Windows Vista Ultimate",
+      "Windows 7 Professional",
+      "Windows 8 Enterprise"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Windows XP Professional\". Remote Desktop se introdujo en XP Pro en 2001, heredado de Windows NT/2000 Server.",
+    "source": "https://es.wikipedia.org/wiki/Escritorio_remoto_de_Windows"
+  },
+  {
+    "id": 137,
+    "category": "Historia de Windows",
+    "question": "¿Cuál de las siguientes versiones de Windows fue la primera en incluir el sistema de cifrado de archivos EFS (Encrypting File System)?",
+    "options": [
+      "Windows 2000",
+      "Windows XP",
+      "Windows Vista",
+      "Windows 7"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Windows 2000\". EFS se introdujo en Windows 2000 para cifrar archivos y carpetas en volúmenes NTFS.",
+    "source": "https://es.wikipedia.org/wiki/Encrypting_File_System"
+  },
+  {
+    "id": 138,
+    "category": "Historia de Windows",
+    "question": "¿Cuál de las siguientes versiones de Windows fue la primera en introducir el sistema de navegación por pestañas en el Explorador de archivos?",
+    "options": [
+      "Windows 95",
+      "Windows 98",
+      "Windows XP",
+      "Windows 7"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Windows 7\". Aunque no tenía pestañas nativas, muchos confunden esta característica; en realidad, **ninguna versión de Windows hasta Windows 11 incluyó pestañas nativas en el Explorador**. Sin embargo, entre las opciones dadas, **Windows 7** introdujo mejoras visuales y de navegación que se asocian erróneamente con pestañas. Nota: la pregunta contiene un error histórico; las pestañas llegaron en **Windows 11**.",
+    "source": "https://es.wikipedia.org/wiki/Explorador_de_Windows"
+  },
+  {
+    "id": 139,
+    "category": "Historia de Windows",
+    "question": "¿Qué versión de Windows fue la primera en presentar el escritorio en mosaico (Tiles) en lugar del menú de inicio tradicional?",
+    "options": [
+      "Windows 8",
+      "Windows 8.1",
+      "Windows 10",
+      "Windows 11"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Windows 8\". Eliminó el menú Inicio clásico y lo reemplazó por la interfaz Metro/Modern UI con mosaicos dinámicos.",
+    "source": "https://es.wikipedia.org/wiki/Windows_8"
+  },
+  {
+    "id": 140,
+    "category": "Historia de Windows",
+    "question": "¿Cuál de las siguientes versiones de Windows fue la primera en incluir el sistema de archivos exFAT (Extended File Allocation Table)?",
+    "options": [
+      "Windows Vista",
+      "Windows 7",
+      "Windows 8",
+      "Windows 10"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Windows Vista\". exFAT se introdujo con el Service Pack 1 de Windows Vista en 2007 para dispositivos flash.",
+    "source": "https://es.wikipedia.org/wiki/ExFAT"
+  },
+  {
+    "id": 141,
+    "category": "Sistemas Operativos",
+    "question": "¿Qué sistema operativo es conocido por su arquitectura basada en UNIX y su uso predominante en servidores y estaciones de trabajo?",
+    "options": [
+      "macOS",
+      "Linux",
+      "Android",
+      "Windows"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Linux\". Es un sistema operativo de código abierto inspirado en Unix, ampliamente usado en servidores, supercomputadoras y desarrollo.",
+    "source": "https://es.wikipedia.org/wiki/Linux"
+  },
+  {
+    "id": 142,
+    "category": "Sistemas Operativos",
+    "question": "¿Cuál de los siguientes sistemas operativos es una variante de Unix desarrollada por Apple Inc. y diseñada exclusivamente para hardware de Macintosh?",
+    "options": [
+      "Ubuntu",
+      "Android",
+      "iOS",
+      "CentOS"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"iOS\". iOS está basado en Darwin (derivado de BSD, un Unix), al igual que macOS, y es exclusivo de dispositivos Apple móviles.",
+    "source": "https://es.wikipedia.org/wiki/IOS"
+  },
+  {
+    "id": 143,
+    "category": "Sistemas Operativos",
+    "question": "¿Qué sistema operativo es utilizado en dispositivos móviles y tabletas, desarrollado por Google y basado en el núcleo de Linux?",
+    "options": [
+      "iOS",
+      "macOS",
+      "Android",
+      "Windows Phone"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Android\". Android utiliza el kernel de Linux y es el sistema operativo móvil más usado en el mundo.",
+    "source": "https://es.wikipedia.org/wiki/Android"
+  },
+  {
+    "id": 144,
+    "category": "Sistemas Operativos",
+    "question": "¿Cuál de las siguientes distribuciones de Linux es conocida por su enfoque en la simplicidad y la elegancia del diseño?",
+    "options": [
+      "Ubuntu",
+      "Debian",
+      "Fedora",
+      "Arch Linux"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Ubuntu\". Ubuntu es famoso por su facilidad de uso, interfaz limpia y enfoque en la experiencia del usuario.",
+    "source": "https://es.wikipedia.org/wiki/Ubuntu"
+  },
+  {
+    "id": 145,
+    "category": "Sistemas Operativos",
+    "question": "¿Qué sistema operativo de código abierto es ampliamente utilizado en servidores y estaciones de trabajo y se basa en la filosofía de Unix?",
+    "options": [
+      "Android",
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Linux\".",
+    "source": "https://es.wikipedia.org/wiki/Linux"
+  },
+  {
+    "id": 146,
+    "category": "Sistemas Operativos",
+    "question": "¿Qué sistema operativo de código cerrado es utilizado exclusivamente en computadoras Macintosh?",
+    "options": [
+      "macOS",
+      "Ubuntu",
+      "Fedora",
+      "CentOS"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"macOS\". Es el sistema operativo propietario de Apple para sus computadoras de escritorio y portátiles.",
+    "source": "https://es.wikipedia.org/wiki/MacOS"
+  },
+  {
+    "id": 147,
+    "category": "Sistemas Operativos",
+    "question": "¿Cuál de los siguientes sistemas operativos es conocido por su entorno gráfico llamado \"Finder\" y su facilidad de uso?",
+    "options": [
+      "Ubuntu",
+      "macOS",
+      "CentOS",
+      "Fedora"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"macOS\". Finder es el gestor de archivos y el entorno gráfico principal de macOS.",
+    "source": "https://es.wikipedia.org/wiki/Finder"
+  },
+  {
+    "id": 148,
+    "category": "Sistemas Operativos",
+    "question": "¿Qué sistema operativo de código cerrado es utilizado en dispositivos móviles y tabletas, desarrollado exclusivamente por Apple Inc.?",
+    "options": [
+      "iOS",
+      "Android",
+      "Linux",
+      "macOS"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"iOS\".",
+    "source": "https://es.wikipedia.org/wiki/IOS"
+  },
+  {
+    "id": 149,
+    "category": "Sistemas Operativos",
+    "question": "¿Cuál de las siguientes distribuciones de Linux es conocida por su enfoque en la estabilidad y la seguridad, y es ampliamente utilizada en servidores?",
+    "options": [
+      "Ubuntu",
+      "Debian",
+      "Fedora",
+      "Arch Linux"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Debian\". Es la base de muchas distribuciones (incluyendo Ubuntu) y es valorada por su estabilidad y rigor en el software libre.",
+    "source": "https://es.wikipedia.org/wiki/Debian"
+  },
+  {
+    "id": 150,
+    "category": "Sistemas Operativos",
+    "question": "¿Qué sistema operativo es conocido por su flexibilidad y su capacidad para ejecutarse en una amplia variedad de hardware, incluidos dispositivos embebidos y supercomputadoras?",
+    "options": [
+      "macOS",
+      "Android",
+      "Linux",
+      "Windows"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Linux\". Su kernel modular y su naturaleza de código abierto permiten adaptarlo a casi cualquier plataforma.",
+    "source": "https://es.wikipedia.org/wiki/Linux"
+  },
+  {
+    "id": 151,
+    "category": "Sistemas Operativos",
+    "question": "¿Cuál de los siguientes sistemas operativos de código abierto es utilizado principalmente en dispositivos móviles y tabletas?",
+    "options": [
+      "Ubuntu Touch",
+      "macOS",
+      "Android",
+      "CentOS"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Android\". Aunque Ubuntu Touch existe, Android es el sistema de código abierto dominante en móviles.",
+    "source": "https://es.wikipedia.org/wiki/Android"
+  },
+  {
+    "id": 152,
+    "category": "Sistemas Operativos",
+    "question": "¿Qué sistema operativo de código abierto es conocido por su gran cantidad de distribuciones (distros) adaptadas a diferentes necesidades y preferencias de los usuarios?",
+    "options": [
+      "macOS",
+      "Android",
+      "Linux",
+      "CentOS"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Linux\".",
+    "source": "https://es.wikipedia.org/wiki/Distribuci%C3%B3n_de_Linux"
+  },
+  {
+    "id": 153,
+    "category": "Sistemas Operativos",
+    "question": "¿Cuál de las siguientes distribuciones de Linux es conocida por su enfoque en la comunidad y su filosofía de software libre?",
+    "options": [
+      "Ubuntu",
+      "Fedora",
+      "openSUSE",
+      "Arch Linux"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Ubuntu\". Aunque todas promueven el software libre, Ubuntu tiene una de las comunidades más grandes y accesibles para nuevos usuarios.",
+    "source": "https://es.wikipedia.org/wiki/Ubuntu"
+  },
+  {
+    "id": 154,
+    "category": "Sistemas Operativos",
+    "question": "¿Qué sistema operativo es conocido por su integración con servicios en la nube y su capacidad para ejecutarse en una amplia gama de dispositivos de hardware?",
+    "options": [
+      "Android",
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Windows\". Microsoft ha integrado OneDrive, Azure y otras nubes, y Windows se ejecuta desde PCs hasta servidores y dispositivos IoT.",
+    "source": "https://es.wikipedia.org/wiki/Microsoft_Windows"
+  },
+  {
+    "id": 155,
+    "category": "Sistemas Operativos",
+    "question": "¿Cuál de los siguientes sistemas operativos es conocido por su seguridad, su robusto sistema de permisos y su diseño resistente a malware?",
+    "options": [
+      "macOS",
+      "Linux",
+      "Android",
+      "Windows"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Linux\". Su modelo de permisos, la diversidad de distribuciones y la transparencia del código lo hacen menos vulnerable.",
+    "source": "https://es.wikipedia.org/wiki/Linux"
+  },
+  {
+    "id": 156,
+    "category": "Sistemas Operativos",
+    "question": "¿Qué sistema operativo es conocido por su sistema de gestión de paquetes llamado \"Homebrew\" y su potente terminal de línea de comandos?",
+    "options": [
+      "Windows",
+      "Ubuntu",
+      "macOS",
+      "CentOS"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"macOS\". Homebrew es un gestor de paquetes de terceros muy popular en macOS para instalar software de línea de comandos.",
+    "source": "https://es.wikipedia.org/wiki/Homebrew_(gestor_de_paquetes)"
+  },
+  {
+    "id": 157,
+    "category": "Sistemas Operativos",
+    "question": "¿Cuál de las siguientes distribuciones de Linux es conocida por su enfoque en la velocidad y el rendimiento, así como por su diseño minimalista?",
+    "options": [
+      "Ubuntu",
+      "Fedora",
+      "Arch Linux",
+      "openSUSE"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Arch Linux\". Es una distribución rolling release que permite a los usuarios construir su sistema desde cero, optimizado para sus necesidades.",
+    "source": "https://es.wikipedia.org/wiki/Arch_Linux"
+  },
+  {
+    "id": 158,
+    "category": "Sistemas Operativos",
+    "question": "¿Qué sistema operativo es utilizado principalmente en dispositivos de la familia iPhone, iPad y iPod Touch?",
+    "options": [
+      "macOS",
+      "iOS",
+      "Android",
+      "Linux"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"iOS\".",
+    "source": "https://es.wikipedia.org/wiki/IOS"
+  },
+  {
+    "id": 159,
+    "category": "Sistemas Operativos",
+    "question": "¿Cuál de las siguientes distribuciones de Linux es conocida por su enfoque en la seguridad y la privacidad, así como por su integración con la red de anonimato Tor?",
+    "options": [
+      "Debian",
+      "Fedora",
+      "Kali Linux",
+      "Ubuntu"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Kali Linux\". Es una distribución especializada en pruebas de penetración y seguridad informática.",
+    "source": "https://es.wikipedia.org/wiki/Kali_Linux"
+  },
+  {
+    "id": 160,
+    "category": "Sistemas Operativos",
+    "question": "¿Qué sistema operativo es utilizado en computadoras personales, estaciones de trabajo y servidores, desarrollado por Microsoft Corporation?",
+    "options": [
+      "macOS",
+      "Linux",
+      "Android",
+      "Windows"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Windows\".",
+    "source": "https://es.wikipedia.org/wiki/Microsoft_Windows"
+  },
+  {
+    "id": 161,
+    "category": "Licencias de Software",
+    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar, modificar y distribuir el código fuente del programa de forma gratuita?",
+    "options": [
+      "Licencia Propietaria",
+      "Licencia Freeware",
+      "Licencia Open Source",
+      "Licencia Shareware"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Licencia Open Source\". Este tipo de licencia garantiza los derechos de uso, estudio, modificación y redistribución del software.",
+    "source": "https://es.wikipedia.org/wiki/C%C3%B3digo_abierto"
+  },
+  {
+    "id": 162,
+    "category": "Licencias de Software",
+    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar el software de forma gratuita, pero no proporciona acceso al código fuente ni permite modificaciones?",
+    "options": [
+      "Licencia Propietaria",
+      "Licencia Freeware",
+      "Licencia Open Source",
+      "Licencia Shareware"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Licencia Freeware\". El software freeware es gratuito para usar, pero su código fuente no se distribuye y no se permite su modificación.",
+    "source": "https://es.wikipedia.org/wiki/Freeware"
+  },
+  {
+    "id": 163,
+    "category": "Licencias de Software",
+    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar el software de forma gratuita durante un período de tiempo limitado, después del cual deben pagar para continuar usándolo?",
+    "options": [
+      "Licencia Propietaria",
+      "Licencia Freeware",
+      "Licencia Open Source",
+      "Licencia Shareware"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Licencia Shareware\". El software shareware suele ofrecer una versión de prueba gratuita con funcionalidad completa o limitada por un tiempo determinado.",
+    "source": "https://es.wikipedia.org/wiki/Shareware"
+  },
+  {
+    "id": 164,
+    "category": "Licencias de Software",
+    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar, modificar y distribuir el software de forma gratuita, pero con la condición de que los derivados también se distribuyan bajo la misma licencia?",
+    "options": [
+      "Licencia Propietaria",
+      "Licencia Freeware",
+      "Licencia Copyleft",
+      "Licencia Shareware"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Licencia Copyleft\". Es una estrategia legal usada en licencias como la GPL para garantizar que las modificaciones también permanezcan libres.",
+    "source": "https://es.wikipedia.org/wiki/Copyleft"
+  },
+  {
+    "id": 165,
+    "category": "Licencias de Software",
+    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar el software de forma gratuita, pero restringe su redistribución y modificación?",
+    "options": [
+      "Licencia Propietaria",
+      "Licencia Freeware",
+      "Licencia Open Source",
+      "Licencia Shareware"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Licencia Freeware\". Aunque es gratuita, normalmente prohíbe la redistribución y modificación sin autorización explícita.",
+    "source": "https://es.wikipedia.org/wiki/Freeware"
+  },
+  {
+    "id": 166,
+    "category": "Licencias de Software",
+    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar, modificar y distribuir el software de forma gratuita, pero con restricciones adicionales, como la atribución al autor original?",
+    "options": [
+      "Licencia Propietaria",
+      "Licencia Freeware",
+      "Licencia Creative Commons",
+      "Licencia Shareware"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Licencia Creative Commons\". Aunque más común en contenido creativo, algunas variantes (como CC BY-SA) se usan en software y exigen atribución.",
+    "source": "https://es.wikipedia.org/wiki/Licencia_Creative_Commons"
+  },
+  {
+    "id": 167,
+    "category": "Licencias de Software",
+    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar el software de forma gratuita, pero no permite redistribuirlo ni modificarlo?",
+    "options": [
+      "Licencia Propietaria",
+      "Licencia Freeware",
+      "Licencia Open Source",
+      "Licencia Shareware"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Licencia Freeware\". Es común en software gratuito que no es de código abierto.",
+    "source": "https://es.wikipedia.org/wiki/Freeware"
+  },
+  {
+    "id": 168,
+    "category": "Licencias de Software",
+    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar el software de forma gratuita, pero con la opción de pagar una tarifa para acceder a funciones adicionales o una versión premium?",
+    "options": [
+      "Licencia Propietaria",
+      "Licencia Freeware",
+      "Licencia Open Source",
+      "Licencia Shareware"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Licencia Shareware\". Muchos programas shareware ofrecen una versión básica gratuita y una versión completa de pago.",
+    "source": "https://es.wikipedia.org/wiki/Shareware"
+  },
+  {
+    "id": 169,
+    "category": "Licencias de Software",
+    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar, modificar y distribuir el software de forma gratuita, pero sin la obligación de que los derivados se distribuyan bajo la misma licencia?",
+    "options": [
+      "Licencia Propietaria",
+      "Licencia Freeware",
+      "Licencia Permisiva",
+      "Licencia Shareware"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Licencia Permisiva\". Ejemplos incluyen la licencia MIT o BSD, que imponen muy pocos requisitos sobre el software derivado.",
+    "source": "https://es.wikipedia.org/wiki/Licencia_MIT"
+  },
+  {
+    "id": 170,
+    "category": "Licencias de Software",
+    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar el software de forma gratuita, pero con restricciones en su uso, como la prohibición de uso comercial?",
+    "options": [
+      "Licencia Propietaria",
+      "Licencia Freeware",
+      "Licencia Open Source",
+      "Licencia Shareware"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Licencia Open Source\". Sin embargo, **ninguna licencia OSI aprobada prohíbe el uso comercial**. Esta pregunta contiene un error conceptual. Las licencias que prohíben uso comercial **no son consideradas Open Source**. La opción más cercana es una licencia Creative Commons no comercial, pero entre las dadas, ninguna es técnicamente correcta. Por coherencia con el texto fuente, se selecciona \"Licencia Open Source\" como la intención probable, aunque es técnicamente incorrecta.",
+    "source": "https://es.wikipedia.org/wiki/Definici%C3%B3n_de_software_de_c%C3%B3digo_abierto"
+  },
+  {
+    "id": 171,
+    "category": "Licencias de Software",
+    "question": "¿Qué tipo de licencia de software otorga al usuario el derecho de usar, copiar, modificar y distribuir el software de forma gratuita?",
+    "options": [
+      "Licencia Propietaria",
+      "Licencia Freeware",
+      "Licencia Open Source",
+      "Licencia Shareware"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Licencia Open Source\".",
+    "source": "https://es.wikipedia.org/wiki/C%C3%B3digo_abierto"
+  },
+  {
+    "id": 172,
+    "category": "Licencias de Software",
+    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar el software de forma gratuita solo para fines personales, pero requiere una licencia comercial para uso empresarial?",
+    "options": [
+      "Licencia Propietaria",
+      "Licencia Freeware",
+      "Licencia Open Source",
+      "Licencia Shareware"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Licencia Propietaria\". Muchas licencias propietarias ofrecen versiones gratuitas para uso personal, pero exigen pago para uso comercial.",
+    "source": "https://es.wikipedia.org/wiki/Software_propietario"
+  },
+  {
+    "id": 173,
+    "category": "Licencias de Software",
+    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar el software de forma gratuita, pero prohíbe la redistribución y modificación?",
+    "options": [
+      "Licencia Propietaria",
+      "Licencia Freeware",
+      "Licencia Open Source",
+      "Licencia Shareware"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Licencia Freeware\".",
+    "source": "https://es.wikipedia.org/wiki/Freeware"
+  },
+  {
+    "id": 174,
+    "category": "Licencias de Software",
+    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar, modificar y distribuir el software de forma gratuita, pero con la condición de que los derivados también se distribuyan bajo una licencia similar?",
+    "options": [
+      "Licencia Propietaria",
+      "Licencia Freeware",
+      "Licencia Copyleft",
+      "Licencia Shareware"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Licencia Copyleft\".",
+    "source": "https://es.wikipedia.org/wiki/Copyleft"
+  },
+  {
+    "id": 175,
+    "category": "Licencias de Software",
+    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar el software de forma gratuita durante un período de tiempo limitado, después del cual deben pagar para continuar usando el software?",
+    "options": [
+      "Licencia Propietaria",
+      "Licencia Freeware",
+      "Licencia Open Source",
+      "Licencia Shareware"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Licencia Shareware\".",
+    "source": "https://es.wikipedia.org/wiki/Shareware"
+  },
+  {
+    "id": 176,
+    "category": "Licencias de Software",
+    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar, modificar y distribuir el software de forma gratuita, pero con la obligación de hacer públicos los cambios realizados?",
+    "options": [
+      "Licencia Propietaria",
+      "Licencia Freeware",
+      "Licencia Open Source",
+      "Licencia Copyleft"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Licencia Copyleft\". La GPL, por ejemplo, exige que el código fuente de las modificaciones se haga público si se distribuye el software derivado.",
+    "source": "https://es.wikipedia.org/wiki/GNU_General_Public_License"
+  },
+  {
+    "id": 177,
+    "category": "Licencias de Software",
+    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar el software de forma gratuita, pero prohíbe la redistribución y modificación sin autorización?",
+    "options": [
+      "Licencia Propietaria",
+      "Licencia Freeware",
+      "Licencia Open Source",
+      "Licencia Shareware"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Licencia Freeware\".",
+    "source": "https://es.wikipedia.org/wiki/Freeware"
+  },
+  {
+    "id": 178,
+    "category": "Licencias de Software",
+    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar, modificar y distribuir el software de forma gratuita, pero con la condición de que se dé crédito al autor original?",
+    "options": [
+      "Licencia Propietaria",
+      "Licencia Freeware",
+      "Licencia Creative Commons",
+      "Licencia Shareware"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Licencia Creative Commons\". La variante CC BY exige atribución al creador original.",
+    "source": "https://es.wikipedia.org/wiki/Licencia_Creative_Commons"
+  },
+  {
+    "id": 179,
+    "category": "Instalación de Sistemas Operativos",
+    "question": "¿Qué es un sistema operativo live?",
+    "options": [
+      "Un sistema operativo que se ejecuta directamente desde un CD o USB sin necesidad de instalación.",
+      "Un sistema operativo diseñado exclusivamente para servidores en la nube.",
+      "Un sistema operativo utilizado únicamente en dispositivos móviles.",
+      "Un sistema operativo que requiere una activación en línea para funcionar."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Un sistema operativo que se ejecuta directamente desde un CD o USB sin necesidad de instalación.\". Es muy útil para pruebas, rescate o instalación.",
+    "source": "https://es.wikipedia.org/wiki/Sistema_operativo_live"
+  },
+  {
+    "id": 180,
+    "category": "Instalación de Sistemas Operativos",
+    "question": "¿Cuál es el propósito principal de un disco de instalación de un sistema operativo?",
+    "options": [
+      "Proporcionar una interfaz gráfica para el usuario.",
+      "Instalar controladores de dispositivos automáticamente.",
+      "Facilitar la instalación del sistema operativo en un equipo.",
+      "Proporcionar herramientas de mantenimiento del sistema."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Facilitar la instalación del sistema operativo en un equipo.\".",
+    "source": "https://es.wikipedia.org/wiki/Instalaci%C3%B3n_de_software"
+  },
+  {
+    "id": 181,
+    "category": "Instalación de Sistemas Operativos",
+    "question": "¿Qué es la partición del disco duro durante la instalación de un sistema operativo?",
+    "options": [
+      "El proceso de eliminar todos los datos del disco duro.",
+      "La creación de secciones lógicas en el disco duro para organizar y administrar los datos.",
+      "La copia de seguridad de los datos del disco duro en otro medio de almacenamiento.",
+      "La instalación de un sistema operativo en una memoria USB."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"La creación de secciones lógicas en el disco duro para organizar y administrar los datos.\".",
+    "source": "https://es.wikipedia.org/wiki/Partici%C3%B3n_de_disco"
+  },
+  {
+    "id": 182,
+    "category": "Instalación de Sistemas Operativos",
+    "question": "¿Qué es la elección del idioma durante la instalación de un sistema operativo?",
+    "options": [
+      "La configuración de la disposición del teclado.",
+      "La selección del idioma en el que se mostrarán los mensajes y las opciones durante la instalación.",
+      "La elección del país de residencia del usuario.",
+      "La configuración de la zona horaria del sistema."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"La selección del idioma en el que se mostrarán los mensajes y las opciones durante la instalación.\".",
+    "source": "https://es.wikipedia.org/wiki/Localizaci%C3%B3n_de_software"
+  },
+  {
+    "id": 183,
+    "category": "Instalación de Sistemas Operativos",
+    "question": "¿Qué es el proceso de formateo durante la instalación de un sistema operativo?",
+    "options": [
+      "La eliminación de todos los archivos del disco duro.",
+      "La creación de una estructura de carpetas en el disco duro.",
+      "La instalación de controladores de dispositivos.",
+      "La preparación del disco duro para el sistema operativo mediante la creación de un sistema de archivos."
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"La preparación del disco duro para el sistema operativo mediante la creación de un sistema de archivos.\".",
+    "source": "https://es.wikipedia.org/wiki/Formateo_de_disco"
+  },
+  {
+    "id": 184,
+    "category": "Instalación de Sistemas Operativos",
+    "question": "¿Cuál de las siguientes herramientas es utilizada comúnmente para crear un medio de instalación de un sistema operativo en una unidad USB?",
+    "options": [
+      "Disk Management (Administración de discos)",
+      "Command Prompt (Símbolo del sistema)",
+      "Windows Update (Actualización de Windows)",
+      "Rufus"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Rufus\". Es una herramienta popular en Windows para crear unidades USB de arranque.",
+    "source": "https://es.wikipedia.org/wiki/Rufus_(software)"
+  },
+  {
+    "id": 185,
+    "category": "Instalación de Sistemas Operativos",
+    "question": "Durante la instalación de un sistema operativo, ¿qué es la configuración de red?",
+    "options": [
+      "La selección del proveedor de servicios de Internet (ISP).",
+      "La configuración de la conexión a una red Wi-Fi.",
+      "La configuración de la dirección IP y otros ajustes de red.",
+      "La elección del navegador web predeterminado."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"La configuración de la dirección IP y otros ajustes de red.\".",
+    "source": "https://es.wikipedia.org/wiki/Configuraci%C3%B3n_de_red"
+  },
+  {
+    "id": 186,
+    "category": "Instalación de Sistemas Operativos",
+    "question": "¿Qué es el proceso de activación durante la instalación de un sistema operativo?",
+    "options": [
+      "La instalación de programas adicionales para mejorar el rendimiento del sistema.",
+      "La verificación de la autenticidad de la licencia del sistema operativo.",
+      "La creación de una cuenta de usuario en línea.",
+      "La configuración de la resolución de pantalla y otros ajustes de visualización."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"La verificación de la autenticidad de la licencia del sistema operativo.\".",
+    "source": "https://es.wikipedia.org/wiki/Activaci%C3%B3n_de_Windows"
+  },
+  {
+    "id": 187,
+    "category": "Instalación de Sistemas Operativos",
+    "question": "¿Qué es la instalación limpia de un sistema operativo?",
+    "options": [
+      "La instalación de un sistema operativo sin formatear el disco duro.",
+      "La instalación de un sistema operativo sobre una versión existente sin eliminar los datos.",
+      "La instalación de un sistema operativo sin la necesidad de introducir una clave de producto.",
+      "La instalación de un sistema operativo en un nuevo equipo sin sistemas operativos previos."
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"La instalación de un sistema operativo en un nuevo equipo sin sistemas operativos previos.\". Aunque a veces implica formateo, el concepto clave es que no hay SO anterior.",
+    "source": "https://es.wikipedia.org/wiki/Instalaci%C3%B3n_limpia"
+  },
+  {
+    "id": 188,
+    "category": "Instalación de Sistemas Operativos",
+    "question": "¿Qué es el proceso de particionamiento durante la instalación de un sistema operativo?",
+    "options": [
+      "La eliminación de todos los datos del disco duro.",
+      "La creación de secciones lógicas en el disco duro para organizar y administrar los datos.",
+      "La copia de seguridad de los datos del disco duro en otro medio de almacenamiento.",
+      "La instalación de un sistema operativo en una memoria USB."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"La creación de secciones lógicas en el disco duro para organizar y administrar los datos.\".",
+    "source": "https://es.wikipedia.org/wiki/Partici%C3%B3n_de_disco"
+  },
+  {
+    "id": 189,
+    "category": "Gestores de Arranque",
+    "question": "¿Qué es un gestor de arranque?",
+    "options": [
+      "Un programa que controla el inicio del sistema operativo y permite al usuario seleccionar entre varios sistemas operativos instalados.",
+      "Un componente físico del disco duro que contiene la información de inicio del sistema operativo.",
+      "Una herramienta de diagnóstico del sistema utilizada para reparar problemas de inicio.",
+      "Un componente de software que controla la velocidad de inicio del sistema operativo."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Un programa que controla el inicio del sistema operativo y permite al usuario seleccionar entre varios sistemas operativos instalados.\".",
+    "source": "https://es.wikipedia.org/wiki/Gestor_de_arranque"
+  },
+  {
+    "id": 190,
+    "category": "Gestores de Arranque",
+    "question": "¿Cuál es una función común de un gestor de arranque?",
+    "options": [
+      "Optimizar la velocidad de conexión a Internet.",
+      "Administrador las actualizaciones del sistema operativo.",
+      "Permitir al usuario elegir entre diferentes sistemas operativos durante el arranque.",
+      "Controlar el consumo de energía del equipo."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Permitir al usuario elegir entre diferentes sistemas operativos durante el arranque.\".",
+    "source": "https://es.wikipedia.org/wiki/Gestor_de_arranque"
+  },
+  {
+    "id": 191,
+    "category": "Gestores de Arranque",
+    "question": "¿Cuál de los siguientes gestores de arranque es utilizado comúnmente en sistemas operativos Windows?",
+    "options": [
+      "GRUB (Grand Unified Bootloader)",
+      "LILO (LInux LOader)",
+      "NTLDR (New Technology Loader)",
+      "rEFInd (UEFI boot manager)"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"NTLDR (New Technology Loader)\". Fue usado en Windows NT, 2000, XP y Server 2003. A partir de Vista, se usa Windows Boot Manager.",
+    "source": "https://es.wikipedia.org/wiki/NTLDR"
+  },
+  {
+    "id": 192,
+    "category": "Gestores de Arranque",
+    "question": "¿Qué gestor de arranque es utilizado principalmente en sistemas basados en Linux?",
+    "options": [
+      "GRUB (Grand Unified Bootloader)",
+      "LILO (LInux LOader)",
+      "NTLDR (New Technology Loader)",
+      "rEFInd (UEFI boot manager)"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"GRUB (Grand Unified Bootloader)\". Es el gestor de arranque predeterminado en la mayoría de las distribuciones modernas de Linux.",
+    "source": "https://es.wikipedia.org/wiki/GNU_GRUB"
+  },
+  {
+    "id": 193,
+    "category": "Gestores de Arranque",
+    "question": "¿Cuál es la función principal del gestor de arranque GRUB (Grand Unified Bootloader)?",
+    "options": [
+      "Controlar el acceso a los recursos del sistema.",
+      "Administrar la configuración de red del equipo.",
+      "Permitir al usuario seleccionar entre varios sistemas operativos durante el arranque.",
+      "Gestionar las actualizaciones del sistema operativo."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Permitir al usuario seleccionar entre varios sistemas operativos durante el arranque.\".",
+    "source": "https://es.wikipedia.org/wiki/GNU_GRUB"
+  },
+  {
+    "id": 194,
+    "category": "Gestores de Arranque",
+    "question": "¿Qué gestor de arranque es comúnmente utilizado en sistemas macOS?",
+    "options": [
+      "GRUB (Grand Unified Bootloader)",
+      "LILO (LInux LOader)",
+      "NTLDR (New Technology Loader)",
+      "rEFInd (UEFI boot manager)"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"rEFInd (UEFI boot manager)\". Aunque macOS usa su propio gestor de arranque basado en EFI, rEFInd es una alternativa popular para arranque dual.",
+    "source": "https://es.wikipedia.org/wiki/Extensible_Firmware_Interface"
+  },
+  {
+    "id": 195,
+    "category": "Gestores de Arranque",
+    "question": "¿Qué gestor de arranque es utilizado en sistemas basados en UEFI?",
+    "options": [
+      "GRUB (Grand Unified Bootloader)",
+      "LILO (LInux LOader)",
+      "NTLDR (New Technology Loader)",
+      "rEFInd (UEFI boot manager)"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"rEFInd (UEFI boot manager)\". Es un gestor de arranque diseñado específicamente para sistemas UEFI.",
+    "source": "https://es.wikipedia.org/wiki/Extensible_Firmware_Interface"
+  },
+  {
+    "id": 196,
+    "category": "Gestores de Arranque",
+    "question": "¿Cuál es una característica de rEFInd (UEFI boot manager)?",
+    "options": [
+      "Compatible solo con sistemas operativos Windows.",
+      "Permite arrancar sistemas operativos tanto en arquitectura x86 como en arquitectura ARM.",
+      "Diseñado exclusivamente para sistemas Linux.",
+      "Requiere una conexión a Internet para funcionar correctamente."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Permite arrancar sistemas operativos tanto en arquitectura x86 como en arquitectura ARM.\".",
+    "source": "https://www.rodsbooks.com/refind/"
+  },
+  {
+    "id": 197,
+    "category": "Gestores de Arranque",
+    "question": "¿Qué gestor de arranque es utilizado comúnmente en sistemas operativos Windows anteriores a Windows Vista?",
+    "options": [
+      "GRUB (Grand Unified Bootloader)",
+      "LILO (LInux LOader)",
+      "NTLDR (New Technology Loader)",
+      "rEFInd (UEFI boot manager)"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"NTLDR (New Technology Loader)\".",
+    "source": "https://es.wikipedia.org/wiki/NTLDR"
+  },
+  {
+    "id": 198,
+    "category": "Gestores de Arranque",
+    "question": "¿Cuál es el gestor de arranque predeterminado en la mayoría de las distribuciones de Linux?",
+    "options": [
+      "GRUB (Grand Unified Bootloader)",
+      "LILO (LInux LOader)",
+      "NTLDR (New Technology Loader)",
+      "rEFInd (UEFI boot manager)"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"GRUB (Grand Unified Bootloader)\".",
+    "source": "https://es.wikipedia.org/wiki/GNU_GRUB"
+  },
+  {
+    "id": 199,
     "category": "USB y Conectores",
     "question": "¿Cuál es la función principal de un conector USB?",
     "options": [
@@ -15,9596 +2787,4177 @@ const questionsDatabase = [
     "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus"
   },
   {
-    "id": 2,
-    "category": "USB y Conectores",
-    "question": "¿Cuál es la velocidad de transferencia de datos del estándar USB 2.0?",
-    "options": [
-      "480 Mbps.",
-      "5 Gbps.",
-      "12 Mbps.",
-      "1 Gbps."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"480 Mbps.\". USB 2.0 tiene una velocidad máxima de transferencia de 480 Mbps.",
-    "source": "https://es.wikipedia.org/wiki/USB_2.0"
-  },
-  {
-    "id": 3,
-    "category": "Componentes Básicos",
-    "question": "¿Qué tipo de conector se utiliza comúnmente para cargar dispositivos móviles, como smartphones y tabletas?",
-    "options": [
-      "USB Type-A.",
-      "USB Type-B.",
-      "USB Micro-B.",
-      "USB-C."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"USB-C.\". Aunque antes se usaba USB Micro-B, actualmente USB-C es el estándar para cargar dispositivos móviles.",
-    "source": "https://es.wikipedia.org/wiki/USB-C"
-  },
-  {
-    "id": 4,
-    "category": "USB y Conectores",
-    "question": "¿Cuál es la principal ventaja del conector USB-C en comparación con otros conectores USB?",
-    "options": [
-      "Es más pequeño y reversible.",
-      "Tiene mayor velocidad de transferencia.",
-      "Solo se utiliza en dispositivos Apple.",
-      "No requiere energía para la transferencia de datos."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Es más pequeño y reversible.\". USB-C es reversible (se puede conectar en cualquier orientación) y más compacto que otros conectores USB.",
-    "source": "https://es.wikipedia.org/wiki/USB-C"
-  },
-  {
-    "id": 5,
-    "category": "USB y Conectores",
-    "question": "¿Cuál de los siguientes dispositivos suele utilizar un conector USB Mini-B?",
-    "options": [
-      "Impresoras.",
-      "Cámaras digitales.",
-      "Ratones.",
-      "Teclados."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Cámaras digitales.\". Las cámaras digitales antiguas solían usar USB Mini-B.",
-    "source": "https://es.wikipedia.org/wiki/USB#Mini"
-  },
-  {
-    "id": 6,
-    "category": "USB y Conectores",
-    "question": "¿Qué significa la sigla \"USB\" en inglés?",
-    "options": [
-      "Universal Serial Bus.",
-      "United States of Bluetooth.",
-      "Ultra Speed Connector.",
-      "Underlying System Backup."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Universal Serial Bus.\". USB es el acrónimo de \"Universal Serial Bus\".",
-    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus"
-  },
-  {
-    "id": 7,
-    "category": "USB y Conectores",
-    "question": "¿Qué versión de USB introdujo el conector USB Type-C por primera vez?",
-    "options": [
-      "USB 1.1.",
-      "USB 2.0.",
-      "USB 3.0.",
-      "USB 3.1."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"USB 3.1.\". USB Type-C se introdujo con USB 3.1.",
-    "source": "https://es.wikipedia.org/wiki/USB-C"
-  },
-  {
-    "id": 8,
-    "category": "USB y Conectores",
-    "question": "¿Cuál es la función principal del protocolo USB Power Delivery (USB PD)?",
-    "options": [
-      "Mejorar la velocidad de transferencia de datos.",
-      "Proporcionar energía para la carga rápida de dispositivos.",
-      "Conectar periféricos de audio.",
-      "Facilitar la conexión inalámbrica."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Proporcionar energía para la carga rápida de dispositivos.\". USB PD permite la carga rápida y suministro de energía a dispositivos.",
-    "source": "https://es.wikipedia.org/wiki/USB_Power_Delivery"
-  },
-  {
-    "id": 9,
-    "category": "USB y Conectores",
-    "question": "¿Cuántos pines tiene un conector USB Type-A estándar?",
-    "options": [
-      "4.",
-      "6.",
-      "8.",
-      "12."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"4.\". Un conector USB Type-A estándar tiene 4 pines.",
-    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus"
-  },
-  {
-    "id": 10,
-    "category": "Componentes Básicos",
-    "question": "¿Qué tipo de conector se utiliza comúnmente para conectar impresoras y escáneres a una computadora?",
-    "options": [
-      "USB Type-C.",
-      "USB Mini-B.",
-      "USB Type-A.",
-      "USB Type-B."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"USB Type-B.\". Las impresoras y escáneres suelen usar USB Type-B.",
-    "source": "https://es.wikipedia.org/wiki/USB#Type-B"
-  },
-  {
-    "id": 11,
-    "category": "USB y Conectores",
-    "question": "¿Cuál es la función del conector USB OTG (On-The-Go)?",
-    "options": [
-      "Conectar dispositivos USB directamente entre sí sin necesidad de una computadora.",
-      "Optimizar la velocidad de conexión a Internet.",
-      "Mejorar la calidad de audio en dispositivos USB.",
-      "Proporcionar energía a dispositivos externos."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Conectar dispositivos USB directamente entre sí sin necesidad de una computadora.\". USB OTG permite la conexión directa entre dispositivos sin un host intermediario.",
-    "source": "https://es.wikipedia.org/wiki/USB_On-The-Go"
-  },
-  {
-    "id": 12,
-    "category": "USB y Conectores",
-    "question": "¿Cuál es la velocidad de transferencia de datos del estándar USB 3.0?",
-    "options": [
-      "480 Mbps.",
-      "5 Gbps.",
-      "12 Mbps.",
-      "1 Gbps."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"5 Gbps.\". USB 3.0 tiene una velocidad máxima de 5 Gbps.",
-    "source": "https://es.wikipedia.org/wiki/USB_3.0"
-  },
-  {
-    "id": 13,
-    "category": "USB y Conectores",
-    "question": "¿Cuál es la característica principal de un cable USB 3.1 Gen 2?",
-    "options": [
-      "Mayor velocidad de transferencia.",
-      "Menor compatibilidad con dispositivos antiguos.",
-      "Conector más grande.",
-      "Solo compatible con dispositivos Apple."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Mayor velocidad de transferencia.\". USB 3.1 Gen 2 ofrece velocidades de hasta 10 Gbps.",
-    "source": "https://es.wikipedia.org/wiki/USB_3.1"
-  },
-  {
-    "id": 14,
-    "category": "USB y Conectores",
-    "question": "¿Cuál de las siguientes afirmaciones es verdadera sobre USB 3.2?",
-    "options": [
-      "Introduce velocidades de transferencia de hasta 20 Gbps.",
-      "Es una versión más antigua que USB 2.0.",
-      "Utiliza únicamente conectores USB Type-A.",
-      "No es compatible con la carga de dispositivos."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Introduce velocidades de transferencia de hasta 20 Gbps.\". USB 3.2 puede alcanzar hasta 20 Gbps.",
-    "source": "https://es.wikipedia.org/wiki/USB_3.2"
-  },
-  {
-    "id": 15,
-    "category": "Almacenamiento",
-    "question": "¿Qué tipo de conector se utiliza comúnmente para conectar dispositivos de almacenamiento externo, como discos duros?",
-    "options": [
-      "USB Type-A.",
-      "USB Type-B.",
-      "USB Micro-B.",
-      "USB-C."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"USB-C.\". Los discos duros externos modernos usan USB-C por su velocidad y versatilidad.",
-    "source": "https://es.wikipedia.org/wiki/USB-C"
-  },
-  {
-    "id": 16,
-    "category": "USB y Conectores",
-    "question": "¿Cuántos conductores tiene un cable USB 2.0 estándar?",
-    "options": [
-      "2.",
-      "4.",
-      "6.",
-      "8."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"4.\". Un cable USB 2.0 tiene 4 conductores: 2 para datos y 2 para energía.",
-    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus"
-  },
-  {
-    "id": 17,
-    "category": "USB y Conectores",
-    "question": "¿Qué ventaja ofrece el conector USB Micro-B sobre el conector USB Mini-B?",
-    "options": [
-      "Mayor velocidad de transferencia.",
-      "Mayor durabilidad.",
-      "Reversibilidad.",
-      "Menor tamaño."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Menor tamaño.\". USB Micro-B es más pequeño y duradero que USB Mini-B.",
-    "source": "https://es.wikipedia.org/wiki/USB#Micro"
-  },
-  {
-    "id": 18,
-    "category": "USB y Conectores",
-    "question": "¿En qué año se lanzó oficialmente el estándar USB 3.1?",
-    "options": [
-      "2008.",
-      "2013.",
-      "2015.",
-      "2020."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"2013.\". USB 3.1 se lanzó en 2013.",
-    "source": "https://es.wikipedia.org/wiki/USB_3.1"
-  },
-  {
-    "id": 19,
-    "category": "Componentes Básicos",
-    "question": "¿Qué tipo de conector se utiliza comúnmente para conectar periféricos como teclados y ratones a una computadora?",
-    "options": [
-      "USB Type-A.",
-      "USB Mini-B.",
-      "USB Micro-B.",
-      "USB Type-B."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"USB Type-A.\". Los teclados y ratones suelen usar USB Type-A.",
-    "source": "https://es.wikipedia.org/wiki/USB#Type-A"
-  },
-  {
-    "id": 20,
-    "category": "USB y Conectores",
-    "question": "¿Qué es el \"USB Implementers Forum\" (USB-IF)?",
-    "options": [
-      "Un grupo de usuarios de USB.",
-      "Una organización que desarrolla y promueve el estándar USB.",
-      "Un programa de software para mejorar la velocidad de conexión USB.",
-      "Un dispositivo de almacenamiento USB de alta velocidad."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Una organización que desarrolla y promueve el estándar USB.\". USB-IF es el organismo responsable de mantener y promover el estándar USB.",
-    "source": "https://es.wikipedia.org/wiki/USB_Implementers_Forum"
-  },
-  {
-    "id": 21,
-    "category": "USB y Conectores",
-    "question": "¿Cuál es la función principal del protocolo USB Audio Class?",
-    "options": [
-      "Mejorar la velocidad de transferencia de datos.",
-      "Proporcionar energía para la carga rápida de dispositivos.",
-      "Establecer estándares para la conexión de dispositivos de audio.",
-      "Facilitar la conexión inalámbrica."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Establecer estándares para la conexión de dispositivos de audio.\". USB Audio Class define cómo los dispositivos de audio deben comunicarse a través de USB.",
-    "source": "https://es.wikipedia.org/wiki/USB_audio_device_class"
-  },
-  {
-    "id": 22,
-    "category": "USB y Conectores",
-    "question": "¿Qué versión de USB introdujo el conector USB Micro-B por primera vez?",
-    "options": [
-      "USB 1.1.",
-      "USB 2.0.",
-      "USB 3.0.",
-      "USB 3.1."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"USB 2.0.\". USB Micro-B se introdujo con USB 2.0.",
-    "source": "https://es.wikipedia.org/wiki/USB#Micro"
-  },
-  {
-    "id": 23,
-    "category": "USB y Conectores",
-    "question": "¿Cuál es la principal ventaja del conector USB Type-B en comparación con otros conectores USB?",
-    "options": [
-      "Es más pequeño y reversible.",
-      "Tiene mayor velocidad de transferencia.",
-      "Ofrece una conexión más segura para periféricos.",
-      "No requiere energía para la transferencia de datos."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Ofrece una conexión más segura para periféricos.\". USB Type-B es más robusto y seguro para dispositivos como impresoras.",
-    "source": "https://es.wikipedia.org/wiki/USB#Type-B"
-  },
-  {
-    "id": 24,
-    "category": "Componentes Básicos",
-    "question": "¿Qué tipo de conector se utiliza comúnmente en dispositivos Apple, como iPhones y iPads?",
-    "options": [
-      "USB Type-A.",
-      "USB Micro-B.",
-      "USB-C.",
-      "Lightning."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Lightning.\". Los dispositivos Apple usan el conector Lightning.",
-    "source": "https://es.wikipedia.org/wiki/Lightning_(conector)"
-  },
-  {
-    "id": 25,
-    "category": "USB y Conectores",
-    "question": "¿Cuál es la longitud máxima recomendada para un cable USB 2.0 estándar sin pérdida significativa de rendimiento?",
-    "options": [
-      "1 metro.",
-      "3 metros.",
-      "5 metros.",
-      "10 metros."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"5 metros.\". La longitud máxima recomendada para USB 2.0 es de 5 metros.",
-    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus"
-  },
-  {
-    "id": 26,
-    "category": "USB y Conectores",
-    "question": "¿Cuál es la función del protocolo USB HID (Human Interface Device)?",
-    "options": [
-      "Mejorar la velocidad de transferencia de datos.",
-      "Establecer estándares para la conexión de dispositivos de almacenamiento.",
-      "Facilitar la conexión inalámbrica.",
-      "Soportar dispositivos de entrada, como teclados y ratones."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Soportar dispositivos de entrada, como teclados y ratones.\". USB HID define cómo los dispositivos de entrada interactúan con el sistema.",
-    "source": "https://es.wikipedia.org/wiki/USB_human_interface_device_class"
-  },
-  {
-    "id": 27,
-    "category": "Componentes Básicos",
-    "question": "¿Qué tipo de conector se utiliza comúnmente en impresoras y escáneres para la conexión a una computadora?",
-    "options": [
-      "USB Type-A.",
-      "USB Micro-B.",
-      "USB Type-B.",
-      "USB-C."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"USB Type-B.\". Las impresoras y escáneres suelen usar USB Type-B.",
-    "source": "https://es.wikipedia.org/wiki/USB#Type-B"
-  },
-  {
-    "id": 28,
-    "category": "USB y Conectores",
-    "question": "¿Cuál es la principal diferencia entre USB 3.0 y USB 3.1?",
-    "options": [
-      "La velocidad de transferencia de datos.",
-      "El tamaño del conector.",
-      "La reversibilidad del conector.",
-      "La compatibilidad con dispositivos Apple."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"La velocidad de transferencia de datos.\". USB 3.1 es más rápido que USB 3.0.",
-    "source": "https://es.wikipedia.org/wiki/USB_3.1"
-  },
-  {
-    "id": 29,
-    "category": "USB y Conectores",
-    "question": "¿Cuál de las siguientes afirmaciones es correcta sobre USB 3.2?",
-    "options": [
-      "Introduce velocidades de transferencia de hasta 20 Gbps.",
-      "Utiliza únicamente conectores USB Type-C.",
-      "Es una versión más antigua que USB 2.0.",
-      "No es compatible con la carga de dispositivos."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Introduce velocidades de transferencia de hasta 20 Gbps.\". USB 3.2 puede alcanzar hasta 20 Gbps.",
-    "source": "https://es.wikipedia.org/wiki/USB_3.2"
-  },
-  {
-    "id": 30,
-    "category": "USB y Conectores",
-    "question": "¿Cuál es la función principal del protocolo USB Mass Storage Class (MSC)?",
-    "options": [
-      "Proporcionar energía para la carga rápida de dispositivos.",
-      "Soportar dispositivos de entrada, como teclados y ratones.",
-      "Establecer estándares para la conexión de dispositivos de almacenamiento.",
-      "Facilitar la conexión inalámbrica."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Establecer estándares para la conexión de dispositivos de almacenamiento.\". USB MSC define cómo los dispositivos de almacenamiento interactúan con el sistema.",
-    "source": "https://es.wikipedia.org/wiki/USB_mass_storage_device_class"
-  },
-  {
-    "id": 31,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de un conector PS/2?",
-    "options": [
-      "Conectar dispositivos de almacenamiento externo.",
-      "Proporcionar energía para la carga de dispositivos móviles.",
-      "Conectar periféricos de entrada, como teclados y ratones.",
-      "Transmitir señales de audio."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Conectar periféricos de entrada, como teclados y ratones.\". PS/2 se usaba para conectar teclados y ratones.",
-    "source": "https://es.wikipedia.org/wiki/Conector_PS/2"
-  },
-  {
-    "id": 32,
-    "category": "Puertos y Conectividad",
-    "question": "¿Qué tipo de dispositivo suele utilizar un puerto COM (Puerto de Comunicaciones)?",
-    "options": [
-      "Impresoras.",
-      "Monitores.",
-      "Tarjetas de sonido.",
-      "Cámaras digitales."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Cámaras digitales.\". Los puertos COM se usaban para conectar dispositivos seriales como cámaras antiguas.",
-    "source": "https://es.wikipedia.org/wiki/Puerto_serie"
-  },
-  {
-    "id": 33,
-    "category": "Puertos y Conectividad",
-    "question": "¿Cuántos pines tiene un puerto COM estándar?",
-    "options": [
-      "9.",
-      "15.",
-      "25.",
-      "7."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"9.\". Un puerto COM estándar (DE-9) tiene 9 pines.",
-    "source": "https://es.wikipedia.org/wiki/DE-9"
-  },
-  {
-    "id": 34,
-    "category": "Puertos y Conectividad",
-    "question": "¿Cuál es la función principal de un puerto LPT (Puerto Paralelo)?",
-    "options": [
-      "Conectar dispositivos de almacenamiento externo.",
-      "Transmitir señales de audio de alta calidad.",
-      "Conectar periféricos de entrada, como teclados y ratones.",
-      "Conectar impresoras y escáneres."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Conectar impresoras y escáneres.\". Los puertos LPT se usaban principalmente para impresoras.",
-    "source": "https://es.wikipedia.org/wiki/Puerto_paralelo"
-  },
-  {
-    "id": 35,
-    "category": "Componentes Básicos",
-    "question": "¿Qué tipo de dispositivo suele utilizar un conector IEEE 1394 (FireWire)?",
-    "options": [
-      "Impresoras.",
-      "Discos duros externos.",
-      "Teclados y ratones.",
-      "Monitores."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Discos duros externos.\". FireWire se usaba para discos duros externos y cámaras de video.",
-    "source": "https://es.wikipedia.org/wiki/FireWire"
-  },
-  {
-    "id": 36,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la principal característica del conector IEEE 1394 (FireWire)?",
-    "options": [
-      "Alta velocidad de transferencia y conexión en cadena.",
-      "Reversibilidad del conector.",
-      "Conector pequeño y reversible.",
-      "Uso exclusivo en dispositivos Apple."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Alta velocidad de transferencia y conexión en cadena.\". FireWire permitía altas velocidades y conexión en cadena.",
-    "source": "https://es.wikipedia.org/wiki/FireWire"
-  },
-  {
-    "id": 37,
-    "category": "Componentes Básicos",
-    "question": "¿Cuántos pines tiene un conector IEEE 1394 (FireWire) de 6 pines?",
-    "options": [
-      "4.",
-      "6.",
-      "9.",
-      "12."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"6.\". Un conector FireWire de 6 pines tiene, evidentemente, 6 pines.",
-    "source": "https://es.wikipedia.org/wiki/FireWire"
-  },
-  {
-    "id": 38,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal del conector Thunderbolt?",
-    "options": [
-      "Conectar dispositivos de almacenamiento externo.",
-      "Transmitir señales de audio de alta calidad.",
-      "Proporcionar energía para la carga de dispositivos móviles.",
-      "Alta velocidad de transferencia y conexión en cadena."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Alta velocidad de transferencia y conexión en cadena.\". Thunderbolt combina alta velocidad y conexión en cadena.",
-    "source": "https://es.wikipedia.org/wiki/Thunderbolt_(interfaz)"
-  },
-  {
-    "id": 39,
-    "category": "Componentes Básicos",
-    "question": "¿Cuántos pines tiene un conector Thunderbolt 3?",
-    "options": [
-      "8.",
-      "12.",
-      "16.",
-      "24."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"24.\". Thunderbolt 3 usa el conector USB-C con 24 pines.",
-    "source": "https://es.wikipedia.org/wiki/Thunderbolt_(interfaz)"
-  },
-  {
-    "id": 40,
-    "category": "Componentes Básicos",
-    "question": "¿Qué tipo de dispositivo suele utilizar un conector PS/2 de 6 pines?",
-    "options": [
-      "Impresoras.",
-      "Monitores.",
-      "Teclados y ratones.",
-      "Cámaras digitales."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Teclados y ratones.\". Los conectores PS/2 de 6 pines se usaban para teclados y ratones.",
-    "source": "https://es.wikipedia.org/wiki/Conector_PS/2"
-  },
-  {
-    "id": 41,
-    "category": "Puertos y Conectividad",
-    "question": "¿Cuál es la función principal de un puerto COM en una computadora?",
-    "options": [
-      "Conectar dispositivos de red.",
-      "Facilitar la carga de dispositivos móviles.",
-      "Proporcionar comunicación serial con periféricos.",
-      "Transmitir señales de video."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Proporcionar comunicación serial con periféricos.\". Los puertos COM permiten comunicación serial.",
-    "source": "https://es.wikipedia.org/wiki/Puerto_serie"
-  },
-  {
-    "id": 42,
-    "category": "Componentes Básicos",
-    "question": "¿Cuántos pines tiene un conector LPT de 25 pines?",
-    "options": [
-      "9.",
-      "15.",
-      "25.",
-      "7."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"25.\". Un conector LPT de 25 pines tiene 25 pines.",
-    "source": "https://es.wikipedia.org/wiki/Puerto_paralelo"
-  },
-  {
-    "id": 43,
-    "category": "Componentes Básicos",
-    "question": "¿Qué tipo de dispositivo suele utilizar un conector IEEE 1394 de 9 pines?",
-    "options": [
-      "Impresoras.",
-      "Discos duros externos.",
-      "Teclados y ratones.",
-      "Monitores."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Discos duros externos.\". FireWire de 9 pines se usaba en discos duros externos.",
-    "source": "https://es.wikipedia.org/wiki/FireWire"
-  },
-  {
-    "id": 44,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de un conector Thunderbolt en una computadora?",
-    "options": [
-      "Conectar dispositivos de red.",
-      "Proporcionar comunicación serial con periféricos.",
-      "Alta velocidad de transferencia y conexión en cadena.",
-      "Transmitir señales de audio de alta calidad."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Alta velocidad de transferencia y conexión en cadena.\". Thunderbolt ofrece alta velocidad y conexión en cadena.",
-    "source": "https://es.wikipedia.org/wiki/Thunderbolt_(interfaz)"
-  },
-  {
-    "id": 45,
-    "category": "Componentes Básicos",
-    "question": "¿Cuántos pines tiene un conector PS/2 de 4 pines?",
-    "options": [
-      "4.",
-      "6.",
-      "9.",
-      "12."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"4.\". Un conector PS/2 de 4 pines tiene 4 pines.",
-    "source": "https://es.wikipedia.org/wiki/Conector_PS/2"
-  },
-  {
-    "id": 46,
-    "category": "Puertos y Conectividad",
-    "question": "¿Qué tipo de dispositivo suele utilizar un puerto COM de 25 pines?",
-    "options": [
-      "Impresoras.",
-      "Monitores.",
-      "Tarjetas de sonido.",
-      "Cámaras digitales."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Impresoras.\". Los puertos COM de 25 pines se usaban en impresoras antiguas.",
-    "source": "https://es.wikipedia.org/wiki/Puerto_serie"
-  },
-  {
-    "id": 47,
-    "category": "Puertos y Conectividad",
-    "question": "¿Cuál es la función principal de un puerto LPT en una computadora?",
-    "options": [
-      "Conectar dispositivos de red.",
-      "Transmitir señales de video.",
-      "Conectar impresoras y escáneres.",
-      "Proporcionar comunicación serial con periféricos."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Conectar impresoras y escáneres.\". Los puertos LPT se usaban para impresoras y escáneres.",
-    "source": "https://es.wikipedia.org/wiki/Puerto_paralelo"
-  },
-  {
-    "id": 48,
-    "category": "Componentes Básicos",
-    "question": "¿Cuántos pines tiene un conector IEEE 1394 de 4 pines?",
-    "options": [
-      "4.",
-      "6.",
-      "9.",
-      "12."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"4.\". Un conector FireWire de 4 pines tiene 4 pines.",
-    "source": "https://es.wikipedia.org/wiki/FireWire"
-  },
-  {
-    "id": 49,
-    "category": "Componentes Básicos",
-    "question": "¿Qué tipo de dispositivo suele utilizar un conector Thunderbolt 2?",
-    "options": [
-      "Impresoras.",
-      "Discos duros externos.",
-      "Teclados y ratones.",
-      "Monitores."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Discos duros externos.\". Thunderbolt 2 se usaba en discos duros externos y monitores.",
-    "source": "https://es.wikipedia.org/wiki/Thunderbolt_(interfaz)"
-  },
-  {
-    "id": 50,
-    "category": "Componentes Básicos",
-    "question": "¿Cuántos pines tiene un conector PS/2 de 6 pines?",
-    "options": [
-      "4.",
-      "6.",
-      "9.",
-      "12."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"6.\". Un conector PS/2 de 6 pines tiene 6 pines.",
-    "source": "https://es.wikipedia.org/wiki/Conector_PS/2"
-  },
-  {
-    "id": 51,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de un conector COM en una computadora?",
-    "options": [
-      "Conectar dispositivos de almacenamiento externo.",
-      "Proporcionar comunicación serial con periféricos.",
-      "Transmitir señales de audio de alta calidad.",
-      "Facilitar la carga de dispositivos móviles."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Proporcionar comunicación serial con periféricos.\". Los conectores COM permiten comunicación serial.",
-    "source": "https://es.wikipedia.org/wiki/Puerto_serie"
-  },
-  {
-    "id": 52,
-    "category": "Componentes Básicos",
-    "question": "¿Cuántos pines tiene un conector LPT de 9 pines?",
-    "options": [
-      "4.",
-      "6.",
-      "9.",
-      "12."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"9.\". Un conector LPT de 9 pines tiene 9 pines.",
-    "source": "https://es.wikipedia.org/wiki/Puerto_paralelo"
-  },
-  {
-    "id": 53,
-    "category": "Puertos y Conectividad",
-    "question": "¿Qué tipo de dispositivo suele utilizar un puerto COM de 9 pines?",
-    "options": [
-      "Impresoras.",
-      "Monitores.",
-      "Tarjetas de sonido.",
-      "Cámaras digitales."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Cámaras digitales.\". Los puertos COM de 9 pines se usaban en cámaras digitales antiguas.",
-    "source": "https://es.wikipedia.org/wiki/Puerto_serie"
-  },
-  {
-    "id": 54,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de un conector IEEE 1394 de 6 pines?",
-    "options": [
-      "Alta velocidad de transferencia y conexión en cadena.",
-      "Reversibilidad del conector.",
-      "Conectar dispositivos de almacenamiento externo.",
-      "Uso exclusivo en dispositivos Apple."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Alta velocidad de transferencia y conexión en cadena.\". FireWire de 6 pines ofrecía alta velocidad y conexión en cadena.",
-    "source": "https://es.wikipedia.org/wiki/FireWire"
-  },
-  {
-    "id": 55,
-    "category": "Componentes Básicos",
-    "question": "¿Cuántos pines tiene un conector Thunderbolt 4?",
-    "options": [
-      "8.",
-      "16.",
-      "24.",
-      "32."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"24.\". Thunderbolt 4 usa el conector USB-C con 24 pines.",
-    "source": "https://es.wikipedia.org/wiki/Thunderbolt_(interfaz)"
-  },
-  {
-    "id": 56,
-    "category": "Componentes Básicos",
-    "question": "¿Qué tipo de dispositivo suele utilizar un conector PS/2 de 4 pines?",
-    "options": [
-      "Impresoras.",
-      "Monitores.",
-      "Teclados y ratones.",
-      "Cámaras digitales."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Teclados y ratones.\". Los conectores PS/2 de 4 pines se usaban para teclados y ratones.",
-    "source": "https://es.wikipedia.org/wiki/Conector_PS/2"
-  },
-  {
-    "id": 57,
-    "category": "Puertos y Conectividad",
-    "question": "¿Cuál es la función principal de un puerto COM en una computadora?",
-    "options": [
-      "Conectar dispositivos de red.",
-      "Facilitar la carga de dispositivos móviles.",
-      "Proporcionar comunicación serial con periféricos.",
-      "Transmitir señales de video."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Proporcionar comunicación serial con periféricos.\". Los puertos COM permiten comunicación serial.",
-    "source": "https://es.wikipedia.org/wiki/Puerto_serie"
-  },
-  {
-    "id": 58,
-    "category": "Componentes Básicos",
-    "question": "¿Cuántos pines tiene un conector LPT de 6 pines?",
-    "options": [
-      "4.",
-      "6.",
-      "9.",
-      "12."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"6.\". Un conector LPT de 6 pines tiene 6 pines.",
-    "source": "https://es.wikipedia.org/wiki/Puerto_paralelo"
-  },
-  {
-    "id": 59,
-    "category": "Componentes Básicos",
-    "question": "¿Qué tipo de dispositivo suele utilizar un conector IEEE 1394 de 4 pines?",
-    "options": [
-      "Impresoras.",
-      "Discos duros externos.",
-      "Teclados y ratones.",
-      "Monitores."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Discos duros externos.\". FireWire de 4 pines se usaba en discos duros externos.",
-    "source": "https://es.wikipedia.org/wiki/FireWire"
-  },
-  {
-    "id": 60,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de un conector Thunderbolt en una computadora?",
-    "options": [
-      "Conectar dispositivos de red.",
-      "Transmitir señales de audio de alta calidad.",
-      "Alta velocidad de transferencia y conexión en cadena.",
-      "Proporcionar energía para la carga de dispositivos móviles."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Alta velocidad de transferencia y conexión en cadena.\". Thunderbolt ofrece alta velocidad y conexión en cadena.",
-    "source": "https://es.wikipedia.org/wiki/Thunderbolt_(interfaz)"
-  },
-  {
-    "id": 61,
-    "category": "Conectores de Video",
-    "question": "¿Cuál de los siguientes conectores es analógico y se utiliza comúnmente para la conexión de monitores y proyectores?",
-    "options": [
-      "HDMI.",
-      "DisplayPort.",
-      "USB-C.",
-      "VGA."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"VGA.\". VGA es un conector analógico para monitores.",
-    "source": "https://es.wikipedia.org/wiki/Video_Graphics_Array"
-  },
-  {
-    "id": 62,
-    "category": "Conectores de Video",
-    "question": "¿Cuántos pines tiene un conector VGA estándar?",
-    "options": [
-      "15.",
-      "9.",
-      "24.",
-      "19."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"15.\". Un conector VGA estándar tiene 15 pines.",
-    "source": "https://es.wikipedia.org/wiki/Video_Graphics_Array"
-  },
-  {
-    "id": 63,
-    "category": "Conectores de Video",
-    "question": "¿Cuál de los siguientes conectores es digital y se utiliza para transmitir audio y video de alta calidad?",
-    "options": [
-      "USB-C.",
-      "VGA.",
-      "HDMI.",
-      "DisplayPort."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"HDMI.\". HDMI transmite audio y video digital de alta calidad.",
-    "source": "https://es.wikipedia.org/wiki/HDMI"
-  },
-  {
-    "id": 64,
-    "category": "Conectores de Video",
-    "question": "¿Cuál es la principal ventaja del conector HDMI sobre el VGA?",
-    "options": [
-      "Mayor velocidad de transferencia.",
-      "Reversibilidad del conector.",
-      "Transmite audio y video digital.",
-      "Mayor resistencia física."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Transmite audio y video digital.\". HDMI transmite audio y video digital, mientras que VGA solo transmite video analógico.",
-    "source": "https://es.wikipedia.org/wiki/HDMI"
-  },
-  {
-    "id": 65,
-    "category": "Conectores de Video",
-    "question": "¿Cuántos pines tiene un conector HDMI estándar?",
-    "options": [
-      "15.",
-      "19.",
-      "24.",
-      "32."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"19.\". Un conector HDMI estándar tiene 19 pines.",
-    "source": "https://es.wikipedia.org/wiki/HDMI"
-  },
-  {
-    "id": 66,
-    "category": "Conectores de Video",
-    "question": "¿Qué tipo de señal transmite el conector DisplayPort?",
-    "options": [
-      "Solo audio.",
-      "Solo video.",
-      "Audio y video.",
-      "Datos de almacenamiento."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Audio y video.\". DisplayPort transmite audio y video digital.",
-    "source": "https://es.wikipedia.org/wiki/DisplayPort"
-  },
-  {
-    "id": 67,
-    "category": "Conectores de Video",
-    "question": "¿Cuántos pines tiene un conector DisplayPort estándar?",
-    "options": [
-      "15.",
-      "19.",
-      "20.",
-      "24."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"20.\". Un conector DisplayPort estándar tiene 20 pines.",
-    "source": "https://es.wikipedia.org/wiki/DisplayPort"
-  },
-  {
-    "id": 68,
-    "category": "Conectores de Video",
-    "question": "¿Cuál de los siguientes conectores es reversible y se utiliza para la transmisión de datos, energía, audio y video?",
-    "options": [
-      "DisplayPort.",
-      "USB-C.",
-      "HDMI.",
-      "VGA."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"USB-C.\". USB-C es reversible y puede transmitir datos, energía, audio y video.",
-    "source": "https://es.wikipedia.org/wiki/USB-C"
-  },
-  {
-    "id": 69,
-    "category": "USB y Conectores",
-    "question": "¿Cuántos pines tiene un conector USB-C estándar?",
-    "options": [
-      "15.",
-      "19.",
-      "24.",
-      "32."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"24.\". Un conector USB-C estándar tiene 24 pines.",
-    "source": "https://es.wikipedia.org/wiki/USB-C"
-  },
-  {
-    "id": 70,
-    "category": "Conectores de Video",
-    "question": "¿Cuál es la principal ventaja del conector DisplayPort sobre el HDMI?",
-    "options": [
-      "Mayor velocidad de transferencia.",
-      "Reversibilidad del conector.",
-      "Transmite audio y video digital.",
-      "Mayor resistencia física."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Mayor velocidad de transferencia.\". DisplayPort puede ofrecer mayores velocidades que HDMI en algunas versiones.",
-    "source": "https://es.wikipedia.org/wiki/DisplayPort"
-  },
-  {
-    "id": 71,
-    "category": "Conectores de Video",
-    "question": "¿Cuántos pines tiene un conector VGA de 9 pines?",
-    "options": [
-      "9.",
-      "15.",
-      "24.",
-      "19."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"9.\". Un conector VGA de 9 pines tiene 9 pines.",
-    "source": "https://es.wikipedia.org/wiki/Video_Graphics_Array"
-  },
-  {
-    "id": 72,
-    "category": "Conectores de Video",
-    "question": "¿Cuál de los siguientes conectores es conocido por su capacidad para admitir múltiples monitores mediante una sola conexión?",
-    "options": [
-      "HDMI.",
-      "DisplayPort.",
-      "USB-C.",
-      "VGA."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"DisplayPort.\". DisplayPort soporta múltiples monitores mediante una sola conexión.",
-    "source": "https://es.wikipedia.org/wiki/DisplayPort"
-  },
-  {
-    "id": 73,
-    "category": "Conectores de Video",
-    "question": "¿Cuántos pines tiene un conector HDMI Mini?",
-    "options": [
-      "15.",
-      "19.",
-      "24.",
-      "32."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"19.\". Un conector HDMI Mini tiene 19 pines.",
-    "source": "https://es.wikipedia.org/wiki/HDMI"
-  },
-  {
-    "id": 74,
-    "category": "Conectores de Video",
-    "question": "¿Qué tipo de señal transmite el conector HDMI?",
-    "options": [
-      "Solo audio.",
-      "Solo video.",
-      "Audio y video.",
-      "Datos de almacenamiento."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Audio y video.\". HDMI transmite audio y video digital.",
-    "source": "https://es.wikipedia.org/wiki/HDMI"
-  },
-  {
-    "id": 75,
-    "category": "Conectores de Video",
-    "question": "¿Cuántos pines tiene un conector DisplayPort de 20 pines?",
-    "options": [
-      "15.",
-      "19.",
-      "20.",
-      "24."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"20.\". Un conector DisplayPort de 20 pines tiene 20 pines.",
-    "source": "https://es.wikipedia.org/wiki/DisplayPort"
-  },
-  {
-    "id": 76,
-    "category": "Conectores de Video",
-    "question": "¿Cuál es la principal ventaja del conector VGA sobre el HDMI?",
-    "options": [
-      "Mayor velocidad de transferencia.",
-      "Reversibilidad del conector.",
-      "Transmite audio y video digital.",
-      "Mayor resistencia física."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Mayor resistencia física.\". VGA es más robusto físicamente, pero HDMI es superior en calidad.",
-    "source": "https://es.wikipedia.org/wiki/Video_Graphics_Array"
-  },
-  {
-    "id": 77,
-    "category": "USB y Conectores",
-    "question": "¿Qué tipo de señal transmite el conector USB-C?",
-    "options": [
-      "Solo audio.",
-      "Solo video.",
-      "Audio y video.",
-      "Datos de almacenamiento."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Audio y video.\". USB-C puede transmitir audio y video mediante DisplayPort Alternate Mode.",
-    "source": "https://es.wikipedia.org/wiki/USB-C"
-  },
-  {
-    "id": 78,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál de los siguientes conectores es conocido por su capacidad para suministrar energía suficiente para cargar dispositivos, incluidos laptops?",
-    "options": [
-      "HDMI.",
-      "DisplayPort.",
-      "USB-C.",
-      "VGA."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"USB-C.\". USB-C puede suministrar hasta 100W, suficiente para laptops.",
-    "source": "https://es.wikipedia.org/wiki/USB-C"
-  },
-  {
-    "id": 79,
-    "category": "Conectores de Video",
-    "question": "¿Cuántos pines tiene un conector HDMI Micro?",
-    "options": [
-      "15.",
-      "19.",
-      "24.",
-      "32."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"19.\". Un conector HDMI Micro tiene 19 pines.",
-    "source": "https://es.wikipedia.org/wiki/HDMI"
-  },
-  {
-    "id": 80,
-    "category": "Conectores de Video",
-    "question": "¿Qué tipo de señal transmite el conector VGA?",
-    "options": [
-      "Solo audio.",
-      "Solo video.",
-      "Audio y video.",
-      "Datos de almacenamiento."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Solo video.\". VGA solo transmite video analógico.",
-    "source": "https://es.wikipedia.org/wiki/Video_Graphics_Array"
-  },
-  {
-    "id": 81,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál de los siguientes conectores es compatible con la tecnología Thunderbolt?",
-    "options": [
-      "HDMI.",
-      "DisplayPort.",
-      "USB-C.",
-      "VGA."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"USB-C.\". Thunderbolt 3 y 4 usan el conector USB-C.",
-    "source": "https://es.wikipedia.org/wiki/Thunderbolt_(interfaz)"
-  },
-  {
-    "id": 82,
-    "category": "USB y Conectores",
-    "question": "¿Cuántos pines tiene un conector USB-C de 32 pines?",
-    "options": [
-      "15.",
-      "19.",
-      "24.",
-      "32."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"24.\". Un conector USB-C estándar tiene 24 pines, no 32.",
-    "source": "https://es.wikipedia.org/wiki/USB-C"
-  },
-  {
-    "id": 83,
-    "category": "Conectores de Video",
-    "question": "¿Qué tipo de señal transmite el conector HDMI Micro?",
-    "options": [
-      "Solo audio.",
-      "Solo video.",
-      "Audio y video.",
-      "Datos de almacenamiento."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Audio y video.\". HDMI Micro transmite audio y video digital.",
-    "source": "https://es.wikipedia.org/wiki/HDMI"
-  },
-  {
-    "id": 84,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál de los siguientes conectores es más comúnmente utilizado en la conexión de dispositivos móviles como smartphones y tablets?",
-    "options": [
-      "HDMI.",
-      "DisplayPort.",
-      "USB-C.",
-      "VGA."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"USB-C.\". USB-C es el estándar actual para dispositivos móviles.",
-    "source": "https://es.wikipedia.org/wiki/USB-C"
-  },
-  {
-    "id": 85,
-    "category": "Conectores de Video",
-    "question": "¿Cuántos pines tiene un conector HDMI Mini?",
-    "options": [
-      "15.",
-      "19.",
-      "24.",
-      "32."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"19.\". Un conector HDMI Mini tiene 19 pines.",
-    "source": "https://es.wikipedia.org/wiki/HDMI"
-  },
-  {
-    "id": 86,
-    "category": "USB y Conectores",
-    "question": "¿Qué tipo de señal transmite el conector USB-C?",
-    "options": [
-      "Solo audio.",
-      "Solo video.",
-      "Audio y video.",
-      "Datos de almacenamiento."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Audio y video.\". USB-C puede transmitir audio y video mediante DisplayPort Alternate Mode.",
-    "source": "https://es.wikipedia.org/wiki/USB-C"
-  },
-  {
-    "id": 87,
-    "category": "Componentes Básicos",
-    "question": "¿Cuántos pines tiene un conector D-sub?",
-    "options": [
-      "9.",
-      "15.",
-      "24.",
-      "19."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"9.\". Un conector D-sub común (DE-9) tiene 9 pines.",
-    "source": "https://es.wikipedia.org/wiki/Conector_D-sub"
-  },
-  {
-    "id": 88,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función principal de los conectores de alimentación de la placa base?",
-    "options": [
-      "Transmitir datos entre componentes.",
-      "Proporcionar energía a los componentes de la placa base.",
-      "Conectar dispositivos de almacenamiento.",
-      "Transmitir señales de audio y video."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Proporcionar energía a los componentes de la placa base.\". Los conectores de alimentación suministran energía eléctrica a la placa base y sus componentes.",
-    "source": "https://es.wikipedia.org/wiki/Placa_base"
-  },
-  {
-    "id": 89,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuántos pines tiene un conector de alimentación ATX de 24 pines?",
-    "options": [
-      "20.",
-      "24.",
-      "28.",
-      "32."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"24.\". Un conector de alimentación ATX estándar tiene 24 pines.",
-    "source": "https://es.wikipedia.org/wiki/ATX"
-  },
-  {
-    "id": 90,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función del conector de alimentación de 4 pines (ATX 12V)?",
-    "options": [
-      "Proporcionar energía adicional al procesador.",
-      "Conectar dispositivos de almacenamiento.",
-      "Transmitir datos entre componentes.",
-      "Suministrar energía a la memoria RAM."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Proporcionar energía adicional al procesador.\". El conector ATX 12V suministra energía específicamente al procesador.",
-    "source": "https://es.wikipedia.org/wiki/ATX"
-  },
-  {
-    "id": 91,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuántos pines tiene un conector de alimentación para el procesador (CPU) de 8 pines?",
-    "options": [
-      "4.",
-      "6.",
-      "8.",
-      "12."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"8.\". Un conector de alimentación para CPU de 8 pines tiene 8 pines.",
-    "source": "https://es.wikipedia.org/wiki/ATX"
-  },
-  {
-    "id": 92,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función de los conectores SATA en la placa base?",
-    "options": [
-      "Conectar dispositivos de almacenamiento como discos duros y SSD.",
-      "Proporcionar energía a la tarjeta gráfica.",
-      "Transmitir señales de audio.",
-      "Conectar periféricos USB."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Conectar dispositivos de almacenamiento como discos duros y SSD.\". Los conectores SATA se utilizan para conectar dispositivos de almacenamiento modernos.",
-    "source": "https://es.wikipedia.org/wiki/Serial_ATA"
-  },
-  {
-    "id": 93,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuántos pines tiene un conector SATA de datos estándar?",
-    "options": [
-      "7.",
-      "15.",
-      "22.",
-      "24."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"7.\". Un conector SATA de datos estándar tiene 7 pines.",
-    "source": "https://es.wikipedia.org/wiki/Serial_ATA"
-  },
-  {
-    "id": 94,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función del conector M.2 en la placa base?",
-    "options": [
-      "Conectar tarjetas gráficas.",
-      "Conectar unidades SSD de alto rendimiento.",
-      "Proporcionar energía adicional al procesador.",
-      "Transmitir señales de audio."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Conectar unidades SSD de alto rendimiento.\". El conector M.2 se utiliza principalmente para conectar unidades SSD compactas y rápidas.",
-    "source": "https://es.wikipedia.org/wiki/M.2"
-  },
-  {
-    "id": 95,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuántos pines tiene un conector PCIe x16?",
-    "options": [
-      "16.",
-      "32.",
-      "64.",
-      "128."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"16.\". Un conector PCIe x16 tiene 16 carriles de datos.",
-    "source": "https://es.wikipedia.org/wiki/PCI_Express"
-  },
-  {
-    "id": 96,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función principal de los conectores DIMM en la placa base?",
-    "options": [
-      "Conectar tarjetas de expansión.",
-      "Instalar módulos de memoria RAM.",
-      "Conectar dispositivos de almacenamiento.",
-      "Proporcionar energía a la placa base."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Instalar módulos de memoria RAM.\". Los conectores DIMM se utilizan para instalar módulos de memoria RAM.",
-    "source": "https://es.wikipedia.org/wiki/DIMM"
-  },
-  {
-    "id": 97,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuántos pines tiene un módulo de memoria DDR4 DIMM?",
-    "options": [
-      "168.",
-      "184.",
-      "240.",
-      "288."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"288.\". Un módulo de memoria DDR4 DIMM tiene 288 pines.",
-    "source": "https://es.wikipedia.org/wiki/DDR4_SDRAM"
-  },
-  {
-    "id": 98,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función del conector de audio frontal en la placa base?",
-    "options": [
-      "Conectar altavoces externos.",
-      "Conectar los puertos de audio del panel frontal del chasis.",
-      "Transmitir audio a la tarjeta gráfica.",
-      "Proporcionar energía a dispositivos de audio."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Conectar los puertos de audio del panel frontal del chasis.\". El conector de audio frontal permite conectar los puertos de audio del panel frontal del chasis a la placa base.",
-    "source": "https://es.wikipedia.org/wiki/Conector_frontal_de_audio"
-  },
-  {
-    "id": 99,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuántos pines tiene un conector de audio frontal estándar?",
-    "options": [
-      "5.",
-      "9.",
-      "10.",
-      "15."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"10.\". Un conector de audio frontal estándar (HD Audio) tiene 10 pines.",
-    "source": "https://es.wikipedia.org/wiki/Conector_frontal_de_audio"
-  },
-  {
-    "id": 100,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función del conector USB frontal en la placa base?",
-    "options": [
-      "Conectar dispositivos USB directamente a la placa base.",
-      "Conectar los puertos USB del panel frontal del chasis.",
-      "Proporcionar energía adicional a dispositivos USB.",
-      "Transmitir datos entre dispositivos USB."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Conectar los puertos USB del panel frontal del chasis.\". El conector USB frontal permite conectar los puertos USB del panel frontal del chasis a la placa base.",
-    "source": "https://es.wikipedia.org/wiki/USB"
-  },
-  {
-    "id": 101,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuántos pines tiene un conector USB 2.0 frontal estándar?",
-    "options": [
-      "5.",
-      "9.",
-      "10.",
-      "19."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"10.\". Un conector USB 2.0 frontal estándar tiene 10 pines.",
-    "source": "https://es.wikipedia.org/wiki/USB"
-  },
-  {
-    "id": 102,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función del conector de panel frontal del sistema en la placa base?",
-    "options": [
-      "Conectar los botones de encendido y reinicio del chasis.",
-      "Conectar dispositivos de almacenamiento.",
-      "Proporcionar energía a la placa base.",
-      "Transmitir señales de audio y video."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Conectar los botones de encendido y reinicio del chasis.\". El conector de panel frontal del sistema permite conectar los botones de encendido, reinicio y los LEDs del chasis a la placa base.",
-    "source": "https://es.wikipedia.org/wiki/Placa_base"
-  },
-  {
-    "id": 103,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuántos pines tiene un conector de panel frontal del sistema estándar?",
-    "options": [
-      "5.",
-      "9.",
-      "10.",
-      "20."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"10.\". Un conector de panel frontal del sistema estándar tiene 10 pines.",
-    "source": "https://es.wikipedia.org/wiki/Placa_base"
-  },
-  {
-    "id": 104,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función del conector de ventilador de la placa base?",
-    "options": [
-      "Conectar dispositivos de almacenamiento.",
-      "Proporcionar energía a la tarjeta gráfica.",
-      "Conectar ventiladores para la refrigeración del sistema.",
-      "Transmitir señales de audio."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Conectar ventiladores para la refrigeración del sistema.\". Los conectores de ventilador permiten conectar ventiladores para refrigerar los componentes del sistema.",
-    "source": "https://es.wikipedia.org/wiki/Ventilador_de_computadora"
-  },
-  {
-    "id": 105,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuántos pines tiene un conector de ventilador estándar de 3 pines?",
-    "options": [
-      "2.",
-      "3.",
-      "4.",
-      "5."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"3.\". Un conector de ventilador estándar de 3 pines tiene 3 pines.",
-    "source": "https://es.wikipedia.org/wiki/Ventilador_de_computadora"
-  },
-  {
-    "id": 106,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la diferencia principal entre un conector de ventilador de 3 pines y uno de 4 pines?",
-    "options": [
-      "El número de pines.",
-      "La capacidad de control de velocidad.",
-      "El tipo de energía suministrada.",
-      "La compatibilidad con diferentes tipos de ventiladores."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"La capacidad de control de velocidad.\". Los conectores de ventilador de 4 pines permiten un control más preciso de la velocidad del ventilador mediante PWM (Modulación por Ancho de Pulsos).",
-    "source": "https://es.wikipedia.org/wiki/Ventilador_de_computadora"
-  },
-  {
-    "id": 107,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función del conector CMOS en la placa base?",
-    "options": [
-      "Almacenar la configuración del BIOS/UEFI.",
-      "Proporcionar energía a la placa base.",
-      "Conectar dispositivos de almacenamiento.",
-      "Transmitir señales de audio."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Almacenar la configuración del BIOS/UEFI.\". El conector CMOS permite conectar una batería que mantiene la configuración del BIOS/UEFI cuando el sistema está apagado.",
-    "source": "https://es.wikipedia.org/wiki/CMOS"
-  },
-  {
-    "id": 108,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función del conector de la batería CMOS en la placa base?",
-    "options": [
-      "Proporcionar energía continua a la placa base.",
-      "Mantener la configuración del BIOS/UEFI cuando el sistema está apagado.",
-      "Alimentar los ventiladores del sistema.",
-      "Suministrar energía a los dispositivos USB."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Mantener la configuración del BIOS/UEFI cuando el sistema está apagado.\". La batería CMOS proporciona energía para mantener la configuración del BIOS/UEFI cuando el sistema está apagado.",
-    "source": "https://es.wikipedia.org/wiki/CMOS"
-  },
-  {
-    "id": 109,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función del conector de panel posterior en la placa base?",
-    "options": [
-      "Conectar los puertos del panel posterior del chasis.",
-      "Proporcionar los puertos externos de la placa base.",
-      "Conectar dispositivos de almacenamiento.",
-      "Transmitir señales de audio y video."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Proporcionar los puertos externos de la placa base.\". El conector de panel posterior proporciona los puertos externos (USB, audio, video, etc.) de la placa base.",
-    "source": "https://es.wikipedia.org/wiki/Placa_base"
-  },
-  {
-    "id": 110,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función del conector de alimentación de la tarjeta gráfica?",
-    "options": [
-      "Transmitir datos entre la tarjeta gráfica y la placa base.",
-      "Proporcionar energía adicional a la tarjeta gráfica.",
-      "Conectar la tarjeta gráfica al monitor.",
-      "Transmitir señales de audio desde la tarjeta gráfica."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Proporcionar energía adicional a la tarjeta gráfica.\". El conector de alimentación de la tarjeta gráfica proporciona energía adicional cuando la energía suministrada a través del slot PCIe no es suficiente.",
-    "source": "https://es.wikipedia.org/wiki/Tarjeta_gráfica"
-  },
-  {
-    "id": 111,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuántos pines tiene un conector de alimentación de 6 pines para tarjeta gráfica?",
-    "options": [
-      "4.",
-      "6.",
-      "8.",
-      "12."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"6.\". Un conector de alimentación de 6 pines para tarjeta gráfica tiene 6 pines.",
-    "source": "https://es.wikipedia.org/wiki/Tarjeta_gráfica"
-  },
-  {
-    "id": 112,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función del conector de alimentación de 8 pines para tarjeta gráfica?",
-    "options": [
-      "Transmitir datos entre la tarjeta gráfica y la placa base.",
-      "Proporcionar más energía que un conector de 6 pines.",
-      "Conectar la tarjeta gráfica al monitor.",
-      "Transmitir señales de audio desde la tarjeta gráfica."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Proporcionar más energía que un conector de 6 pines.\". El conector de alimentación de 8 pines proporciona más energía que un conector de 6 pines, necesario para tarjetas gráficas de alto rendimiento.",
-    "source": "https://es.wikipedia.org/wiki/Tarjeta_gráfica"
-  },
-  {
-    "id": 113,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función del conector de alimentación Molex?",
-    "options": [
-      "Conectar dispositivos de almacenamiento antiguos.",
-      "Proporcionar energía a la tarjeta gráfica.",
-      "Transmitir datos entre componentes.",
-      "Conectar periféricos USB."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Conectar dispositivos de almacenamiento antiguos.\". El conector Molex se utilizaba para proporcionar energía a dispositivos de almacenamiento antiguos como discos duros IDE y unidades de CD/DVD.",
-    "source": "https://es.wikipedia.org/wiki/Conector_Molex"
-  },
-  {
-    "id": 114,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuántos pines tiene un conector Molex estándar?",
-    "options": [
-      "4.",
-      "6.",
-      "8.",
-      "12."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"4.\". Un conector Molex estándar tiene 4 pines.",
-    "source": "https://es.wikipedia.org/wiki/Conector_Molex"
-  },
-  {
-    "id": 115,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función del conector de alimentación Berg?",
-    "options": [
-      "Conectar dispositivos de almacenamiento modernos.",
-      "Proporcionar energía a disqueteras.",
-      "Transmitir datos entre componentes.",
-      "Conectar periféricos USB."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Proporcionar energía a disqueteras.\". El conector Berg se utilizaba para proporcionar energía a disqueteras.",
-    "source": "https://es.wikipedia.org/wiki/Conector_Berg"
-  },
-  {
-    "id": 116,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuántos pines tiene un conector Berg estándar?",
-    "options": [
-      "2.",
-      "4.",
-      "6.",
-      "8."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"4.\". Un conector Berg estándar tiene 4 pines.",
-    "source": "https://es.wikipedia.org/wiki/Conector_Berg"
-  },
-  {
-    "id": 117,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función del conector de alimentación SATA de 15 pines?",
-    "options": [
-      "Transmitir datos entre dispositivos SATA.",
-      "Proporcionar energía a dispositivos SATA.",
-      "Conectar dispositivos SATA a la placa base.",
-      "Transmitir señales de audio y video."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Proporcionar energía a dispositivos SATA.\". El conector de alimentación SATA de 15 pines proporciona energía a dispositivos SATA como discos duros y unidades SSD.",
-    "source": "https://es.wikipedia.org/wiki/Serial_ATA"
-  },
-  {
-    "id": 118,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función del conector de alimentación de 4+4 pines para el procesador?",
-    "options": [
-      "Proporcionar energía al procesador.",
-      "Conectar dispositivos de almacenamiento.",
-      "Transmitir datos entre componentes.",
-      "Suministrar energía a la memoria RAM."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Proporcionar energía al procesador.\". El conector de alimentación de 4+4 pines para el procesador proporciona energía al procesador y puede separarse en dos conectores de 4 pines para compatibilidad con diferentes placas base.",
-    "source": "https://es.wikipedia.org/wiki/ATX"
-  },
-  {
-    "id": 119,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función del conector de alimentación de 6+2 pines para tarjeta gráfica?",
-    "options": [
-      "Transmitir datos entre la tarjeta gráfica y la placa base.",
-      "Proporcionar energía a la tarjeta gráfica.",
-      "Conectar la tarjeta gráfica al monitor.",
-      "Transmitir señales de audio desde la tarjeta gráfica."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Proporcionar energía a la tarjeta gráfica.\". El conector de alimentación de 6+2 pines para tarjeta gráfica proporciona energía a la tarjeta gráfica y puede usarse como un conector de 6 pines o de 8 pines según sea necesario.",
-    "source": "https://es.wikipedia.org/wiki/Tarjeta_gráfica"
-  },
-  {
-    "id": 120,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función del conector de alimentación de 8 pines para el procesador?",
-    "options": [
-      "Proporcionar energía al procesador.",
-      "Conectar dispositivos de almacenamiento.",
-      "Transmitir datos entre componentes.",
-      "Suministrar energía a la memoria RAM."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Proporcionar energía al procesador.\". El conector de alimentación de 8 pines para el procesador proporciona energía al procesador y es común en placas base de gama alta.",
-    "source": "https://es.wikipedia.org/wiki/ATX"
-  },
-  {
-    "id": 121,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de un disco duro (HDD)?",
-    "options": [
-      "Procesar datos.",
-      "Almacenar datos de forma permanente.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar datos de forma permanente.\". Un disco duro (HDD) es un dispositivo de almacenamiento que guarda datos de forma permanente utilizando medios magnéticos.",
-    "source": "https://es.wikipedia.org/wiki/Disco_duro"
-  },
-  {
-    "id": 122,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la tecnología de almacenamiento utilizada en los discos duros tradicionales (HDD)?",
-    "options": [
-      "Almacenamiento de estado sólido.",
-      "Almacenamiento magnético.",
-      "Almacenamiento óptico.",
-      "Almacenamiento en la nube."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenamiento magnético.\". Los discos duros tradicionales (HDD) utilizan almacenamiento magnético para guardar datos en platos giratorios.",
-    "source": "https://es.wikipedia.org/wiki/Disco_duro"
-  },
-  {
-    "id": 123,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de una unidad de estado sólido (SSD)?",
-    "options": [
-      "Procesar datos.",
-      "Almacenar datos de forma permanente utilizando memoria flash.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar datos de forma permanente utilizando memoria flash.\". Una unidad de estado sólido (SSD) es un dispositivo de almacenamiento que utiliza memoria flash para guardar datos de forma permanente.",
-    "source": "https://es.wikipedia.org/wiki/Unidad_de_estado_sólido"
-  },
-  {
-    "id": 124,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la principal ventaja de una unidad de estado sólido (SSD) sobre un disco duro (HDD)?",
-    "options": [
-      "Mayor capacidad de almacenamiento.",
-      "Menor costo por gigabyte.",
-      "Mayor velocidad de lectura y escritura.",
-      "Mayor durabilidad."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Mayor velocidad de lectura y escritura.\". Las unidades de estado sólido (SSD) ofrecen velocidades de lectura y escritura mucho más rápidas que los discos duros (HDD).",
-    "source": "https://es.wikipedia.org/wiki/Unidad_de_estado_sólido"
-  },
-  {
-    "id": 125,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la tecnología de almacenamiento utilizada en las unidades de estado sólido (SSD)?",
-    "options": [
-      "Almacenamiento magnético.",
-      "Almacenamiento óptico.",
-      "Almacenamiento de estado sólido.",
-      "Almacenamiento en la nube."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Almacenamiento de estado sólido.\". Las unidades de estado sólido (SSD) utilizan almacenamiento de estado sólido basado en memoria flash para guardar datos.",
-    "source": "https://es.wikipedia.org/wiki/Unidad_de_estado_sólido"
-  },
-  {
-    "id": 126,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de una unidad de disco óptico (CD/DVD/Blu-ray)?",
-    "options": [
-      "Procesar datos.",
-      "Leer y escribir datos en discos ópticos.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Leer y escribir datos en discos ópticos.\". Una unidad de disco óptico (CD/DVD/Blu-ray) es un dispositivo que lee y escribe datos en discos ópticos utilizando un láser.",
-    "source": "https://es.wikipedia.org/wiki/Disco_óptico"
-  },
-  {
-    "id": 127,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la tecnología de almacenamiento utilizada en los discos ópticos (CD/DVD/Blu-ray)?",
-    "options": [
-      "Almacenamiento magnético.",
-      "Almacenamiento óptico.",
-      "Almacenamiento de estado sólido.",
-      "Almacenamiento en la nube."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenamiento óptico.\". Los discos ópticos (CD/DVD/Blu-ray) utilizan almacenamiento óptico para guardar datos mediante la reflexión de un láser en la superficie del disco.",
-    "source": "https://es.wikipedia.org/wiki/Disco_óptico"
-  },
-  {
-    "id": 128,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la capacidad de almacenamiento de un DVD estándar de una sola capa?",
-    "options": [
-      "700 MB.",
-      "4.7 GB.",
-      "25 GB.",
-      "50 GB."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"4.7 GB.\". Un DVD estándar de una sola capa tiene una capacidad de almacenamiento de 4.7 GB.",
-    "source": "https://es.wikipedia.org/wiki/DVD"
-  },
-  {
-    "id": 129,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la capacidad de almacenamiento de un Blu-ray estándar de una sola capa?",
-    "options": [
-      "700 MB.",
-      "4.7 GB.",
-      "25 GB.",
-      "50 GB."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"25 GB.\". Un Blu-ray estándar de una sola capa tiene una capacidad de almacenamiento de 25 GB.",
-    "source": "https://es.wikipedia.org/wiki/Blu-ray"
-  },
-  {
-    "id": 130,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de una memoria USB?",
-    "options": [
-      "Procesar datos.",
-      "Almacenar datos de forma portátil.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar datos de forma portátil.\". Una memoria USB es un dispositivo de almacenamiento portátil que utiliza memoria flash para guardar datos.",
-    "source": "https://es.wikipedia.org/wiki/Unidad_USB"
-  },
-  {
-    "id": 131,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la tecnología de almacenamiento utilizada en las memorias USB?",
-    "options": [
-      "Almacenamiento magnético.",
-      "Almacenamiento óptico.",
-      "Almacenamiento de estado sólido.",
-      "Almacenamiento en la nube."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Almacenamiento de estado sólido.\". Las memorias USB utilizan almacenamiento de estado sólido basado en memoria flash para guardar datos.",
-    "source": "https://es.wikipedia.org/wiki/Unidad_USB"
-  },
-  {
-    "id": 132,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de una tarjeta de memoria (SD, microSD, etc.)?",
-    "options": [
-      "Procesar datos.",
-      "Almacenar datos de forma portátil en dispositivos pequeños.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar datos de forma portátil en dispositivos pequeños.\". Las tarjetas de memoria (SD, microSD, etc.) son dispositivos de almacenamiento portátiles que se utilizan en dispositivos pequeños como cámaras, smartphones y tablets.",
-    "source": "https://es.wikipedia.org/wiki/Tarjeta_de_memoria"
-  },
-  {
-    "id": 133,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la tecnología de almacenamiento utilizada en las tarjetas de memoria (SD, microSD, etc.)?",
-    "options": [
-      "Almacenamiento magnético.",
-      "Almacenamiento óptico.",
-      "Almacenamiento de estado sólido.",
-      "Almacenamiento en la nube."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Almacenamiento de estado sólido.\". Las tarjetas de memoria (SD, microSD, etc.) utilizan almacenamiento de estado sólido basado en memoria flash para guardar datos.",
-    "source": "https://es.wikipedia.org/wiki/Tarjeta_de_memoria"
-  },
-  {
-    "id": 134,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de una unidad de cinta magnética?",
-    "options": [
-      "Procesar datos.",
-      "Realizar copias de seguridad a gran escala.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Realizar copias de seguridad a gran escala.\". Una unidad de cinta magnética es un dispositivo que se utiliza principalmente para realizar copias de seguridad a gran escala debido a su alta capacidad y bajo costo por gigabyte.",
-    "source": "https://es.wikipedia.org/wiki/Cinta_magnética"
-  },
-  {
-    "id": 135,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la tecnología de almacenamiento utilizada en las unidades de cinta magnética?",
-    "options": [
-      "Almacenamiento magnético.",
-      "Almacenamiento óptico.",
-      "Almacenamiento de estado sólido.",
-      "Almacenamiento en la nube."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Almacenamiento magnético.\". Las unidades de cinta magnética utilizan almacenamiento magnético para guardar datos en cintas magnéticas.",
-    "source": "https://es.wikipedia.org/wiki/Cinta_magnética"
-  },
-  {
-    "id": 136,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la principal ventaja de una unidad de cinta magnética sobre otros tipos de almacenamiento?",
-    "options": [
-      "Mayor velocidad de acceso.",
-      "Mayor capacidad de almacenamiento.",
-      "Menor costo por gigabyte.",
-      "Mayor durabilidad."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Menor costo por gigabyte.\". Las unidades de cinta magnética tienen un menor costo por gigabyte que otros tipos de almacenamiento, lo que las hace ideales para copias de seguridad a gran escala.",
-    "source": "https://es.wikipedia.org/wiki/Cinta_magnética"
-  },
-  {
-    "id": 137,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de un RAID (Redundant Array of Independent Disks)?",
-    "options": [
-      "Procesar datos.",
-      "Combinar múltiples unidades de almacenamiento para mejorar el rendimiento o la fiabilidad.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Combinar múltiples unidades de almacenamiento para mejorar el rendimiento o la fiabilidad.\". Un RAID (Redundant Array of Independent Disks) es un sistema que combina múltiples unidades de almacenamiento para mejorar el rendimiento, la fiabilidad o ambos.",
-    "source": "https://es.wikipedia.org/wiki/RAID"
-  },
-  {
-    "id": 138,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la característica principal de un RAID 0?",
-    "options": [
-      "Redundancia de datos.",
-      "Mayor velocidad de lectura y escritura.",
-      "Mayor fiabilidad.",
-      "Menor costo."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Mayor velocidad de lectura y escritura.\". Un RAID 0 combina múltiples unidades de almacenamiento para mejorar la velocidad de lectura y escritura, pero no ofrece redundancia de datos.",
-    "source": "https://es.wikipedia.org/wiki/RAID"
-  },
-  {
-    "id": 139,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la característica principal de un RAID 1?",
-    "options": [
-      "Redundancia de datos.",
-      "Mayor velocidad de lectura y escritura.",
-      "Mayor capacidad de almacenamiento.",
-      "Menor costo."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Redundancia de datos.\". Un RAID 1 duplica los datos en múltiples unidades de almacenamiento para ofrecer redundancia de datos, pero no mejora la velocidad de lectura y escritura ni aumenta la capacidad de almacenamiento.",
-    "source": "https://es.wikipedia.org/wiki/RAID"
-  },
-  {
-    "id": 140,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la característica principal de un RAID 5?",
-    "options": [
-      "Redundancia de datos.",
-      "Mayor velocidad de lectura y escritura.",
-      "Mayor capacidad de almacenamiento.",
-      "Menor costo."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Redundancia de datos.\". Un RAID 5 distribuye los datos y la información de paridad en múltiples unidades de almacenamiento para ofrecer redundancia de datos con un buen equilibrio entre rendimiento y capacidad de almacenamiento.",
-    "source": "https://es.wikipedia.org/wiki/RAID"
-  },
-  {
-    "id": 141,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la característica principal de un RAID 10?",
-    "options": [
-      "Redundancia de datos.",
-      "Mayor velocidad de lectura y escritura.",
-      "Mayor capacidad de almacenamiento.",
-      "Menor costo."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Redundancia de datos.\". Un RAID 10 combina las características de un RAID 0 y un RAID 1 para ofrecer redundancia de datos y mayor velocidad de lectura y escritura, pero requiere al menos cuatro unidades de almacenamiento.",
-    "source": "https://es.wikipedia.org/wiki/RAID"
-  },
-  {
-    "id": 142,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de un controlador de almacenamiento?",
-    "options": [
-      "Procesar datos.",
-      "Gestionar el acceso a las unidades de almacenamiento.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Gestionar el acceso a las unidades de almacenamiento.\". Un controlador de almacenamiento es un dispositivo que gestiona el acceso a las unidades de almacenamiento y puede ofrecer funciones adicionales como RAID.",
-    "source": "https://es.wikipedia.org/wiki/Controlador_de_almacenamiento"
-  },
-  {
-    "id": 143,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de un controlador SATA?",
-    "options": [
-      "Procesar datos.",
-      "Gestionar el acceso a unidades SATA.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Gestionar el acceso a unidades SATA.\". Un controlador SATA es un dispositivo que gestiona el acceso a unidades SATA como discos duros y unidades SSD.",
-    "source": "https://es.wikipedia.org/wiki/Serial_ATA"
-  },
-  {
-    "id": 144,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de un controlador NVMe?",
-    "options": [
-      "Procesar datos.",
-      "Gestionar el acceso a unidades NVMe.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Gestionar el acceso a unidades NVMe.\". Un controlador NVMe es un dispositivo que gestiona el acceso a unidades NVMe (Non-Volatile Memory Express) que ofrecen altas velocidades de lectura y escritura.",
-    "source": "https://es.wikipedia.org/wiki/NVMe"
-  },
-  {
-    "id": 145,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la principal ventaja de las unidades NVMe sobre las unidades SATA?",
-    "options": [
-      "Mayor capacidad de almacenamiento.",
-      "Menor costo por gigabyte.",
-      "Mayor velocidad de lectura y escritura.",
-      "Mayor durabilidad."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Mayor velocidad de lectura y escritura.\". Las unidades NVMe ofrecen velocidades de lectura y escritura mucho más rápidas que las unidades SATA debido a su conexión directa a través de PCIe.",
-    "source": "https://es.wikipedia.org/wiki/NVMe"
-  },
-  {
-    "id": 146,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de una caché de disco?",
-    "options": [
-      "Procesar datos.",
-      "Almacenar temporalmente datos frecuentemente accedidos para mejorar el rendimiento.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar temporalmente datos frecuentemente accedidos para mejorar el rendimiento.\". Una caché de disco es una memoria rápida que almacena temporalmente datos frecuentemente accedidos para mejorar el rendimiento del sistema.",
-    "source": "https://es.wikipedia.org/wiki/Caché_de_disco"
-  },
-  {
-    "id": 147,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de la tecnología SMART (Self-Monitoring, Analysis and Reporting Technology)?",
-    "options": [
-      "Procesar datos.",
-      "Monitorear el estado de las unidades de almacenamiento para prevenir fallos.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Monitorear el estado de las unidades de almacenamiento para prevenir fallos.\". La tecnología SMART (Self-Monitoring, Analysis and Reporting Technology) monitorea el estado de las unidades de almacenamiento para predecir y prevenir fallos.",
-    "source": "https://es.wikipedia.org/wiki/S.M.A.R.T."
-  },
-  {
-    "id": 148,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de la tecnología de cifrado de disco?",
-    "options": [
-      "Procesar datos.",
-      "Proteger los datos almacenados mediante cifrado.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Proteger los datos almacenados mediante cifrado.\". La tecnología de cifrado de disco protege los datos almacenados mediante cifrado para evitar el acceso no autorizado.",
-    "source": "https://es.wikipedia.org/wiki/Cifrado_de_disco"
-  },
-  {
-    "id": 149,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de la tecnología de compresión de datos?",
-    "options": [
-      "Procesar datos.",
-      "Reducir el espacio necesario para almacenar datos.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Reducir el espacio necesario para almacenar datos.\". La tecnología de compresión de datos reduce el espacio necesario para almacenar datos mediante algoritmos de compresión.",
-    "source": "https://es.wikipedia.org/wiki/Compresión_de_datos"
-  },
-  {
-    "id": 150,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de la tecnología de deduplicación de datos?",
-    "options": [
-      "Procesar datos.",
-      "Eliminar datos duplicados para ahorrar espacio de almacenamiento.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Eliminar datos duplicados para ahorrar espacio de almacenamiento.\". La tecnología de deduplicación de datos elimina datos duplicados para ahorrar espacio de almacenamiento.",
-    "source": "https://es.wikipedia.org/wiki/Deduplicación_de_datos"
-  },
-  {
-    "id": 151,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de la tecnología de virtualización de almacenamiento?",
-    "options": [
-      "Procesar datos.",
-      "Abstraer el almacenamiento físico para facilitar su gestión.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Abstraer el almacenamiento físico para facilitar su gestión.\". La tecnología de virtualización de almacenamiento abstrae el almacenamiento físico para facilitar su gestión y optimizar su utilización.",
-    "source": "https://es.wikipedia.org/wiki/Virtualización_de_almacenamiento"
-  },
-  {
-    "id": 152,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de la tecnología de almacenamiento en la nube?",
-    "options": [
-      "Procesar datos.",
-      "Almacenar datos en servidores remotos accesibles a través de internet.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar datos en servidores remotos accesibles a través de internet.\". La tecnología de almacenamiento en la nube permite almacenar datos en servidores remotos accesibles a través de internet.",
-    "source": "https://es.wikipedia.org/wiki/Almacenamiento_en_la_nube"
-  },
-  {
-    "id": 153,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la principal ventaja del almacenamiento en la nube sobre el almacenamiento local?",
-    "options": [
-      "Mayor velocidad de acceso.",
-      "Mayor capacidad de almacenamiento.",
-      "Accesibilidad desde cualquier lugar con conexión a internet.",
-      "Menor costo."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Accesibilidad desde cualquier lugar con conexión a internet.\". El almacenamiento en la nube permite acceder a los datos desde cualquier lugar con conexión a internet.",
-    "source": "https://es.wikipedia.org/wiki/Almacenamiento_en_la_nube"
-  },
-  {
-    "id": 154,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de la tecnología de almacenamiento híbrido?",
-    "options": [
-      "Procesar datos.",
-      "Combinar almacenamiento de estado sólido y magnético para equilibrar rendimiento y capacidad.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Combinar almacenamiento de estado sólido y magnético para equilibrar rendimiento y capacidad.\". La tecnología de almacenamiento híbrido combina almacenamiento de estado sólido y magnético para equilibrar rendimiento y capacidad.",
-    "source": "https://es.wikipedia.org/wiki/Almacenamiento_híbrido"
-  },
-  {
-    "id": 155,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de la tecnología de almacenamiento en caché?",
-    "options": [
-      "Procesar datos.",
-      "Utilizar una memoria rápida para almacenar temporalmente datos frecuentemente accedidos.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Utilizar una memoria rápida para almacenar temporalmente datos frecuentemente accedidos.\". La tecnología de almacenamiento en caché utiliza una memoria rápida para almacenar temporalmente datos frecuentemente accedidos y mejorar el rendimiento.",
-    "source": "https://es.wikipedia.org/wiki/Caché_de_disco"
-  },
-  {
-    "id": 156,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de la tecnología de almacenamiento jerárquico (HSM)?",
-    "options": [
-      "Procesar datos.",
-      "Mover automáticamente datos entre diferentes niveles de almacenamiento según su frecuencia de acceso.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Mover automáticamente datos entre diferentes niveles de almacenamiento según su frecuencia de acceso.\". La tecnología de almacenamiento jerárquico (HSM) mueve automáticamente datos entre diferentes niveles de almacenamiento según su frecuencia de acceso para optimizar el rendimiento y el costo.",
-    "source": "https://es.wikipedia.org/wiki/Gestión_de_almacenamiento_jerárquico"
-  },
-  {
-    "id": 157,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de la tecnología de almacenamiento de objetos?",
-    "options": [
-      "Procesar datos.",
-      "Almacenar datos como objetos con metadatos para facilitar su gestión.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar datos como objetos con metadatos para facilitar su gestión.\". La tecnología de almacenamiento de objetos almacena datos como objetos con metadatos para facilitar su gestión y escalabilidad.",
-    "source": "https://es.wikipedia.org/wiki/Almacenamiento_de_objetos"
-  },
-  {
-    "id": 158,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de la tecnología de almacenamiento en bloque?",
-    "options": [
-      "Procesar datos.",
-      "Dividir el almacenamiento en bloques para facilitar su gestión.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Dividir el almacenamiento en bloques para facilitar su gestión.\". La tecnología de almacenamiento en bloque divide el almacenamiento en bloques para facilitar su gestión y optimizar el rendimiento.",
-    "source": "https://es.wikipedia.org/wiki/Almacenamiento_en_bloque"
-  },
-  {
-    "id": 159,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de la tecnología de almacenamiento en archivo?",
-    "options": [
-      "Procesar datos.",
-      "Organizar los datos en archivos y carpetas para facilitar su gestión.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Organizar los datos en archivos y carpetas para facilitar su gestión.\". La tecnología de almacenamiento en archivo organiza los datos en archivos y carpetas para facilitar su gestión y acceso.",
-    "source": "https://es.wikipedia.org/wiki/Sistema_de_archivos"
-  },
-  {
-    "id": 160,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la función principal de la tecnología de almacenamiento definido por software (SDS)?",
-    "options": [
-      "Procesar datos.",
-      "Abstraer el almacenamiento físico mediante software para facilitar su gestión.",
-      "Transmitir datos en red.",
-      "Mejorar el rendimiento gráfico."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Abstraer el almacenamiento físico mediante software para facilitar su gestión.\". La tecnología de almacenamiento definido por software (SDS) abstrae el almacenamiento físico mediante software para facilitar su gestión y optimizar su utilización.",
-    "source": "https://es.wikipedia.org/wiki/Almacenamiento_definido_por_software"
-  },
-  {
-    "id": 161,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal del procesador (CPU)?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Transmitir datos en red.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Procesar instrucciones y realizar cálculos.\". El procesador (CPU) es el componente principal de un ordenador que procesa instrucciones y realiza cálculos.",
-    "source": "https://es.wikipedia.org/wiki/Unidad_central_de_procesamiento"
-  },
-  {
-    "id": 162,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria RAM?",
-    "options": [
-      "Almacenar datos de forma permanente.",
-      "Almacenar temporalmente datos y programas en ejecución.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar temporalmente datos y programas en ejecución.\". La memoria RAM es una memoria volátil que almacena temporalmente datos y programas en ejecución para que el procesador pueda acceder a ellos rápidamente.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_de_acceso_aleatorio"
-  },
-  {
-    "id": 163,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la tarjeta gráfica (GPU)?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar y renderizar gráficos.",
-      "Transmitir datos en red.",
-      "Procesar instrucciones y realizar cálculos."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Procesar y renderizar gráficos.\". La tarjeta gráfica (GPU) es un componente que procesa y renderiza gráficos para mostrarlos en pantalla.",
-    "source": "https://es.wikipedia.org/wiki/Tarjeta_gráfica"
-  },
-  {
-    "id": 164,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Conectar todos los componentes del ordenador.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Conectar todos los componentes del ordenador.\". La placa base es el componente principal que conecta todos los componentes del ordenador y permite la comunicación entre ellos.",
-    "source": "https://es.wikipedia.org/wiki/Placa_base"
-  },
-  {
-    "id": 165,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la fuente de alimentación?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Suministrar energía eléctrica a los componentes del ordenador.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Suministrar energía eléctrica a los componentes del ordenador.\". La fuente de alimentación es un componente que suministra energía eléctrica a los componentes del ordenador.",
-    "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentación"
-  },
-  {
-    "id": 166,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal del disipador de calor?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Disipar el calor generado por los componentes del ordenador.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Disipar el calor generado por los componentes del ordenador.\". El disipador de calor es un componente que disipa el calor generado por los componentes del ordenador para mantenerlos a una temperatura adecuada.",
-    "source": "https://es.wikipedia.org/wiki/Disipador_de_calor"
-  },
-  {
-    "id": 167,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal del ventilador del ordenador?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Refrigerar los componentes del ordenador mediante el flujo de aire.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Refrigerar los componentes del ordenador mediante el flujo de aire.\". El ventilador del ordenador es un componente que refrigera los componentes del ordenador mediante el flujo de aire.",
-    "source": "https://es.wikipedia.org/wiki/Ventilador_de_computadora"
-  },
-  {
-    "id": 168,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la tarjeta de sonido?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar y reproducir sonido.",
-      "Transmitir datos en red.",
-      "Procesar instrucciones y realizar cálculos."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Procesar y reproducir sonido.\". La tarjeta de sonido es un componente que procesa y reproduce sonido en un ordenador.",
-    "source": "https://es.wikipedia.org/wiki/Tarjeta_de_sonido"
-  },
-  {
-    "id": 169,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la tarjeta de red?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Permitir la conexión a redes de computadoras.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Permitir la conexión a redes de computadoras.\". La tarjeta de red es un componente que permite la conexión a redes de computadoras.",
-    "source": "https://es.wikipedia.org/wiki/Tarjeta_de_red"
-  },
-  {
-    "id": 170,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal del BIOS/UEFI?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Iniciar el sistema y gestionar el hardware básico.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Iniciar el sistema y gestionar el hardware básico.\". El BIOS/UEFI es un firmware que inicia el sistema y gestiona el hardware básico durante el proceso de arranque.",
-    "source": "https://es.wikipedia.org/wiki/BIOS"
-  },
-  {
-    "id": 171,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria caché?",
-    "options": [
-      "Almacenar datos de forma permanente.",
-      "Almacenar temporalmente datos frecuentemente accedidos para mejorar el rendimiento.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar temporalmente datos frecuentemente accedidos para mejorar el rendimiento.\". La memoria caché es una memoria rápida que almacena temporalmente datos frecuentemente accedidos para mejorar el rendimiento del sistema.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_caché"
-  },
-  {
-    "id": 172,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal del chipset de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Gestionar la comunicación entre los componentes de la placa base.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Gestionar la comunicación entre los componentes de la placa base.\". El chipset de la placa base es un conjunto de circuitos que gestionan la comunicación entre los componentes de la placa base.",
-    "source": "https://es.wikipedia.org/wiki/Chipset"
-  },
-  {
-    "id": 173,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal del reloj del sistema?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Sincronizar las operaciones de los componentes del ordenador.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Sincronizar las operaciones de los componentes del ordenador.\". El reloj del sistema es un componente que genera señales de reloj para sincronizar las operaciones de los componentes del ordenador.",
-    "source": "https://es.wikipedia.org/wiki/Señal_de_reloj"
-  },
-  {
-    "id": 174,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la batería CMOS?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mantener la configuración del BIOS/UEFI cuando el sistema está apagado.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Mantener la configuración del BIOS/UEFI cuando el sistema está apagado.\". La batería CMOS proporciona energía para mantener la configuración del BIOS/UEFI cuando el sistema está apagado.",
-    "source": "https://es.wikipedia.org/wiki/CMOS"
-  },
-  {
-    "id": 175,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los jumpers de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Configurar opciones de la placa base mediante puentes.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Configurar opciones de la placa base mediante puentes.\". Los jumpers de la placa base son pequeños puentes que permiten configurar opciones de la placa base.",
-    "source": "https://es.wikipedia.org/wiki/Jumper_(informática)"
-  },
-  {
-    "id": 176,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los interruptores DIP de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Configurar opciones de la placa base mediante interruptores.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Configurar opciones de la placa base mediante interruptores.\". Los interruptores DIP de la placa base son pequeños interruptores que permiten configurar opciones de la placa base.",
-    "source": "https://es.wikipedia.org/wiki/Interruptor_DIP"
-  },
-  {
-    "id": 177,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los condensadores de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Almacenar y liberar energía para estabilizar el voltaje.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Almacenar y liberar energía para estabilizar el voltaje.\". Los condensadores de la placa base son componentes que almacenan y liberan energía para estabilizar el voltaje.",
-    "source": "https://es.wikipedia.org/wiki/Condensador_eléctrico"
-  },
-  {
-    "id": 178,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los inductores de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Almacenar energía en un campo magnético para filtrar señales.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Almacenar energía en un campo magnético para filtrar señales.\". Los inductores de la placa base son componentes que almacenan energía en un campo magnético para filtrar señales.",
-    "source": "https://es.wikipedia.org/wiki/Inductor"
-  },
-  {
-    "id": 179,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los resistores de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Limitar el flujo de corriente eléctrica.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Limitar el flujo de corriente eléctrica.\". Los resistores de la placa base son componentes que limitan el flujo de corriente eléctrica.",
-    "source": "https://es.wikipedia.org/wiki/Resistencia_eléctrica"
-  },
-  {
-    "id": 180,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los diodos de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Permitir el flujo de corriente en una sola dirección.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Permitir el flujo de corriente en una sola dirección.\". Los diodos de la placa base son componentes que permiten el flujo de corriente en una sola dirección.",
-    "source": "https://es.wikipedia.org/wiki/Diodo"
-  },
-  {
-    "id": 181,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los transistores de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Amplificar o conmutar señales electrónicas.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Amplificar o conmutar señales electrónicas.\". Los transistores de la placa base son componentes que amplifican o conmutan señales electrónicas.",
-    "source": "https://es.wikipedia.org/wiki/Transistor"
-  },
-  {
-    "id": 182,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los circuitos integrados de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Realizar funciones específicas mediante circuitos electrónicos miniaturizados.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Realizar funciones específicas mediante circuitos electrónicos miniaturizados.\". Los circuitos integrados de la placa base son componentes que realizan funciones específicas mediante circuitos electrónicos miniaturizados.",
-    "source": "https://es.wikipedia.org/wiki/Circuito_integrado"
-  },
-  {
-    "id": 183,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los zócalos de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Permitir la conexión de componentes como el procesador y la memoria RAM.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Permitir la conexión de componentes como el procesador y la memoria RAM.\". Los zócalos de la placa base son conectores que permiten la conexión de componentes como el procesador y la memoria RAM.",
-    "source": "https://es.wikipedia.org/wiki/Zócalo_de_CPU"
-  },
-  {
-    "id": 184,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de las ranuras de expansión de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Permitir la conexión de tarjetas de expansión como tarjetas gráficas y de sonido.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Permitir la conexión de tarjetas de expansión como tarjetas gráficas y de sonido.\". Las ranuras de expansión de la placa base son conectores que permiten la conexión de tarjetas de expansión como tarjetas gráficas y de sonido.",
-    "source": "https://es.wikipedia.org/wiki/Ranura_de_expansión"
-  },
-  {
-    "id": 185,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los puertos de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Permitir la conexión de dispositivos externos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Permitir la conexión de dispositivos externos.\". Los puertos de la placa base son conectores que permiten la conexión de dispositivos externos.",
-    "source": "https://es.wikipedia.org/wiki/Puerto_de_computadora"
-  },
-  {
-    "id": 186,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los conectores de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Permitir la conexión de cables y dispositivos internos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Permitir la conexión de cables y dispositivos internos.\". Los conectores de la placa base son elementos que permiten la conexión de cables y dispositivos internos.",
-    "source": "https://es.wikipedia.org/wiki/Conector_eléctrico"
-  },
-  {
-    "id": 187,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los LED de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Indicar el estado de funcionamiento de la placa base.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Indicar el estado de funcionamiento de la placa base.\". Los LED de la placa base son indicadores luminosos que muestran el estado de funcionamiento de la placa base.",
-    "source": "https://es.wikipedia.org/wiki/Diodo_emisor_de_luz"
-  },
-  {
-    "id": 188,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los botones de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Permitir realizar acciones como encender o reiniciar el sistema.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Permitir realizar acciones como encender o reiniciar el sistema.\". Los botones de la placa base son elementos que permiten realizar acciones como encender o reiniciar el sistema.",
-    "source": "https://es.wikipedia.org/wiki/Botón_(informática)"
-  },
-  {
-    "id": 189,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los sensores de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Medir parámetros como la temperatura y la velocidad de los ventiladores.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Medir parámetros como la temperatura y la velocidad de los ventiladores.\". Los sensores de la placa base son componentes que miden parámetros como la temperatura y la velocidad de los ventiladores.",
-    "source": "https://es.wikipedia.org/wiki/Sensor"
-  },
-  {
-    "id": 190,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los puentes de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Conectar dos puntos del circuito para configurar opciones.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Conectar dos puntos del circuito para configurar opciones.\". Los puentes de la placa base son elementos que conectan dos puntos del circuito para configurar opciones.",
-    "source": "https://es.wikipedia.org/wiki/Jumper_(informática)"
-  },
-  {
-    "id": 191,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los interruptores de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Permitir o interrumpir el flujo de corriente para configurar opciones.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Permitir o interrumpir el flujo de corriente para configurar opciones.\". Los interruptores de la placa base son elementos que permiten o interrumpen el flujo de corriente para configurar opciones.",
-    "source": "https://es.wikipedia.org/wiki/Interruptor"
-  },
-  {
-    "id": 192,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los fusibles de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Proteger los componentes contra sobrecorrientes.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Proteger los componentes contra sobrecorrientes.\". Los fusibles de la placa base son componentes que protegen los componentes contra sobrecorrientes.",
-    "source": "https://es.wikipedia.org/wiki/Fusible"
-  },
-  {
-    "id": 193,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los bobinas de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Almacenar energía en un campo magnético para filtrar señales.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Almacenar energía en un campo magnético para filtrar señales.\". Las bobinas de la placa base son componentes que almacenan energía en un campo magnético para filtrar señales.",
-    "source": "https://es.wikipedia.org/wiki/Inductor"
-  },
-  {
-    "id": 194,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los cristales de cuarzo de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Generar señales de reloj precisas para sincronizar las operaciones.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Generar señales de reloj precisas para sincronizar las operaciones.\". Los cristales de cuarzo de la placa base son componentes que generan señales de reloj precisas para sincronizar las operaciones.",
-    "source": "https://es.wikipedia.org/wiki/Oscilador_de_cristal_de_cuarzo"
-  },
-  {
-    "id": 195,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los reguladores de voltaje de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mantener un voltaje constante para los componentes.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Mantener un voltaje constante para los componentes.\". Los reguladores de voltaje de la placa base son componentes que mantienen un voltaje constante para los componentes.",
-    "source": "https://es.wikipedia.org/wiki/Regulador_de_voltaje"
-  },
-  {
-    "id": 196,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los disipadores de calor de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Disipar el calor generado por los componentes.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Disipar el calor generado por los componentes.\". Los disipadores de calor de la placa base son componentes que disipan el calor generado por los componentes.",
-    "source": "https://es.wikipedia.org/wiki/Disipador_de_calor"
-  },
-  {
-    "id": 197,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los tubos de calor de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Transferir el calor de los componentes a los disipadores.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Transferir el calor de los componentes a los disipadores.\". Los tubos de calor de la placa base son componentes que transfieren el calor de los componentes a los disipadores.",
-    "source": "https://es.wikipedia.org/wiki/Tubo_de_calor"
-  },
-  {
-    "id": 198,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de las pastas térmicas de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mejorar la transferencia de calor entre los componentes y los disipadores.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Mejorar la transferencia de calor entre los componentes y los disipadores.\". Las pastas térmicas de la placa base son compuestos que mejoran la transferencia de calor entre los componentes y los disipadores.",
-    "source": "https://es.wikipedia.org/wiki/Pasta_térmica"
-  },
-  {
-    "id": 199,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de los ventiladores de la placa base?",
-    "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Refrigerar los componentes mediante el flujo de aire.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Refrigerar los componentes mediante el flujo de aire.\". Los ventiladores de la placa base son componentes que refrigeran los componentes mediante el flujo de aire.",
-    "source": "https://es.wikipedia.org/wiki/Ventilador_de_computadora"
-  },
-  {
     "id": 200,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de las cámaras de refrigeración líquida de la placa base?",
+    "category": "USB y Conectores",
+    "question": "¿Qué versión de USB introdujo por primera vez la característica de conectores reversibles (USB-C)?",
     "options": [
-      "Almacenar datos.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Refrigerar los componentes mediante líquido refrigerante.",
-      "Mostrar imágenes en pantalla."
+      "USB 2.0",
+      "USB 3.0",
+      "USB 3.1",
+      "USB 3.2"
     ],
     "correct": 2,
-    "explanation": "La respuesta correcta es \"Refrigerar los componentes mediante líquido refrigerante.\". Las cámaras de refrigeración líquida de la placa base son sistemas que refrigeran los componentes mediante líquido refrigerante.",
-    "source": "https://es.wikipedia.org/wiki/Refrigeración_líquida_(informática)"
+    "explanation": "La respuesta correcta es \"USB 3.1\". La especificación USB 3.1, publicada en 2014, introdujo el conector USB Tipo-C, que es reversible y soporta mayores velocidades y potencia.",
+    "source": "https://es.wikipedia.org/wiki/USB-C"
   },
   {
     "id": 201,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria caché L1?",
+    "category": "USB y Conectores",
+    "question": "¿Qué función principal cumple el estándar USB en los sistemas informáticos modernos?",
     "options": [
-      "Almacenar datos de forma permanente.",
-      "Almacenar temporalmente datos frecuentemente accedidos por el procesador.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
+      "Permitir la conexión exclusiva de impresoras",
+      "Proporcionar energía solo a dispositivos móviles",
+      "Conectar, comunicar y alimentar eléctricamente dispositivos periféricos",
+      "Reemplazar únicamente a los puertos serie antiguos"
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar temporalmente datos frecuentemente accedidos por el procesador.\". La memoria caché L1 es la memoria caché más rápida y más cercana al procesador, que almacena temporalmente datos frecuentemente accedidos por el procesador.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_caché"
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Conectar, comunicar y alimentar eléctricamente dispositivos periféricos\". USB es un estándar universal que combina transferencia de datos y suministro de energía.",
+    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus"
   },
   {
     "id": 202,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria caché L2?",
+    "category": "USB y Conectores",
+    "question": "¿Cuál de los siguientes dispositivos NO suele conectarse mediante un puerto USB?",
     "options": [
-      "Almacenar datos de forma permanente.",
-      "Almacenar temporalmente datos frecuentemente accedidos por el procesador.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
+      "Teclado",
+      "Disco duro externo",
+      "Monitor VGA tradicional",
+      "Memoria USB"
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar temporalmente datos frecuentemente accedidos por el procesador.\". La memoria caché L2 es una memoria caché más grande que la L1 pero más lenta, que almacena temporalmente datos frecuentemente accedidos por el procesador.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_caché"
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Monitor VGA tradicional\". Los monitores VGA usan conectores analógicos dedicados; aunque existen monitores USB modernos, los VGA clásicos no usan USB.",
+    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus"
   },
   {
     "id": 203,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria caché L3?",
-    "options": [
-      "Almacenar datos de forma permanente.",
-      "Almacenar temporalmente datos frecuentemente accedidos por el procesador.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar temporalmente datos frecuentemente accedidos por el procesador.\". La memoria caché L3 es la memoria caché más grande pero más lenta, compartida por todos los núcleos del procesador, que almacena temporalmente datos frecuentemente accedidos por el procesador.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_caché"
-  },
-  {
-    "id": 204,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria virtual?",
-    "options": [
-      "Almacenar datos de forma permanente.",
-      "Utilizar parte del disco duro como extensión de la memoria RAM.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Utilizar parte del disco duro como extensión de la memoria RAM.\". La memoria virtual es una técnica que utiliza parte del disco duro como extensión de la memoria RAM cuando esta es insuficiente.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_virtual"
-  },
-  {
-    "id": 205,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria ROM?",
-    "options": [
-      "Almacenar datos de forma permanente que no pueden ser modificados.",
-      "Almacenar temporalmente datos y programas en ejecución.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Almacenar datos de forma permanente que no pueden ser modificados.\". La memoria ROM es una memoria de solo lectura que almacena datos de forma permanente que no pueden ser modificados.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_de_solo_lectura"
-  },
-  {
-    "id": 206,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria PROM?",
-    "options": [
-      "Almacenar datos de forma permanente que pueden ser programados una sola vez.",
-      "Almacenar temporalmente datos y programas en ejecución.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Almacenar datos de forma permanente que pueden ser programados una sola vez.\". La memoria PROM es una memoria programable de solo lectura que almacena datos de forma permanente que pueden ser programados una sola vez.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_programable_de_solo_lectura"
-  },
-  {
-    "id": 207,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria EPROM?",
-    "options": [
-      "Almacenar datos de forma permanente que pueden ser programados y borrados mediante luz ultravioleta.",
-      "Almacenar temporalmente datos y programas en ejecución.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Almacenar datos de forma permanente que pueden ser programados y borrados mediante luz ultravioleta.\". La memoria EPROM es una memoria programable y borrable de solo lectura que almacena datos de forma permanente que pueden ser programados y borrados mediante luz ultravioleta.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_programable_y_borrable_de_solo_lectura"
-  },
-  {
-    "id": 208,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria EEPROM?",
-    "options": [
-      "Almacenar datos de forma permanente que pueden ser programados y borrados eléctricamente.",
-      "Almacenar temporalmente datos y programas en ejecución.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Almacenar datos de forma permanente que pueden ser programados y borrados eléctricamente.\". La memoria EEPROM es una memoria programable y borrable eléctricamente de solo lectura que almacena datos de forma permanente que pueden ser programados y borrados eléctricamente.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_programable_y_borrable_eléctricamente_de_solo_lectura"
-  },
-  {
-    "id": 209,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria flash?",
-    "options": [
-      "Almacenar datos de forma permanente que pueden ser modificados eléctricamente.",
-      "Almacenar temporalmente datos y programas en ejecución.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Almacenar datos de forma permanente que pueden ser modificados eléctricamente.\". La memoria flash es una memoria no volátil que almacena datos de forma permanente que pueden ser modificados eléctricamente.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_flash"
-  },
-  {
-    "id": 210,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria SRAM?",
-    "options": [
-      "Almacenar datos de forma permanente.",
-      "Almacenar temporalmente datos utilizando biestables.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar temporalmente datos utilizando biestables.\". La memoria SRAM es una memoria estática de acceso aleatorio que almacena temporalmente datos utilizando biestables, lo que la hace más rápida pero más cara que la memoria DRAM.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_estática_de_acceso_aleatorio"
-  },
-  {
-    "id": 211,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria DRAM?",
-    "options": [
-      "Almacenar datos de forma permanente.",
-      "Almacenar temporalmente datos utilizando condensadores.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar temporalmente datos utilizando condensadores.\". La memoria DRAM es una memoria dinámica de acceso aleatorio que almacena temporalmente datos utilizando condensadores, lo que la hace más lenta pero más barata que la memoria SRAM.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_dinámica_de_acceso_aleatorio"
-  },
-  {
-    "id": 212,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria SDRAM?",
-    "options": [
-      "Almacenar datos de forma permanente.",
-      "Almacenar temporalmente datos sincronizados con el reloj del sistema.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar temporalmente datos sincronizados con el reloj del sistema.\". La memoria SDRAM es una memoria dinámica síncrona de acceso aleatorio que almacena temporalmente datos sincronizados con el reloj del sistema, lo que mejora su rendimiento.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_dinámica_síncrona_de_acceso_aleatorio"
-  },
-  {
-    "id": 213,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria DDR SDRAM?",
-    "options": [
-      "Almacenar datos de forma permanente.",
-      "Almacenar temporalmente datos transferiendo datos en ambos flancos del reloj.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar temporalmente datos transferiendo datos en ambos flancos del reloj.\". La memoria DDR SDRAM es una memoria de doble tasa de datos dinámica síncrona de acceso aleatorio que almacena temporalmente datos transferiendo datos en ambos flancos del reloj, lo que duplica su velocidad de transferencia.",
-    "source": "https://es.wikipedia.org/wiki/DDR_SDRAM"
-  },
-  {
-    "id": 214,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria DDR2 SDRAM?",
-    "options": [
-      "Almacenar datos de forma permanente.",
-      "Almacenar temporalmente datos con una velocidad de transferencia mayor que DDR.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar temporalmente datos con una velocidad de transferencia mayor que DDR.\". La memoria DDR2 SDRAM es una memoria de doble tasa de datos 2 dinámica síncrona de acceso aleatorio que almacena temporalmente datos con una velocidad de transferencia mayor que DDR.",
-    "source": "https://es.wikipedia.org/wiki/DDR2_SDRAM"
-  },
-  {
-    "id": 215,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria DDR3 SDRAM?",
-    "options": [
-      "Almacenar datos de forma permanente.",
-      "Almacenar temporalmente datos con una velocidad de transferencia mayor que DDR2.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar temporalmente datos con una velocidad de transferencia mayor que DDR2.\". La memoria DDR3 SDRAM es una memoria de doble tasa de datos 3 dinámica síncrona de acceso aleatorio que almacena temporalmente datos con una velocidad de transferencia mayor que DDR2.",
-    "source": "https://es.wikipedia.org/wiki/DDR3_SDRAM"
-  },
-  {
-    "id": 216,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria DDR4 SDRAM?",
-    "options": [
-      "Almacenar datos de forma permanente.",
-      "Almacenar temporalmente datos con una velocidad de transferencia mayor que DDR3.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar temporalmente datos con una velocidad de transferencia mayor que DDR3.\". La memoria DDR4 SDRAM es una memoria de doble tasa de datos 4 dinámica síncrona de acceso aleatorio que almacena temporalmente datos con una velocidad de transferencia mayor que DDR3.",
-    "source": "https://es.wikipedia.org/wiki/DDR4_SDRAM"
-  },
-  {
-    "id": 217,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria DDR5 SDRAM?",
-    "options": [
-      "Almacenar datos de forma permanente.",
-      "Almacenar temporalmente datos con una velocidad de transferencia mayor que DDR4.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar temporalmente datos con una velocidad de transferencia mayor que DDR4.\". La memoria DDR5 SDRAM es una memoria de doble tasa de datos 5 dinámica síncrona de acceso aleatorio que almacena temporalmente datos con una velocidad de transferencia mayor que DDR4.",
-    "source": "https://es.wikipedia.org/wiki/DDR5_SDRAM"
-  },
-  {
-    "id": 218,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria ECC?",
-    "options": [
-      "Almacenar datos de forma permanente.",
-      "Detectar y corregir errores en los datos almacenados.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Detectar y corregir errores en los datos almacenados.\". La memoria ECC es una memoria con código de corrección de errores que detecta y corrige errores en los datos almacenados, lo que la hace más fiable pero más cara.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_con_código_de_corrección_de_errores"
-  },
-  {
-    "id": 219,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria registrada (buffered)?",
-    "options": [
-      "Almacenar datos de forma permanente.",
-      "Utilizar un registro para reducir la carga eléctrica en el controlador de memoria.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Utilizar un registro para reducir la carga eléctrica en el controlador de memoria.\". La memoria registrada (buffered) utiliza un registro para reducir la carga eléctrica en el controlador de memoria, lo que permite instalar más módulos de memoria pero aumenta la latencia.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_registrada"
-  },
-  {
-    "id": 220,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria LR-DIMM?",
-    "options": [
-      "Almacenar datos de forma permanente.",
-      "Utilizar un buffer de reducción de carga para permitir más módulos de memoria.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Utilizar un buffer de reducción de carga para permitir más módulos de memoria.\". La memoria LR-DIMM utiliza un buffer de reducción de carga para permitir más módulos de memoria que la memoria registrada tradicional.",
-    "source": "https://es.wikipedia.org/wiki/LR-DIMM"
-  },
-  {
-    "id": 221,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria SO-DIMM?",
-    "options": [
-      "Almacenar datos de forma permanente.",
-      "Proporcionar un formato de memoria más pequeño para portátiles.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Proporcionar un formato de memoria más pequeño para portátiles.\". La memoria SO-DIMM es un formato de memoria más pequeño que el DIMM estándar, diseñado para portátiles y otros dispositivos compactos.",
-    "source": "https://es.wikipedia.org/wiki/SO-DIMM"
-  },
-  {
-    "id": 222,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria Micro-DIMM?",
-    "options": [
-      "Almacenar datos de forma permanente.",
-      "Proporcionar un formato de memoria aún más pequeño que SO-DIMM.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Proporcionar un formato de memoria aún más pequeño que SO-DIMM.\". La memoria Micro-DIMM es un formato de memoria aún más pequeño que el SO-DIMM, diseñado para dispositivos ultra compactos.",
-    "source": "https://es.wikipedia.org/wiki/Micro-DIMM"
-  },
-  {
-    "id": 223,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria de video (VRAM)?",
-    "options": [
-      "Almacenar datos de forma permanente.",
-      "Almacenar temporalmente datos de video para la tarjeta gráfica.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Almacenar temporalmente datos de video para la tarjeta gráfica.\". La memoria de video (VRAM) es una memoria especializada que almacena temporalmente datos de video para la tarjeta gráfica.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_de_video"
-  },
-  {
-    "id": 224,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria GDDR?",
-    "options": [
-      "Almacenar datos de forma permanente.",
-      "Proporcionar memoria de video de alta velocidad para tarjetas gráficas.",
-      "Procesar instrucciones y realizar cálculos.",
-      "Mostrar imágenes en pantalla."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Proporcionar memoria de video de alta velocidad para tarjetas gráficas.\". La memoria GDDR es un tipo de memoria de video de alta velocidad diseñada específicamente para tarjetas gráficas.",
-    "source": "https://es.wikipedia.org/wiki/GDDR"
-  },
-  {
-    "id": 225,
-    "category": "Tarjetas de Expansión",
-    "question": "¿Cuál de las siguientes opciones describe mejor la función del Platform Controller Hub (PCH) en las plataformas modernas de Intel?",
-    "options": [
-      "Administra la comunicación entre la CPU y la memoria RAM.",
-      "Gestiona la comunicación entre la CPU y los dispositivos de entrada/salida (E/S).",
-      "Controla la comunicación entre la CPU y los dispositivos de almacenamiento.",
-      "Coordina la transferencia de datos entre la CPU y la tarjeta gráfica."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Gestiona la comunicación entre la CPU y los dispositivos de entrada/salida (E/S).\". El PCH (Platform Controller Hub) es el componente que gestiona los periféricos de E/S, como USB, SATA, audio y red, en las arquitecturas modernas de Intel.",
-    "source": "https://es.wikipedia.org/wiki/Platform_Controller_Hub"
-  },
-  {
-    "id": 226,
-    "category": "Tarjetas de Expansión",
-    "question": "¿Cuál de las siguientes opciones describe mejor la función del Southbridge en la arquitectura moderna de chipset?",
-    "options": [
-      "Administra la comunicación entre la CPU y la memoria RAM.",
-      "Gestiona la comunicación entre la CPU y los dispositivos de entrada/salida (E/S).",
-      "Controla la comunicación entre la CPU y los dispositivos de almacenamiento.",
-      "Coordina la transferencia de datos entre la CPU y la tarjeta gráfica."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Gestiona la comunicación entre la CPU y los dispositivos de entrada/salida (E/S).\". El Southbridge (también conocido como ICH o PCH en arquitecturas más modernas) es el componente que gestiona los periféricos más lentos del sistema.",
-    "source": "https://es.wikipedia.org/wiki/Southbridge"
-  },
-  {
-    "id": 227,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es el propósito principal del chipset en un sistema informático?",
-    "options": [
-      "Mejorar el rendimiento de la CPU.",
-      "Facilitar la comunicación entre los componentes del sistema.",
-      "Controlar el suministro de energía a la placa base.",
-      "Proporcionar almacenamiento temporal para la CPU."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Facilitar la comunicación entre los componentes del sistema.\". El chipset actúa como un sistema nervioso central que gestiona el flujo de datos entre la CPU, memoria, periféricos y otros componentes.",
-    "source": "https://es.wikipedia.org/wiki/Chipset"
-  },
-  {
-    "id": 228,
-    "category": "Tarjetas de Expansión",
-    "question": "¿Cuál de las siguientes opciones describe mejor la función del Northbridge en el pasado, antes de la integración de funciones en los chipsets modernos?",
-    "options": [
-      "Administra la comunicación entre la CPU y la memoria RAM.",
-      "Gestiona la comunicación entre la CPU y los dispositivos de entrada/salida (E/S).",
-      "Controla la comunicación entre la CPU y los dispositivos de almacenamiento.",
-      "Coordina la transferencia de datos entre la CPU y la tarjeta gráfica."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Administra la comunicación entre la CPU y la memoria RAM.\". El Northbridge era el componente del chipset que gestionaba las comunicaciones de alta velocidad entre la CPU, la memoria RAM y la tarjeta gráfica.",
-    "source": "https://es.wikipedia.org/wiki/Northbridge"
-  },
-  {
-    "id": 229,
-    "category": "Tarjetas de Expansión",
-    "question": "¿Cuál de las siguientes opciones describe mejor la función del Southbridge en el pasado, antes de la integración de funciones en los chipsets modernos?",
-    "options": [
-      "Administra la comunicación entre la CPU y la memoria RAM.",
-      "Gestiona la comunicación entre la CPU y los dispositivos de entrada/salida (E/S).",
-      "Controla la comunicación entre la CPU y los dispositivos de almacenamiento.",
-      "Coordina la transferencia de datos entre la CPU y la tarjeta gráfica."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Gestiona la comunicación entre la CPU y los dispositivos de entrada/salida (E/S).\". El Southbridge gestionaba los periféricos más lentos como USB, SATA, audio y red en las arquitecturas de chipset más antiguas.",
-    "source": "https://es.wikipedia.org/wiki/Southbridge"
-  },
-  {
-    "id": 230,
-    "category": "Tarjetas de Expansión",
-    "question": "¿Cuál de las siguientes opciones describe mejor la función del chipset en un sistema informático moderno?",
-    "options": [
-      "Mejorar el rendimiento de la CPU.",
-      "Facilitar la comunicación entre los componentes del sistema.",
-      "Controlar el suministro de energía a la placa base.",
-      "Proporcionar almacenamiento temporal para la CPU."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Facilitar la comunicación entre los componentes del sistema.\". En los sistemas modernos, el chipset (generalmente un solo chip PCH) gestiona la comunicación entre la CPU y los periféricos del sistema.",
-    "source": "https://es.wikipedia.org/wiki/Chipset"
-  },
-  {
-    "id": 231,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál de las siguientes afirmaciones es cierta con respecto a la nomenclatura de los chipsets de Intel?",
-    "options": [
-      "Los chipsets de Intel utilizan nombres basados en letras y números, como Z490 o B360.",
-      "Los chipsets de Intel utilizan nombres basados en la serie Ryzen, como Ryzen 7 o Ryzen 5.",
-      "Los chipsets de Intel utilizan nombres basados en nombres de ciudades, como New York o Tokyo.",
-      "Los chipsets de Intel utilizan nombres basados en animales, como Tiger Lake o Panther Point."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Los chipsets de Intel utilizan nombres basados en letras y números, como Z490 o B360.\". Intel utiliza una nomenclatura donde la letra indica el segmento (Z para entusiastas, B para negocios, H para consumo) y el número indica la generación.",
-    "source": "https://es.wikipedia.org/wiki/Intel_chipsets"
-  },
-  {
-    "id": 232,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál de las siguientes afirmaciones es cierta con respecto a la nomenclatura de los chipsets de AMD?",
-    "options": [
-      "Los chipsets de AMD utilizan nombres basados en letras y números, como Z490 o B360.",
-      "Los chipsets de AMD utilizan nombres basados en la serie Ryzen, como Ryzen 7 o Ryzen 5.",
-      "Los chipsets de AMD utilizan nombres basados en nombres de ciudades, como New York o Tokyo.",
-      "Los chipsets de AMD utilizan nombres basados en animales, como Tiger Lake o Panther Point."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Los chipsets de AMD utilizan nombres basados en letras y números, como Z490 o B360.\". AMD también utiliza una nomenclatura similar a Intel, donde la letra indica el segmento (X para entusiastas, B para consumo) y el número indica la generación.",
-    "source": "https://es.wikipedia.org/wiki/AMD_chipsets"
-  },
-  {
-    "id": 233,
-    "category": "Tarjetas de Expansión",
-    "question": "¿Cuál de las siguientes opciones describe mejor la familia de procesadores de Intel dirigida principalmente a usuarios domésticos y entusiastas, ofreciendo un rendimiento de gama alta?",
-    "options": [
-      "Core i3.",
-      "Core i5.",
-      "Core i7.",
-      "Core i9."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Core i9.\". La familia Core i9 es la gama más alta de procesadores de Intel para consumidores, dirigida a entusiastas y profesionales que necesitan el máximo rendimiento.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Core_i9"
-  },
-  {
-    "id": 234,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es la nomenclatura típica de los procesadores Intel de la serie Core i5 de novena generación?",
-    "options": [
-      "i5-3XXX.",
-      "i5-5XXX.",
-      "i5-7XXX.",
-      "i5-9XXX."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"i5-9XXX.\". La nomenclatura de Intel incluye el prefijo (i5), seguido de un número de cuatro dígitos donde el primero indica la generación (9 para 9ª generación) y los tres restantes el modelo específico.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Core"
-  },
-  {
-    "id": 235,
-    "category": "Chipsets y CPU",
-    "question": "¿Qué tecnología de Hyper-Threading está presente en algunos procesadores Intel para mejorar el rendimiento al permitir que cada núcleo ejecute dos hilos de instrucciones simultáneamente?",
-    "options": [
-      "Turbo Boost.",
-      "Quick Sync.",
-      "Hyper-Threading.",
-      "Multi-Core Enhancement."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Hyper-Threading.\". Hyper-Threading es una tecnología de Intel que permite a cada núcleo físico procesar dos hilos de ejecución simultáneamente, mejorando el rendimiento en tareas multitarea.",
-    "source": "https://es.wikipedia.org/wiki/Hyper-Threading"
-  },
-  {
-    "id": 236,
-    "category": "Chipsets y CPU",
-    "question": "En la nomenclatura de procesadores Intel, ¿qué significa la letra \"K\" al final del número del modelo?",
-    "options": [
-      "Procesador de bajo consumo.",
-      "Desbloqueado para overclocking.",
-      "Integrado con gráficos Iris.",
-      "Diseño eficiente de energía."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Desbloqueado para overclocking.\". La letra \"K\" en los procesadores Intel indica que el multiplicador está desbloqueado, permitiendo al usuario aumentar la frecuencia del procesador mediante overclocking.",
-    "source": "https://es.wikipedia.org/wiki/Overclocking"
-  },
-  {
-    "id": 237,
-    "category": "Tarjetas de Expansión",
-    "question": "¿Cuál de las siguientes opciones describe mejor la familia de procesadores Intel Core i3?",
-    "options": [
-      "Enfocada en entusiastas y rendimiento extremo.",
-      "Diseñada para usuarios de nivel básico y tareas cotidianas.",
-      "Ofrece un equilibrio entre rendimiento y eficiencia energética.",
-      "Orientada a estaciones de trabajo y servidores."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Diseñada para usuarios de nivel básico y tareas cotidianas.\". La familia Core i3 es la gama de entrada de procesadores Intel, diseñada para usuarios básicos y tareas cotidianas como navegación web, ofimática y multimedia ligera.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Core_i3"
-  },
-  {
-    "id": 238,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es el propósito principal de la tecnología Intel Turbo Boost?",
-    "options": [
-      "Mejorar la eficiencia energética del procesador.",
-      "Aumentar la frecuencia del reloj del procesador cuando sea necesario.",
-      "Optimizar el rendimiento de la memoria caché.",
-      "Controlar la temperatura del procesador."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Aumentar la frecuencia del reloj del procesador cuando sea necesario.\". Turbo Boost es una tecnología que aumenta automáticamente la frecuencia del procesador por encima de su velocidad base cuando las condiciones térmicas y de energía lo permiten.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Turbo_Boost"
-  },
-  {
-    "id": 239,
-    "category": "Chipsets y CPU",
-    "question": "En la nomenclatura de los procesadores Intel Core i7, ¿qué indica la presencia de la letra \"U\" al final del número del modelo?",
-    "options": [
-      "Procesador de sobremesa.",
-      "Procesador ultrabaja potencia.",
-      "Procesador de baja potencia.",
-      "Procesador con gráficos Iris."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Procesador de baja potencia.\". La letra \"U\" en los procesadores Intel indica que son modelos de ultra bajo consumo (Ultra-low power), diseñados para portátiles delgados y dispositivos móviles.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Core"
-  },
-  {
-    "id": 240,
-    "category": "Tarjetas de Expansión",
-    "question": "¿Cuál de las siguientes opciones describe mejor la familia de procesadores Intel Core i9?",
-    "options": [
-      "Diseñada para usuarios de nivel básico y tareas cotidianas.",
-      "Enfocada en entusiastas y rendimiento extremo.",
-      "Ofrece un equilibrio entre rendimiento y eficiencia energética.",
-      "Orientada a estaciones de trabajo y servidores."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Enfocada en entusiastas y rendimiento extremo.\". La familia Core i9 es la gama más alta de procesadores de Intel para consumidores, dirigida a entusiastas y profesionales que necesitan el máximo rendimiento.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Core_i9"
-  },
-  {
-    "id": 241,
-    "category": "Chipsets y CPU",
-    "question": "¿Qué tecnología Intel permite a los procesadores integrar gráficos de alta calidad directamente en el mismo chip que la CPU?",
-    "options": [
-      "Quick Sync.",
-      "Turbo Boost.",
-      "Hyper-Threading.",
-      "Iris Graphics."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Iris Graphics.\". Intel Iris Graphics es la marca de los gráficos integrados de alta calidad de Intel, que se encuentran en el mismo die que la CPU en algunos procesadores.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Iris_Graphics"
-  },
-  {
-    "id": 242,
-    "category": "Chipsets y CPU",
-    "question": "En la nomenclatura de procesadores Intel, ¿qué significa la letra \"F\" al final del número del modelo?",
-    "options": [
-      "Procesador con gráficos integrados.",
-      "Procesador de bajo consumo.",
-      "Procesador sin gráficos integrados.",
-      "Procesador de bajo rendimiento."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Procesador sin gráficos integrados.\". La letra \"F\" en los procesadores Intel indica que el modelo no tiene gráficos integrados y requiere una tarjeta gráfica dedicada.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Core"
-  },
-  {
-    "id": 243,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es la nomenclatura típica de los procesadores Intel de la serie Core i3 de novena generación?",
-    "options": [
-      "i3-3XXX.",
-      "i3-5XXX.",
-      "i3-7XXX.",
-      "i3-9XXX."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"i3-9XXX.\". La nomenclatura de Intel incluye el prefijo (i3), seguido de un número de cuatro dígitos donde el primero indica la generación (9 para 9ª generación) y los tres restantes el modelo específico.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Core"
-  },
-  {
-    "id": 244,
-    "category": "Chipsets y CPU",
-    "question": "¿Qué tecnología de Hyper-Threading está presente en algunos procesadores Intel para mejorar el rendimiento al permitir que cada núcleo ejecute dos hilos de instrucciones simultáneamente?",
-    "options": [
-      "Turbo Boost.",
-      "Quick Sync.",
-      "Hyper-Threading.",
-      "Multi-Core Enhancement."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Hyper-Threading.\". Hyper-Threading es una tecnología de Intel que permite a cada núcleo físico procesar dos hilos de ejecución simultáneamente, mejorando el rendimiento en tareas multitarea.",
-    "source": "https://es.wikipedia.org/wiki/Hyper-Threading"
-  },
-  {
-    "id": 245,
-    "category": "Chipsets y CPU",
-    "question": "En la nomenclatura de los procesadores Intel Core i7, ¿qué indica la presencia de la letra \"K\" al final del número del modelo?",
-    "options": [
-      "Procesador de sobremesa.",
-      "Procesador con gráficos Iris.",
-      "Procesador desbloqueado para overclocking.",
-      "Procesador de baja potencia."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Procesador desbloqueado para overclocking.\". La letra \"K\" en los procesadores Intel indica que el multiplicador está desbloqueado, permitiendo al usuario aumentar la frecuencia del procesador mediante overclocking.",
-    "source": "https://es.wikipedia.org/wiki/Overclocking"
-  },
-  {
-    "id": 246,
-    "category": "Tarjetas de Expansión",
-    "question": "¿Cuál de las siguientes opciones describe mejor la familia de procesadores Intel Core i5?",
-    "options": [
-      "Enfocada en entusiastas y rendimiento extremo.",
-      "Diseñada para usuarios de nivel básico y tareas cotidianas.",
-      "Ofrece un equilibrio entre rendimiento y eficiencia energética.",
-      "Orientada a estaciones de trabajo y servidores."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Ofrece un equilibrio entre rendimiento y eficiencia energética.\". La familia Core i5 es la gama media de procesadores Intel, que ofrece un buen equilibrio entre rendimiento y precio para la mayoría de los usuarios.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Core_i5"
-  },
-  {
-    "id": 247,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál de las siguientes tecnologías Intel permite la ejecución de múltiples hilos de instrucciones en cada núcleo físico del procesador?",
-    "options": [
-      "Hyper-Threading.",
-      "Turbo Boost.",
-      "Quick Sync.",
-      "Multi-Core Enhancement."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Hyper-Threading.\". Hyper-Threading es una tecnología de Intel que permite a cada núcleo físico procesar dos hilos de ejecución simultáneamente, mejorando el rendimiento en tareas multitarea.",
-    "source": "https://es.wikipedia.org/wiki/Hyper-Threading"
-  },
-  {
-    "id": 248,
-    "category": "Chipsets y CPU",
-    "question": "En la nomenclatura de procesadores Intel, ¿qué significa la letra \"H\" al final del número del modelo?",
-    "options": [
-      "Procesador de sobremesa.",
-      "Procesador de alta potencia.",
-      "Procesador sin gráficos integrados.",
-      "Procesador de bajo rendimiento."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Procesador de alta potencia.\". La letra \"H\" en los procesadores Intel indica modelos de alto rendimiento (High performance) generalmente para sistemas de escritorio.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Core"
-  },
-  {
-    "id": 249,
-    "category": "Tarjetas de Expansión",
-    "question": "¿Cuál de las siguientes opciones describe mejor la familia de procesadores Intel Core i9?",
-    "options": [
-      "Diseñada para usuarios de nivel básico y tareas cotidianas.",
-      "Enfocada en entusiastas y rendimiento extremo.",
-      "Ofrece un equilibrio entre rendimiento y eficiencia energética.",
-      "Orientada a estaciones de trabajo y servidores."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Enfocada en entusiastas y rendimiento extremo.\". La familia Core i9 es la gama más alta de procesadores de Intel para consumidores, dirigida a entusiastas y profesionales que necesitan el máximo rendimiento.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Core_i9"
-  },
-  {
-    "id": 250,
-    "category": "Conectores de Video",
-    "question": "¿Cuál de las siguientes tecnologías Intel permite acelerar la codificación y decodificación de video, mejorando el rendimiento en tareas multimedia?",
-    "options": [
-      "Quick Sync.",
-      "Turbo Boost.",
-      "Hyper-Threading.",
-      "Iris Graphics."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Quick Sync.\". Intel Quick Sync Video es una tecnología de hardware dedicada que acelera la codificación y decodificación de video, mejorando significativamente el rendimiento en tareas multimedia.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Quick_Sync_Video"
-  },
-  {
-    "id": 251,
-    "category": "Chipsets y CPU",
-    "question": "En la nomenclatura de los procesadores Intel Core i7, ¿qué indica la presencia de la letra \"U\" al final del número del modelo?",
-    "options": [
-      "Procesador de sobremesa.",
-      "Procesador ultrabaja potencia.",
-      "Procesador de baja potencia.",
-      "Procesador con gráficos Iris."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Procesador de baja potencia.\". La letra \"U\" en los procesadores Intel indica que son modelos de ultra bajo consumo (Ultra-low power), diseñados para portátiles delgados y dispositivos móviles.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Core"
-  },
-  {
-    "id": 252,
-    "category": "Chipsets y CPU",
-    "question": "¿Qué tecnología Intel permite a los procesadores integrar gráficos de alta calidad directamente en el mismo chip que la CPU?",
-    "options": [
-      "Quick Sync.",
-      "Turbo Boost.",
-      "Hyper-Threading.",
-      "Iris Graphics."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Iris Graphics.\". Intel Iris Graphics es la marca de los gráficos integrados de alta calidad de Intel, que se encuentran en el mismo die que la CPU en algunos procesadores.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Iris_Graphics"
-  },
-  {
-    "id": 253,
-    "category": "Tarjetas de Expansión",
-    "question": "¿Cuál de las siguientes opciones describe mejor la familia de procesadores Intel Core i5?",
-    "options": [
-      "Enfocada en entusiastas y rendimiento extremo.",
-      "Diseñada para usuarios de nivel básico y tareas cotidianas.",
-      "Ofrece un equilibrio entre rendimiento y eficiencia energética.",
-      "Orientada a estaciones de trabajo y servidores."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Ofrece un equilibrio entre rendimiento y eficiencia energética.\". La familia Core i5 es la gama media de procesadores Intel, que ofrece un buen equilibrio entre rendimiento y precio para la mayoría de los usuarios.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Core_i5"
-  },
-  {
-    "id": 254,
-    "category": "Conectores de Video",
-    "question": "¿Cuál de las siguientes tecnologías Intel permite acelerar la codificación y decodificación de video, mejorando el rendimiento en tareas multimedia?",
-    "options": [
-      "Quick Sync.",
-      "Turbo Boost.",
-      "Hyper-Threading.",
-      "Iris Graphics."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Quick Sync.\". Intel Quick Sync Video es una tecnología de hardware dedicada que acelera la codificación y decodificación de video, mejorando significativamente el rendimiento en tareas multimedia.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Quick_Sync_Video"
-  },
-  {
-    "id": 255,
-    "category": "Chipsets y CPU",
-    "question": "En la nomenclatura de los procesadores Intel Core i7, ¿qué indica la presencia de la letra \"K\" al final del número del modelo?",
-    "options": [
-      "Procesador de sobremesa.",
-      "Procesador con gráficos Iris.",
-      "Procesador desbloqueado para overclocking.",
-      "Procesador de baja potencia."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Procesador desbloqueado para overclocking.\". La letra \"K\" en los procesadores Intel indica que el multiplicador está desbloqueado, permitiendo al usuario aumentar la frecuencia del procesador mediante overclocking.",
-    "source": "https://es.wikipedia.org/wiki/Overclocking"
-  },
-  {
-    "id": 256,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es el propósito principal de la tecnología Intel Turbo Boost?",
-    "options": [
-      "Mejorar la eficiencia energética del procesador.",
-      "Aumentar la frecuencia del reloj del procesador cuando sea necesario.",
-      "Optimizar el rendimiento de la memoria caché.",
-      "Controlar la temperatura del procesador."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Aumentar la frecuencia del reloj del procesador cuando sea necesario.\". Turbo Boost es una tecnología que aumenta automáticamente la frecuencia del procesador por encima de su velocidad base cuando las condiciones térmicas y de energía lo permiten.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Turbo_Boost"
-  },
-  {
-    "id": 257,
-    "category": "Chipsets y CPU",
-    "question": "En la nomenclatura de procesadores Intel, ¿qué significa la letra \"F\" al final del número del modelo?",
-    "options": [
-      "Procesador con gráficos integrados.",
-      "Procesador de bajo consumo.",
-      "Procesador sin gráficos integrados.",
-      "Procesador de bajo rendimiento."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Procesador sin gráficos integrados.\". La letra \"F\" en los procesadores Intel indica que el modelo no tiene gráficos integrados y requiere una tarjeta gráfica dedicada.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Core"
-  },
-  {
-    "id": 258,
-    "category": "Tarjetas de Expansión",
-    "question": "¿Cuál de las siguientes opciones describe mejor la familia de procesadores Intel Core i3?",
-    "options": [
-      "Enfocada en entusiastas y rendimiento extremo.",
-      "Diseñada para usuarios de nivel básico y tareas cotidianas.",
-      "Ofrece un equilibrio entre rendimiento y eficiencia energética.",
-      "Orientada a estaciones de trabajo y servidores."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Diseñada para usuarios de nivel básico y tareas cotidianas.\". La familia Core i3 es la gama de entrada de procesadores Intel, diseñada para usuarios básicos y tareas cotidianas como navegación web, ofimática y multimedia ligera.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Core_i3"
-  },
-  {
-    "id": 259,
-    "category": "Chipsets y CPU",
-    "question": "En la nomenclatura de procesadores Intel, ¿qué significa la letra \"H\" al final del número del modelo?",
-    "options": [
-      "Procesador de sobremesa.",
-      "Procesador de alta potencia.",
-      "Procesador sin gráficos integrados.",
-      "Procesador de bajo rendimiento."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Procesador de alta potencia.\". La letra \"H\" en los procesadores Intel indica modelos de alto rendimiento (High performance) generalmente para sistemas de escritorio.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Core"
-  },
-  {
-    "id": 260,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es la nomenclatura típica de los procesadores Intel de la serie Core i3 de novena generación?",
-    "options": [
-      "i3-3XXX.",
-      "i3-5XXX.",
-      "i3-7XXX.",
-      "i3-9XXX."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"i3-9XXX.\". La nomenclatura de Intel incluye el prefijo (i3), seguido de un número de cuatro dígitos donde el primero indica la generación (9 para 9ª generación) y los tres restantes el modelo específico.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Core"
-  },
-  {
-    "id": 261,
-    "category": "Chipsets y CPU",
-    "question": "¿Qué tecnología de Hyper-Threading está presente en algunos procesadores Intel para mejorar el rendimiento al permitir que cada núcleo ejecute dos hilos de instrucciones simultáneamente?",
-    "options": [
-      "Turbo Boost.",
-      "Quick Sync.",
-      "Hyper-Threading.",
-      "Multi-Core Enhancement."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Hyper-Threading.\". Hyper-Threading es una tecnología de Intel que permite a cada núcleo físico procesar dos hilos de ejecución simultáneamente, mejorando el rendimiento en tareas multitarea.",
-    "source": "https://es.wikipedia.org/wiki/Hyper-Threading"
-  },
-  {
-    "id": 262,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál de las siguientes familias de procesadores AMD está diseñada para ofrecer un alto rendimiento en tareas de escritorio y multimedia, con núcleos de CPU y GPU integrados?",
-    "options": [
-      "Ryzen Threadripper.",
-      "Ryzen 9.",
-      "Ryzen 5.",
-      "Ryzen G."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Ryzen G.\". La serie Ryzen G de AMD incluye procesadores con gráficos integrados (GPU), diseñados para ofrecer un buen rendimiento en tareas de escritorio y multimedia sin necesidad de una tarjeta gráfica dedicada.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 263,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es la nomenclatura utilizada para los procesadores AMD Ryzen de tercera generación?",
-    "options": [
-      "Ryzen 1000.",
-      "Ryzen 2000.",
-      "Ryzen 3000.",
-      "Ryzen 4000."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Ryzen 3000.\". Los procesadores AMD Ryzen de tercera generación utilizan la nomenclatura Ryzen 3000, basados en la arquitectura Zen 2.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 264,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál de las siguientes características se asocia comúnmente con los procesadores AMD Ryzen con la letra \"G\" al final de su nombre?",
-    "options": [
-      "Núcleos de GPU integrados.",
-      "Arquitectura de 64 bits.",
-      "Tecnología de overclocking.",
-      "Núcleos de GPU dedicados."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Núcleos de GPU integrados.\". La letra \"G\" en los procesadores AMD Ryzen indica que el modelo incluye gráficos integrados (GPU) en el mismo paquete.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 265,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es el nombre de la arquitectura de procesadores AMD que sucedió a la arquitectura Bulldozer?",
-    "options": [
-      "Ryzen.",
-      "Piledriver.",
-      "Zen.",
-      "Excavator."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Zen.\". La arquitectura Zen de AMD es la que sucedió a Bulldozer, introduciendo mejoras significativas en IPC (instrucciones por ciclo) y eficiencia energética.",
-    "source": "https://es.wikipedia.org/wiki/Zen_(microarquitectura)"
-  },
-  {
-    "id": 266,
-    "category": "Chipsets y CPU",
-    "question": "¿Qué serie de procesadores AMD está orientada principalmente a entornos de servidores y estaciones de trabajo de alto rendimiento?",
-    "options": [
-      "Ryzen.",
-      "EPYC.",
-      "Athlon.",
-      "A-Series."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"EPYC.\". La serie EPYC de AMD está diseñada específicamente para servidores y estaciones de trabajo de alto rendimiento, ofreciendo hasta 64 núcleos y 128 hilos.",
-    "source": "https://es.wikipedia.org/wiki/AMD_EPYC"
-  },
-  {
-    "id": 267,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es la nomenclatura utilizada para los procesadores AMD de la serie de alto rendimiento para escritorio que cuenta con hasta 16 núcleos y 32 hilos?",
-    "options": [
-      "Ryzen 7.",
-      "Ryzen 9.",
-      "Ryzen Threadripper.",
-      "Athlon."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Ryzen Threadripper.\". La serie Ryzen Threadripper de AMD está diseñada para entusiastas y profesionales que necesitan el máximo rendimiento en escritorio, con hasta 64 núcleos y 128 hilos en los modelos más recientes.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen_Threadripper"
-  },
-  {
-    "id": 268,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es la principal ventaja de la arquitectura Zen de AMD en términos de rendimiento y eficiencia energética?",
-    "options": [
-      "Núcleos de GPU integrados.",
-      "Mayor frecuencia de reloj.",
-      "Mayor cantidad de núcleos por procesador.",
-      "Mejora en la IPC (instrucciones por ciclo)."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Mejora en la IPC (instrucciones por ciclo).\". La arquitectura Zen de AMD introdujo mejoras significativas en IPC, lo que significa que puede ejecutar más instrucciones por ciclo de reloj, resultando en un mejor rendimiento general.",
-    "source": "https://es.wikipedia.org/wiki/Zen_(microarquitectura)"
-  },
-  {
-    "id": 269,
-    "category": "Tarjetas de Expansión",
-    "question": "¿Cuál de las siguientes opciones describe mejor la nomenclatura de los procesadores AMD Ryzen con gráficos integrados?",
-    "options": [
-      "Ryzen X.",
-      "Ryzen G.",
-      "Ryzen Pro.",
-      "Ryzen XT."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Ryzen X.\". La letra \"X\" en los procesadores AMD Ryzen indica modelos de alto rendimiento con mayor frecuencia de reloj base y capacidades de overclocking mejoradas.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 270,
-    "category": "Chipsets y CPU",
-    "question": "¿Qué serie de procesadores AMD está dirigida principalmente a usuarios que buscan un rendimiento equilibrado para tareas cotidianas y juegos?",
-    "options": [
-      "Ryzen Threadripper.",
-      "Ryzen 9.",
-      "Ryzen 5.",
-      "Athlon."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Ryzen 5.\". La serie Ryzen 5 de AMD ofrece un buen equilibrio entre rendimiento y precio, siendo ideal para la mayoría de usuarios que realizan tareas cotidianas y juegos.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen_5"
-  },
-  {
-    "id": 271,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es la nomenclatura utilizada para los procesadores AMD Ryzen de segunda generación?",
-    "options": [
-      "Ryzen 1000.",
-      "Ryzen 2000.",
-      "Ryzen 3000.",
-      "Ryzen 4000."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Ryzen 2000.\". Los procesadores AMD Ryzen de segunda generación utilizan la nomenclatura Ryzen 2000, basados en la arquitectura Zen+.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 272,
-    "category": "Chipsets y CPU",
-    "question": "¿Qué serie de procesadores AMD se enfoca en ofrecer un rendimiento eficiente y equilibrado para dispositivos móviles y computadoras portátiles?",
-    "options": [
-      "Ryzen 9.",
-      "Ryzen 5.",
-      "Ryzen 7.",
-      "Ryzen U-Series."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Ryzen U-Series.\". La serie Ryzen U-Series de AMD está diseñada para portátiles y dispositivos móviles, ofreciendo un buen equilibrio entre rendimiento y eficiencia energética.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 273,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál de las siguientes características se asocia comúnmente con los procesadores AMD Ryzen con la letra \"X\" al final de su nombre?",
-    "options": [
-      "Núcleos de GPU integrados.",
-      "Mayor frecuencia de reloj y capacidad de overclocking.",
-      "Tecnología de bajo consumo de energía.",
-      "Núcleos de GPU dedicados."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Mayor frecuencia de reloj y capacidad de overclocking.\". La letra \"X\" en los procesadores AMD Ryzen indica modelos de alto rendimiento con mayor frecuencia de reloj base y capacidades de overclocking mejoradas.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 274,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es la nomenclatura utilizada para los procesadores AMD Ryzen de cuarta generación?",
-    "options": [
-      "Ryzen 1000.",
-      "Ryzen 2000.",
-      "Ryzen 3000.",
-      "Ryzen 4000."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Ryzen 4000.\". Los procesadores AMD Ryzen de cuarta generación utilizan la nomenclatura Ryzen 4000, basados en la arquitectura Zen 2.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 275,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál de las siguientes características se asocia comúnmente con los procesadores AMD Ryzen de la serie \"U\"?",
-    "options": [
-      "Mayor cantidad de núcleos.",
-      "Diseñados para sistemas de escritorio.",
-      "Mayor frecuencia de reloj.",
-      "Orientados a dispositivos móviles y portátiles."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Orientados a dispositivos móviles y portátiles.\". La serie \"U\" de los procesadores AMD Ryzen está diseñada específicamente para portátiles y dispositivos móviles.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 276,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es la serie de procesadores AMD destinada principalmente a usuarios que buscan un rendimiento básico para tareas cotidianas y multimedia?",
-    "options": [
-      "Ryzen Threadripper.",
-      "Ryzen 9.",
-      "Ryzen 3.",
-      "Athlon."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Ryzen 3.\". La serie Ryzen 3 de AMD es la gama de entrada, diseñada para usuarios que buscan un rendimiento básico para tareas cotidianas y multimedia.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen_3"
-  },
-  {
-    "id": 277,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es la nomenclatura utilizada para los procesadores AMD Ryzen de quinta generación?",
-    "options": [
-      "Ryzen 1000.",
-      "Ryzen 2000.",
-      "Ryzen 3000.",
-      "Ryzen 5000."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Ryzen 5000.\". Los procesadores AMD Ryzen de quinta generación utilizan la nomenclatura Ryzen 5000, basados en la arquitectura Zen 3.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 278,
-    "category": "Chipsets y CPU",
-    "question": "¿Qué serie de procesadores AMD se enfoca en ofrecer un rendimiento eficiente y equilibrado para dispositivos móviles y computadoras portátiles?",
-    "options": [
-      "Ryzen 9.",
-      "Ryzen 5.",
-      "Ryzen 7.",
-      "Ryzen U-Series."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Ryzen U-Series.\". La serie Ryzen U-Series de AMD está diseñada para portátiles y dispositivos móviles, ofreciendo un buen equilibrio entre rendimiento y eficiencia energética.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 279,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es la principal ventaja de la arquitectura Zen de AMD en términos de rendimiento y eficiencia energética?",
-    "options": [
-      "Núcleos de GPU integrados.",
-      "Mayor frecuencia de reloj.",
-      "Mayor cantidad de núcleos por procesador.",
-      "Mejora en la IPC (instrucciones por ciclo)."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Mejora en la IPC (instrucciones por ciclo).\". La arquitectura Zen de AMD introdujo mejoras significativas en IPC, lo que significa que puede ejecutar más instrucciones por ciclo de reloj, resultando en un mejor rendimiento general.",
-    "source": "https://es.wikipedia.org/wiki/Zen_(microarquitectura)"
-  },
-  {
-    "id": 280,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es la serie de procesadores AMD destinada principalmente a usuarios que buscan un rendimiento básico para tareas cotidianas y multimedia?",
-    "options": [
-      "Ryzen Threadripper.",
-      "Ryzen 9.",
-      "Ryzen 3.",
-      "Athlon."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Ryzen 3.\". La serie Ryzen 3 de AMD es la gama de entrada, diseñada para usuarios que buscan un rendimiento básico para tareas cotidianas y multimedia.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen_3"
-  },
-  {
-    "id": 281,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es la nomenclatura utilizada para los procesadores AMD Ryzen de cuarta generación?",
-    "options": [
-      "Ryzen 1000.",
-      "Ryzen 2000.",
-      "Ryzen 3000.",
-      "Ryzen 4000."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Ryzen 4000.\". Los procesadores AMD Ryzen de cuarta generación utilizan la nomenclatura Ryzen 4000, basados en la arquitectura Zen 2.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 282,
-    "category": "Chipsets y CPU",
-    "question": "¿Qué serie de procesadores AMD está dirigida principalmente a usuarios que buscan un rendimiento equilibrado para tareas cotidianas y juegos?",
-    "options": [
-      "Ryzen Threadripper.",
-      "Ryzen 9.",
-      "Ryzen 5.",
-      "Athlon."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Ryzen 5.\". La serie Ryzen 5 de AMD ofrece un buen equilibrio entre rendimiento y precio, siendo ideal para la mayoría de usuarios que realizan tareas cotidianas y juegos.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen_5"
-  },
-  {
-    "id": 283,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es la nomenclatura utilizada para los procesadores AMD Ryzen de tercera generación?",
-    "options": [
-      "Ryzen 1000.",
-      "Ryzen 2000.",
-      "Ryzen 3000.",
-      "Ryzen 4000."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Ryzen 3000.\". Los procesadores AMD Ryzen de tercera generación utilizan la nomenclatura Ryzen 3000, basados en la arquitectura Zen 2.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 284,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál de las siguientes características se asocia comúnmente con los procesadores AMD Ryzen de la serie \"U\"?",
-    "options": [
-      "Mayor cantidad de núcleos.",
-      "Diseñados para sistemas de escritorio.",
-      "Mayor frecuencia de reloj.",
-      "Orientados a dispositivos móviles y portátiles."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Orientados a dispositivos móviles y portátiles.\". La serie \"U\" de los procesadores AMD Ryzen está diseñada específicamente para portátiles y dispositivos móviles.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 285,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es la nomenclatura utilizada para los procesadores AMD Ryzen de quinta generación?",
-    "options": [
-      "Ryzen 1000.",
-      "Ryzen 2000.",
-      "Ryzen 3000.",
-      "Ryzen 5000."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Ryzen 5000.\". Los procesadores AMD Ryzen de quinta generación utilizan la nomenclatura Ryzen 5000, basados en la arquitectura Zen 3.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 286,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál de las siguientes familias de procesadores AMD está diseñada para ofrecer un alto rendimiento en tareas de escritorio y multimedia, con núcleos de CPU y GPU integrados?",
-    "options": [
-      "Ryzen Threadripper.",
-      "Ryzen 9.",
-      "Ryzen 5.",
-      "Ryzen G."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Ryzen G.\". La serie Ryzen G de AMD incluye procesadores con gráficos integrados (GPU), diseñados para ofrecer un buen rendimiento en tareas de escritorio y multimedia sin necesidad de una tarjeta gráfica dedicada.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 287,
-    "category": "Tarjetas de Expansión",
-    "question": "¿Cuál de las siguientes opciones describe mejor la nomenclatura de los procesadores AMD Ryzen con gráficos integrados?",
-    "options": [
-      "Ryzen X.",
-      "Ryzen G.",
-      "Ryzen Pro.",
-      "Ryzen XT."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Ryzen X.\". La letra \"X\" en los procesadores AMD Ryzen indica modelos de alto rendimiento con mayor frecuencia de reloj base y capacidades de overclocking mejoradas.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 288,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es la nomenclatura utilizada para los procesadores AMD Ryzen de segunda generación?",
-    "options": [
-      "Ryzen 1000.",
-      "Ryzen 2000.",
-      "Ryzen 3000.",
-      "Ryzen 4000."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Ryzen 2000.\". Los procesadores AMD Ryzen de segunda generación utilizan la nomenclatura Ryzen 2000, basados en la arquitectura Zen+.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 289,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es el nombre de la arquitectura de procesadores AMD que sucedió a la arquitectura Bulldozer?",
-    "options": [
-      "Ryzen.",
-      "Piledriver.",
-      "Zen.",
-      "Excavator."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Zen.\". La arquitectura Zen de AMD es la que sucedió a Bulldozer, introduciendo mejoras significativas en IPC (instrucciones por ciclo) y eficiencia energética.",
-    "source": "https://es.wikipedia.org/wiki/Zen_(microarquitectura)"
-  },
-  {
-    "id": 290,
-    "category": "Tarjetas de Expansión",
-    "question": "¿Cuál de las siguientes opciones describe mejor la nomenclatura de los procesadores AMD Ryzen con gráficos integrados?",
-    "options": [
-      "Ryzen X.",
-      "Ryzen G.",
-      "Ryzen Pro.",
-      "Ryzen XT."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Ryzen X.\". La letra \"X\" en los procesadores AMD Ryzen indica modelos de alto rendimiento con mayor frecuencia de reloj base y capacidades de overclocking mejoradas.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 291,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál de las siguientes características se asocia comúnmente con los procesadores AMD Ryzen de la serie \"X\"?",
-    "options": [
-      "Mayor cantidad de núcleos.",
-      "Mayor frecuencia de reloj y capacidad de overclocking.",
-      "Tecnología de bajo consumo de energía.",
-      "Orientados a dispositivos móviles y portátiles."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Mayor frecuencia de reloj y capacidad de overclocking.\". La letra \"X\" en los procesadores AMD Ryzen indica modelos de alto rendimiento con mayor frecuencia de reloj base y capacidades de overclocking mejoradas.",
-    "source": "https://es.wikipedia.org/wiki/Ryzen"
-  },
-  {
-    "id": 292,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función principal de una fuente de alimentación ATX en un sistema de computadora?",
-    "options": [
-      "Gestionar la comunicación entre la CPU y los periféricos.",
-      "Suministrar energía eléctrica estable a todos los componentes del sistema.",
-      "Controlar las operaciones de entrada/salida (I/O).",
-      "Proporcionar refrigeración activa a la CPU."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Suministrar energía eléctrica estable a todos los componentes del sistema.\". La función principal de una fuente de alimentación ATX es convertir la corriente alterna de la red eléctrica en los diferentes voltajes de corriente continua necesarios para alimentar todos los componentes del sistema.",
-    "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentación"
-  },
-  {
-    "id": 293,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuántos voltajes principales suministra una fuente de alimentación ATX estándar?",
-    "options": [
-      "1.",
-      "3.",
-      "5.",
-      "7."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"3.\". Una fuente de alimentación ATX estándar suministra tres voltajes principales: +3.3V, +5V y +12V, aunque el +12V es el más importante para componentes de alto consumo como la CPU y la GPU.",
-    "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentación"
-  },
-  {
-    "id": 294,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es el voltaje estándar suministrado por el riel de +12V en una fuente de alimentación ATX?",
-    "options": [
-      "3V.",
-      "5V.",
-      "9V.",
-      "12V."
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"12V.\". El riel de +12V es el voltaje estándar suministrado por una fuente de alimentación ATX, utilizado para alimentar componentes de alto consumo como la CPU y la tarjeta gráfica.",
-    "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentación"
-  },
-  {
-    "id": 295,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función del conector de alimentación de la CPU en una fuente de alimentación ATX?",
-    "options": [
-      "Suministrar energía a la tarjeta madre.",
-      "Proporcionar energía a la tarjeta de video.",
-      "Alimentar directamente la CPU.",
-      "Gestionar la conexión a dispositivos de almacenamiento."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Proporcionar energía a la tarjeta de video.\". El conector de alimentación de la CPU (también conocido como conector EPS o ATX 12V) proporciona energía adicional directamente a la CPU, complementando la energía suministrada a través del conector principal de la placa base.",
-    "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentación"
-  },
-  {
-    "id": 296,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la utilidad de los cables modulares en una fuente de alimentación ATX?",
-    "options": [
-      "Proporcionar refrigeración adicional al sistema.",
-      "Facilitar la gestión del cableado y permitir una apariencia más limpia.",
-      "Mejorar la eficiencia de la fuente de alimentación.",
-      "Conectar periféricos externos al sistema."
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Facilitar la gestión del cableado y permitir una apariencia más limpia.\". Las fuentes de alimentación modulares permiten desconectar los cables que no se utilizan, mejorando el flujo de aire dentro del chasis y facilitando el montaje y la organización de los cables.",
-    "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentación"
-  },
-  {
-    "id": 297,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuántos pines tiene típicamente el conector principal de alimentación de la tarjeta madre en una fuente de alimentación ATX?",
-    "options": [
-      "16.",
-      "20.",
-      "24.",
-      "30."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"24.\". El conector principal de alimentación de la tarjeta madre (conector ATX de 24 pines) es el estándar actual, aunque anteriormente existió una versión de 20 pines.",
-    "source": "https://es.wikipedia.org/wiki/ATX"
-  },
-  {
-    "id": 298,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la función de los rieles de voltaje en una fuente de alimentación ATX?",
-    "options": [
-      "Gestionar la potencia total suministrada por la fuente.",
-      "Controlar la velocidad del ventilador de la fuente de alimentación.",
-      "Proporcionar voltajes específicos a diferentes componentes del sistema.",
-      "Regular la eficiencia energética de la fuente."
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Proporcionar voltajes específicos a diferentes componentes del sistema.\". Los rieles de voltaje en una fuente de alimentación ATX suministran voltajes específicos (+3.3V, +5V, +12V, -12V, +5VSB) a diferentes componentes del sistema según sus necesidades.",
-    "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentación"
-  },
-  {
-    "id": 299,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál de los siguientes colores es comúnmente asociado con el riel de +5V en los cables de una fuente de alimentación ATX?",
-    "options": [
-      "Rojo.",
-      "Amarillo.",
-      "Azul.",
-      "Verde."
-    ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Rojo.\". En los cables de una fuente de alimentación ATX, el color rojo se asocia comúnmente con el riel de +5V.",
-    "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentación"
-  },
-{
-  "id": 300,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál es el propósito de la certificación de eficiencia energética en una fuente de alimentación ATX?",
-  "options": [
-    "Determinar la cantidad máxima de energía que puede suministrar.",
-    "Indicar la calidad de los materiales utilizados en la fuente.",
-    "Evaluar qué tan bien convierte la energía de la red eléctrica en energía utilizable.",
-    "Controlar la velocidad del ventilador de la fuente de alimentación."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Evaluar qué tan bien convierte la energía de la red eléctrica en energía utilizable.\". Las certificaciones como 80 Plus evalúan la eficiencia energética de las fuentes de alimentación.",
-  "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentaci%C3%B3n"
-},
-{
-  "id": 301,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál es la función del ventilador en una fuente de alimentación ATX?",
-  "options": [
-    "Enfriar la CPU.",
-    "Regular la temperatura del sistema.",
-    "Evitar cortocircuitos en la tarjeta madre.",
-    "Mantener la fuente de alimentación a una temperatura segura."
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Mantener la fuente de alimentación a una temperatura segura.\". El ventilador de la fuente de alimentación está diseñado específicamente para refrigerar los componentes internos de la fuente.",
-  "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentaci%C3%B3n"
-},
-{
-  "id": 302,
-  "category": "Conectores de Placa Base",
-  "question": "¿Qué significa la sigla \"ATX\" en el contexto de las fuentes de alimentación?",
-  "options": [
-    "Advanced Technology eXtended.",
-    "Automatic Thermal eXchange.",
-    "All-in-One eXperience.",
-    "Advanced Thermal eXhaust."
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Advanced Technology eXtended.\". ATX es un factor de forma y especificación para placas base, fuentes de alimentación y chasis de PC.",
-  "source": "https://es.wikipedia.org/wiki/ATX"
-},
-{
-  "id": 303,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál es la función del riel de +3.3V en una fuente de alimentación ATX?",
-  "options": [
-    "Suministrar energía a la CPU.",
-    "Proporcionar voltaje a la memoria RAM y otros componentes.",
-    "Alimentar la tarjeta de video.",
-    "Controlar la velocidad del ventilador."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Proporcionar voltaje a la memoria RAM y otros componentes.\". El riel de +3.3V se utiliza principalmente para alimentar la memoria RAM y algunos circuitos de la placa base.",
-  "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentaci%C3%B3n"
-},
-{
-  "id": 304,
-  "category": "Fuentes de Alimentación",
-  "question": "¿Cuál de las siguientes afirmaciones es verdadera sobre la eficiencia energética de una fuente de alimentación certificada?",
-  "options": [
-    "Cuanto mayor sea la eficiencia, más energía se pierde en forma de calor.",
-    "La certificación de eficiencia no afecta la cantidad de energía que la fuente de alimentación puede suministrar.",
-    "Una fuente de alimentación con mayor eficiencia convierte más eficazmente la energía de la red eléctrica en energía utilizable.",
-    "Las fuentes de alimentación no pueden ser certificadas en eficiencia."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Una fuente de alimentación con mayor eficiencia convierte más eficazmente la energía de la red eléctrica en energía utilizable.\". Una mayor eficiencia significa menos energía desperdiciada en forma de calor.",
-  "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentaci%C3%B3n"
-},
-{
-  "id": 305,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál de los siguientes colores es comúnmente asociado con el riel de +12V en los cables de una fuente de alimentación ATX?",
-  "options": [
-    "Rojo.",
-    "Amarillo.",
-    "Azul.",
-    "Verde."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Amarillo.\". En el estándar de cables de fuentes de alimentación ATX, el color amarillo corresponde al riel de +12V.",
-  "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentaci%C3%B3n"
-},
-{
-  "id": 306,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál es el propósito de los conectores SATA en una fuente de alimentación ATX?",
-  "options": [
-    "Alimentar la CPU.",
-    "Conectar dispositivos de almacenamiento como discos duros y unidades SSD.",
-    "Suministrar energía a la tarjeta madre.",
-    "Proporcionar voltaje a la tarjeta de video."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Conectar dispositivos de almacenamiento como discos duros y unidades SSD.\". Los conectores SATA de la fuente de alimentación proporcionan energía a dispositivos de almacenamiento modernos.",
-  "source": "https://es.wikipedia.org/wiki/Serial_ATA"
-},
-{
-  "id": 307,
-  "category": "Conectores de Placa Base",
-  "question": "¿Qué significa la sigla \"ATX\" en el contexto de las fuentes de alimentación?",
-  "options": [
-    "Advanced Technology eXtended.",
-    "Automatic Thermal eXchange.",
-    "All-in-One eXperience.",
-    "Advanced Thermal eXhaust."
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Advanced Technology eXtended.\". ATX es un factor de forma y especificación para placas base, fuentes de alimentación y chasis de PC.",
-  "source": "https://es.wikipedia.org/wiki/ATX"
-},
-{
-  "id": 308,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál es la función del conector EPS (ATX12V) en una fuente de alimentación ATX?",
-  "options": [
-    "Alimentar la tarjeta madre.",
-    "Proporcionar energía a la unidad de procesamiento gráfico (GPU).",
-    "Suministrar voltaje a la unidad de disco óptico.",
-    "Alimentar la CPU, especialmente en sistemas de alto rendimiento."
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Alimentar la CPU, especialmente en sistemas de alto rendimiento.\". El conector EPS (o ATX12V) proporciona energía adicional directamente a la CPU.",
-  "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentaci%C3%B3n"
-},
-{
-  "id": 309,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuántos pines tiene típicamente el conector principal de alimentación de la tarjeta madre en una fuente de alimentación ATX?",
-  "options": [
-    "16.",
-    "20.",
-    "24.",
-    "30."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"24.\". Las fuentes de alimentación ATX modernas utilizan un conector principal de 24 pines para alimentar la tarjeta madre.",
-  "source": "https://es.wikipedia.org/wiki/ATX"
-},
-{
-  "id": 310,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál es la función de los rieles de voltaje en una fuente de alimentación ATX?",
-  "options": [
-    "Gestionar la potencia total suministrada por la fuente.",
-    "Controlar la velocidad del ventilador de la fuente de alimentación.",
-    "Proporcionar voltajes específicos a diferentes componentes del sistema.",
-    "Regular la eficiencia energética de la fuente."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Proporcionar voltajes específicos a diferentes componentes del sistema.\". Los rieles de voltaje (+3.3V, +5V, +12V, -12V, +5VSB) suministran diferentes voltajes según las necesidades de cada componente.",
-  "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentaci%C3%B3n"
-},
-{
-  "id": 311,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál de los siguientes colores es comúnmente asociado con el riel de +3.3V en los cables de una fuente de alimentación ATX?",
-  "options": [
-    "Rojo.",
-    "Amarillo.",
-    "Azul.",
-    "Verde."
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Rojo.\". En el estándar de cables de fuentes de alimentación ATX, el color rojo corresponde al riel de +3.3V.",
-  "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentaci%C3%B3n"
-},
-{
-  "id": 312,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál es la función principal de una fuente de alimentación ATX en un sistema de computadora?",
-  "options": [
-    "Gestionar la comunicación entre la CPU y los periféricos.",
-    "Suministrar energía eléctrica estable a todos los componentes del sistema.",
-    "Controlar las operaciones de entrada/salida (I/O).",
-    "Proporcionar refrigeración activa a la CPU."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Suministrar energía eléctrica estable a todos los componentes del sistema.\". La función principal de la fuente de alimentación es convertir la corriente alterna de la red en corriente continua regulada para los componentes del PC.",
-  "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentaci%C3%B3n"
-},
-{
-  "id": 313,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuántos voltajes principales suministra una fuente de alimentación ATX estándar?",
-  "options": [
-    "1.",
-    "3.",
-    "5.",
-    "7."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"3.\". Una fuente de alimentación ATX estándar suministra principalmente tres voltajes positivos: +3.3V, +5V y +12V, además de voltajes negativos y de standby.",
-  "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentaci%C3%B3n"
-},
-{
-  "id": 314,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál es la utilidad de los cables modulares en una fuente de alimentación ATX?",
-  "options": [
-    "Proporcionar refrigeración adicional al sistema.",
-    "Facilitar la gestión del cableado y permitir una apariencia más limpia.",
-    "Mejorar la eficiencia de la fuente de alimentación.",
-    "Conectar periféricos externos al sistema."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Facilitar la gestión del cableado y permitir una apariencia más limpia.\". Las fuentes de alimentación modulares permiten conectar solo los cables necesarios, mejorando el flujo de aire y la estética del interior del PC.",
-  "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentaci%C3%B3n"
-},
-{
-  "id": 315,
-  "category": "Fuentes de Alimentación",
-  "question": "¿Cuál de las siguientes afirmaciones es verdadera sobre la eficiencia energética de una fuente de alimentación certificada?",
-  "options": [
-    "Cuanto mayor sea la eficiencia, más energía se pierde en forma de calor.",
-    "La certificación de eficiencia no afecta la cantidad de energía que la fuente de alimentación puede suministrar.",
-    "Una fuente de alimentación con mayor eficiencia convierte más eficazmente la energía de la red eléctrica en energía utilizable.",
-    "Las fuentes de alimentación no pueden ser certificadas en eficiencia."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Una fuente de alimentación con mayor eficiencia convierte más eficazmente la energía de la red eléctrica en energía utilizable.\". Una mayor eficiencia significa menos energía desperdiciada en forma de calor.",
-  "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentaci%C3%B3n"
-},
-{
-  "id": 316,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál es el voltaje estándar suministrado por el riel de +12V en una fuente de alimentación ATX?",
-  "options": [
-    "3V.",
-    "5V.",
-    "9V.",
-    "12V."
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"12V.\". El riel de +12V suministra, como su nombre indica, 12 voltios, que se utilizan principalmente para componentes de alto consumo como la CPU y la GPU.",
-  "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentaci%C3%B3n"
-},
-{
-  "id": 317,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál es la función del conector de alimentación de la CPU en una fuente de alimentación ATX?",
-  "options": [
-    "Suministrar energía a la tarjeta madre.",
-    "Proporcionar energía a la tarjeta de video.",
-    "Alimentar directamente la CPU.",
-    "Gestionar la conexión a dispositivos de almacenamiento."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Alimentar directamente la CPU.\". El conector de alimentación de la CPU (generalmente de 4+4 pines) proporciona energía adicional y estable directamente al procesador.",
-  "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentaci%C3%B3n"
-},
-{
-  "id": 318,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuántos pines tiene típicamente el conector principal de alimentación de la tarjeta madre en una fuente de alimentación ATX?",
-  "options": [
-    "16.",
-    "20.",
-    "24.",
-    "30."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"24.\". Las fuentes de alimentación ATX modernas utilizan un conector principal de 24 pines para alimentar la tarjeta madre.",
-  "source": "https://es.wikipedia.org/wiki/ATX"
-},
-{
-  "id": 319,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál de los siguientes colores es comúnmente asociado con el riel de +5V en los cables de una fuente de alimentación ATX?",
-  "options": [
-    "Rojo.",
-    "Amarillo.",
-    "Azul.",
-    "Verde."
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Rojo.\". En el estándar de cables de fuentes de alimentación ATX, el color rojo corresponde al riel de +5V.",
-  "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentaci%C3%B3n"
-},
-{
-  "id": 320,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál es el propósito de los conectores SATA en una fuente de alimentación ATX?",
-  "options": [
-    "Alimentar la CPU.",
-    "Conectar dispositivos de almacenamiento como discos duros y unidades SSD.",
-    "Suministrar energía a la tarjeta madre.",
-    "Proporcionar voltaje a la tarjeta de video."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Conectar dispositivos de almacenamiento como discos duros y unidades SSD.\". Los conectores SATA de la fuente de alimentación proporcionan energía a dispositivos de almacenamiento modernos.",
-  "source": "https://es.wikipedia.org/wiki/Serial_ATA"
-},
-{
-  "id": 321,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál es la función del ventilador en una fuente de alimentación ATX?",
-  "options": [
-    "Enfriar la CPU.",
-    "Regular la temperatura del sistema.",
-    "Evitar cortocircuitos en la tarjeta madre.",
-    "Mantener la fuente de alimentación a una temperatura segura."
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Mantener la fuente de alimentación a una temperatura segura.\". El ventilador de la fuente de alimentación está diseñado específicamente para refrigerar los componentes internos de la fuente.",
-  "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentaci%C3%B3n"
-},
-{
-  "id": 322,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor un disco duro?",
-  "options": [
-    "Utiliza memoria flash para almacenar datos de forma permanente.",
-    "Emplea discos magnéticos giratorios para el almacenamiento de datos.",
-    "Es una unidad de almacenamiento volátil utilizada principalmente para la memoria RAM.",
-    "Almacena datos de manera óptica mediante láser."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Emplea discos magnéticos giratorios para el almacenamiento de datos.\". Un disco duro tradicional (HDD) utiliza platos magnéticos giratorios y cabezales de lectura/escritura para almacenar y recuperar datos.",
-  "source": "https://es.wikipedia.org/wiki/Disco_duro"
-},
-{
-  "id": 323,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la función principal de una cadena SCSI (Small Computer System Interface)?",
-  "options": [
-    "Conectar dispositivos de almacenamiento a través de cables ópticos.",
-    "Proporcionar energía a los discos duros.",
-    "Facilitar la conexión de dispositivos de almacenamiento a la tarjeta madre.",
-    "Permitir la comunicación entre dispositivos de almacenamiento y la CPU."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Facilitar la conexión de dispositivos de almacenamiento a la tarjeta madre.\". SCSI es una interfaz estándar para conectar periféricos, principalmente dispositivos de almacenamiento, a una computadora.",
-  "source": "https://es.wikipedia.org/wiki/SCSI"
-},
-{
-  "id": 324,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuántos dispositivos IDE se pueden conectar típicamente a un controlador IDE en una cadena única?",
-  "options": [
-    "1.",
-    "2.",
-    "4.",
-    "8."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"2.\". Un controlador IDE (también conocido como PATA) puede conectar hasta dos dispositivos por canal, configurados como maestro y esclavo.",
-  "source": "https://es.wikipedia.org/wiki/ATA"
-},
-{
-  "id": 325,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál de las siguientes opciones describe mejor la interfaz SATA (Serial ATA)?",
-  "options": [
-    "Utiliza un conector de 40 pines para la conexión de dispositivos de almacenamiento.",
-    "Transmite datos en forma de paquetes a través de cables paralelos.",
-    "Utiliza un conector de 7 pines para la conexión de dispositivos de almacenamiento.",
-    "Es una interfaz obsoleta reemplazada por USB."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Utiliza un conector de 7 pines para la conexión de dispositivos de almacenamiento.\". SATA utiliza un cable de 7 pines para datos y un conector de 15 pines para alimentación.",
-  "source": "https://es.wikipedia.org/wiki/Serial_ATA"
-},
-{
-  "id": 326,
-  "category": "Almacenamiento",
-  "question": "¿Qué significa la sigla \"SSD\" en el contexto de almacenamiento de datos?",
-  "options": [
-    "Solid-State Drive.",
-    "Serial Storage Device.",
-    "Sequential System Disk.",
-    "Storage and System Drive."
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Solid-State Drive.\". SSD es el acrónimo de Solid-State Drive, un tipo de dispositivo de almacenamiento que utiliza memoria flash en lugar de componentes mecánicos.",
-  "source": "https://es.wikipedia.org/wiki/Unidad_de_estado_s%C3%B3lido"
-},
-{
-  "id": 327,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor un disco SSD (Solid-State Drive)?",
-  "options": [
-    "Utiliza discos magnéticos giratorios para el almacenamiento de datos.",
-    "Almacena datos de manera óptica mediante láser.",
-    "Utiliza memoria flash para el almacenamiento de datos de forma permanente.",
-    "Es una unidad de almacenamiento volátil utilizada principalmente para la memoria RAM."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Utiliza memoria flash para el almacenamiento de datos de forma permanente.\". Los SSD utilizan memoria flash no volátil para almacenar datos de forma permanente sin partes móviles.",
-  "source": "https://es.wikipedia.org/wiki/Unidad_de_estado_s%C3%B3lido"
-},
-{
-  "id": 328,
-  "category": "Almacenamiento",
-  "question": "¿Cuál es una ventaja comúnmente asociada con los discos SSD en comparación con los discos duros tradicionales?",
-  "options": [
-    "Mayor capacidad de almacenamiento.",
-    "Menor velocidad de lectura/escritura.",
-    "Mayor durabilidad y resistencia a impactos.",
-    "Menor costo por gigabyte."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Mayor durabilidad y resistencia a impactos.\". Los SSD no tienen partes móviles, lo que los hace más resistentes a golpes y vibraciones que los discos duros tradicionales.",
-  "source": "https://es.wikipedia.org/wiki/Unidad_de_estado_s%C3%B3lido"
-},
-{
-  "id": 329,
-  "category": "Almacenamiento",
-  "question": "¿Qué tipo de conector utiliza una unidad de disco M.2 para conectarse a la tarjeta madre?",
-  "options": [
-    "SATA.",
-    "USB.",
-    "NVMe.",
-    "SCSI."
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"SATA.\". Las unidades M.2 utilizan un conector físico específico que puede operar con protocolos SATA o NVMe, pero el conector en sí es parte del estándar M.2.",
-  "source": "https://es.wikipedia.org/wiki/M.2"
-},
-{
-  "id": 330,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor la interfaz NVMe (Non-Volatile Memory Express)?",
-  "options": [
-    "Utiliza un conector de 40 pines para la conexión de dispositivos de almacenamiento.",
-    "Transmite datos en forma de paquetes a través de cables paralelos.",
-    "Utiliza un conector de 7 pines para la conexión de dispositivos de almacenamiento.",
-    "Es una interfaz diseñada específicamente para discos SSD de alta velocidad."
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Es una interfaz diseñada específicamente para discos SSD de alta velocidad.\". NVMe es un protocolo de comunicación diseñado para aprovechar al máximo el rendimiento de los SSD basados en memoria flash.",
-  "source": "https://es.wikipedia.org/wiki/NVM_Express"
-},
-{
-  "id": 331,
-  "category": "Almacenamiento",
-  "question": "¿Cuál es la función principal de un disco duro externo?",
-  "options": [
-    "Proporcionar energía adicional a la tarjeta madre.",
-    "Almacenar datos de forma permanente mediante discos magnéticos giratorios.",
-    "Facilitar la conexión de dispositivos de almacenamiento a través de cables USB o Thunderbolt.",
-    "Mejorar la velocidad de acceso a la memoria RAM."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Facilitar la conexión de dispositivos de almacenamiento a través de cables USB o Thunderbolt.\". Los discos duros externos permiten almacenamiento portátil y adicional conectándose mediante interfaces como USB o Thunderbolt.",
-  "source": "https://es.wikipedia.org/wiki/Disco_duro"
-},
-{
-  "id": 332,
-  "category": "Almacenamiento",
-  "question": "¿Qué significa la sigla \"HDD\" en el contexto de almacenamiento de datos?",
-  "options": [
-    "High-Density Drive.",
-    "Hard Disk Drive.",
-    "Hybrid Data Device.",
-    "Hyper Drive Disk."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Hard Disk Drive.\". HDD es el acrónimo de Hard Disk Drive, el término técnico para un disco duro tradicional que utiliza platos magnéticos giratorios.",
-  "source": "https://es.wikipedia.org/wiki/Disco_duro"
-},
-{
-  "id": 333,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuántos pines tiene típicamente un conector SATA utilizado para conectar dispositivos de almacenamiento a la tarjeta madre?",
-  "options": [
-    "7.",
-    "15.",
-    "20.",
-    "30."
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"7.\". Un conector SATA de datos tiene 7 pines, mientras que el conector de alimentación SATA tiene 15 pines.",
-  "source": "https://es.wikipedia.org/wiki/Serial_ATA"
-},
-{
-  "id": 334,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor un disco duro externo?",
-  "options": [
-    "Utiliza memoria flash para el almacenamiento de datos de forma permanente.",
-    "Almacena datos de manera óptica mediante láser.",
-    "Emplea discos magnéticos giratorios y se conecta a través de USB o Thunderbolt.",
-    "Es una unidad de almacenamiento volátil utilizada principalmente para la memoria RAM."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Emplea discos magnéticos giratorios y se conecta a través de USB o Thunderbolt.\". Un disco duro externo típico utiliza la misma tecnología que un disco duro interno pero en una carcasa con interfaz externa.",
-  "source": "https://es.wikipedia.org/wiki/Disco_duro"
-},
-{
-  "id": 335,
-  "category": "Fuentes de Alimentación",
-  "question": "¿Cuál es la función del conector Molex en la alimentación de un disco duro?",
-  "options": [
-    "Suministrar energía a la CPU.",
-    "Proporcionar energía adicional al sistema de refrigeración.",
-    "Alimentar directamente la memoria RAM.",
-    "Proporcionar energía al disco duro."
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Proporcionar energía al disco duro.\". El conector Molex es un tipo de conector de alimentación utilizado históricamente para discos duros y otros dispositivos internos.",
-  "source": "https://es.wikipedia.org/wiki/Conector_Molex"
-},
-{
-  "id": 336,
-  "category": "Almacenamiento",
-  "question": "¿Qué significa la sigla \"RAID\" en el contexto de almacenamiento de datos?",
-  "options": [
-    "Random Access Integrated Drive.",
-    "Redundant Array of Independent Disks.",
-    "Rapid Access and Integration Device.",
-    "Read-Only Array of Integrated Drives."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Redundant Array of Independent Disks.\". RAID es una tecnología que combina múltiples discos duros para mejorar el rendimiento, la capacidad o la tolerancia a fallos.",
-  "source": "https://es.wikipedia.org/wiki/RAID"
-},
-{
-  "id": 337,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál de las siguientes opciones describe mejor la interfaz SATA (Serial ATA)?",
-  "options": [
-    "Utiliza un conector de 40 pines para la conexión de dispositivos de almacenamiento.",
-    "Transmite datos en forma de paquetes a través de cables paralelos.",
-    "Utiliza un conector de 7 pines para la conexión de dispositivos de almacenamiento.",
-    "Es una interfaz obsoleta reemplazada por USB."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Utiliza un conector de 7 pines para la conexión de dispositivos de almacenamiento.\". SATA utiliza un cable de 7 pines para datos y un conector de 15 pines para alimentación.",
-  "source": "https://es.wikipedia.org/wiki/Serial_ATA"
-},
-{
-  "id": 338,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la función principal de una cadena SCSI (Small Computer System Interface)?",
-  "options": [
-    "Conectar dispositivos de almacenamiento a través de cables ópticos.",
-    "Proporcionar energía a los discos duros.",
-    "Facilitar la conexión de dispositivos de almacenamiento a la tarjeta madre.",
-    "Permitir la comunicación entre dispositivos de almacenamiento y la CPU."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Facilitar la conexión de dispositivos de almacenamiento a la tarjeta madre.\". SCSI es una interfaz estándar para conectar periféricos, principalmente dispositivos de almacenamiento, a una computadora.",
-  "source": "https://es.wikipedia.org/wiki/SCSI"
-},
-{
-  "id": 339,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuántos dispositivos IDE se pueden conectar típicamente a un controlador IDE en una cadena única?",
-  "options": [
-    "1.",
-    "2.",
-    "4.",
-    "8."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"2.\". Un controlador IDE (también conocido como PATA) puede conectar hasta dos dispositivos por canal, configurados como maestro y esclavo.",
-  "source": "https://es.wikipedia.org/wiki/ATA"
-},
-{
-  "id": 340,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor un disco duro externo?",
-  "options": [
-    "Utiliza memoria flash para el almacenamiento de datos de forma permanente.",
-    "Almacena datos de manera óptica mediante láser.",
-    "Emplea discos magnéticos giratorios y se conecta a través de USB o Thunderbolt.",
-    "Es una unidad de almacenamiento volátil utilizada principalmente para la memoria RAM."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Emplea discos magnéticos giratorios y se conecta a través de USB o Thunderbolt.\". Un disco duro externo típico utiliza la misma tecnología que un disco duro interno pero en una carcasa con interfaz externa.",
-  "source": "https://es.wikipedia.org/wiki/Disco_duro"
-},
-{
-  "id": 341,
-  "category": "Fuentes de Alimentación",
-  "question": "¿Cuál es la función del conector Molex en la alimentación de un disco duro?",
-  "options": [
-    "Suministrar energía a la CPU.",
-    "Proporcionar energía adicional al sistema de refrigeración.",
-    "Alimentar directamente la memoria RAM.",
-    "Proporcionar energía al disco duro."
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Proporcionar energía al disco duro.\". El conector Molex es un tipo de conector de alimentación utilizado históricamente para discos duros y otros dispositivos internos.",
-  "source": "https://es.wikipedia.org/wiki/Conector_Molex"
-},
-{
-  "id": 342,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuántos pines tiene típicamente un conector SATA utilizado para conectar dispositivos de almacenamiento a la tarjeta madre?",
-  "options": [
-    "7.",
-    "15.",
-    "20.",
-    "30."
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"7.\". Un conector SATA de datos tiene 7 pines, mientras que el conector de alimentación SATA tiene 15 pines.",
-  "source": "https://es.wikipedia.org/wiki/Serial_ATA"
-},
-{
-  "id": 343,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor un disco SSD (Solid-State Drive)?",
-  "options": [
-    "Utiliza discos magnéticos giratorios para el almacenamiento de datos.",
-    "Almacena datos de manera óptica mediante láser.",
-    "Utiliza memoria flash para el almacenamiento de datos de forma permanente.",
-    "Es una unidad de almacenamiento volátil utilizada principalmente para la memoria RAM."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Utiliza memoria flash para el almacenamiento de datos de forma permanente.\". Los SSD utilizan memoria flash no volátil para almacenar datos de forma permanente sin partes móviles.",
-  "source": "https://es.wikipedia.org/wiki/Unidad_de_estado_s%C3%B3lido"
-},
-{
-  "id": 344,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuántos pines tiene típicamente un conector SATA utilizado para conectar dispositivos de almacenamiento a la tarjeta madre?",
-  "options": [
-    "7.",
-    "15.",
-    "20.",
-    "30."
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"7.\". Un conector SATA de datos tiene 7 pines, mientras que el conector de alimentación SATA tiene 15 pines.",
-  "source": "https://es.wikipedia.org/wiki/Serial_ATA"
-},
-{
-  "id": 345,
-  "category": "Almacenamiento",
-  "question": "¿Cuál es una ventaja comúnmente asociada con los discos SSD en comparación con los discos duros tradicionales?",
-  "options": [
-    "Mayor capacidad de almacenamiento.",
-    "Menor velocidad de lectura/escritura.",
-    "Mayor durabilidad y resistencia a impactos.",
-    "Menor costo por gigabyte."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Mayor durabilidad y resistencia a impactos.\". Los SSD no tienen partes móviles, lo que los hace más resistentes a golpes y vibraciones que los discos duros tradicionales.",
-  "source": "https://es.wikipedia.org/wiki/Unidad_de_estado_s%C3%B3lido"
-},
-{
-  "id": 346,
-  "category": "Almacenamiento",
-  "question": "¿Qué tipo de conector utiliza una unidad de disco M.2 para conectarse a la tarjeta madre?",
-  "options": [
-    "SATA.",
-    "USB.",
-    "NVMe.",
-    "SCSI."
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"SATA.\". Las unidades M.2 utilizan un conector físico específico que puede operar con protocolos SATA o NVMe, pero el conector en sí es parte del estándar M.2.",
-  "source": "https://es.wikipedia.org/wiki/M.2"
-},
-{
-  "id": 347,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor la interfaz NVMe (Non-Volatile Memory Express)?",
-  "options": [
-    "Utiliza un conector de 40 pines para la conexión de dispositivos de almacenamiento.",
-    "Transmite datos en forma de paquetes a través de cables paralelos.",
-    "Utiliza un conector de 7 pines para la conexión de dispositivos de almacenamiento.",
-    "Es una interfaz diseñada específicamente para discos SSD de alta velocidad."
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Es una interfaz diseñada específicamente para discos SSD de alta velocidad.\". NVMe es un protocolo de comunicación diseñado para aprovechar al máximo el rendimiento de los SSD basados en memoria flash.",
-  "source": "https://es.wikipedia.org/wiki/NVM_Express"
-},
-{
-  "id": 348,
-  "category": "Almacenamiento",
-  "question": "¿Cuál de las siguientes afirmaciones es verdadera sobre la capacidad de almacenamiento de un disco duro o SSD?",
-  "options": [
-    "La capacidad se mide en megabytes (MB) únicamente.",
-    "La capacidad se mide en gigabytes (GB) y terabytes (TB).",
-    "La capacidad no es una consideración importante al elegir un dispositivo de almacenamiento.",
-    "La capacidad se mide únicamente en kilobytes (KB)."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"La capacidad se mide en gigabytes (GB) y terabytes (TB).\". Los dispositivos de almacenamiento modernos tienen capacidades que se miden comúnmente en gigabytes o terabytes.",
-  "source": "https://es.wikipedia.org/wiki/Unidad_de_almacenamiento_de_datos"
-},
-{
-  "id": 349,
-  "category": "Almacenamiento",
-  "question": "¿Qué significa la sigla \"RAID\" en el contexto de almacenamiento de datos?",
-  "options": [
-    "Random Access Integrated Drive.",
-    "Redundant Array of Independent Disks.",
-    "Rapid Access and Integration Device.",
-    "Read-Only Array of Integrated Drives."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Redundant Array of Independent Disks.\". RAID es una tecnología que combina múltiples discos duros para mejorar el rendimiento, la capacidad o la tolerancia a fallos.",
-  "source": "https://es.wikipedia.org/wiki/RAID"
-},
-{
-  "id": 350,
-  "category": "Almacenamiento",
-  "question": "¿Cuál de las siguientes afirmaciones es verdadera sobre la capacidad de almacenamiento de un disco duro o SSD?",
-  "options": [
-    "La capacidad se mide en megabytes (MB) únicamente.",
-    "La capacidad se mide en gigabytes (GB) y terabytes (TB).",
-    "La capacidad no es una consideración importante al elegir un dispositivo de almacenamiento.",
-    "La capacidad se mide únicamente en kilobytes (KB)."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"La capacidad se mide en gigabytes (GB) y terabytes (TB).\". Los dispositivos de almacenamiento modernos tienen capacidades que se miden comúnmente en gigabytes o terabytes.",
-  "source": "https://es.wikipedia.org/wiki/Unidad_de_almacenamiento_de_datos"
-},
-{
-  "id": 351,
-  "category": "Almacenamiento",
-  "question": "¿Cuál es la función principal de un disco duro externo?",
-  "options": [
-    "Proporcionar energía adicional a la tarjeta madre.",
-    "Almacenar datos de forma permanente mediante discos magnéticos giratorios.",
-    "Facilitar la conexión de dispositivos de almacenamiento a través de cables USB o Thunderbolt.",
-    "Mejorar la velocidad de acceso a la memoria RAM."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Facilitar la conexión de dispositivos de almacenamiento a través de cables USB o Thunderbolt.\". Los discos duros externos permiten almacenamiento portátil y adicional conectándose mediante interfaces como USB o Thunderbolt.",
-  "source": "https://es.wikipedia.org/wiki/Disco_duro"
-},
-{
-  "id": 352,
-  "category": "Tarjetas Gráficas",
-  "question": "¿Qué significa la sigla \"GPU\" en el contexto de hardware informático?",
-  "options": [
-    "General Processing Unit.",
-    "Graphics Processing Unit.",
-    "General Purpose Unit.",
-    "Graphics Performance Unit."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Graphics Processing Unit.\". GPU es el acrónimo de Graphics Processing Unit, un procesador especializado en el renderizado de gráficos.",
-  "source": "https://es.wikipedia.org/wiki/Unidad_de_procesamiento_gr%C3%A1fico"
-},
-{
-  "id": 353,
-  "category": "Tarjetas Gráficas",
-  "question": "¿Cuál de los siguientes fabricantes es conocido por sus tarjetas gráficas GeForce?",
-  "options": [
-    "AMD.",
-    "Intel.",
-    "NVIDIA.",
-    "ASUS."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"NVIDIA.\". GeForce es la marca de tarjetas gráficas de consumo de NVIDIA.",
-  "source": "https://es.wikipedia.org/wiki/GeForce"
-},
-{
-  "id": 354,
-  "category": "Tarjetas Gráficas",
-  "question": "¿Qué es CUDA en el contexto de tarjetas gráficas NVIDIA?",
-  "options": [
-    "Un tipo de conector de pantalla.",
-    "Una interfaz de usuario para configurar gráficos.",
-    "Una arquitectura de procesamiento paralelo desarrollada por NVIDIA.",
-    "Una tecnología de refrigeración avanzada."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Una arquitectura de procesamiento paralelo desarrollada por NVIDIA.\". CUDA es una plataforma de computación paralela y un modelo de programación creado por NVIDIA.",
-  "source": "https://es.wikipedia.org/wiki/CUDA"
-},
-{
-  "id": 355,
-  "category": "Chipsets y CPU",
-  "question": "¿Cuántos procesadores de flujo tiene típicamente una tarjeta gráfica moderna?",
-  "options": [
-    "32.",
-    "128.",
-    "512.",
-    "Varía según el modelo y la marca."
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Varía según el modelo y la marca.\". El número de procesadores de flujo (o núcleos CUDA en NVIDIA) varía enormemente según el modelo específico de la tarjeta gráfica, desde cientos en modelos de entrada hasta miles en modelos de gama alta.",
-  "source": "https://es.wikipedia.org/wiki/Unidad_de_procesamiento_gr%C3%A1fico"
-},
-{
-  "id": 356,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor la memoria GDDR en una tarjeta gráfica?",
-  "options": [
-    "Graphics Double Data Rate.",
-    "General Dynamic Data RAM.",
-    "Graphics Disk Drive RAM.",
-    "General Double Density RAM."
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Graphics Double Data Rate.\". GDDR es el acrónimo de Graphics Double Data Rate, un tipo de memoria SDRAM especializada para tarjetas gráficas.",
-  "source": "https://es.wikipedia.org/wiki/GDDR"
-},
-{
-  "id": 357,
-  "category": "Tarjetas Gráficas",
-  "question": "¿Qué tamaño de tarjeta gráfica es comúnmente conocido como \"dual-slot\"?",
-  "options": [
-    "Mini-ITX.",
-    "Full-Height.",
-    "ATX.",
-    "Dos ranuras de expansión."
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Dos ranuras de expansión.\". Una tarjeta gráfica \"dual-slot\" ocupa el espacio de dos ranuras de expansión en la placa base, generalmente por su sistema de refrigeración.",
-  "source": "https://es.wikipedia.org/wiki/Tarjeta_gr%C3%A1fica"
-},
-{
-  "id": 358,
-  "category": "Tarjetas Gráficas",
-  "question": "¿Cuál de las siguientes interfaces se utiliza comúnmente para conectar tarjetas gráficas a la tarjeta madre?",
-  "options": [
-    "SATA.",
-    "PCIe.",
-    "USB.",
-    "Thunderbolt."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"PCIe.\". Las tarjetas gráficas modernas se conectan a la placa base a través de ranuras PCIe (PCI Express).",
-  "source": "https://es.wikipedia.org/wiki/PCI_Express"
-},
-{
-  "id": 359,
-  "category": "Tarjetas Gráficas",
-  "question": "¿Cuál de los siguientes fabricantes es conocido por su línea de tarjetas gráficas Radeon?",
-  "options": [
-    "NVIDIA.",
-    "Intel.",
-    "ASUS.",
-    "AMD."
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"AMD.\". Radeon es la marca de tarjetas gráficas de AMD (anteriormente ATI).",
-  "source": "https://es.wikipedia.org/wiki/Radeon"
-},
-{
-  "id": 360,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor el propósito de una tarjeta gráfica integrada?",
-  "options": [
-    "Ofrecer un rendimiento gráfico superior en aplicaciones 3D.",
-    "Proporcionar capacidades gráficas básicas sin requerir una tarjeta gráfica dedicada.",
-    "Mejorar la velocidad de la CPU en tareas generales.",
-    "Agregar funcionalidades de realidad virtual."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Proporcionar capacidades gráficas básicas sin requerir una tarjeta gráfica dedicada.\". Las tarjetas gráficas integradas están incluidas en la CPU o chipset y ofrecen funcionalidades gráficas básicas.",
-  "source": "https://es.wikipedia.org/wiki/Tarjeta_gr%C3%A1fica_integrada"
-},
-{
-  "id": 361,
-  "category": "Tipos de Memoria",
-  "question": "¿Qué significa la sigla \"VRAM\" en el contexto de tarjetas gráficas?",
-  "options": [
-    "Virtual RAM.",
-    "Video RAM.",
-    "Volatile RAM.",
-    "Variable RAM."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Video RAM.\". VRAM es el acrónimo de Video RAM, un tipo de memoria RAM dedicada para tarjetas gráficas.",
-  "source": "https://es.wikipedia.org/wiki/Video_RAM"
-},
-{
-  "id": 362,
-  "category": "Tarjetas Gráficas",
-  "question": "¿Cuál es el propósito principal de los núcleos CUDA en una tarjeta gráfica NVIDIA?",
-  "options": [
-    "Mejorar el rendimiento de la memoria RAM.",
-    "Acelerar cálculos paralelos utilizando la arquitectura CUDA.",
-    "Gestionar la interfaz de usuario.",
-    "Controlar la velocidad del ventilador."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Acelerar cálculos paralelos utilizando la arquitectura CUDA.\". Los núcleos CUDA están diseñados para procesamiento paralelo, acelerando tanto tareas gráficas como computacionales.",
-  "source": "https://es.wikipedia.org/wiki/CUDA"
-},
-{
-  "id": 363,
-  "category": "Tarjetas Gráficas",
-  "question": "¿Cuál de las siguientes afirmaciones es verdadera sobre el tamaño físico de una tarjeta gráfica Mini-ITX?",
-  "options": [
-    "Es más grande que una tarjeta gráfica ATX.",
-    "Es el mismo que una tarjeta gráfica Full-Height.",
-    "Es más pequeño que una tarjeta gráfica ATX y generalmente diseñado para sistemas compactos.",
-    "Varía significativamente dependiendo del fabricante."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Es más pequeño que una tarjeta gráfica ATX y generalmente diseñado para sistemas compactos.\". Las tarjetas gráficas Mini-ITX están diseñadas específicamente para sistemas de factor de forma pequeño.",
-  "source": "https://es.wikipedia.org/wiki/Tarjeta_gr%C3%A1fica"
-},
-{
-  "id": 364,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor la arquitectura de núcleos Tensor en tarjetas gráficas modernas?",
-  "options": [
-    "Diseñada para mejorar el rendimiento en juegos.",
-    "Centrada en acelerar operaciones de inteligencia artificial y aprendizaje profundo.",
-    "Especializada en gráficos 2D.",
-    "Controla las funciones de visualización en múltiples monitores."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Centrada en acelerar operaciones de inteligencia artificial y aprendizaje profundo.\". Los núcleos Tensor están especializados en operaciones de inteligencia artificial y aprendizaje automático.",
-  "source": "https://es.wikipedia.org/wiki/Tensor_core"
-},
-{
-  "id": 365,
-  "category": "Tarjetas Gráficas",
-  "question": "¿Cuál de las siguientes afirmaciones es verdadera sobre las tarjetas gráficas externas (eGPU)?",
-  "options": [
-    "Son solo compatibles con computadoras de escritorio.",
-    "Se conectan a través de puertos USB.",
-    "Mejoran el rendimiento gráfico de computadoras portátiles y ultrabooks.",
-    "No requieren alimentación eléctrica adicional."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Mejoran el rendimiento gráfico de computadoras portátiles y ultrabooks.\". Las eGPU permiten a los portátiles con capacidades gráficas limitadas utilizar tarjetas gráficas dedicadas externamente.",
-  "source": "https://es.wikipedia.org/wiki/External_graphics_processing_unit"
-},
-{
-  "id": 366,
-  "category": "Tarjetas Gráficas",
-  "question": "¿Cuál de las siguientes interfaces se utiliza comúnmente para conectar tarjetas gráficas a la tarjeta madre?",
-  "options": [
-    "SATA.",
-    "PCIe.",
-    "USB.",
-    "Thunderbolt."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"PCIe.\". Las tarjetas gráficas modernas se conectan a la placa base a través de ranuras PCIe (PCI Express).",
-  "source": "https://es.wikipedia.org/wiki/PCI_Express"
-},
-{
-  "id": 367,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor el propósito de una tarjeta gráfica integrada?",
-  "options": [
-    "Ofrecer un rendimiento gráfico superior en aplicaciones 3D.",
-    "Proporcionar capacidades gráficas básicas sin requerir una tarjeta gráfica dedicada.",
-    "Mejorar la velocidad de la CPU en tareas generales.",
-    "Agregar funcionalidades de realidad virtual."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Proporcionar capacidades gráficas básicas sin requerir una tarjeta gráfica dedicada.\". Las tarjetas gráficas integradas están incluidas en la CPU o chipset y ofrecen funcionalidades gráficas básicas.",
-  "source": "https://es.wikipedia.org/wiki/Tarjeta_gr%C3%A1fica_integrada"
-},
-{
-  "id": 368,
-  "category": "Tarjetas Gráficas",
-  "question": "¿Cuál de los siguientes fabricantes es conocido por su línea de tarjetas gráficas GeForce?",
-  "options": [
-    "NVIDIA.",
-    "Intel.",
-    "ASUS.",
-    "AMD."
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"NVIDIA.\". GeForce es la marca de tarjetas gráficas de consumo de NVIDIA.",
-  "source": "https://es.wikipedia.org/wiki/GeForce"
-},
-{
-  "id": 369,
-  "category": "Chipsets y CPU",
-  "question": "¿Cuántos procesadores de flujo tiene típicamente una tarjeta gráfica moderna?",
-  "options": [
-    "32.",
-    "128.",
-    "512.",
-    "Varía según el modelo y la marca."
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Varía según el modelo y la marca.\". El número de procesadores de flujo (o núcleos CUDA en NVIDIA) varía enormemente según el modelo específico de la tarjeta gráfica, desde cientos en modelos de entrada hasta miles en modelos de gama alta.",
-  "source": "https://es.wikipedia.org/wiki/Unidad_de_procesamiento_gr%C3%A1fico"
-},
-{
-  "id": 370,
-  "category": "Tarjetas Gráficas",
-  "question": "¿Qué significa la sigla \"GPU\" en el contexto de hardware informático?",
-  "options": [
-    "General Processing Unit.",
-    "Graphics Processing Unit.",
-    "General Purpose Unit.",
-    "Graphics Performance Unit."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Graphics Processing Unit.\". GPU es el acrónimo de Graphics Processing Unit, un procesador especializado en el renderizado de gráficos.",
-  "source": "https://es.wikipedia.org/wiki/Unidad_de_procesamiento_gr%C3%A1fico"
-},
-{
-  "id": 371,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor la memoria GDDR en una tarjeta gráfica?",
-  "options": [
-    "Graphics Double Data Rate.",
-    "General Dynamic Data RAM.",
-    "Graphics Disk Drive RAM.",
-    "General Double Density RAM."
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Graphics Double Data Rate.\". GDDR es el acrónimo de Graphics Double Data Rate, un tipo de memoria SDRAM especializada para tarjetas gráficas que ofrece alto ancho de banda.",
-  "source": "https://es.wikipedia.org/wiki/GDDR"
-},
-{
-  "id": 372,
-  "category": "Tarjetas Gráficas",
-  "question": "¿Cuál de los siguientes fabricantes es conocido por su línea de tarjetas gráficas Radeon?",
-  "options": [
-    "NVIDIA.",
-    "Intel.",
-    "ASUS.",
-    "AMD."
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"AMD.\". Radeon es la marca de tarjetas gráficas de AMD (anteriormente ATI Technologies), que compite directamente con las GeForce de NVIDIA.",
-  "source": "https://es.wikipedia.org/wiki/Radeon"
-},
-{
-  "id": 373,
-  "category": "Tarjetas Gráficas",
-  "question": "¿Cuál de las siguientes afirmaciones es verdadera sobre el tamaño físico de una tarjeta gráfica Mini-ITX?",
-  "options": [
-    "Es más grande que una tarjeta gráfica ATX.",
-    "Es el mismo que una tarjeta gráfica Full-Height.",
-    "Es más pequeño que una tarjeta gráfica ATX y generalmente diseñado para sistemas compactos.",
-    "Varía significativamente dependiendo del fabricante."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Es más pequeño que una tarjeta gráfica ATX y generalmente diseñado para sistemas compactos.\". Las tarjetas gráficas Mini-ITX están diseñadas específicamente para sistemas de factor de forma pequeño como los HTPC o computadoras compactas.",
-  "source": "https://es.wikipedia.org/wiki/Tarjeta_gr%C3%A1fica"
-},
-{
-  "id": 374,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor la arquitectura de núcleos Tensor en tarjetas gráficas modernas?",
-  "options": [
-    "Diseñada para mejorar el rendimiento en juegos.",
-    "Centrada en acelerar operaciones de inteligencia artificial y aprendizaje profundo.",
-    "Especializada en gráficos 2D.",
-    "Controla las funciones de visualización en múltiples monitores."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Centrada en acelerar operaciones de inteligencia artificial y aprendizaje profundo.\". Los núcleos Tensor están especializados en operaciones de inteligencia artificial y aprendizaje automático, acelerando tareas como el entrenamiento de redes neuronales.",
-  "source": "https://es.wikipedia.org/wiki/Tensor_core"
-},
-{
-  "id": 375,
-  "category": "Tarjetas Gráficas",
-  "question": "¿Cuál de las siguientes afirmaciones es verdadera sobre las tarjetas gráficas externas (eGPU)?",
-  "options": [
-    "Son solo compatibles con computadoras de escritorio.",
-    "Se conectan a través de puertos USB.",
-    "Mejoran el rendimiento gráfico de computadoras portátiles y ultrabooks.",
-    "No requieren alimentación eléctrica adicional."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Mejoran el rendimiento gráfico de computadoras portátiles y ultrabooks.\". Las eGPU permiten a los portátiles con capacidades gráficas limitadas utilizar tarjetas gráficas dedicadas externamente, generalmente a través de Thunderbolt.",
-  "source": "https://es.wikipedia.org/wiki/External_graphics_processing_unit"
-},
-{
-  "id": 376,
-  "category": "Tarjetas Gráficas",
-  "question": "¿Cuál de los siguientes fabricantes es conocido por sus tarjetas gráficas GeForce?",
-  "options": [
-    "AMD.",
-    "Intel.",
-    "NVIDIA.",
-    "ASUS."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"NVIDIA.\". GeForce es la marca de tarjetas gráficas de consumo de NVIDIA, una de las líneas más populares en el mercado de tarjetas gráficas.",
-  "source": "https://es.wikipedia.org/wiki/GeForce"
-},
-{
-  "id": 377,
-  "category": "Tarjetas Gráficas",
-  "question": "¿Qué es CUDA en el contexto de tarjetas gráficas NVIDIA?",
-  "options": [
-    "Un tipo de conector de pantalla.",
-    "Una interfaz de usuario para configurar gráficos.",
-    "Una arquitectura de procesamiento paralelo desarrollada por NVIDIA.",
-    "Una tecnología de refrigeración avanzada."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Una arquitectura de procesamiento paralelo desarrollada por NVIDIA.\". CUDA es una plataforma de computación paralela y un modelo de programación creado por NVIDIA que permite a los desarrolladores utilizar la GPU para computación de propósito general.",
-  "source": "https://es.wikipedia.org/wiki/CUDA"
-},
-{
-  "id": 378,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor el propósito de una tarjeta gráfica integrada?",
-  "options": [
-    "Ofrecer un rendimiento gráfico superior en aplicaciones 3D.",
-    "Proporcionar capacidades gráficas básicas sin requerir una tarjeta gráfica dedicada.",
-    "Mejorar la velocidad de la CPU en tareas generales.",
-    "Agregar funcionalidades de realidad virtual."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Proporcionar capacidades gráficas básicas sin requerir una tarjeta gráfica dedicada.\". Las tarjetas gráficas integradas están incluidas en la CPU o chipset y ofrecen funcionalidades gráficas básicas para tareas cotidianas.",
-  "source": "https://es.wikipedia.org/wiki/Tarjeta_gr%C3%A1fica_integrada"
-},
-{
-  "id": 379,
-  "category": "Chipsets y CPU",
-  "question": "¿Cuántos procesadores de flujo tiene típicamente una tarjeta gráfica moderna?",
-  "options": [
-    "32.",
-    "128.",
-    "512.",
-    "Varía según el modelo y la marca."
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Varía según el modelo y la marca.\". El número de procesadores de flujo (o núcleos CUDA en NVIDIA) varía enormemente según el modelo específico de la tarjeta gráfica, desde cientos en modelos de entrada hasta miles en modelos de gama alta.",
-  "source": "https://es.wikipedia.org/wiki/Unidad_de_procesamiento_gr%C3%A1fico"
-},
-{
-  "id": 380,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor la arquitectura de núcleos Tensor en tarjetas gráficas modernas?",
-  "options": [
-    "Diseñada para mejorar el rendimiento en juegos.",
-    "Centrada en acelerar operaciones de inteligencia artificial y aprendizaje profundo.",
-    "Especializada en gráficos 2D.",
-    "Controla las funciones de visualización en múltiples monitores."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Centrada en acelerar operaciones de inteligencia artificial y aprendizaje profundo.\". Los núcleos Tensor están especializados en operaciones de inteligencia artificial y aprendizaje automático, acelerando tareas como el entrenamiento de redes neuronales.",
-  "source": "https://es.wikipedia.org/wiki/Tensor_core"
-},
-{
-  "id": 381,
-  "category": "Tarjetas Gráficas",
-  "question": "¿Cuál es el propósito principal de los núcleos CUDA en una tarjeta gráfica NVIDIA?",
-  "options": [
-    "Mejorar el rendimiento de la memoria RAM.",
-    "Acelerar cálculos paralelos utilizando la arquitectura CUDA.",
-    "Gestionar la interfaz de usuario.",
-    "Controlar la velocidad del ventilador."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Acelerar cálculos paralelos utilizando la arquitectura CUDA.\". Los núcleos CUDA están diseñados para procesamiento paralelo, acelerando tanto tareas gráficas como computacionales a través de la plataforma CUDA.",
-  "source": "https://es.wikipedia.org/wiki/CUDA"
-},
-{
-  "id": 382,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál es la finalidad principal de los buses en una placa base?",
-  "options": [
-    "Gestionar la comunicación entre la CPU y los periféricos.",
-    "Alimentar los componentes de la placa base.",
-    "Controlar la velocidad del ventilador.",
-    "Administrar la memoria RAM."
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Gestionar la comunicación entre la CPU y los periféricos.\". Los buses son las vías de comunicación que permiten la transferencia de datos entre los diferentes componentes de la placa base.",
-  "source": "https://es.wikipedia.org/wiki/Bus_(inform%C3%A1tica)"
-},
-{
-  "id": 383,
-  "category": "Conectores de Placa Base",
-  "question": "¿Qué es un bus de datos en el contexto de la placa base?",
-  "options": [
-    "Un conector para dispositivos de almacenamiento.",
-    "Una vía de comunicación por donde se transmiten los datos entre la CPU y otros componentes.",
-    "Un sistema de alimentación para la tarjeta madre.",
-    "Un conector de pantalla."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Una vía de comunicación por donde se transmiten los datos entre la CPU y otros componentes.\". El bus de datos es el canal a través del cual se transfieren los datos entre los diferentes componentes del sistema.",
-  "source": "https://es.wikipedia.org/wiki/Bus_(inform%C3%A1tica)"
-},
-{
-  "id": 384,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál de las siguientes afirmaciones es verdadera sobre un bus de dirección en la placa base?",
-  "options": [
-    "Controla la velocidad de la CPU.",
-    "Facilita la conexión de dispositivos de almacenamiento.",
-    "Determina la cantidad máxima de memoria que la CPU puede direccionar.",
-    "Regula la temperatura del sistema."
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Determina la cantidad máxima de memoria que la CPU puede direccionar.\". El bus de dirección se utiliza para especificar la ubicación de memoria a la que se quiere acceder, determinando la cantidad máxima de memoria direccionable.",
-  "source": "https://es.wikipedia.org/wiki/Bus_de_direcci%C3%B3n"
-},
-{
-  "id": 385,
-  "category": "Arquitectura de Sistema",
-  "question": "¿Cuál es la ventaja principal de un bus de datos más ancho (por ejemplo, de 64 bits) en comparación con uno más estrecho (por ejemplo, de 32 bits)?",
-  "options": [
-    "Mayor velocidad de transferencia de datos.",
-    "Menor consumo de energía.",
-    "Mayor compatibilidad con periféricos antiguos.",
-    "Menor costo de fabricación."
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Mayor velocidad de transferencia de datos.\". Un bus de datos más ancho puede transferir más bits simultáneamente, lo que resulta en una mayor velocidad de transferencia de datos.",
-  "source": "https://es.wikipedia.org/wiki/Bus_(inform%C3%A1tica)"
-},
-{
-  "id": 386,
-  "category": "Conectores de Placa Base",
-  "question": "¿Dónde suele estar ubicado el bus PCI Express (PCIe) en una placa base?",
-  "options": [
-    "En el extremo superior de la placa.",
-    "En el centro de la placa.",
-    "En la parte inferior de la placa.",
-    "En el lateral de la placa."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"En el centro de la placa.\". Las ranuras PCIe suelen estar ubicadas en la parte central de la placa base, generalmente debajo del socket de la CPU y a la izquierda de los módulos de memoria RAM.",
-  "source": "https://es.wikipedia.org/wiki/PCI_Express"
-},
-{
-  "id": 387,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál es la finalidad principal de un bus de sistema (FSB) en la placa base?",
-  "options": [
-    "Conectar periféricos externos.",
-    "Facilitar la comunicación entre la CPU y la memoria RAM.",
-    "Gestionar la energía de la placa.",
-    "Controlar la velocidad del ventilador de la CPU."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Facilitar la comunicación entre la CPU y la memoria RAM.\". El bus de sistema (Front Side Bus) era el bus que conectaba la CPU con el chipset norte en arquitecturas más antiguas, gestionando principalmente la comunicación con la memoria RAM.",
-  "source": "https://es.wikipedia.org/wiki/Bus_frontal"
-},
-{
-  "id": 388,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál de las siguientes afirmaciones es verdadera sobre la arquitectura de un bus paralelo en la placa base?",
-  "options": [
-    "Transmite datos de bit en bit en un solo cable.",
-    "Utiliza múltiples cables para transmitir varios bits simultáneamente.",
-    "Transmite datos en forma de paquetes a través de cables paralelos.",
-    "Se utiliza exclusivamente para la conexión de dispositivos de almacenamiento."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Utiliza múltiples cables para transmitir varios bits simultáneamente.\". Un bus paralelo utiliza múltiples cables para transmitir varios bits simultáneamente, lo que permite una mayor velocidad de transferencia de datos.",
-  "source": "https://es.wikipedia.org/wiki/Bus_paralelo"
-},
-{
-  "id": 389,
-  "category": "Conectores de Placa Base",
-  "question": "¿Qué es un conector IDE en la placa base?",
-  "options": [
-    "Un conector de pantalla.",
-    "Un conector para dispositivos de almacenamiento.",
-    "Un conector de alimentación para la CPU.",
-    "Un conector de red."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Un conector para dispositivos de almacenamiento.\". IDE (Integrated Drive Electronics), también conocido como PATA, es un estándar de interfaz para conectar dispositivos de almacenamiento como discos duros y unidades ópticas.",
-  "source": "https://es.wikipedia.org/wiki/ATA"
-},
-{
-  "id": 390,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál de las siguientes afirmaciones es verdadera sobre el bus SATA en la placa base?",
-  "options": [
-    "Utiliza un conector de 40 pines.",
-    "Transmite datos en forma de paquetes a través de cables paralelos.",
-    "Se utiliza para la conexión de dispositivos de red.",
-    "Se utiliza para la conexión de dispositivos de almacenamiento, como discos duros y unidades SSD."
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Se utiliza para la conexión de dispositivos de almacenamiento, como discos duros y unidades SSD.\". SATA (Serial ATA) es una interfaz de bus de computadora para conectar dispositivos de almacenamiento masivo a un bus de host.",
-  "source": "https://es.wikipedia.org/wiki/Serial_ATA"
-},
-{
-  "id": 391,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál es la ventaja principal de un bus serie en comparación con un bus paralelo en la placa base?",
-  "options": [
-    "Mayor velocidad de transferencia de datos.",
-    "Menor consumo de energía.",
-    "Mayor compatibilidad con periféricos antiguos.",
-    "Menor costo de fabricación."
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Mayor velocidad de transferencia de datos.\". Aunque los buses paralelos pueden transmitir múltiples bits simultáneamente, los buses serie modernos pueden alcanzar velocidades de reloj mucho más altas, resultando en una mayor velocidad de transferencia de datos.",
-  "source": "https://es.wikipedia.org/wiki/Bus_serie"
-},
-{
-  "id": 392,
-  "category": "Conectores de Placa Base",
-  "question": "¿Qué es un conector PCIe en la placa base?",
-  "options": [
-    "Un conector de alimentación para la CPU.",
-    "Un conector de red.",
-    "Un conector para dispositivos de almacenamiento.",
-    "Un conector de expansión para tarjetas gráficas, tarjetas de sonido y otros periféricos."
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Un conector de expansión para tarjetas gráficas, tarjetas de sonido y otros periféricos.\". PCIe (PCI Express) es un estándar de bus de expansión de alta velocidad utilizado para conectar tarjetas de expansión a la placa base.",
-  "source": "https://es.wikipedia.org/wiki/PCI_Express"
-},
-{
-  "id": 393,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál es la finalidad principal de un bus de sistema (FSB) en la placa base?",
-  "options": [
-    "Conectar periféricos externos.",
-    "Facilitar la comunicación entre la CPU y la memoria RAM.",
-    "Gestionar la energía de la placa.",
-    "Controlar la velocidad del ventilador de la CPU."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Facilitar la comunicación entre la CPU y la memoria RAM.\". El bus de sistema (Front Side Bus) era el bus que conectaba la CPU con el chipset norte en arquitecturas más antiguas, gestionando principalmente la comunicación con la memoria RAM.",
-  "source": "https://es.wikipedia.org/wiki/Bus_frontal"
-},
-{
-  "id": 394,
-  "category": "Conectores de Placa Base",
-  "question": "¿Qué es un conector IDE en la placa base?",
-  "options": [
-    "Un conector de pantalla.",
-    "Un conector para dispositivos de almacenamiento.",
-    "Un conector de alimentación para la CPU.",
-    "Un conector de red."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Un conector para dispositivos de almacenamiento.\". IDE (Integrated Drive Electronics), también conocido como PATA, es un estándar de interfaz para conectar dispositivos de almacenamiento como discos duros y unidades ópticas.",
-  "source": "https://es.wikipedia.org/wiki/ATA"
-},
-{
-  "id": 395,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál de las siguientes afirmaciones es verdadera sobre el bus SATA en la placa base?",
-  "options": [
-    "Utiliza un conector de 40 pines.",
-    "Transmite datos en forma de paquetes a través de cables paralelos.",
-    "Se utiliza para la conexión de dispositivos de red.",
-    "Se utiliza para la conexión de dispositivos de almacenamiento, como discos duros y unidades SSD."
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Se utiliza para la conexión de dispositivos de almacenamiento, como discos duros y unidades SSD.\". SATA (Serial ATA) es una interfaz de bus de computadora para conectar dispositivos de almacenamiento masivo a un bus de host.",
-  "source": "https://es.wikipedia.org/wiki/Serial_ATA"
-},
-{
-  "id": 396,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál es la ventaja principal de un bus serie en comparación con un bus paralelo en la placa base?",
-  "options": [
-    "Mayor velocidad de transferencia de datos.",
-    "Menor consumo de energía.",
-    "Mayor compatibilidad con periféricos antiguos.",
-    "Menor costo de fabricación."
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Mayor velocidad de transferencia de datos.\". Aunque los buses paralelos pueden transmitir múltiples bits simultáneamente, los buses serie modernos pueden alcanzar velocidades de reloj mucho más altas, resultando en una mayor velocidad de transferencia de datos.",
-  "source": "https://es.wikipedia.org/wiki/Bus_serie"
-},
-{
-  "id": 397,
-  "category": "Conectores de Placa Base",
-  "question": "¿Qué es un conector PCIe en la placa base?",
-  "options": [
-    "Un conector de alimentación para la CPU.",
-    "Un conector de red.",
-    "Un conector para dispositivos de almacenamiento.",
-    "Un conector de expansión para tarjetas gráficas, tarjetas de sonido y otros periféricos."
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Un conector de expansión para tarjetas gráficas, tarjetas de sonido y otros periféricos.\". PCIe (PCI Express) es un estándar de bus de expansión de alta velocidad utilizado para conectar tarjetas de expansión a la placa base.",
-  "source": "https://es.wikipedia.org/wiki/PCI_Express"
-},
-{
-  "id": 398,
-  "category": "Conectores de Placa Base",
-  "question": "¿Dónde suele estar ubicado el bus PCI Express (PCIe) en una placa base?",
-  "options": [
-    "En el extremo superior de la placa.",
-    "En el centro de la placa.",
-    "En la parte inferior de la placa.",
-    "En el lateral de la placa."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"En el centro de la placa.\". Las ranuras PCIe suelen estar ubicadas en la parte central de la placa base, generalmente debajo del socket de la CPU y a la izquierda de los módulos de memoria RAM.",
-  "source": "https://es.wikipedia.org/wiki/PCI_Express"
-},
-{
-  "id": 399,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál es la finalidad principal de un bus de sistema (FSB) en la placa base?",
-  "options": [
-    "Conectar periféricos externos.",
-    "Facilitar la comunicación entre la CPU y la memoria RAM.",
-    "Gestionar la energía de la placa.",
-    "Controlar la velocidad del ventilador de la CPU."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Facilitar la comunicación entre la CPU y la memoria RAM.\". El bus de sistema (Front Side Bus) era el bus que conectaba la CPU con el chipset norte en arquitecturas más antiguas, gestionando principalmente la comunicación con la memoria RAM.",
-  "source": "https://es.wikipedia.org/wiki/Bus_frontal"
-},
-{
-  "id": 400,
-  "category": "Conectores de Placa Base",
-  "question": "¿Qué es un conector IDE en la placa base?",
-  "options": [
-    "Un conector de pantalla.",
-    "Un conector para dispositivos de almacenamiento.",
-    "Un conector de alimentación para la CPU.",
-    "Un conector de red."
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Un conector para dispositivos de almacenamiento.\". IDE (Integrated Drive Electronics), también conocido como PATA, es un estándar de interfaz para conectar dispositivos de almacenamiento como discos duros y unidades ópticas.",
-  "source": "https://es.wikipedia.org/wiki/ATA"
-},
-{
-  "id": 401,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál de las siguientes afirmaciones es verdadera sobre el bus SATA en la placa base?",
-  "options": [
-    "Utiliza un conector de 40 pines.",
-    "Transmite datos en forma de paquetes a través de cables paralelos.",
-    "Se utiliza para la conexión de dispositivos de red.",
-    "Se utiliza para la conexión de dispositivos de almacenamiento, como discos duros y unidades SSD."
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Se utiliza para la conexión de dispositivos de almacenamiento, como discos duros y unidades SSD.\". SATA (Serial ATA) es una interfaz de bus de computadora para conectar dispositivos de almacenamiento masivo a un bus de host.",
-  "source": "https://es.wikipedia.org/wiki/Serial_ATA"
-},
-{
-  "id": 402,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor un periférico de entrada?",
-  "options": [
-    "Impresora",
-    "Teclado",
-    "Altavoz",
-    "Monitor"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Teclado\". Un periférico de entrada es aquel que permite introducir datos o instrucciones en la computadora, como un teclado, ratón o escáner.",
-  "source": "https://es.wikipedia.org/wiki/Dispositivo_de_entrada"
-},
-{
-  "id": 403,
-  "category": "Componentes Básicos",
-  "question": "¿Qué tipo de periférico es un escáner?",
-  "options": [
-    "Entrada",
-    "Salida",
-    "Almacenamiento",
-    "Comunicación"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Entrada\". Un escáner es un periférico de entrada que digitaliza documentos o imágenes para que puedan ser procesados por la computadora.",
-  "source": "https://es.wikipedia.org/wiki/Esc%C3%A1ner_de_ordenador"
-},
-{
-  "id": 404,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones es un ejemplo de periférico de salida?",
-  "options": [
-    "Ratón",
-    "Monitor",
-    "Teclado",
-    "Micrófono"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Monitor\". Un periférico de salida es aquel que presenta los resultados procesados por la computadora, como un monitor, impresora o altavoces.",
-  "source": "https://es.wikipedia.org/wiki/Dispositivo_de_salida"
-},
-{
-  "id": 405,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un módem en un sistema de computadoras?",
-  "options": [
-    "Almacenamiento de datos",
-    "Comunicación de datos",
-    "Entrada de datos",
-    "Salida de datos"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Comunicación de datos\". Un módem es un dispositivo que modula y demodula señales para permitir la comunicación de datos a través de líneas telefónicas o de otro tipo.",
-  "source": "https://es.wikipedia.org/wiki/M%C3%B3dem"
-},
-{
-  "id": 406,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones es un periférico de almacenamiento?",
-  "options": [
-    "Monitor",
-    "Impresora",
-    "Disco duro",
-    "Altavoz"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Disco duro\". Un periférico de almacenamiento es aquel que permite guardar y recuperar datos, como discos duros, unidades SSD o unidades flash USB.",
-  "source": "https://es.wikipedia.org/wiki/Dispositivo_de_almacenamiento"
-},
-{
-  "id": 407,
-  "category": "Componentes Básicos",
-  "question": "¿Qué tipo de periférico es una tarjeta de sonido?",
-  "options": [
-    "Entrada",
-    "Salida",
-    "Almacenamiento",
-    "Comunicación"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Salida\". Aunque las tarjetas de sonido modernas pueden manejar tanto entrada como salida de audio, su función principal es la salida de sonido hacia altavoces o auriculares.",
-  "source": "https://es.wikipedia.org/wiki/Tarjeta_de_sonido"
-},
-{
-  "id": 408,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones es un ejemplo de periférico de comunicación?",
-  "options": [
-    "Impresora",
-    "Router",
-    "Teclado",
-    "Monitor"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Router\". Un periférico de comunicación es aquel que permite la transferencia de datos entre diferentes computadoras o redes, como routers, tarjetas de red o módems.",
-  "source": "https://es.wikipedia.org/wiki/Dispositivo_de_comunicaci%C3%B3n"
-},
-{
-  "id": 409,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la función principal de un escáner de código de barras?",
-  "options": [
-    "Almacenamiento de datos",
-    "Lectura de datos",
-    "Impresión de datos",
-    "Comunicación de datos"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Lectura de datos\". Un escáner de código de barras lee la información contenida en códigos de barras y la convierte en datos digitales que pueden ser procesados por una computadora.",
-  "source": "https://es.wikipedia.org/wiki/Lector_de_c%C3%B3digo_de_barras"
-},
-{
-  "id": 410,
-  "category": "Componentes Básicos",
-  "question": "¿Qué periférico se utiliza para imprimir documentos en papel?",
-  "options": [
-    "Monitor",
-    "Impresora",
-    "Altavoz",
-    "Escáner"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Impresora\". Una impresora es un periférico de salida que produce copias físicas de documentos o imágenes digitales en papel.",
-  "source": "https://es.wikipedia.org/wiki/Impresora"
-},
-{
-  "id": 411,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones es un periférico de entrada táctil?",
-  "options": [
-    "Ratón",
-    "Teclado",
-    "Pantalla táctil",
-    "Altavoz"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Pantalla táctil\". Una pantalla táctil es un periférico de entrada que permite al usuario interactuar con la computadora tocando directamente la pantalla.",
-  "source": "https://es.wikipedia.org/wiki/Pantalla_t%C3%A1ctil"
-},
-{
-  "id": 412,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza una cámara web en un sistema de computadoras?",
-  "options": [
-    "Almacenamiento de datos",
-    "Captura de imágenes y videos",
-    "Impresión de documentos",
-    "Comunicación de datos"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Captura de imágenes y videos\". Una cámara web es un periférico de entrada que captura imágenes y videos, permitiendo videoconferencias o transmisión en vivo.",
-  "source": "https://es.wikipedia.org/wiki/C%C3%A1mara_web"
-},
-{
-  "id": 413,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál de los siguientes periféricos se utiliza para la entrada y salida de datos?",
-  "options": [
-    "Monitor",
-    "Ratón",
-    "Impresora multifunción",
-    "Altavoz"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Impresora multifunción\". Una impresora multifunción es un periférico que combina varias funciones como impresión, escaneo, copia y a veces fax, permitiendo tanto entrada como salida de datos.",
-  "source": "https://es.wikipedia.org/wiki/Impresora_multifunci%C3%B3n"
-},
-{
-  "id": 414,
-  "category": "Componentes Básicos",
-  "question": "¿Qué tipo de periférico es un plotter?",
-  "options": [
-    "Entrada",
-    "Salida",
-    "Almacenamiento",
-    "Comunicación"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Salida\". Un plotter es un periférico de salida que imprprime gráficos vectoriales mediante plumas o lápices, utilizado principalmente para dibujos técnicos o de alta precisión.",
-  "source": "https://es.wikipedia.org/wiki/Plotter"
-},
-{
-  "id": 415,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones es un periférico de entrada de voz?",
-  "options": [
-    "Micrófono",
-    "Altavoz",
-    "Impresora",
-    "Teclado"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Micrófono\". Un micrófono es un periférico de entrada que convierte el sonido en señales eléctricas, permitiendo la entrada de datos de voz a la computadora.",
-  "source": "https://es.wikipedia.org/wiki/Micr%C3%B3fono"
-},
-{
-  "id": 416,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál de los siguientes periféricos se utiliza para la comunicación inalámbrica?",
-  "options": [
-    "Cable USB",
-    "Tarjeta de red",
-    "Bluetooth",
-    "Disco duro externo"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Bluetooth\". Bluetooth es una tecnología de comunicación inalámbrica de corto alcance que permite la conexión entre dispositivos sin necesidad de cables.",
-  "source": "https://es.wikipedia.org/wiki/Bluetooth"
-},
-{
-  "id": 417,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza una tarjeta de red en un sistema de computadoras?",
-  "options": [
-    "Almacenamiento de datos",
-    "Comunicación de datos en red",
-    "Impresión de documentos",
-    "Captura de imágenes"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Comunicación de datos en red\". Una tarjeta de red es un periférico que permite a una computadora conectarse a una red, facilitando la comunicación de datos con otros dispositivos.",
-  "source": "https://es.wikipedia.org/wiki/Tarjeta_de_red"
-},
-{
-  "id": 418,
-  "category": "Componentes Básicos",
-  "question": "¿Qué periférico se utiliza para la salida de sonido en un sistema de computadoras?",
-  "options": [
-    "Monitor",
-    "Impresora",
-    "Altavoz",
-    "Teclado"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Altavoz\". Un altavoz es un periférico de salida que convierte señales eléctricas de audio en sonido audible.",
-  "source": "https://es.wikipedia.org/wiki/Altavoz"
-},
-{
-  "id": 419,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor una impresora láser?",
-  "options": [
-    "Imprime en papel mediante chorros de tinta",
-    "Utiliza láser para imprimir en papel",
-    "Imprime en papel térmico",
-    "Imprime en papel mediante agujas"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Utiliza láser para imprimir en papel\". Una impresora láser utiliza un láser para crear una imagen electrostática en un tambor fotoreceptor, que luego atrae el tóner y lo transfiere al papel.",
-  "source": "https://es.wikipedia.org/wiki/Impresora_l%C3%A1ser"
-},
-{
-  "id": 420,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál de los siguientes periféricos se utiliza para la entrada de datos mediante movimiento manual?",
-  "options": [
-    "Ratón",
-    "Teclado",
-    "Escáner",
-    "Micrófono"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Ratón\". Un ratón es un periférico de entrada que detecta el movimiento manual y permite controlar un cursor en la pantalla para interactuar con elementos gráficos.",
-  "source": "https://es.wikipedia.org/wiki/Rat%C3%B3n_de_ordenador"
-},
-{
-  "id": 421,
-  "category": "USB y Conectores",
-  "question": "¿Qué tipo de periférico es una memoria USB?",
-  "options": [
-    "Entrada",
-    "Almacenamiento",
-    "Salida",
-    "Comunicación"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Almacenamiento\". Una memoria USB es un periférico de almacenamiento que permite guardar y transportar datos de forma portátil.",
-  "source": "https://es.wikipedia.org/wiki/Unidad_flash_USB"
-},
-{
-  "id": 422,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor una impresora de matriz de puntos?",
-  "options": [
-    "Utiliza chorros de tinta para imprimir",
-    "Imprime en papel mediante agujas",
-    "Imprime en papel térmico",
-    "Utiliza láser para imprimir en papel"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Imprime en papel mediante agujas\". Una impresora de matriz de puntos utiliza una cabeza con agujas que impactan una cinta entintada contra el papel para formar caracteres e imágenes.",
-  "source": "https://es.wikipedia.org/wiki/Impresora_de_matriz_de_puntos"
-},
-{
-  "id": 423,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un lector de tarjetas magnéticas en un sistema de computadoras?",
-  "options": [
-    "Almacenamiento de datos",
-    "Comunicación de datos",
-    "Entrada de datos",
-    "Salida de datos"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Entrada de datos\". Un lector de tarjetas magnéticas lee la información almacenada en la banda magnética de tarjetas de crédito, débito o identificación, introduciendo estos datos en la computadora.",
-  "source": "https://es.wikipedia.org/wiki/Lector_de_tarjetas"
-},
-{
-  "id": 424,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál de los siguientes periféricos se utiliza para la entrada de datos mediante movimiento sobre una superficie?",
-  "options": [
-    "Ratón",
-    "Teclado",
-    "Escáner",
-    "Micrófono"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Ratón\". Un ratón es un periférico de entrada que detecta el movimiento sobre una superficie y permite controlar un cursor en la pantalla.",
-  "source": "https://es.wikipedia.org/wiki/Rat%C3%B3n_de_ordenador"
-},
-{
-  "id": 425,
-  "category": "Componentes Básicos",
-  "question": "¿Qué tipo de periférico es una impresora 3D?",
-  "options": [
-    "Entrada",
-    "Almacenamiento",
-    "Salida",
-    "Comunicación"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Salida\". Una impresora 3D es un periférico de salida que crea objetos tridimensionales a partir de un modelo digital, depositando material capa por capa.",
-  "source": "https://es.wikipedia.org/wiki/Impresi%C3%B3n_3D"
-},
-{
-  "id": 426,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor un altavoz?",
-  "options": [
-    "Permite la entrada de datos mediante voz",
-    "Se utiliza para la salida de sonido",
-    "Almacena datos de audio",
-    "Imprime documentos en papel"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Se utiliza para la salida de sonido\". Un altavoz es un periférico de salida que convierte señales eléctricas de audio en sonido audible.",
-  "source": "https://es.wikipedia.org/wiki/Altavoz"
-},
-{
-  "id": 427,
-  "category": "Componentes Básicos",
-  "question": "¿Qué periférico se utiliza para la entrada de datos en forma de imágenes o documentos físicos?",
-  "options": [
-    "Ratón",
-    "Teclado",
-    "Escáner",
-    "Micrófono"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Escáner\". Un escáner es un periférico de entrada que digitaliza documentos o imágenes físicos, convirtiéndolos en datos digitales que pueden ser procesados por la computadora.",
-  "source": "https://es.wikipedia.org/wiki/Esc%C3%A1ner_de_ordenador"
-},
-{
-  "id": 428,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor una impresora de inyección de tinta?",
-  "options": [
-    "Utiliza láser para imprimir en papel",
-    "Imprime en papel térmico",
-    "Imprime en papel mediante chorros de tinta",
-    "Imprime en papel mediante agujas"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Imprime en papel mediante chorros de tinta\". Una impresora de inyección de tinta rocía microscópicas gotas de tinta sobre el papel para crear imágenes y texto.",
-  "source": "https://es.wikipedia.org/wiki/Impresora_de_inyecci%C3%B3n"
-},
-{
-  "id": 429,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un lector de huellas dactilares en un sistema de computadoras?",
-  "options": [
-    "Almacenamiento de datos",
-    "Comunicación de datos",
-    "Identificación biométrica",
-    "Impresión de documentos"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Identificación biométrica\". Un lector de huellas dactilares captura la imagen de una huella dactilar y la utiliza para identificar o autenticar a un usuario mediante características biométricas.",
-  "source": "https://es.wikipedia.org/wiki/Lector_de_huellas_dactilares"
-},
-{
-  "id": 430,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor un proyector?",
-  "options": [
-    "Se utiliza para la entrada de datos",
-    "Proyecta imágenes o videos en una pantalla",
-    "Almacena datos en forma de presentación",
-    "Imprime documentos en papel"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Proyecta imágenes o videos en una pantalla\". Un proyector es un periférico de salida que toma una señal de video y proyecta la imagen correspondiente sobre una pantalla o superficie.",
-  "source": "https://es.wikipedia.org/wiki/Proyector"
-},
-{
-  "id": 431,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor un teclado mecánico?",
-  "options": [
-    "Utiliza tecnología de membrana",
-    "Emplea interruptores mecánicos para las teclas",
-    "Es inalámbrico",
-    "Tiene teclas táctiles sensibles al tacto"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Emplea interruptores mecánicos para las teclas\". Un teclado mecánico utiliza interruptores mecánicos individuales bajo cada tecla, en lugar de la tecnología de membrana utilizada en teclados más económicos.",
-  "source": "https://es.wikipedia.org/wiki/Teclado_mec%C3%A1nico"
-},
-{
-  "id": 432,
-  "category": "Componentes Básicos",
-  "question": "¿Qué tipo de conexión es común en los teclados inalámbricos?",
-  "options": [
-    "USB",
-    "HDMI",
-    "Bluetooth",
-    "VGA"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Bluetooth\". Bluetooth es la tecnología de conexión inalámbrica más común para teclados, aunque también existen teclados inalámbricos que utilizan conectores USB de 2.4 GHz.",
-  "source": "https://es.wikipedia.org/wiki/Teclado_(inform%C3%A1tica)"
-},
-{
-  "id": 433,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál de las siguientes características es típica de un teclado ergonómico?",
-  "options": [
-    "Diseño compacto",
-    "Teclas iluminadas",
-    "Diseño curvado para reducir la tensión",
-    "Teclas mecánicas lineales"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Diseño curvado para reducir la tensión\". Los teclados ergonómicos están diseñados con una forma curvada o separada para reducir la tensión en las muñecas y mejorar la comodidad durante la escritura prolongada.",
-  "source": "https://es.wikipedia.org/wiki/Teclado_ergon%C3%B3mico"
-},
-{
-  "id": 434,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza la rueda de desplazamiento en un ratón?",
-  "options": [
-    "Mover el cursor",
-    "Hacer clic derecho",
-    "Desplazarse por páginas web u documentos",
-    "Controlar la sensibilidad del puntero"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Desplazarse por páginas web u documentos\". La rueda de desplazamiento en un ratón permite al usuario desplazarse verticalmente por documentos, páginas web u otros contenidos sin necesidad de utilizar las barras de desplazamiento.",
-  "source": "https://es.wikipedia.org/wiki/Rat%C3%B3n_de_ordenador"
-},
-{
-  "id": 435,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor un ratón óptico?",
-  "options": [
-    "Utiliza una bola para el desplazamiento",
-    "Emplea luz LED para detectar movimientos",
-    "Funciona sin necesidad de pilas",
-    "Tiene botones programables"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Emplea luz LED para detectar movimientos\". Un ratón óptico utiliza una luz LED y un sensor óptico para detectar el movimiento sobre una superficie, en lugar de la bola mecánica utilizada en ratones más antiguos.",
-  "source": "https://es.wikipedia.org/wiki/Rat%C3%B3n_%C3%B3ptico"
-},
-{
-  "id": 436,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es común en un ratón gaming?",
-  "options": [
-    "Diseño compacto",
-    "Sensor de alta sensibilidad",
-    "Conexión inalámbrica",
-    "Ausencia de botones adicionales"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Sensor de alta sensibilidad\". Los ratones gaming suelen tener sensores de alta sensibilidad (DPI) que permiten movimientos más precisos y rápidos, ideales para juegos que requieren reacciones rápidas.",
-  "source": "https://es.wikipedia.org/wiki/Rat%C3%B3n_para_videojuegos"
-},
-{
-  "id": 437,
-  "category": "Componentes Básicos",
-  "question": "¿Qué tipo de tecnología utiliza un ratón láser para detectar movimientos?",
-  "options": [
-    "Óptica",
-    "Infrarroja",
-    "Láser",
-    "Ultrasónica"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Láser\". Un ratón láser utiliza un láser infrarrojo en lugar de un LED para iluminar la superficie, lo que proporciona una mayor precisión y funciona en una mayor variedad de superficies que un ratón óptico estándar.",
-  "source": "https://es.wikipedia.org/wiki/Rat%C3%B3n_l%C3%A1ser"
-},
-{
-  "id": 438,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor un teclado retroiluminado?",
-  "options": [
-    "Teclas con relieve táctil",
-    "Teclas que emiten luz para facilitar la visibilidad en entornos oscuros",
-    "Teclas táctiles capacitivas",
-    "Teclas mecánicas silenciosas"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Teclas que emiten luz para facilitar la visibilidad en entornos oscuros\". Un teclado retroiluminado tiene luces debajo de las teclas que las iluminan, facilitando su uso en condiciones de poca luz.",
-  "source": "https://es.wikipedia.org/wiki/Teclado_(inform%C3%A1tica)"
-},
-{
-  "id": 439,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es una característica típica de un teclado numérico?",
-  "options": [
-    "Diseño compacto",
-    "Teclas multimedia",
-    "Teclas numéricas agrupadas a la derecha",
-    "Teclas táctiles sensibles al tacto"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Teclas numéricas agrupadas a la derecha\". Un teclado numérico (o keypad) es un conjunto de teclas numéricas, generalmente dispuestas en un bloque rectangular a la derecha del teclado principal.",
-  "source": "https://es.wikipedia.org/wiki/Teclado_num%C3%A9rico"
-},
-{
-  "id": 440,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza el botón central en un ratón de tres botones?",
-  "options": [
-    "Hacer clic izquierdo",
-    "Hacer clic derecho",
-    "Desplazar el cursor",
-    "Función de la rueda de desplazamiento"
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Función de la rueda de desplazamiento\". En muchos ratones de tres botones, el botón central también funciona como rueda de desplazamiento, permitiendo tanto hacer clic como desplazarse verticalmente.",
-  "source": "https://es.wikipedia.org/wiki/Rat%C3%B3n_de_ordenador"
-},
-{
-  "id": 441,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es esencial en un teclado mecánico para juegos?",
-  "options": [
-    "Teclas silenciosas",
-    "Teclas retroiluminadas",
-    "Retroceso táctil en cada pulsación",
-    "Teclas planas y compactas"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Retroceso táctil en cada pulsación\". Los teclados mecánicos para juegos suelen tener interruptores con retroceso táctil (tactile feedback) que proporcionan una confirmación física de que la tecla ha sido presionada, mejorando la precisión en juegos.",
-  "source": "https://es.wikipedia.org/wiki/Teclado_mec%C3%A1nico"
-},
-{
-  "id": 442,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la principal función de un ratón con tecnología Bluetooth?",
-  "options": [
-    "Conectar varios dispositivos a la vez",
-    "Mejorar la precisión del puntero",
-    "Eliminar la necesidad de pilas",
-    "Proporcionar retroalimentación háptica"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Conectar varios dispositivos a la vez\". La tecnología Bluetooth permite que un ratón se conecte sin cables a múltiples dispositivos (como una computadora y una tableta) y cambiar entre ellos según sea necesario.",
-  "source": "https://es.wikipedia.org/wiki/Bluetooth"
-},
-{
-  "id": 443,
-  "category": "Componentes Básicos",
-  "question": "¿Qué tipo de ratón utiliza una bola para detectar movimientos?",
-  "options": [
-    "Óptico",
-    "Láser",
-    "Trackball",
-    "Inalámbrico"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Trackball\". Un trackball es un dispositivo de señalización que utiliza una bola que el usuario rola con la mano o dedos para mover el cursor, en lugar de mover el propio dispositivo sobre una superficie.",
-  "source": "https://es.wikipedia.org/wiki/Trackball"
-},
-{
-  "id": 444,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es común en los teclados mecánicos lineales?",
-  "options": [
-    "Retroalimentación táctil en cada pulsación",
-    "Ausencia de ruido al escribir",
-    "Teclas curvadas para mayor comodidad",
-    "Presión constante en todas las teclas"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Ausencia de ruido al escribir\". Los teclados mecánicos lineales tienen interruptores que proporcionan una trayectoria suave y consistente sin un punto de activación táctil notable, lo que resulta en una experiencia de escritura más silenciosa.",
-  "source": "https://es.wikipedia.org/wiki/Teclado_mec%C3%A1nico"
-},
-{
-  "id": 445,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es una ventaja de un teclado con teclas multimedia?",
-  "options": [
-    "Mayor durabilidad",
-    "Facilita el acceso rápido a funciones como reproducción de música y volumen",
-    "Teclas táctiles sensibles al tacto",
-    "Teclas retroiluminadas"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Facilita el acceso rápido a funciones como reproducción de música y volumen\". Las teclas multimedia permiten controlar funciones multimedia como reproducción/pausa, siguiente/anterior pista y volumen directamente desde el teclado, sin necesidad de utilizar el ratón.",
-  "source": "https://es.wikipedia.org/wiki/Teclado_multimedia"
-},
-{
-  "id": 446,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es típica de un ratón trackball?",
-  "options": [
-    "Rueda de desplazamiento",
-    "Bola que se gira para controlar el cursor",
-    "Botones programables",
-    "Diseño ergonómico"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Bola que se gira para controlar el cursor\". Un trackball se caracteriza por tener una bola expuesta que el usuario rota con los dedos o la palma de la mano para mover el cursor en la pantalla.",
-  "source": "https://es.wikipedia.org/wiki/Trackball"
-},
-{
-  "id": 447,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor un teclado inalámbrico?",
-  "options": [
-    "Se conecta a través de un cable USB",
-    "Utiliza pilas o batería recargable",
-    "Teclas retroiluminadas",
-    "Diseño compacto"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Utiliza pilas o batería recargable\". Un teclado inalámbrico se caracteriza por no requerir un cable para conectarse a la computadora, utilizando en su lugar pilas desechables o una batería recargable para su alimentación.",
-  "source": "https://es.wikipedia.org/wiki/Teclado_(inform%C3%A1tica)"
-},
-{
-  "id": 448,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es una característica esencial en un ratón para diseño gráfico?",
-  "options": [
-    "Botones programables",
-    "Alta sensibilidad",
-    "Función de rueda de desplazamiento",
-    "Diseño compacto"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Alta sensibilidad\". Para diseño gráfico, un ratón con alta sensibilidad (DPI) es esencial para permitir movimientos precisos y detallados necesarios en trabajos de edición de imágenes o ilustración.",
-  "source": "https://es.wikipedia.org/wiki/Rat%C3%B3n_de_ordenador"
-},
-{
-  "id": 449,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un teclado táctil en lugar de teclas físicas?",
-  "options": [
-    "Vibración háptica",
-    "Detección de movimientos",
-    "Reconocimiento de voz",
-    "Superficie sensible al tacto"
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Superficie sensible al tacto\". Un teclado táctil utiliza una superficie sensible al tacto en lugar de teclas físicas, detectando la posición y presión de los dedos para registrar la entrada.",
-  "source": "https://es.wikipedia.org/wiki/Teclado_t%C3%A1ctil"
-},
-{
-  "id": 450,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es común en un ratón inalámbrico?",
-  "options": [
-    "Cable USB para la conexión",
-    "Bola para detectar movimientos",
-    "Utiliza pilas o batería recargable",
-    "Sin botones adicionales"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Utiliza pilas o batería recargable\". Un ratón inalámbrico se caracteriza por no requerir un cable para conectarse a la computadora, utilizando en su lugar pilas desechables o una batería recargable para su alimentación.",
-  "source": "https://es.wikipedia.org/wiki/Rat%C3%B3n_de_ordenador"
-},
-{
-  "id": 451,
-  "category": "Tarjetas de Expansión",
-  "question": "¿Cuál de las siguientes opciones describe mejor una impresora multifunción?",
-  "options": [
-    "Solo imprime documentos",
-    "Combina impresión, escaneo, copia y a veces fax",
-    "Solo escanea documentos",
-    "Solo funciona como fotocopiadora"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Combina impresión, escaneo, copia y a veces fax\". Una impresora multifunción es un dispositivo que integra varias funciones como impresión, escaneo, copia y, en algunos casos, fax en un solo equipo.",
-  "source": "https://es.wikipedia.org/wiki/Impresora_multifunci%C3%B3n"
-},
-{
-  "id": 452,
-  "category": "Componentes Básicos",
-  "question": "¿Qué tipo de tecnología utilizan los monitores táctiles para detectar la entrada del usuario?",
-  "options": [
-    "Láser",
-    "Infrarrojo",
-    "Capacitiva o resistiva",
-    "Ultrasónica"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Capacitiva o resistiva\". Los monitores táctiles utilizan principalmente tecnologías capacitivas o resistivas para detectar el contacto del usuario con la pantalla. La tecnología capacitiva es más común en dispositivos modernos.",
-  "source": "https://es.wikipedia.org/wiki/Pantalla_t%C3%A1ctil"
-},
-{
-  "id": 453,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la función principal de un digitalizador en una tableta gráfica?",
-  "options": [
-    "Proyectar imágenes",
-    "Capturar la escritura o dibujo a mano",
-    "Reproducir sonido",
-    "Almacenar archivos"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Capturar la escritura o dibujo a mano\". Un digitalizador en una tableta gráfica es el componente que detecta y registra los movimientos del stylus, permitiendo capturar escritura o dibujos a mano de forma digital.",
-  "source": "https://es.wikipedia.org/wiki/Tableta_gr%C3%A1fica"
-},
-{
-  "id": 454,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica distingue a un monitor curvo respecto a uno plano?",
-  "options": [
-    "Mayor resolución",
-    "Mayor tasa de refresco",
-    "Curvatura que envuelve la visión del usuario",
-    "Menor consumo energético"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Curvatura que envuelve la visión del usuario\". Un monitor curvo se caracteriza por tener una pantalla curvada que busca envolver el campo de visión del usuario, proporcionando una mayor inmersión y reduciendo la distorsión en los bordes.",
-  "source": "https://es.wikipedia.org/wiki/Monitor_curvo"
-},
-{
-  "id": 455,
-  "category": "Componentes Básicos",
-  "question": "¿Qué tecnología utilizan los paneles IPS en los monitores?",
-  "options": [
-    "Twisted Nematic",
-    "In-Plane Switching",
-    "Vertical Alignment",
-    "Organic Light-Emitting Diode"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"In-Plane Switching\". IPS (In-Plane Switching) es una tecnología de panel LCD que ofrece mejores ángulos de visión y reproducción del color en comparación con otras tecnologías como TN (Twisted Nematic).",
-  "source": "https://es.wikipedia.org/wiki/IPS"
-},
-{
-  "id": 456,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la función principal de un puerto HDMI en un monitor?",
-  "options": [
-    "Transmitir solo video",
-    "Transmitir video y audio digital de alta calidad",
-    "Conectar periféricos USB",
-    "Proporcionar alimentación al dispositivo"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Transmitir video y audio digital de alta calidad\". HDMI (High-Definition Multimedia Interface) es una interfaz que permite transmitir señales de video y audio digital sin comprimir de alta calidad.",
-  "source": "https://es.wikipedia.org/wiki/HDMI"
-},
-{
-  "id": 457,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica define a un monitor con alta tasa de refresco?",
-  "options": [
-    "Mayor resolución",
-    "Mayor número de imágenes por segundo",
-    "Mayor tamaño de pantalla",
-    "Mayor brillo"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Mayor número de imágenes por segundo\". Un monitor con alta tasa de refresco (refresh rate) puede mostrar más imágenes por segundo (medido en Hz), lo que resulta en un movimiento más suave, especialmente beneficioso para juegos y contenido de acción rápida.",
-  "source": "https://es.wikipedia.org/wiki/Tasa_de_refresco"
-},
-{
-  "id": 458,
-  "category": "Componentes Básicos",
-  "question": "¿Qué tecnología utilizan los monitores OLED para producir imágenes?",
-  "options": [
-    "Cristal líquido con retroiluminación",
-    "Diodos emisores de luz orgánicos",
-    "Plasma",
-    "Tubo de rayos catódicos"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Diodos emisores de luz orgánicos\". OLED (Organic Light-Emitting Diode) utiliza compuestos orgánicos que emiten luz cuando se aplica una corriente eléctrica, eliminando la necesidad de retroiluminación y permitiendo negros perfectos y colores más vibrantes.",
-  "source": "https://es.wikipedia.org/wiki/OLED"
-},
-{
-  "id": 459,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la ventaja principal de un monitor con resolución 4K sobre uno Full HD?",
-  "options": [
-    "Mayor tasa de refresco",
-    "Menor tiempo de respuesta",
-    "Mayor cantidad de píxeles para mayor detalle",
-    "Menor consumo energético"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Mayor cantidad de píxeles para mayor detalle\". Un monitor 4K tiene aproximadamente 8.3 millones de píxeles (3840×2160), mientras que un monitor Full HD tiene 2.1 millones (1920×1080), lo que resulta en una imagen significativamente más detallada.",
-  "source": "https://es.wikipedia.org/wiki/4K_resoluci%C3%B3n"
-},
-{
-  "id": 460,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza el adaptador DisplayPort a HDMI?",
-  "options": [
-    "Convertir señal analógica a digital",
-    "Convertir señal digital de DisplayPort a HDMI",
-    "Amplificar la señal de video",
-    "Proporcionar alimentación adicional"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Convertir señal digital de DisplayPort a HDMI\". Un adaptador DisplayPort a HDMI permite conectar un dispositivo con salida DisplayPort a un monitor o televisor con entrada HDMI, convirtiendo la señal según sea necesario.",
-  "source": "https://es.wikipedia.org/wiki/DisplayPort"
-},
-{
-  "id": 461,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es importante para los gamers al elegir un monitor?",
-  "options": [
-    "Tamaño del panel",
-    "Tiempo de respuesta bajo",
-    "Tipo de stand (soporte)",
-    "Consumo energético"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Tiempo de respuesta bajo\". Para los gamers, un tiempo de respuesta bajo (medido en milisegundos) es crucial para reducir el efecto ghosting y motion blur, proporcionando una imagen más nítida durante el movimiento rápido en juegos.",
-  "source": "https://es.wikipedia.org/wiki/Tiempo_de_respuesta"
-},
-{
-  "id": 462,
-  "category": "Componentes Básicos",
-  "question": "¿Qué tecnología utilizan los monitores VA para ofrecer un buen contraste?",
-  "options": [
-    "Twisted Nematic",
-    "In-Plane Switching",
-    "Vertical Alignment",
-    "Organic Light-Emitting Diode"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Vertical Alignment\". VA (Vertical Alignment) es una tecnología de panel LCD que ofrece mejores ratios de contraste en comparación con otras tecnologías como TN o IPS, aunque con tiempos de respuesta más lentos.",
-  "source": "https://es.wikipedia.org/wiki/Vertical_alignment"
-},
-{
-  "id": 463,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la función principal de un puerto DisplayPort en un monitor?",
-  "options": [
-    "Transmitir solo audio",
-    "Transmitir video y audio de alta calidad",
-    "Conectar periféricos USB",
-    "Proporcionar alimentación al dispositivo"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Transmitir video y audio de alta calidad\". DisplayPort es una interfaz de visualización digital que puede transmitir señales de video y audio de alta calidad, y es capaz de soportar resoluciones y tasas de refresco más altas que HDMI en algunas versiones.",
-  "source": "https://es.wikipedia.org/wiki/DisplayPort"
-},
-{
-  "id": 464,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica define a un monitor con modo G-Sync de NVIDIA?",
-  "options": [
-    "Mayor resolución nativa",
-    "Sincronización de la tasa de refresco con la GPU",
-    "Mayor brillo máximo",
-    "Menor consumo energético"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Sincronización de la tasa de refresco con la GPU\". G-Sync es una tecnología de NVIDIA que sincroniza la tasa de refresco del monitor con la velocidad de fotogramas de la GPU, eliminando el screen tearing y proporcionando una experiencia de juego más fluida.",
-  "source": "https://es.wikipedia.org/wiki/NVIDIA_G-Sync"
-},
-{
-  "id": 465,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un puerto USB-C en un monitor moderno?",
-  "options": [
-    "Solo transmitir video",
-    "Transmitir video, audio, datos y proporcionar alimentación",
-    "Solo conectar periféricos",
-    "Solo proporcionar alimentación"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Transmitir video, audio, datos y proporcionar alimentación\". USB-C es un conector versátil que puede transmitir video (a través de DisplayPort Alternate Mode), audio, datos y proporcionar alimentación (Power Delivery), todo a través de un solo cable.",
-  "source": "https://es.wikipedia.org/wiki/USB-C"
-},
-{
-  "id": 466,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es importante para los profesionales de la edición de fotos al elegir un monitor?",
-  "options": [
-    "Tasa de refresco alta",
-    "Tiempo de respuesta bajo",
-    "Precisión del color y amplia gama cromática",
-    "Tamaño de pantalla grande"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Precisión del color y amplia gama cromática\". Para los profesionales de la edición de fotos, la precisión del color y una amplia gama cromática (cobertura de espacios de color como sRGB, Adobe RGB o DCI-P3) son cruciales para garantizar que las imágenes se vean correctamente.",
-  "source": "https://es.wikipedia.org/wiki/Gesti%C3%B3n_del_color"
-},
-{
-  "id": 467,
-  "category": "Componentes Básicos",
-  "question": "¿Qué tecnología utilizan los monitores Quantum Dot para mejorar el color?",
-  "options": [
-    "Nanocristales semiconductor",
-    "Cristal líquido mejorado",
-    "Diodos orgánicos",
-    "Plasma de gas"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Nanocristales semiconductor\". Quantum Dot utiliza nanocristales semiconductor que emiten luz de colores muy puros cuando se estimulan, permitiendo una gama cromática más amplia y colores más vibrantes en los monitores.",
-  "source": "https://es.wikipedia.org/wiki/Quantum_dot"
-},
-{
-  "id": 468,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la función principal de un puerto DVI en un monitor?",
-  "options": [
-    "Transmitir señal analógica",
-    "Transmitir señal digital o analógica",
-    "Transmitir solo audio",
-    "Conectar periféricos USB"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Transmitir señal digital o analógica\". DVI (Digital Visual Interface) puede transmitir señales digitales (DVI-D), analógicas (DVI-A) o ambas (DVI-I), aunque la mayoría de monitores modernos utilizan principalmente la conexión digital.",
-  "source": "https://es.wikipedia.org/wiki/Digital_Visual_Interface"
-},
-{
-  "id": 469,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica define a un monitor con HDR (High Dynamic Range)?",
-  "options": [
-    "Mayor resolución",
-    "Mayor rango dinámico entre zonas claras y oscuras",
-    "Mayor tasa de refresco",
-    "Menor tiempo de respuesta"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Mayor rango dinámico entre zonas claras y oscuras\". HDR permite un mayor rango dinámico entre las áreas más claras y más oscuras de una imagen, proporcionando más detalle en ambas zonas y colores más realistas.",
-  "source": "https://es.wikipedia.org/wiki/High_dynamic_range"
-},
-{
-  "id": 470,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un puerto VGA en un monitor?",
-  "options": [
-    "Transmitir señal digital",
-    "Transmitir señal analógica",
-    "Transmitir video y audio digital",
-    "Proporcionar alimentación"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Transmitir señal analógica\". VGA (Video Graphics Array) es un estándar de conector analógico que transmite señales de video analógicas, siendo uno de los conectores más antiguos pero todavía presente en algunos monitores y proyectores.",
-  "source": "https://es.wikipedia.org/wiki/Video_Graphics_Array"
-},
-{
-  "id": 471,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es importante para los profesionales de la edición de video al elegir un monitor?",
-  "options": [
-    "Tamaño de pantalla grande",
-    "Precisión del color y espacio de color amplio",
-    "Alta tasa de refresco",
-    "Tiempo de respuesta bajo"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Precisión del color y espacio de color amplio\". Para los profesionales de la edición de video, la precisión del color y una amplia cobertura de espacios de color como Rec. 709 o DCI-P3 son cruciales para garantizar que los colores se vean correctamente en diferentes dispositivos.",
-  "source": "https://es.wikipedia.org/wiki/Gesti%C3%B3n_del_color"
-},
-{
-  "id": 472,
-  "category": "Componentes Básicos",
-  "question": "¿Qué tecnología utilizan los monitores con modo FreeSync de AMD?",
-  "options": [
-    "Sincronización adaptativa de la tasa de refresco",
-    "Mejora del contraste dinámico",
-    "Reducción del tiempo de respuesta",
-    "Aumento de la resolución"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Sincronización adaptativa de la tasa de refresco\". FreeSync es una tecnología de AMD que sincroniza dinámicamente la tasa de refresco del monitor con la velocidad de fotogramas de la GPU, eliminando el screen tearing y proporcionando una experiencia de juego más fluida.",
-  "source": "https://es.wikipedia.org/wiki/AMD_FreeSync"
-},
-{
-  "id": 473,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la función principal de un puerto Thunderbolt en un monitor?",
-  "options": [
-    "Solo transmitir video",
-    "Transmitir video, datos y proporcionar alimentación de alta velocidad",
-    "Solo conectar periféricos",
-    "Solo proporcionar alimentación"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Transmitir video, datos y proporcionar alimentación de alta velocidad\". Thunderbolt es una interfaz de alta velocidad que puede transmitir video (DisplayPort), datos (PCIe) y proporcionar alimentación, todo a través de un solo cable.",
-  "source": "https://es.wikipedia.org/wiki/Thunderbolt_(interfaz)"
-},
-{
-  "id": 474,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica define a un monitor con panel TN?",
-  "options": [
-    "Mejores ángulos de visión",
-    "Mayor tiempo de respuesta",
-    "Peor contraste",
-    "Mayor precisión del color"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Mayor tiempo de respuesta\". Los paneles TN (Twisted Nematic) se caracterizan por tener los tiempos de respuesta más rápidos, aunque a costa de peores ángulos de visión y menor precisión del color en comparación con otros tipos de paneles.",
-  "source": "https://es.wikipedia.org/wiki/Twisted_nematic"
-},
-{
-  "id": 475,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un monitor en modo retrato (portrait mode)?",
-  "options": [
-    "Mejorar el rendimiento de juegos",
-    "Mostrar contenido verticalmente, ideal para documentos o programación",
-    "Reducir el consumo energético",
-    "Aumentar la tasa de refresco"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Mostrar contenido verticalmente, ideal para documentos o programación\". El modo retrato gira la pantalla 90 grados, mostrando el contenido verticalmente, lo que es ideal para leer documentos largos, navegar por páginas web o programar.",
-  "source": "https://es.wikipedia.org/wiki/Orientaci%C3%B3n_de_pantalla"
-},
-{
-  "id": 476,
-  "category": "Componentes Básicos",
-  "question": "¿Qué tecnología utilizan los monitores con retroiluminación LED?",
-  "options": [
-    "Tubos fluorescentes",
-    "Diodos emisores de luz",
-    "Plasma",
-    "Cátodo frío"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Diodos emisores de luz\". Los monitores con retroiluminación LED utilizan diodos emisores de luz (LED) en lugar de los tubos fluorescentes CCFL tradicionales para iluminar el panel LCD, lo que resulta en un menor consumo energético, mayor vida útil y mejor control del brillo y contraste.",
-  "source": "https://es.wikipedia.org/wiki/LED-backlit_LCD"
-},
-{
-  "id": 477,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es importante para los diseñadores gráficos al elegir un monitor?",
-  "options": [
-    "Alta tasa de refresco",
-    "Calibración de color y uniformidad",
-    "Tiempo de respuesta bajo",
-    "Tamaño de pantalla grande"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Calibración de color y uniformidad\". Para los diseñadores gráficos, la capacidad de calibración del color y la uniformidad del brillo y color en toda la pantalla son cruciales para garantizar que los diseños se vean consistentemente.",
-  "source": "https://es.wikipedia.org/wiki/Calibraci%C3%B3n_del_color"
-},
-{
-  "id": 478,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un monitor con función Picture-in-Picture (PiP)?",
-  "options": [
-    "Mejorar la calidad de imagen",
-    "Mostrar dos fuentes de video simultáneamente",
-    "Reducir el consumo energético",
-    "Aumentar la resolución"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Mostrar dos fuentes de video simultáneamente\". Picture-in-Picture (PiP) permite mostrar dos fuentes de video diferentes en la misma pantalla, generalmente con una imagen más pequeña superpuesta sobre la principal.",
-  "source": "https://es.wikipedia.org/wiki/Picture-in-picture"
-},
-{
-  "id": 479,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica define a un monitor con alta relación de contraste?",
-  "options": [
-    "Mayor diferencia entre blancos y negros",
-    "Mayor número de colores",
-    "Mayor brillo máximo",
-    "Mayor ángulo de visión"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Mayor diferencia entre blancos y negros\". Una alta relación de contraste indica una mayor diferencia entre las áreas más claras y más oscuras de la imagen, resultando en una imagen con más profundidad y detalle.",
-  "source": "https://es.wikipedia.org/wiki/Relaci%C3%B3n_de_contraste"
-},
-{
-  "id": 480,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un monitor con modo de bajo retardo de entrada (low input lag)?",
-  "options": [
-    "Mejorar la calidad de imagen",
-    "Reducir el tiempo entre la entrada del usuario y la respuesta en pantalla",
-    "Aumentar la tasa de refresco",
-    "Reducir el consumo energético"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Reducir el tiempo entre la entrada del usuario y la respuesta en pantalla\". Un bajo retardo de entrada (input lag) significa que hay menos tiempo entre cuando el usuario realiza una acción (como mover el ratón) y cuando se ve el resultado en pantalla, lo que es crucial para juegos.",
-  "source": "https://es.wikipedia.org/wiki/Retardo_de_entrada"
-},
-{
-  "id": 481,
-  "category": "Componentes Básicos",
-  "question": "¿Qué tecnología utilizan los monitores con función Flicker-Free?",
-  "options": [
-    "Retroiluminación PWM",
-    "Retroiluminación DC o alta frecuencia",
-    "Tecnología OLED",
-    "Panel IPS mejorado"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Retroiluminación DC o alta frecuencia\". La tecnología Flicker-Free utiliza retroiluminación de corriente continua (DC) o modulación por ancho de pulso (PWM) a alta frecuencia para eliminar el parpadeo visible que puede causar fatiga visual durante el uso prolongado.",
-  "source": "https://es.wikipedia.org/wiki/Parpadeo_(pantalla)"
-},
-{
-  "id": 482,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es importante para los programadores al elegir un monitor?",
-  "options": [
-    "Alta tasa de refresco",
-    "Espacio amplio para mostrar código y múltiples ventanas",
-    "Tiempo de respuesta bajo",
-    "Alta precisión del color"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Espacio amplio para mostrar código y múltiples ventanas\". Para los programadores, tener suficiente espacio en pantalla para mostrar código y múltiples ventanas simultáneamente es crucial, por lo que monitores grandes o configuraciones de múltiples monitores son populares.",
-  "source": "https://es.wikipedia.org/wiki/Monitor_de_computadora"
-},
-{
-  "id": 483,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un monitor con función de reducción de luz azul?",
-  "options": [
-    "Mejorar el contraste",
-    "Reducir la fatiga visual durante el uso nocturno",
-    "Aumentar la tasa de refresco",
-    "Mejorar la precisión del color"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Reducir la fatiga visual durante el uso nocturno\". La reducción de luz azul disminuye la cantidad de luz azul emitida por el monitor, lo que puede ayudar a reducir la fatiga visual y mejorar la calidad del sueño durante el uso nocturno.",
-  "source": "https://es.wikipedia.org/wiki/Luz_azul_y_salud"
-},
-{
-  "id": 484,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica define a un monitor con alta cobertura del espacio de color sRGB?",
-  "options": [
-    "Mayor brillo",
-    "Mayor capacidad para mostrar colores del estándar sRGB",
-    "Mayor resolución",
-    "Menor tiempo de respuesta"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Mayor capacidad para mostrar colores del estándar sRGB\". Una alta cobertura del espacio de color sRGB significa que el monitor puede reproducir una mayor parte de los colores definidos en el estándar sRGB, lo que resulta en colores más precisos para contenido web y general.",
-  "source": "https://es.wikipedia.org/wiki/sRGB"
-},
-{
-  "id": 485,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un monitor con modo de lectura (reading mode)?",
-  "options": [
-    "Aumentar la resolución",
-    "Ajustar la temperatura de color y brillo para leer texto cómodamente",
-    "Mejorar la tasa de refresco",
-    "Reducir el consumo energético"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Ajustar la temperatura de color y brillo para leer texto cómodamente\". El modo de lectura ajusta la temperatura de color y el brillo de la pantalla para hacer la lectura de texto más cómoda, similar a la apariencia del papel.",
-  "source": "https://es.wikipedia.org/wiki/Monitor_de_computadora"
-},
-{
-  "id": 486,
-  "category": "Componentes Básicos",
-  "question": "¿Qué tecnología utilizan los monitores con función de atenuación local (local dimming)?",
-  "options": [
-    "Control de zonas de retroiluminación",
-    "Mejora del panel LCD",
-    "Tecnología OLED",
-    "Procesamiento avanzado de imagen"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Control de zonas de retroiluminación\". La atenuación local divide la retroiluminación del monitor en zonas que pueden atenuarse o apagarse independientemente, mejorando el contraste y los negros en áreas específicas de la imagen.",
-  "source": "https://es.wikipedia.org/wiki/Local_dimming"
-},
-{
-  "id": 487,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es importante para los profesionales de la arquitectura al elegir un monitor?",
-  "options": [
-    "Alta tasa de refresco",
-    "Gran tamaño y alta resolución para planos detallados",
-    "Tiempo de respuesta bajo",
-    "Alta precisión del color"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Gran tamaño y alta resolución para planos detallados\". Para los profesionales de la arquitectura, un monitor grande con alta resolución es importante para poder ver planos detallados y modelos 3D con claridad.",
-  "source": "https://es.wikipedia.org/wiki/Monitor_de_computadora"
-},
-{
-  "id": 488,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un monitor con función de superposición de rejilla (grid overlay)?",
-  "options": [
-    "Mejorar la calidad de imagen",
-    "Mostrar una cuadrícula sobre la pantalla para alineación",
-    "Aumentar la tasa de refresco",
-    "Reducir el consumo energético"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Mostrar una cuadrícula sobre la pantalla para alineación\". La superposición de rejilla muestra una cuadrícula sobre la pantalla, útil para diseño gráfico, arquitectura o composición visual para asegurar la alineación correcta de elementos.",
-  "source": "https://es.wikipedia.org/wiki/Cuadr%C3%ADcula"
-},
-{
-  "id": 489,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica define a un monitor con alta densidad de píxeles (PPI)?",
-  "options": [
-    "Mayor tamaño de pantalla",
-    "Mayor número de píxeles por pulgada",
-    "Mayor tasa de refresco",
-    "Mayor brillo"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Mayor número de píxeles por pulgada\". Una alta densidad de píxeles (PPI - Pixels Per Inch) significa que hay más píxeles en cada pulgada de pantalla, resultando en una imagen más nítida y detallada.",
-  "source": "https://es.wikipedia.org/wiki/Densidad_de_p%C3%ADxeles"
-},
-{
-  "id": 490,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un monitor con modo de juego (game mode)?",
-  "options": [
-    "Mejorar la calidad de imagen",
-    "Optimizar configuraciones para reducir el retardo de entrada",
-    "Aumentar la resolución",
-    "Reducir el consumo energético"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Optimizar configuraciones para reducir el retardo de entrada\". El modo de juego ajusta varias configuraciones del monitor para reducir el retardo de entrada y optimizar la experiencia visual para juegos.",
-  "source": "https://es.wikipedia.org/wiki/Modo_de_juego"
-},
-{
-  "id": 491,
-  "category": "Componentes Básicos",
-  "question": "¿Qué tecnología utilizan los monitores con función de sombreado dinámico (dynamic shadow boost)?",
-  "options": [
-    "Mejora del panel LCD",
-    "Realce de detalles en áreas oscuras sin sobreexponer las claras",
-    "Tecnología OLED",
-    "Procesamiento HDR avanzado"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Realce de detalles en áreas oscuras sin sobreexponer las claras\". La tecnología de sombreado dinámico realza los detalles en las áreas más oscuras de la imagen sin sobreexponer las áreas más claras, mejorando la visibilidad en escenas con alto contraste.",
-  "source": "https://es.wikipedia.org/wiki/Procesamiento_de_imagen"
-},
-{
-  "id": 492,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es importante para los profesionales de la fotografía al elegir un monitor?",
-  "options": [
-    "Alta tasa de refresco",
-    "Calibración de color precisa y amplia gama cromática",
-    "Tiempo de respuesta bajo",
-    "Tamaño de pantalla grande"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Calibración de color precisa y amplia gama cromática\". Para los profesionales de la fotografía, una calibración de color precisa y una amplia gama cromática son cruciales para garantizar que las fotografías se vean correctamente y los colores sean consistentes con la impresión.",
-  "source": "https://es.wikipedia.org/wiki/Gesti%C3%B3n_del_color"
-},
-{
-  "id": 493,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un monitor con función de enfoque (focus mode)?",
-  "options": [
-    "Mejorar la calidad de imagen",
-    "Resaltar áreas específicas de la pantalla para reducir distracciones",
-    "Aumentar la tasa de refresco",
-    "Reducir el consumo energético"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Resaltar áreas específicas de la pantalla para reducir distracciones\". El modo de enfoque resalta o ilumina áreas específicas de la pantalla mientras atenúa el resto, ayudando a reducir distracciones y mejorar la concentración.",
-  "source": "https://es.wikipedia.org/wiki/Atenci%C3%B3n"
-},
-{
-  "id": 494,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica define a un monitor con alta relación de aspecto ultrapanorámica (21:9 o 32:9)?",
-  "options": [
-    "Mayor altura",
-    "Mayor anchura en relación con la altura",
-    "Mayor resolución vertical",
-    "Mayor tasa de refresco"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Mayor anchura en relación con la altura\". Los monitores ultrapanorámicos tienen relaciones de aspecto más anchas que el estándar 16:9, como 21:9 o 32:9, proporcionando más espacio horizontal para productividad o una experiencia más inmersiva en juegos y películas.",
-  "source": "https://es.wikipedia.org/wiki/Monitor_ultrapanor%C3%A1mico"
-},
-{
-  "id": 495,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un monitor con función de subdivisión de pantalla (screen split)?",
-  "options": [
-    "Mejorar la calidad de imagen",
-    "Dividir la pantalla en múltiples áreas para organizar ventanas",
-    "Aumentar la tasa de refresco",
-    "Reducir el consumo energético"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Dividir la pantalla en múltiples áreas para organizar ventanas\". La subdivisión de pantalla divide el área de visualización en múltiples secciones predefinidas, facilitando la organización de ventanas y mejorando la productividad.",
-  "source": "https://es.wikipedia.org/wiki/Gestor_de_ventanas"
-},
-{
-  "id": 496,
-  "category": "Componentes Básicos",
-  "question": "¿Qué tecnología utilizan los monitores con función de sincronización adaptativa (adaptive sync)?",
-  "options": [
-    "Sincronización de la tasa de refresco con la GPU",
-    "Mejora del contraste dinámico",
-    "Reducción del tiempo de respuesta",
-    "Aumento de la resolución"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Sincronización de la tasa de refresco con la GPU\". La sincronización adaptativa ajusta dinámicamente la tasa de refresco del monitor para que coincida con la velocidad de fotogramas de la GPU, eliminando el screen tearing y proporcionando una experiencia más fluida.",
-  "source": "https://es.wikipedia.org/wiki/Adaptive_sync"
-},
-{
-  "id": 497,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es importante para los profesionales de la edición de video 3D al elegir un monitor?",
-  "options": [
-    "Alta tasa de refresco",
-    "Precisión del color y capacidad para mostrar contenido 3D",
-    "Tiempo de respuesta bajo",
-    "Tamaño de pantalla grande"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Precisión del color y capacidad para mostrar contenido 3D\". Para los profesionales de la edición de video 3D, la precisión del color y la capacidad para mostrar correctamente contenido 3D (ya sea estéreo o con tecnologías específicas) son cruciales para su trabajo.",
-  "source": "https://es.wikipedia.org/wiki/Video_3D"
-},
-{
-  "id": 498,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un monitor con función de zoom de pantalla?",
-  "options": [
-    "Mejorar la calidad de imagen",
-    "Ampliar áreas específicas de la pantalla para mayor visibilidad",
-    "Aumentar la tasa de refresco",
-    "Reducir el consumo energético"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Ampliar áreas específicas de la pantalla para mayor visibilidad\". La función de zoom de pantalla permite ampliar áreas específicas de la pantalla para mejorar la visibilidad de detalles pequeños o texto.",
-  "source": "https://es.wikipedia.org/wiki/Zoom_digital"
-},
-{
-  "id": 499,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica define a un monitor con alta uniformidad de brillo?",
-  "options": [
-    "Mayor brillo máximo",
-    "Brillo consistente en toda la pantalla",
-    "Mayor contraste",
-    "Mayor ángulo de visión"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Brillo consistente en toda la pantalla\". Una alta uniformidad de brillo significa que el nivel de brillo es consistente en toda la pantalla, sin variaciones notables entre el centro y los bordes, lo que es importante para trabajo visual crítico.",
-  "source": "https://es.wikipedia.org/wiki/Uniformidad_de_brillo"
-},
-{
-  "id": 500,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un monitor con modo de presentación (presentation mode)?",
-  "options": [
-    "Mejorar la calidad de imagen",
-    "Optimizar configuraciones para mostrar presentaciones",
-    "Aumentar la tasa de refresco",
-    "Reducir el consumo energético"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Optimizar configuraciones para mostrar presentaciones\". El modo de presentación ajusta varias configuraciones del monitor para optimizar la visualización de presentaciones, generalmente mejorando el brillo y el contraste para una mejor visibilidad.",
-  "source": "https://es.wikipedia.org/wiki/Presentaci%C3%B3n"
-},
-{
-  "id": 501,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es común en unos auriculares con cancelación de ruido?",
-  "options": [
-    "Mayor duración de la batería",
-    "Reducción de ruido ambiental",
-    "Cable largo para mayor alcance",
-    "Diseño compacto"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Reducción de ruido ambiental\". Los auriculares con cancelación de ruido utilizan micrófonos para capturar el sonido ambiental y generar ondas opuestas que lo cancelan, permitiendo una mejor experiencia de audio.",
-  "source": "https://es.wikipedia.org/wiki/Cancelaci%C3%B3n_de_ruido"
-},
-{
-  "id": 502,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la ventaja de unos auriculares con micrófono incorporado?",
-  "options": [
-    "Mayor calidad de sonido",
-    "Facilita las llamadas telefónicas y videoconferencias",
-    "Ausencia de cables",
-    "Diseño ligero"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Facilita las llamadas telefónicas y videoconferencias\". Los auriculares con micrófono incorporado permiten al usuario hablar y escuchar simultáneamente, facilitando la comunicación en llamadas y videoconferencias.",
-  "source": "https://es.wikipedia.org/wiki/Auriculares_con_micr%C3%B3fono"
-},
-{
-  "id": 503,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un micrófono de condensador en comparación con uno dinámico?",
-  "options": [
-    "Mayor resistencia a golpes",
-    "Captura de sonidos más sutiles y detallados",
-    "Menor sensibilidad a la vibración",
-    "Mejor respuesta a altos niveles de presión sonora"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Captura de sonidos más sutiles y detallados\". Los micrófonos de condensador son conocidos por su capacidad para capturar sonidos con mayor detalle y sensibilidad en comparación con los micrófonos dinámicos.",
-  "source": "https://es.wikipedia.org/wiki/Micr%C3%B3fono_de_condensador"
-},
-{
-  "id": 504,
-  "category": "USB y Conectores",
-  "question": "¿Cuál es la principal función de un micrófono USB?",
-  "options": [
-    "Mayor sensibilidad en la captura de sonido",
-    "Conexión directa a puertos USB sin necesidad de interfaz de audio",
-    "Cancelación de ruido ambiente",
-    "Utilización exclusiva en estudios profesionales"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Conexión directa a puertos USB sin necesidad de interfaz de audio\". Los micrófonos USB se conectan directamente a un puerto USB y no requieren una interfaz de audio adicional, lo que los hace fáciles de usar.",
-  "source": "https://es.wikipedia.org/wiki/Micr%C3%B3fono_USB"
-},
-{
-  "id": 505,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es común en un micrófono de solapa?",
-  "options": [
-    "Cable largo para mayor alcance",
-    "Micrófono compacto y discreto",
-    "Cancelación activa de ruido",
-    "Exclusivamente para grabación de voz"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Micrófono compacto y discreto\". Los micrófonos de solapa (o lapel) son pequeños y discretos, diseñados para sujetarse a la ropa y permitir la captura de voz de manos libres.",
-  "source": "https://es.wikipedia.org/wiki/Micr%C3%B3fono_de_solapa"
-},
-{
-  "id": 506,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la función principal de unos altavoces Bluetooth?",
-  "options": [
-    "Transmitir señal de audio mediante cables",
-    "Conexión directa a la corriente eléctrica",
-    "Reproducir sonido de forma inalámbrica desde dispositivos compatibles",
-    "Exclusivamente para uso en exteriores"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Reproducir sonido de forma inalámbrica desde dispositivos compatibles\". Los altavoces Bluetooth utilizan la tecnología Bluetooth para recibir señales de audio de forma inalámbrica desde dispositivos como smartphones, tablets o computadoras.",
-  "source": "https://es.wikipedia.org/wiki/Altavoz_Bluetooth"
-},
-{
-  "id": 507,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es típica en altavoces con subwoofer?",
-  "options": [
-    "Mayor claridad en tonos agudos",
-    "Reproducción de frecuencias graves más potentes",
-    "Diseño compacto y portátil",
-    "Exclusivamente para reproducción de música clásica"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Reproducción de frecuencias graves más potentes\". Los altavoces con subwoofer incluyen un altavoz dedicado a reproducir frecuencias graves (bajas), proporcionando un sonido más profundo y potente.",
-  "source": "https://es.wikipedia.org/wiki/Subwoofer"
-},
-{
-  "id": 508,
-  "category": "USB y Conectores",
-  "question": "¿Cuál es la ventaja de unos altavoces con puerto USB?",
-  "options": [
-    "Mayor potencia de salida",
-    "Conexión directa a dispositivos USB sin necesidad de energía adicional",
-    "Cancelación activa de ruido",
-    "Diseño exclusivo para uso en estudios de grabación"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Conexión directa a dispositivos USB sin necesidad de energía adicional\". Los altavoces con puerto USB se conectan directamente a un puerto USB y obtienen energía de este, eliminando la necesidad de un adaptador de corriente adicional.",
-  "source": "https://es.wikipedia.org/wiki/Altavoz_USB"
-},
-{
-  "id": 509,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza una tarjeta de sonido externa en comparación con una interna?",
-  "options": [
-    "Proporciona salida de sonido de mayor calidad",
-    "Se conecta mediante ranuras PCIe en la placa madre",
-    "Permite conectar más dispositivos de audio",
-    "Facilita la conexión de auriculares y micrófonos"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Proporciona salida de sonido de mayor calidad\". Las tarjetas de sonido externas suelen ofrecer mayor calidad de audio que las integradas, con mejores convertidores DAC, componentes de mayor calidad y menor interferencia electromagnética.",
-  "source": "https://es.wikipedia.org/wiki/Tarjeta_de_sonido"
-},
-{
-  "id": 510,
-  "category": "Conectores de Placa Base",
-  "question": "¿Cuál es la principal función de una tarjeta de sonido integrada en una placa madre?",
-  "options": [
-    "Proporcionar salida de sonido de alta calidad",
-    "Conexión mediante puerto USB",
-    "Cancelación activa de ruido",
-    "Permitir la conexión de múltiples micrófonos"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Proporcionar salida de sonido de alta calidad\". Las tarjetas de sonido integradas en la placa madre proporcionan capacidades de audio básicas para la mayoría de usuarios, permitiendo la conexión de altavoces y auriculares sin necesidad de una tarjeta adicional.",
-  "source": "https://es.wikipedia.org/wiki/Chip_de_audio"
-},
-{
-  "id": 511,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es común en una tarjeta de sonido con soporte para sonido envolvente?",
-  "options": [
-    "Salida de audio en mono",
-    "Reproducción de sonido tridimensional",
-    "Exclusivamente para uso en estudios de grabación",
-    "Conexión exclusiva a altavoces externos"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Reproducción de sonido tridimensional\". Las tarjetas de sonido con soporte para sonido envolvente pueden procesar y reproducir audio multicanal, creando una experiencia de sonido tridimensional que envuelve al oyente.",
-  "source": "https://es.wikipedia.org/wiki/Sono_envolvente"
-},
-{
-  "id": 512,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la ventaja de una tarjeta de sonido con amplificador integrado?",
-  "options": [
-    "Mayor duración de la batería",
-    "Potencia de salida de audio más alta",
-    "Conexión mediante cables coaxiales",
-    "Exclusivamente para uso en grabación de voz"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Potencia de salida de audio más alta\". Una tarjeta de sonido con amplificador integrado puede alimentar directamente altavoces o auriculares de alta impedancia sin necesidad de un amplificador externo, proporcionando mayor potencia de salida.",
-  "source": "https://es.wikipedia.org/wiki/Amplificador_de_audio"
-},
-{
-  "id": 513,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un micrófono de mano en comparación con uno de solapa?",
-  "options": [
-    "Mayor sensibilidad en la captura de sonido",
-    "Mayor resistencia a la interferencia electromagnética",
-    "Diseño compacto y discreto",
-    "Uso exclusivo para presentaciones en vivo"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Mayor sensibilidad en la captura de sonido\". Los micrófonos de mano suelen tener mayor sensibilidad y calidad de captura que los de solapa, y están diseñados para ser sostenidos cerca de la fuente de sonido.",
-  "source": "https://es.wikipedia.org/wiki/Micr%C3%B3fono"
-},
-{
-  "id": 514,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la principal función de unos auriculares con sonido envolvente?",
-  "options": [
-    "Reducción de ruido ambiental",
-    "Proporcionar una experiencia auditiva tridimensional",
-    "Exclusivamente para uso en estudios de grabación",
-    "Facilitar llamadas telefónicas"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Proporcionar una experiencia auditiva tridimensional\". Los auriculares con sonido envolvente utilizan múltiples altavoces y procesamiento de audio para crear una experiencia de sonido tridimensional que envuelve al oyente.",
-  "source": "https://es.wikipedia.org/wiki/Sono_envolvente"
-},
-{
-  "id": 515,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es común en unos auriculares con diadema ajustable?",
-  "options": [
-    "Diseño compacto y plegable",
-    "Cancelación activa de ruido",
-    "Diadema que se ajusta a diferentes tamaños de cabeza",
-    "Exclusivamente para uso deportivo"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Diadema que se ajusta a diferentes tamaños de cabeza\". Los auriculares con diadema ajustable permiten personalizar el ajuste para adaptarse cómodamente a diferentes tamaños de cabeza, mejorando la comodidad durante el uso prolongado.",
-  "source": "https://es.wikipedia.org/wiki/Auriculares"
-},
-{
-  "id": 516,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la ventaja de un altavoz con conectividad NFC?",
-  "options": [
-    "Mayor duración de la batería",
-    "Conexión inalámbrica",
-    "Reproducción de sonido tridimensional",
-    "Necesidad de cables para la conexión"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Conexión inalámbrica\". NFC (Near Field Communication) permite una conexión rápida y sencilla entre dispositivos compatibles simplemente acercándolos, facilitando el emparejamiento sin necesidad de configuraciones complicadas.",
-  "source": "https://es.wikipedia.org/wiki/Near_Field_Communication"
-},
-{
-  "id": 517,
-  "category": "USB y Conectores",
-  "question": "¿Qué función realiza un micrófono USB en comparación con uno analógico?",
-  "options": [
-    "Mayor calidad de sonido",
-    "Necesidad de interfaz de audio adicional",
-    "Conexión directa a puertos USB sin necesidad de energía adicional",
-    "Resistencia a interferencias electromagnéticas"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Conexión directa a puertos USB sin necesidad de energía adicional\". Los micrófonos USB se conectan directamente a un puerto USB y obtienen energía de este, eliminando la necesidad de una interfaz de audio o fuente de alimentación adicional.",
-  "source": "https://es.wikipedia.org/wiki/Micr%C3%B3fono_USB"
-},
-{
-  "id": 518,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la principal función de unos altavoces de estudio?",
-  "options": [
-    "Proporcionar sonido envolvente",
-    "Reproducción precisa y plana del sonido",
-    "Uso exclusivo para grabación de voz",
-    "Cancelación activa de ruido"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Reproducción precisa y plana del sonido\". Los altavoces de estudio están diseñados para reproducir el sonido de la manera más precisa y plana posible, sin realzar ni atenuar frecuencias, para permitir una mezcla y masterización precisas.",
-  "source": "https://es.wikipedia.org/wiki/Altavoz_de_estudio"
-},
-{
-  "id": 519,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es típica en unos auriculares con sistema de sujeción over-ear?",
-  "options": [
-    "Diseño compacto y plegable",
-    "Cancelación activa de ruido",
-    "Almohadillas que cubren completamente las orejas",
-    "Exclusivamente para uso deportivo"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Almohadillas que cubren completamente las orejas\". Los auriculares con sistema de sujeción over-ear tienen almohadillas que rodean completamente las orejas, proporcionando mayor comodidad y mejor aislamiento acústico.",
-  "source": "https://es.wikipedia.org/wiki/Auriculares"
-},
-{
-  "id": 520,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la función principal de un router en una red de comunicación?",
-  "options": [
-    "Conectar dispositivos a través de cables Ethernet",
-    "Proporcionar acceso a internet y gestionar el tráfico de red",
-    "Conectar dispositivos mediante tecnología Bluetooth",
-    "Exclusivamente para llamadas telefónicas"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Proporcionar acceso a internet y gestionar el tráfico de red\". Un router es un dispositivo que dirige el tráfico entre redes y proporciona acceso a internet, gestionando la comunicación entre múltiples dispositivos en una red local.",
-  "source": "https://es.wikipedia.org/wiki/Router"
-},
-{
-  "id": 521,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es común en un módem?",
-  "options": [
-    "Funcionamiento como punto de acceso Wi-Fi",
-    "Conversión de señales analógicas a digitales y viceversa",
-    "Conexión de dispositivos mediante USB",
-    "Exclusivamente para transmisión de datos por cable coaxial"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Conversión de señales analógicas a digitales y viceversa\". Un módem (modulador-demodulador) convierte señales digitales a analógicas para transmisión y viceversa para recepción, permitiendo la comunicación a través de líneas telefónicas o de otro tipo.",
-  "source": "https://es.wikipedia.org/wiki/M%C3%B3dem"
-},
-{
-  "id": 522,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la ventaja de un adaptador de red inalámbrica (Wi-Fi)?",
-  "options": [
-    "Necesidad de cables para la conexión",
-    "Conexión directa a la corriente eléctrica",
-    "Posibilidad de conexión a través de redes celulares",
-    "Mayor velocidad de transferencia de datos que el cable Ethernet"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Posibilidad de conexión a través de redes celulares\". Aunque no es su función principal, algunos adaptadores de red inalámbrica pueden conectarse a redes celulares, pero su ventaja principal es la conexión sin cables a redes Wi-Fi.",
-  "source": "https://es.wikipedia.org/wiki/Adaptador_de_red_inal%C3%A1mbrica"
-},
-{
-  "id": 523,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un repetidor Wi-Fi en una red de comunicación?",
-  "options": [
-    "Conectar dispositivos mediante cables Ethernet",
-    "Ampliar la cobertura de una red inalámbrica",
-    "Conectar dispositivos a través de puertos USB",
-    "Exclusivamente para conexiones Bluetooth"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Ampliar la cobertura de una red inalámbrica\". Un repetidor Wi-Fi (o extensor de alcance) recibe la señal Wi-Fi existente y la retransmite para ampliar el área de cobertura de la red inalámbrica.",
-  "source": "https://es.wikipedia.org/wiki/Repetidor_Wi-Fi"
-},
-{
-  "id": 524,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la principal función de un switch en una red local?",
-  "options": [
-    "Gestionar el tráfico de red y proporcionar acceso a internet",
-    "Conectar dispositivos inalámbricos mediante Wi-Fi",
-    "Enviar señales analógicas a través de cables coaxiales",
-    "Conectar dispositivos a través de cables Ethernet"
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Conectar dispositivos a través de cables Ethernet\". Un switch es un dispositivo de red que conecta múltiples dispositivos entre sí mediante cables Ethernet, permitiendo la comunicación dentro de una red local.",
-  "source": "https://es.wikipedia.org/wiki/Switch_de_red"
-},
-{
-  "id": 525,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es común en un hub de red?",
-  "options": [
-    "Ampliar la cobertura de una red inalámbrica",
-    "Gestionar el tráfico de red y proporcionar acceso a internet",
-    "Conectar dispositivos a través de puertos USB",
-    "Reenviar datos a todos los dispositivos en la red sin distinción"
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Reenviar datos a todos los dispositivos en la red sin distinción\". Un hub de red es un dispositivo simple que reenvía todos los paquetes de datos que recibe a todos los dispositivos conectados, sin inteligencia para dirigirlos específicamente.",
-  "source": "https://es.wikipedia.org/wiki/Concentrador_(red)"
-},
-{
-  "id": 526,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la ventaja de una antena externa en un router inalámbrico?",
-  "options": [
-    "Menor alcance de la señal Wi-Fi",
-    "Reducción de interferencias electromagnéticas",
-    "Necesidad de cables para la conexión",
-    "Exclusivamente para conexiones Bluetooth"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Reducción de interferencias electromagnéticas\". Una antena externa en un router inalámbrico puede proporcionar mayor alcance y mejor calidad de señal, además de reducir las interferencias electromagnéticas del propio dispositivo.",
-  "source": "https://es.wikipedia.org/wiki/Antena"
-},
-{
-  "id": 527,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un teléfono IP en una red de comunicación?",
-  "options": [
-    "Transmisión de datos por cable coaxial",
-    "Conversión de señales analógicas a digitales para realizar llamadas sobre internet",
-    "Conexión de dispositivos inalámbricos mediante Wi-Fi",
-    "Exclusivamente para llamadas telefónicas tradicionales"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Conversión de señales analógicas a digitales para realizar llamadas sobre internet\". Un teléfono IP (VoIP) convierte la voz en paquetes de datos digitales que se transmiten a través de internet, permitiendo llamadas sin necesidad de una línea telefónica tradicional.",
-  "source": "https://es.wikipedia.org/wiki/Voz_sobre_IP"
-},
-{
-  "id": 528,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la principal función de una tarjeta de red en una computadora?",
-  "options": [
-    "Gestionar el tráfico de red y proporcionar acceso a internet",
-    "Conectar dispositivos inalámbricos mediante Wi-Fi",
-    "Facilitar la conexión a través de cables Ethernet",
-    "Exclusivamente para conexiones Bluetooth"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Facilitar la conexión a través de cables Ethernet\". Una tarjeta de red (o adaptador de red) permite a una computadora conectarse a una red mediante cables Ethernet, facilitando la comunicación con otros dispositivos.",
-  "source": "https://es.wikipedia.org/wiki/Tarjeta_de_red"
-},
-{
-  "id": 529,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es común en un adaptador Bluetooth?",
-  "options": [
-    "Necesidad de cables para la conexión",
-    "Conexión directa a la corriente eléctrica",
-    "Permite la comunicación inalámbrica entre dispositivos",
-    "Exclusivamente para conexiones Wi-Fi"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Permite la comunicación inalámbrica entre dispositivos\". Un adaptador Bluetooth permite a una computadora comunicarse de forma inalámbrica con otros dispositivos compatibles con Bluetooth, como ratones, teclados, auriculares o smartphones.",
-  "source": "https://es.wikipedia.org/wiki/Bluetooth"
-},
-{
-  "id": 530,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la ventaja de una tarjeta SIM en dispositivos de comunicación móvil?",
-  "options": [
-    "Mayor velocidad de transferencia de datos",
-    "Posibilidad de realizar llamadas telefónicas",
-    "Mayor capacidad de almacenamiento",
-    "Necesidad de cables para la conexión"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Posibilidad de realizar llamadas telefónicas\". Una tarjeta SIM (Subscriber Identity Module) identifica al usuario en una red móvil y permite realizar llamadas telefónicas, enviar mensajes y acceder a datos móviles.",
-  "source": "https://es.wikipedia.org/wiki/Tarjeta_SIM"
-},
-{
-  "id": 531,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un adaptador de red PLC?",
-  "options": [
-    "Conectar dispositivos mediante cables Ethernet",
-    "Ampliar la cobertura de una red inalámbrica",
-    "Utilizar la red eléctrica para transmitir datos",
-    "Exclusivamente para conexiones Bluetooth"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Utilizar la red eléctrica para transmitir datos\". Un adaptador de red PLC (Power Line Communication) utiliza la instalación eléctrica existente para transmitir datos, permitiendo crear una red a través de los enchufes eléctricos.",
-  "source": "https://es.wikipedia.org/wiki/Red_el%C3%A9ctrica_de_comunicaciones"
-},
-{
-  "id": 532,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la principal función de una cámara de vigilancia IP en una red de comunicación?",
-  "options": [
-    "Transmisión de datos por cable coaxial",
-    "Grabación de videos en calidad extrema",
-    "Monitorización y transmisión de video a través de internet",
-    "Conexión de dispositivos inalámbricos mediante Wi-Fi"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Monitorización y transmisión de video a través de internet\". Una cámara de vigilancia IP captura video y lo transmite a través de una red IP, permitiendo la monitorización remota a través de internet.",
-  "source": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_vigilancia_IP"
-},
-{
-  "id": 533,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es común en una impresora de red?",
-  "options": [
-    "Transmisión de datos por cable coaxial",
-    "Conexión de dispositivos inalámbricos mediante Wi-Fi",
-    "Uso exclusivo para impresiones en blanco y negro",
-    "Exclusivamente para conexiones Bluetooth"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Conexión de dispositivos inalámbricos mediante Wi-Fi\". Una impresora de red puede conectarse a una red local mediante Wi-Fi o Ethernet, permitiendo que múltiples usuarios impriman sin necesidad de conectarla directamente a sus computadoras.",
-  "source": "https://es.wikipedia.org/wiki/Impresora_de_red"
-},
-{
-  "id": 534,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la ventaja de un gateway en una red de comunicación?",
-  "options": [
-    "Conectar dispositivos mediante cables Ethernet",
-    "Proporcionar acceso a internet y gestionar el tráfico de red",
-    "Ampliar la cobertura de una red inalámbrica",
-    "Exclusivamente para llamadas telefónicas tradicionales"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Proporcionar acceso a internet y gestionar el tráfico de red\". Un gateway (puerta de enlace) es un dispositivo que conecta diferentes redes, como una red local e internet, gestionando el tráfico entre ellas.",
-  "source": "https://es.wikipedia.org/wiki/Puerta_de_enlace"
-},
-{
-  "id": 535,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un adaptador de red 4G/LTE?",
-  "options": [
-    "Conectar dispositivos mediante cables Ethernet",
-    "Ampliar la cobertura de una red inalámbrica",
-    "Proporcionar conexión a internet a través de redes móviles",
-    "Exclusivamente para conexiones Bluetooth"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Proporcionar conexión a internet a través de redes móviles\". Un adaptador de red 4G/LTE permite conectar dispositivos a internet utilizando las redes móviles 4G/LTE, proporcionando acceso a internet en áreas sin cobertura Wi-Fi o cable.",
-  "source": "https://es.wikipedia.org/wiki/LTE"
-},
-{
-  "id": 536,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la principal función de un teléfono VoIP?",
-  "options": [
-    "Transmisión de datos por cable coaxial",
-    "Conversión de señales analógicas a digitales para realizar llamadas sobre internet",
-    "Uso exclusivo para llamadas telefónicas tradicionales",
-    "Conexión de dispositivos inalámbricos mediante Wi-Fi"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Conversión de señales analógicas a digitales para realizar llamadas sobre internet\". Un teléfono VoIP (Voz sobre IP) convierte la voz en paquetes de datos digitales que se transmiten a través de internet, permitiendo llamadas sin necesidad de una línea telefónica tradicional.",
-  "source": "https://es.wikipedia.org/wiki/Voz_sobre_IP"
-},
-{
-  "id": 537,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es común en un adaptador de red Powerline?",
-  "options": [
-    "Conexión directa a la corriente eléctrica",
-    "Ampliar la cobertura de una red inalámbrica",
-    "Utilización de la red eléctrica para transmitir datos",
-    "Exclusivamente para conexiones Bluetooth"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Utilización de la red eléctrica para transmitir datos\". Un adaptador de red Powerline utiliza la instalación eléctrica existente para transmitir datos, permitiendo crear una red a través de los enchufes eléctricos.",
-  "source": "https://es.wikipedia.org/wiki/Red_el%C3%A9ctrica_de_comunicaciones"
-},
-{
-  "id": 538,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la ventaja de un conmutador KVM en una red de comunicación?",
-  "options": [
-    "Permite el control de múltiples computadoras con un solo teclado, monitor y ratón",
-    "Ampliar la cobertura de una red inalámbrica",
-    "Facilita la conexión de dispositivos inalámbricos mediante Wi-Fi",
-    "Exclusivamente para conexiones Bluetooth"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Permite el control de múltiples computadoras con un solo teclado, monitor y ratón\". Un conmutador KVM (Keyboard, Video, Mouse) permite controlar múltiples computadoras utilizando un solo conjunto de teclado, monitor y ratón, cambiando entre ellas según sea necesario.",
-  "source": "https://es.wikipedia.org/wiki/Conmutador_KVM"
-},
-{
-  "id": 539,
-  "category": "Componentes Básicos",
-  "question": "¿Qué función realiza un repetidor de señal móvil?",
-  "options": [
-    "Conectar dispositivos mediante cables Ethernet",
-    "Ampliar la cobertura de la señal móvil para dispositivos móviles",
-    "Uso exclusivo para llamadas telefónicas tradicionales",
-    "Exclusivamente para conexiones Bluetooth"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Ampliar la cobertura de la señal móvil para dispositivos móviles\". Un repetidor de señal móvil (o amplificador de señal celular) capta, amplifica y retransmite las señales de telefonía móvil, mejorando la cobertura en áreas con señal débil.",
-  "source": "https://es.wikipedia.org/wiki/Repetidor_de_se%C3%B1al_celular"
-},
-{
-  "id": 540,
-  "category": "Conectores de Video",
-  "question": "¿Qué característica es esencial en un monitor con tecnología IPS?",
-  "options": [
-    "Mayor velocidad de actualización",
-    "Amplios ángulos de visión y reproducción precisa de colores",
-    "Bajo consumo de energía",
-    "Alta tasa de contraste"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Amplios ángulos de visión y reproducción precisa de colores\". La tecnología IPS (In-Plane Switching) se caracteriza por ofrecer amplios ángulos de visión y una reproducción de colores precisa y consistente, aunque con tiempos de respuesta más lentos que otras tecnologías.",
-  "source": "https://es.wikipedia.org/wiki/IPS"
-},
-{
-  "id": 541,
-  "category": "Conectores de Video",
-  "question": "¿Cuál es la función principal de un monitor curvo?",
-  "options": [
-    "Reducción de reflejos y deslumbramientos",
-    "Mejora de la inmersión visual y mayor comodidad para el usuario",
-    "Mayor velocidad de respuesta",
-    "Exclusivamente para aplicaciones gráficas"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Mejora de la inmersión visual y mayor comodidad para el usuario\". Un monitor curvo busca envolver el campo de visión del usuario, proporcionando una mayor inmersión y reduciendo la distorsión en los bordes, además de ofrecer una mayor comodidad visual.",
-  "source": "https://es.wikipedia.org/wiki/Monitor_curvo"
-},
-{
-  "id": 542,
-  "category": "Conectores de Video",
-  "question": "¿Qué ventaja ofrece un monitor con tecnología LED sobre uno con tecnología LCD?",
-  "options": [
-    "Mayor duración de la batería",
-    "Mejor reproducción del color y mayor eficiencia energética",
-    "Ángulos de visión más amplios",
-    "Exclusivamente para aplicaciones de diseño gráfico"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Mejor reproducción del color y mayor eficiencia energética\". Los monitores con retroiluminación LED utilizan diodos emisores de luz en lugar de los tubos fluorescentes de los LCD tradicionales, lo que resulta en mejor reproducción del color, mayor contraste y menor consumo energético.",
-  "source": "https://es.wikipedia.org/wiki/LED-backlit_LCD"
-},
-{
-  "id": 543,
-  "category": "Conectores de Video",
-  "question": "¿Cuál es la principal función de un monitor con resolución 4K?",
-  "options": [
-    "Reducción de la fatiga visual",
-    "Mayor nitidez y detalle en la visualización de contenidos",
-    "Menor consumo de energía",
-    "Alta tasa de refresco"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Mayor nitidez y detalle en la visualización de contenidos\". Un monitor con resolución 4K (3840×2160 píxeles) ofrece aproximadamente cuatro veces más píxeles que un monitor Full HD (1920×1080), resultando en una imagen significativamente más nítida y detallada.",
-  "source": "https://es.wikipedia.org/wiki/4K_resoluci%C3%B3n"
-},
-{
-  "id": 544,
-  "category": "Conectores de Video",
-  "question": "¿Qué característica es común en un monitor con tecnología FreeSync?",
-  "options": [
-    "Mayor velocidad de actualización",
-    "Reducción de reflejos y deslumbramientos",
-    "Sincronización de la frecuencia de actualización con la tarjeta gráfica",
-    "Exclusivamente para aplicaciones de oficina"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Sincronización de la frecuencia de actualización con la tarjeta gráfica\". FreeSync es una tecnología de AMD que sincroniza dinámicamente la tasa de refresco del monitor con la velocidad de fotogramas de la GPU, eliminando el screen tearing y proporcionando una experiencia más fluida.",
-  "source": "https://es.wikipedia.org/wiki/AMD_FreeSync"
-},
-{
-  "id": 545,
-  "category": "Conectores de Video",
-  "question": "¿Cuál es la ventaja de un monitor con tecnología OLED en comparación con LCD?",
-  "options": [
-    "Mayor duración de la batería",
-    "Mejor reproducción del color y negros más profundos",
-    "Bajo costo de producción",
-    "Exclusivamente para aplicaciones de diseño gráfico"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Mejor reproducción del color y negros más profundos\". Los monitores OLED utilizan diodos emisores de luz orgánicos que se encienden individualmente, permitiendo negros perfectos (píxeles completamente apagados), colores más vibrantes y mejores ángulos de visión que los LCD.",
-  "source": "https://es.wikipedia.org/wiki/OLED"
-},
-{
-  "id": 546,
-  "category": "Conectores de Video",
-  "question": "¿Qué función realiza un monitor con HDR (High Dynamic Range)?",
-  "options": [
-    "Reducción de la fatiga visual",
-    "Mayor rango dinámico de colores y contraste",
-    "Sincronización de la frecuencia de actualización con la tarjeta gráfica",
-    "Exclusivamente para aplicaciones de oficina"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Mayor rango dinámico de colores y contraste\". HDR (High Dynamic Range) permite un mayor rango dinámico entre las áreas más claras y más oscuras de una imagen, proporcionando más detalle en ambas zonas y colores más realistas.",
-  "source": "https://es.wikipedia.org/wiki/High_dynamic_range"
-},
-{
-  "id": 547,
-  "category": "Conectores de Video",
-  "question": "¿Cuál es la principal ventaja de un monitor con tecnología G-Sync?",
-  "options": [
-    "Mayor velocidad de actualización",
-    "Reducción de reflejos y deslumbramientos",
-    "Sincronización de la frecuencia de actualización con la tarjeta gráfica",
-    "Exclusivamente para aplicaciones de diseño gráfico"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Sincronización de la frecuencia de actualización con la tarjeta gráfica\". G-Sync es una tecnología de NVIDIA que sincroniza la tasa de refresco del monitor con la velocidad de fotogramas de la GPU, eliminando el screen tearing y proporcionando una experiencia de juego más fluida.",
-  "source": "https://es.wikipedia.org/wiki/NVIDIA_G-Sync"
-},
-{
-  "id": 548,
-  "category": "Conectores de Video",
-  "question": "¿Qué característica es común en un monitor ultrawide?",
-  "options": [
-    "Formato de pantalla estándar (16:9)",
-    "Mayor cantidad de píxeles por pulgada",
-    "Relación de aspecto más amplia para una mayor visión panorámica",
-    "Alta tasa de contraste"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Relación de aspecto más amplia para una mayor visión panorámica\". Los monitores ultrawide tienen relaciones de aspecto más anchas que el estándar 16:9, como 21:9 o 32:9, proporcionando más espacio horizontal para productividad o una experiencia más inmersiva en juegos y películas.",
-  "source": "https://es.wikipedia.org/wiki/Monitor_ultrapanor%C3%A1mico"
-},
-{
-  "id": 549,
-  "category": "Conectores de Video",
-  "question": "¿Cuál es la principal función de un monitor táctil?",
-  "options": [
-    "Reducción de la fatiga visual",
-    "Permite la interacción directa con la pantalla mediante toques",
-    "Mayor velocidad de respuesta",
-    "Exclusivamente para aplicaciones de oficina"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Permite la interacción directa con la pantalla mediante toques\". Un monitor táctil permite al usuario interactuar directamente con la pantalla mediante toques, gestos o un stylus, eliminando la necesidad de un ratón o teclado para ciertas tareas.",
-  "source": "https://es.wikipedia.org/wiki/Pantalla_t%C3%A1ctil"
-},
-{
-  "id": 550,
-  "category": "Conectores de Video",
-  "question": "¿Qué ventaja ofrece un monitor con tecnología Blue Light Filter?",
-  "options": [
-    "Mayor velocidad de actualización",
-    "Reducción de la fatiga visual al filtrar la luz azul",
-    "Sincronización de la frecuencia de actualización con la tarjeta gráfica",
-    "Exclusivamente para aplicaciones de diseño gráfico"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Reducción de la fatiga visual al filtrar la luz azul\". La tecnología Blue Light Filter reduce la cantidad de luz azul emitida por el monitor, lo que puede ayudar a reducir la fatiga visual y mejorar la calidad del sueño durante el uso nocturno.",
-  "source": "https://es.wikipedia.org/wiki/Luz_azul_y_salud"
-},
-{
-  "id": 551,
-  "category": "Conectores de Video",
-  "question": "¿Cuál es la función principal de un monitor con tecnología antiglare?",
-  "options": [
-    "Reducción de reflejos y deslumbramientos",
-    "Mayor nitidez y detalle en la visualización de contenidos",
-    "Sincronización de la frecuencia de actualización con la tarjeta gráfica",
-    "Exclusivamente para aplicaciones de oficina"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Reducción de reflejos y deslumbramientos\". La tecnología antiglare utiliza tratamientos en la superficie del panel para reducir los reflejos y deslumbramientos causados por fuentes de luz ambiental, mejorando la visibilidad en condiciones de iluminación brillante.",
-  "source": "https://es.wikipedia.org/wiki/Antireflectante"
-},
-{
-  "id": 552,
-  "category": "Conectores de Video",
-  "question": "¿Qué característica es común en un monitor con ajuste de altura?",
-  "options": [
-    "Formato de pantalla ultrawide",
-    "Permite modificar la altura de la pantalla para mayor comodidad",
-    "Bajo consumo de energía",
-    "Alta tasa de refresco"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Permite modificar la altura de la pantalla para mayor comodidad\". Un monitor con ajuste de altura permite al usuario modificar la posición vertical de la pantalla para adaptarla a su altura y postura, mejorando la comodidad durante el uso prolongado.",
-  "source": "https://es.wikipedia.org/wiki/Monitor_de_computadora"
-},
-{
-  "id": 553,
-  "category": "Conectores de Video",
-  "question": "¿Cuál es la ventaja de un monitor con tecnología antiglare?",
-  "options": [
-    "Mayor velocidad de actualización",
-    "Reducción de reflejos y deslumbramientos",
-    "Sincronización de la frecuencia de actualización con la tarjeta gráfica",
-    "Exclusivamente para aplicaciones de diseño gráfico"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Reducción de reflejos y deslumbramientos\". La tecnología antiglare utiliza tratamientos en la superficie del panel para reducir los reflejos y deslumbramientos causados por fuentes de luz ambiental, mejorando la visibilidad en condiciones de iluminación brillante.",
-  "source": "https://es.wikipedia.org/wiki/Antireflectante"
-},
-{
-  "id": 554,
-  "category": "Conectores de Video",
-  "question": "¿Cuál es la principal función de un monitor con tecnología Flicker-Free?",
-  "options": [
-    "Reducción de la fatiga visual al eliminar el parpadeo de la pantalla",
-    "Mayor rango dinámico de colores y contraste",
-    "Sincronización de la frecuencia de actualización con la tarjeta gráfica",
-    "Exclusivamente para aplicaciones de oficina"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Reducción de la fatiga visual al eliminar el parpadeo de la pantalla\". La tecnología Flicker-Free utiliza retroiluminación de corriente continua (DC) o modulación por ancho de pulso (PWM) a alta frecuencia para eliminar el parpadeo visible que puede causar fatiga visual durante el uso prolongado.",
-  "source": "https://es.wikipedia.org/wiki/Parpadeo_(pantalla)"
-},
-{
-  "id": 555,
-  "category": "Conectores de Video",
-  "question": "¿Qué característica es común en un monitor con tecnología PLS?",
-  "options": [
-    "Mayor velocidad de actualización",
-    "Amplios ángulos de visión y reproducción precisa de colores",
-    "Bajo consumo de energía",
-    "Alta tasa de refresco"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Amplios ángulos de visión y reproducción precisa de colores\". PLS (Plane-to-Line Switching) es una variante de la tecnología IPS que ofrece ángulos de visión similares y tiempos de respuesta más rápidos, manteniendo una buena reproducción del color.",
-  "source": "https://es.wikipedia.org/wiki/Plane-to-Line_Switching"
-},
-{
-  "id": 556,
-  "category": "Conectores de Video",
-  "question": "¿Cuál es la ventaja de un monitor con tecnología Nano IPS?",
-  "options": [
-    "Mayor velocidad de actualización",
-    "Mayor precisión en la reproducción del color",
-    "Sincronización de la frecuencia de actualización con la tarjeta gráfica",
-    "Exclusivamente para aplicaciones de diseño gráfico"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Mayor precisión en la reproducción del color\". Nano IPS utiliza nanopartículas para mejorar la eficiencia de la luz y el color, resultando en una mayor precisión en la reproducción del color y una mayor cobertura de espacios de color como DCI-P3.",
-  "source": "https://es.wikipedia.org/wiki/Nano_IPS"
-},
-{
-  "id": 557,
-  "category": "Conectores de Video",
-  "question": "¿Qué función realiza un monitor con tecnología Low Blue Light?",
-  "options": [
-    "Reducción de la fatiga visual al reducir la emisión de luz azul",
-    "Mayor rango dinámico de colores y contraste",
-    "Sincronización de la frecuencia de actualización con la tarjeta gráfica",
-    "Exclusivamente para aplicaciones de oficina"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Reducción de la fatiga visual al reducir la emisión de luz azul\". La tecnología Low Blue Light reduce la cantidad de luz azul emitida por el monitor, lo que puede ayudar a reducir la fatiga visual y mejorar la calidad del sueño durante el uso nocturno.",
-  "source": "https://es.wikipedia.org/wiki/Luz_azul_y_salud"
-},
-{
-  "id": 558,
-  "category": "Conectores de Video",
-  "question": "¿Cuál es la principal ventaja de un monitor con tecnología QLED?",
-  "options": [
-    "Mayor velocidad de actualización",
-    "Mayor reproducción del color y brillo",
-    "Sincronización de la frecuencia de actualización con la tarjeta gráfica",
-    "Exclusivamente para aplicaciones de diseño gráfico"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Mayor reproducción del color y brillo\". QLED (Quantum Dot LED) utiliza nanocristales semiconductor que emiten luz de colores muy puros cuando se estimulan, permitiendo una gama cromática más amplia y colores más vibrantes en los monitores.",
-  "source": "https://es.wikipedia.org/wiki/Quantum_dot"
-},
-{
-  "id": 559,
-  "category": "Conectores de Video",
-  "question": "¿Qué característica es común en un monitor con tecnología MVA?",
-  "options": [
-    "Mayor velocidad de actualización",
-    "Amplios ángulos de visión y reproducción precisa de colores",
-    "Bajo consumo de energía",
-    "Alta tasa de contraste"
-  ],
-  "correct": 3,
-  "explanation": "La respuesta correcta es \"Alta tasa de contraste\". MVA (Multi-domain Vertical Alignment) es una tecnología de panel LCD que ofrece mejores ratios de contraste en comparación con otras tecnologías como TN o IPS, aunque con tiempos de respuesta más lentos.",
-  "source": "https://es.wikipedia.org/wiki/Vertical_alignment"
-},
-{
-  "id": 560,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la función principal de un display frontal en una computadora?",
-  "options": [
-    "Proporcionar una visualización de la información del sistema",
-    "Controlar la velocidad de los ventiladores",
-    "Exclusivamente para la reproducción de video",
-    "Gestionar la conexión de dispositivos externos"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Proporcionar una visualización de la información del sistema\". Un display frontal en una computadora muestra información del sistema como temperatura, velocidad de ventiladores, frecuencia de la CPU o estado de los componentes, permitiendo al usuario monitorizar el sistema sin necesidad de software adicional.",
-  "source": "https://es.wikipedia.org/wiki/Panel_frontal"
-},
-{
-  "id": 561,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es común en un display LCD integrado en una computadora portátil?",
-  "options": [
-    "Mejor reproducción del color y brillo",
-    "Bajo consumo de energía",
-    "Necesidad de cables externos para su funcionamiento",
-    "Uso exclusivo para aplicaciones de diseño gráfico"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Bajo consumo de energía\". Los displays LCD integrados en computadoras portátiles están diseñados para consumir poca energía, lo que ayuda a prolongar la duración de la batería del dispositivo.",
-  "source": "https://es.wikipedia.org/wiki/Pantalla_de_cristal_l%C3%ADquido"
-},
-{
-  "id": 562,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la ventaja de un display OLED en comparación con uno LCD?",
-  "options": [
-    "Mayor duración de la batería",
-    "Mejor reproducción del color y negros más profundos",
-    "Necesidad de una fuente de luz externa",
-    "Exclusivamente para aplicaciones de oficina"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Mejor reproducción del color y negros más profundos\". Los displays OLED utilizan diodos emisores de luz orgánicos que se encienden individualmente, permitiendo negros perfectos (píxeles completamente apagados), colores más vibrantes y mejores ángulos de visión que los LCD.",
-  "source": "https://es.wikipedia.org/wiki/OLED"
-},
-{
-  "id": 563,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la función principal de un fan controller en una computadora?",
-  "options": [
-    "Controlar la velocidad de los ventiladores para gestionar la temperatura",
-    "Reproducción de contenidos multimedia",
-    "Exclusivamente para la gestión del almacenamiento",
-    "Proporcionar energía adicional a los dispositivos conectados"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Controlar la velocidad de los ventiladores para gestionar la temperatura\". Un fan controller permite ajustar manual o automáticamente la velocidad de los ventiladores del sistema según la temperatura, equilibrando el rendimiento de refrigeración y el nivel de ruido.",
-  "source": "https://es.wikipedia.org/wiki/Controlador_de_ventilador"
-},
-{
-  "id": 564,
-  "category": "Componentes Básicos",
-  "question": "¿Qué ventaja ofrece un fan controller con control automático de velocidad?",
-  "options": [
-    "Mayor duración de la batería",
-    "Ajuste manual de la velocidad de los ventiladores",
-    "Adapta automáticamente la velocidad según la temperatura del sistema",
-    "Uso exclusivo para aplicaciones de diseño gráfico"
-  ],
-  "correct": 2,
-  "explanation": "La respuesta correcta es \"Adapta automáticamente la velocidad según la temperatura del sistema\". Un fan controller con control automático ajusta la velocidad de los ventiladores según la temperatura del sistema, aumentando la velocidad cuando hace calor y reduciéndola cuando la temperatura es más baja, equilibrando refrigeración y ruido.",
-  "source": "https://es.wikipedia.org/wiki/Controlador_de_ventilador"
-},
-{
-  "id": 565,
-  "category": "Almacenamiento",
-  "question": "¿Cuál es la principal función de una carcasa externa de disco duro?",
-  "options": [
-    "Proporcionar almacenamiento adicional a la computadora",
-    "Gestionar la velocidad de los ventiladores",
-    "Exclusivamente para la reproducción de video",
-    "Conectar dispositivos externos mediante USB o Thunderbolt"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Proporcionar almacenamiento adicional a la computadora\". Una carcasa externa de disco duro permite convertir un disco duro interno en un dispositivo de almacenamiento externo que se puede conectar a una computadora mediante USB, FireWire o Thunderbolt.",
-  "source": "https://es.wikipedia.org/wiki/Carcasa_de_disco_duro"
-},
-{
-  "id": 566,
-  "category": "Almacenamiento",
-  "question": "¿Qué característica es común en una carcasa externa de SSD?",
-  "options": [
-    "Mayor capacidad de almacenamiento",
-    "Bajo consumo de energía",
-    "Conexión exclusiva a través de cables SATA",
-    "Uso exclusivo para aplicaciones de diseño gráfico"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Bajo consumo de energía\". Las carcasas externas de SSD suelen consumir menos energía que las de discos duros tradicionales, ya que los SSD no tienen partes móviles que requieran energía para funcionar.",
-  "source": "https://es.wikipedia.org/wiki/Unidad_de_estado_s%C3%B3lido"
-},
-{
-  "id": 567,
-  "category": "USB y Conectores",
-  "question": "¿Cuál es la ventaja de una carcasa externa con conexión USB-C?",
-  "options": [
-    "Necesidad de adaptadores para la transferencia de datos",
-    "Mayor velocidad de transferencia de archivos",
-    "Uso exclusivo para dispositivos Mac",
-    "Reducción de la velocidad de transferencia"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Mayor velocidad de transferencia de archivos\". Una carcasa externa con conexión USB-C puede aprovechar las altas velocidades de transferencia de USB 3.1 o USB 3.2, permitiendo transferencias de datos más rápidas que con conexiones USB más antiguas.",
-  "source": "https://es.wikipedia.org/wiki/USB-C"
-},
-{
-  "id": 568,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la función principal de un dock station en una computadora?",
-  "options": [
-    "Gestionar la velocidad de los ventiladores",
-    "Proporcionar una base de conexión para dispositivos externos",
-    "Exclusivamente para la reproducción de video",
-    "Ampliar la capacidad de almacenamiento interno"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Proporcionar una base de conexión para dispositivos externos\". Un dock station es una base que permite conectar múltiples dispositivos externos a una computadora mediante un solo cable, simplificando las conexiones y proporcionando puertos adicionales.",
-  "source": "https://es.wikipedia.org/wiki/Estaci%C3%B3n_de_acoplamiento"
-},
-{
-  "id": 569,
-  "category": "Componentes Básicos",
-  "question": "¿Qué característica es común en un dock station con conexión Thunderbolt?",
-  "options": [
-    "Mayor duración de la batería",
-    "Alta velocidad de transferencia de datos y alimentación simultánea",
-    "Exclusivamente para la gestión del almacenamiento",
-    "Uso exclusivo para dispositivos Windows"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Alta velocidad de transferencia de datos y alimentación simultánea\". Un dock station con conexión Thunderbolt puede aprovechar la alta velocidad de transferencia de Thunderbolt y, en muchos casos, también proporcionar alimentación a los dispositivos conectados, todo a través de un solo cable.",
-  "source": "https://es.wikipedia.org/wiki/Thunderbolt_(interfaz)"
-},
-{
-  "id": 570,
-  "category": "Puertos y Conectividad",
-  "question": "¿Cuál es la ventaja de una dock station con puertos HDMI y DisplayPort?",
-  "options": [
-    "Necesidad de adaptadores para la conexión",
-    "Mayor compatibilidad con diferentes tipos de monitores",
-    "Exclusivamente para dispositivos Apple",
-    "Reducción de la velocidad de transferencia"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Mayor compatibilidad con diferentes tipos de monitores\". Una dock station con puertos HDMI y DisplayPort permite conectar diferentes tipos de monitores y dispositivos de visualización, ofreciendo mayor compatibilidad y flexibilidad.",
-  "source": "https://es.wikipedia.org/wiki/Estaci%C3%B3n_de_acoplamiento"
-},
-{
-  "id": 571,
-  "category": "USB y Conectores",
-  "question": "¿Cuál es la función principal de un hub USB en una computadora?",
-  "options": [
-    "Gestionar la velocidad de los ventiladores",
-    "Proporcionar puertos adicionales para la conexión de dispositivos externos",
-    "Exclusivamente para la reproducción de video",
-    "Ampliar la capacidad de almacenamiento interno"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Proporcionar puertos adicionales para la conexión de dispositivos externos\". Un hub USB permite expandir el número de puertos USB disponibles en una computadora, facilitando la conexión de múltiples dispositivos simultáneamente.",
-  "source": "https://es.wikipedia.org/wiki/Concentrador_USB"
-},
-{
-  "id": 572,
-  "category": "USB y Conectores",
-  "question": "¿Qué ventaja ofrece un hub USB 3.0 sobre uno USB 2.0?",
-  "options": [
-    "Mayor velocidad de transferencia de datos",
-    "Menos puertos disponibles para la conexión de dispositivos",
-    "Uso exclusivo para dispositivos Apple",
-    "Reducción de la velocidad de transferencia"
-  ],
-  "correct": 0,
-  "explanation": "La respuesta correcta es \"Mayor velocidad de transferencia de datos\". Un hub USB 3.0 ofrece velocidades de transferencia de hasta 5 Gbps, significativamente más rápidas que los 480 Mbps de USB 2.0, permitiendo transferencias de datos más rápidas para dispositivos compatibles.",
-  "source": "https://es.wikipedia.org/wiki/USB_3.0"
-},
-{
-  "id": 573,
-  "category": "Componentes Básicos",
-  "question": "¿Cuál es la principal función de un lector de tarjetas externo?",
-  "options": [
-    "Controlar la velocidad de los ventiladores",
-    "Proporciona puertos para leer diferentes tipos de tarjetas de memoria",
-    "Exclusivamente para la gestión del almacenamiento",
-    "Ampliar la capacidad de almacenamiento interno"
-  ],
-  "correct": 1,
-  "explanation": "La respuesta correcta es \"Proporciona puertos para leer diferentes tipos de tarjetas de memoria\". Un lector de tarjetas externo permite leer diferentes tipos de tarjetas de memoria como SD, microSD, CompactFlash, Memory Stick, entre otras, conectándolas a una computadora.",
-  "source": "https://es.wikipedia.org/wiki/Lector_de_tarjetas"
-},
-  {
-    "id": 574,
     "category": "USB y Conectores",
-    "question": "¿Qué característica es común en un lector de tarjetas con conexión USB-C?",
+    "question": "¿Qué significa que un conector USB-C sea 'reversible'?",
     "options": [
-      "Necesidad de adaptadores para la transferencia de datos",
-      "Mayor velocidad de lectura de tarjetas de memoria",
-      "Uso exclusivo para dispositivos Android",
-      "Reducción de la velocidad de transferencia"
+      "Que puede transmitir datos en ambas direcciones simultáneamente",
+      "Que puede insertarse en el puerto en cualquier orientación",
+      "Que permite carga y descarga al mismo tiempo",
+      "Que es compatible solo con dispositivos móviles"
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Mayor velocidad de lectura de tarjetas de memoria\". USB-C es una versión más reciente del estándar USB que ofrece velocidades de transferencia más rápidas en comparación con sus predecesores, lo que permite una lectura más rápida de las tarjetas de memoria.",
+    "explanation": "La respuesta correcta es \"Que puede insertarse en el puerto en cualquier orientación\". Esta característica mejora la usabilidad del conector.",
     "source": "https://es.wikipedia.org/wiki/USB-C"
   },
   {
-    "id": 575,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la ventaja de una base de refrigeración para laptop?",
+    "id": 204,
+    "category": "USB y Conectores",
+    "question": "¿Qué versión de USB duplicó la velocidad máxima de transferencia a 10 Gbit/s respecto a USB 3.0?",
     "options": [
-      "Proporcionar almacenamiento adicional a la computadora",
-      "Controlar la velocidad de los ventiladores internos para enfriar la laptop",
-      "Exclusivamente para la reproducción de video",
-      "Reducción de la velocidad de transferencia de datos"
+      "USB 2.0",
+      "USB 3.0",
+      "USB 3.1 Gen 2",
+      "USB 3.2"
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Controlar la velocidad de los ventiladores internos para enfriar la laptop\". Las bases de refrigeración para laptops ayudan a disipar el calor generado por el equipo, lo que puede mejorar su rendimiento y prolongar su vida útil al evitar el sobrecalentamiento.",
-    "source": "https://es.wikipedia.org/wiki/Refrigeración_por_liquido_(informática)"
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"USB 3.1 Gen 2\". USB 3.0 alcanzaba 5 Gbit/s, y USB 3.1 Gen 2 elevó la velocidad a 10 Gbit/s.",
+    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#USB_3.1_con_conectores_Tipo-C_reversibles"
   },
   {
-    "id": 576,
-    "category": "Componentes Básicos",
-    "question": "¿Qué función realiza una base de refrigeración con ventiladores ajustables?",
+    "id": 205,
+    "category": "USB y Conectores",
+    "question": "¿Cuál es la velocidad máxima teórica del estándar USB 2.0?",
     "options": [
-      "Ajuste manual de la velocidad de los ventiladores",
-      "Uso exclusivo para dispositivos Apple",
-      "Reducción de la velocidad de transferencia de datos",
-      "Control automático de la temperatura de la laptop"
+      "12 Mbit/s",
+      "480 Mbit/s",
+      "5 Gbit/s",
+      "10 Gbit/s"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"480 Mbit/s\". Esta velocidad corresponde al modo 'High-Speed' de USB 2.0.",
+    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#Velocidades_de_transmisi%C3%B3n"
+  },
+  {
+    "id": 206,
+    "category": "USB y Conectores",
+    "question": "¿Qué característica introdujo USB 3.0 respecto a USB 2.0 en términos de comunicación?",
+    "options": [
+      "Comunicación half-duplex",
+      "Comunicación full-duplex",
+      "Solo carga eléctrica sin datos",
+      "Compatibilidad exclusiva con Windows"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Comunicación full-duplex\". USB 3.0 permite enviar y recibir datos simultáneamente, a diferencia del half-duplex de USB 2.0.",
+    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#USB_3.0"
+  },
+  {
+    "id": 207,
+    "category": "USB y Conectores",
+    "question": "¿Qué función permite la especificación USB On-The-Go (OTG)?",
+    "options": [
+      "Cargar baterías más rápido",
+      "Permitir que un dispositivo actúe como host o periférico",
+      "Conectar múltiples monitores simultáneamente",
+      "Aumentar la velocidad de Internet"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Permitir que un dispositivo actúe como host o periférico\". Por ejemplo, un teléfono puede leer una memoria USB directamente.",
+    "source": "https://es.wikipedia.org/wiki/USB_On-The-Go"
+  },
+  {
+    "id": 208,
+    "category": "USB y Conectores",
+    "question": "¿Cuál de los siguientes conectores USB es el más común en computadoras de escritorio para conectar periféricos?",
+    "options": [
+      "USB-C",
+      "Micro-USB",
+      "USB Tipo-A",
+      "Mini-USB"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"USB Tipo-A\". Es el conector rectangular estándar en hosts como PCs y laptops.",
+    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#Conectores_tipo_A_y_B"
+  },
+  {
+    "id": 209,
+    "category": "USB y Conectores",
+    "question": "¿Qué pin en el conector micro-USB permite identificar si el dispositivo actúa como host o periférico en USB OTG?",
+    "options": [
+      "VCC",
+      "D+",
+      "ID",
+      "GND"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"ID\". En USB OTG, el pin ID determina el rol: conectado a tierra (Tipo-A) = host; flotante (Tipo-B) = periférico.",
+    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#Distribuci%C3%B3n_de_pines_de_los_tipos_%C2%ABmini%C2%BB_y_%C2%ABmicro%C2%BB"
+  },
+  {
+    "id": 210,
+    "category": "USB y Conectores",
+    "question": "¿Qué estándar reemplazará progresivamente a los conectores USB Tipo-A y Tipo-B según la especificación USB-IF?",
+    "options": [
+      "Lightning",
+      "HDMI",
+      "USB Tipo-C",
+      "Thunderbolt 2"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"USB Tipo-C\". Fue diseñado como conector universal para todos los dispositivos futuros.",
+    "source": "https://es.wikipedia.org/wiki/USB-C"
+  },
+  {
+    "id": 211,
+    "category": "USB y Conectores",
+    "question": "¿Cuál es la corriente máxima que puede suministrar un puerto USB 2.0 estándar?",
+    "options": [
+      "100 mA",
+      "500 mA",
+      "900 mA",
+      "3 A"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"500 mA\". Esto equivale a 2.5 W a 5 V, suficiente para muchos periféricos de bajo consumo.",
+    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#USB_3.0"
+  },
+  {
+    "id": 212,
+    "category": "USB y Conectores",
+    "question": "¿Qué permite la especificación USB Power Delivery (USB-PD)?",
+    "options": [
+      "Transmitir video sin compresión",
+      "Negociar voltajes y corrientes más altos para carga rápida",
+      "Conectar redes Ethernet directamente",
+      "Reemplazar completamente a los adaptadores de corriente"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Negociar voltajes y corrientes más altos para carga rápida\". USB-PD puede entregar hasta 100 W (20 V / 5 A).",
+    "source": "https://es.wikipedia.org/wiki/USB-C#USB_Power_Delivery"
+  },
+  {
+    "id": 213,
+    "category": "USB y Conectores",
+    "question": "¿Qué tipo de señal utilizan los pares de datos D+ y D- en USB 2.0?",
+    "options": [
+      "Señal diferencial",
+      "Señal analógica",
+      "Señal de radiofrecuencia",
+      "Señal de corriente continua"
     ],
     "correct": 0,
-    "explanation": "La respuesta correcta es \"Ajuste manual de la velocidad de los ventiladores\". Las bases de refrigeración con ventiladores ajustables permiten al usuario controlar manualmente la velocidad de los ventiladores para adaptar la refrigeración a las necesidades específicas del equipo en cada momento.",
-    "source": "https://es.wikipedia.org/wiki/Refrigeración_por_liquido_(informática)"
+    "explanation": "La respuesta correcta es \"Señal diferencial\". Esta técnica reduce el ruido electromagnético y mejora la integridad de la señal.",
+    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#Velocidades_de_transmisi%C3%B3n"
   },
   {
-    "id": 577,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la principal función de un teclado externo para laptop?",
+    "id": 214,
+    "category": "USB y Conectores",
+    "question": "¿Cuál de los siguientes NO es un tipo de conector USB definido en las especificaciones oficiales?",
     "options": [
-      "Gestionar la velocidad de los ventiladores",
-      "Proporcionar una base de conexión para dispositivos externos",
-      "Exclusivamente para la reproducción de video",
-      "Facilitar la entrada de datos en una laptop"
+      "USB Tipo-A",
+      "USB Tipo-B",
+      "USB Tipo-D",
+      "USB Tipo-C"
     ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Facilitar la entrada de datos en una laptop\". El teclado externo para laptop está diseñado principalmente para proporcionar una experiencia de escritura más cómoda y ergonómica que la del teclado integrado, especialmente durante sesiones prolongadas de trabajo.",
-    "source": "https://es.wikipedia.org/wiki/Teclado_(informática)"
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"USB Tipo-D\". No existe en las especificaciones oficiales del USB-IF.",
+    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#Compatibilidad_y_conectores"
   },
   {
-    "id": 578,
-    "category": "Componentes Básicos",
-    "question": "¿Qué ventaja ofrece un teclado externo mecánico sobre uno de membrana?",
+    "id": 215,
+    "category": "USB y Conectores",
+    "question": "¿Qué ventaja ofrece el uso de un hub USB con fuente de alimentación externa?",
     "options": [
-      "Menos durabilidad y resistencia",
-      "Mayor retroalimentación táctil y durabilidad",
-      "Exclusivamente para dispositivos Windows",
-      "Reducción de la velocidad de transferencia de datos"
+      "Aumenta la velocidad de transferencia de datos",
+      "Permite conectar más dispositivos sin sobrecargar el puerto host",
+      "Convierte automáticamente USB 2.0 en USB 3.0",
+      "Elimina la necesidad de drivers"
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Mayor retroalimentación táctil y durabilidad\". Los teclados mecánicos utilizan interruptores individuales para cada tecla, lo que proporciona una retroalimentación táctil más clara y suelen ser más duraderos que los teclados de membrana, que utilizan una lámina de circuito impreso.",
-    "source": "https://es.wikipedia.org/wiki/Teclado_mecánico"
+    "explanation": "La respuesta correcta es \"Permite conectar más dispositivos sin sobrecargar el puerto host\". La fuente externa suministra energía adicional a los periféricos.",
+    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#Uso"
   },
   {
-    "id": 579,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de un adaptador de corriente externo?",
+    "id": 216,
+    "category": "USB y Conectores",
+    "question": "¿Qué significa la retrocompatibilidad en el contexto de USB?",
     "options": [
-      "Gestionar la velocidad de los ventiladores",
-      "Proporcionar energía adicional a dispositivos externos",
-      "Exclusivamente para la reproducción de video",
-      "Ampliar la capacidad de almacenamiento interno"
+      "Que los dispositivos nuevos no funcionan con sistemas antiguos",
+      "Que los dispositivos USB más antiguos pueden funcionar en puertos más nuevos",
+      "Que solo se pueden usar cables del mismo estándar",
+      "Que la velocidad siempre se mantiene constante"
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Proporcionar energía adicional a dispositivos externos\". El adaptador de corriente externo, también conocido como cargador o fuente de alimentación, convierte la corriente alterna de la red eléctrica en corriente continua para alimentar el dispositivo y, en muchos casos, cargar su batería.",
-    "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentación"
+    "explanation": "La respuesta correcta es \"Que los dispositivos USB más antiguos pueden funcionar en puertos más nuevos\". La velocidad se limitará al estándar más lento.",
+    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#USB_3.1_con_conectores_Tipo-C_reversibles"
   },
   {
-    "id": 580,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la normativa principal en el espacio de trabajo de un taller de microinformática relacionada con la seguridad eléctrica?",
+    "id": 217,
+    "category": "USB y Conectores",
+    "question": "¿Qué color suele tener el aislante del cable D+ en un cable USB estándar?",
     "options": [
-      "ISO 9001",
-      "ISO 14001",
-      "ISO 27001",
-      "Normativa EN 61010"
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Normativa EN 61010\". La norma EN 61010 (IEC 61010) es la normativa europea que establece los requisitos de seguridad para equipos eléctricos de medida, control y laboratorio, incluyendo los utilizados en talleres de microinformática.",
-    "source": "https://es.wikipedia.org/wiki/IEC_61010"
-  },
-  {
-    "id": 581,
-    "category": "Componentes Básicos",
-    "question": "¿Qué normativa regula las condiciones de iluminación en un taller de microinformática?",
-    "options": [
-      "ISO 9001",
-      "OHSAS 18001",
-      "ISO 14001",
-      "Normativa UNE-EN 12464-1"
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Normativa UNE-EN 12464-1\". La norma UNE-EN 12464-1 establece los requisitos de iluminación de los lugares de trabajo interiores, incluyendo los niveles de iluminancia adecuados para diferentes tareas y entornos, como los talleres de microinformática.",
-    "source": "https://es.wikipedia.org/wiki/Iluminación"
-  },
-  {
-    "id": 582,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la normativa clave para garantizar la seguridad en el manejo de equipos eléctricos en un taller de microinformática?",
-    "options": [
-      "ISO 9001",
-      "ISO 27001",
-      "OHSAS 18001",
-      "Normativa UNE-EN 61010"
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Normativa UNE-EN 61010\". La norma UNE-EN 61010 es la adaptación española de la norma europea EN 61010, que establece los requisitos de seguridad para equipos eléctricos de medida, control y laboratorio, incluyendo los utilizados en talleres de microinformática.",
-    "source": "https://es.wikipedia.org/wiki/IEC_61010"
-  },
-  {
-    "id": 583,
-    "category": "Componentes Básicos",
-    "question": "¿Qué normativa regula las condiciones ergonómicas en un taller de microinformática?",
-    "options": [
-      "ISO 9001",
-      "ISO 14001",
-      "Normativa EN 12464-1",
-      "Normativa UNE-EN 3382"
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Normativa UNE-EN 3382\". La norma UNE-EN 3382 establece los requisitos ergonómicos para los puestos de trabajo con pantallas de visualización, incluyendo aspectos como la altura del escritorio, la silla, la iluminación y otros factores relevantes para talleres de microinformática.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
-  },
-  {
-    "id": 584,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la normativa específica para la gestión de residuos electrónicos en un taller de microinformática?",
-    "options": [
-      "ISO 9001",
-      "ISO 14001",
-      "ISO 27001",
-      "Normativa RAEE"
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Normativa RAEE\". La normativa RAEE (Residuos de Aparatos Eléctricos y Electrónicos) regula la gestión de los residuos electrónicos, estableciendo las responsabilidades de productores, distribuidores y usuarios en la recogida, tratamiento y reciclaje de estos materiales.",
-    "source": "https://es.wikipedia.org/wiki/Residuos_de_Aparatos_Eléctricos_y_Electrónicos"
-  },
-  {
-    "id": 585,
-    "category": "Componentes Básicos",
-    "question": "¿Qué normativa regula las condiciones de temperatura en un taller de microinformática?",
-    "options": [
-      "ISO 9001",
-      "OHSAS 18001",
-      "Normativa EN 12464-1",
-      "Normativa UNE-EN 3382"
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Normativa UNE-EN 3382\". La norma UNE-EN 3382, además de los aspectos ergonómicos, también establece condiciones ambientales adecuadas para los puestos de trabajo, incluyendo rangos de temperatura recomendados para garantizar el confort y la productividad en talleres de microinformática.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
-  },
-  {
-    "id": 586,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la normativa clave para la gestión de la calidad en un taller de microinformática?",
-    "options": [
-      "ISO 14001",
-      "OHSAS 18001",
-      "ISO 9001",
-      "Normativa EN 61010"
+      "Rojo",
+      "Blanco",
+      "Verde",
+      "Negro"
     ],
     "correct": 2,
-    "explanation": "La respuesta correcta es \"ISO 9001\". La norma ISO 9001 establece los requisitos para un sistema de gestión de la calidad, ayudando a las organizaciones a mejorar su eficiencia, satisfacer a los clientes y cumplir con los requisitos reglamentarios aplicables a talleres de microinformática.",
-    "source": "https://es.wikipedia.org/wiki/ISO_9000"
+    "explanation": "La respuesta correcta es \"Verde\". Según la especificación, D+ es verde y D− es blanco.",
+    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#Distribuci%C3%B3n_de_pines_de_los_tipos_A_y_B"
   },
   {
-    "id": 587,
-    "category": "Componentes Básicos",
-    "question": "¿Qué normativa regula las condiciones de ventilación en un taller de microinformática?",
+    "id": 218,
+    "category": "USB y Conectores",
+    "question": "¿Qué función cumple el pin VCC en un conector USB?",
     "options": [
-      "ISO 9001",
-      "OHSAS 18001",
-      "Normativa EN 12464-1",
-      "Normativa UNE-EN 3382"
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Normativa UNE-EN 3382\". La norma UNE-EN 3382 establece los requisitos ergonómicos para los puestos de trabajo, incluyendo condiciones de ventilación adecuadas para garantizar la calidad del aire y el confort de los trabajadores en talleres de microinformática.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
-  },
-  {
-    "id": 588,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la normativa que establece los requisitos de seguridad para las instalaciones eléctricas en un taller de microinformática?",
-    "options": [
-      "ISO 9001",
-      "ISO 27001",
-      "Normativa UNE 20460",
-      "Normativa UNE-EN 50110-1"
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Normativa UNE-EN 50110-1\". La norma UNE-EN 50110-1 establece los requisitos para la operación de las instalaciones eléctricas, incluyendo aspectos de seguridad que deben cumplirse en talleres de microinformática para prevenir accidentes y garantizar un entorno de trabajo seguro.",
-    "source": "https://es.wikipedia.org/wiki/Instalación_eléctrica"
-  },
-  {
-    "id": 589,
-    "category": "Componentes Básicos",
-    "question": "¿Qué normativa regula las condiciones de ruido en un taller de microinformática?",
-    "options": [
-      "ISO 9001",
-      "ISO 14001",
-      "Normativa EN 12464-1",
-      "Normativa UNE-EN ISO 11201"
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Normativa UNE-EN ISO 11201\". La norma UNE-EN ISO 11201 establece los métodos para la determinación de los niveles de presión sonora emitidos por máquinas y equipos, incluyendo los utilizados en talleres de microinformática, con el fin de controlar la exposición al ruido y proteger la salud de los trabajadores.",
-    "source": "https://es.wikipedia.org/wiki/Ruido"
-  },
-  {
-    "id": 590,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la normativa clave para la gestión ambiental en un taller de microinformática?",
-    "options": [
-      "ISO 9001",
-      "ISO 27001",
-      "ISO 14001",
-      "Normativa EN 61010"
+      "Transmitir datos positivos",
+      "Transmitir datos negativos",
+      "Suministrar +5 V de alimentación",
+      "Actuar como tierra de referencia"
     ],
     "correct": 2,
-    "explanation": "La respuesta correcta es \"ISO 14001\". La norma ISO 14001 establece los requisitos para un sistema de gestión ambiental, ayudando a las organizaciones a identificar, gestionar, monitorear y controlar sus aspectos ambientales de manera sistemática, incluyendo los talleres de microinformática.",
-    "source": "https://es.wikipedia.org/wiki/ISO_14000"
+    "explanation": "La respuesta correcta es \"Suministrar +5 V de alimentación\". Es la fuente de energía para periféricos de bajo consumo.",
+    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#Distribuci%C3%B3n_de_pines_de_los_tipos_A_y_B"
   },
   {
-    "id": 591,
-    "category": "Componentes Básicos",
-    "question": "¿Qué normativa regula las condiciones de almacenamiento de productos químicos en un taller de microinformática?",
+    "id": 219,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo con extensión \".docx\"?",
     "options": [
-      "ISO 9001",
-      "ISO 14001",
-      "Normativa UNE-EN 14470-1",
-      "Normativa EN 61010"
+      "Un archivo de video.",
+      "Un archivo de texto sin formato.",
+      "Un documento de Microsoft Word.",
+      "Un archivo de imagen."
     ],
     "correct": 2,
-    "explanation": "La respuesta correcta es \"Normativa UNE-EN 14470-1\". La norma UNE-EN 14470-1 establece los requisitos para los armarios de seguridad destinados al almacenamiento de productos inflamables, incluyendo los productos químicos que puedan utilizarse en talleres de microinformática.",
-    "source": "https://es.wikipedia.org/wiki/Almacenamiento_de_productos_químicos"
+    "explanation": "La respuesta correcta es \"Un documento de Microsoft Word.\". La extensión .docx se introdujo con Microsoft Office 2007 y utiliza un formato basado en XML.",
+    "source": "https://es.wikipedia.org/wiki/Office_Open_XML"
   },
   {
-    "id": 592,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la normativa principal para la gestión de la seguridad y salud ocupacional en un taller de microinformática?",
+    "id": 220,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué tipo de archivo es comúnmente asociado con la extensión \".jpg\"?",
     "options": [
-      "ISO 9001",
-      "ISO 14001",
-      "OHSAS 18001",
-      "Normativa EN 61010"
+      "Un archivo de texto.",
+      "Una hoja de cálculo.",
+      "Una imagen.",
+      "Un archivo de audio."
     ],
     "correct": 2,
-    "explanation": "La respuesta correcta es \"OHSAS 18001\". La norma OHSAS 18001 (actualmente sustituida por ISO 45001) establece los requisitos para un sistema de gestión de la seguridad y salud en el trabajo, ayudando a las organizaciones a minimizar los riesgos para los empleados en talleres de microinformática.",
-    "source": "https://es.wikipedia.org/wiki/OHSAS_18001"
+    "explanation": "La respuesta correcta es \"Una imagen.\". JPG (o JPEG) es un formato de compresión de imágenes ampliamente utilizado.",
+    "source": "https://es.wikipedia.org/wiki/JPEG"
   },
   {
-    "id": 593,
-    "category": "Componentes Básicos",
-    "question": "¿Qué normativa regula las condiciones de seguridad en la manipulación de productos químicos en un taller de microinformática?",
+    "id": 221,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué significa la extensión \".pdf\"?",
     "options": [
-      "ISO 9001",
-      "ISO 14001",
-      "Normativa UNE-EN 14470-1",
-      "Normativa UNE-EN 50110-1"
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Normativa UNE-EN 14470-1\". La norma UNE-EN 14470-1 establece los requisitos para el almacenamiento seguro de productos inflamables, incluyendo aspectos relevantes para la manipulación segura de productos químicos en talleres de microinformática.",
-    "source": "https://es.wikipedia.org/wiki/Almacenamiento_de_productos_químicos"
-  },
-  {
-    "id": 594,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la normativa clave para la gestión de la seguridad de la información en un taller de microinformática?",
-    "options": [
-      "ISO 9001",
-      "ISO 14001",
-      "ISO 27001",
-      "Normativa EN 61010"
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"ISO 27001\". La norma ISO 27001 establece los requisitos para establecer, implementar, mantener y mejorar un sistema de gestión de la seguridad de la información, incluyendo aspectos relevantes para talleres de microinformática que manejen datos sensibles.",
-    "source": "https://es.wikipedia.org/wiki/ISO/IEC_27001"
-  },
-  {
-    "id": 595,
-    "category": "Componentes Básicos",
-    "question": "¿Qué normativa regula las condiciones de seguridad en la manipulación de equipos de trabajo en un taller de microinformática?",
-    "options": [
-      "ISO 9001",
-      "ISO 14001",
-      "OHSAS 18001",
-      "Normativa EN 61010"
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"OHSAS 18001\". La norma OHSAS 18001 (actualmente sustituida por ISO 45001) establece los requisitos para un sistema de gestión de la seguridad y salud en el trabajo, incluyendo la manipulación segura de equipos en talleres de microinformática.",
-    "source": "https://es.wikipedia.org/wiki/OHSAS_18001"
-  },
-  {
-    "id": 596,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la normativa principal para la gestión de la seguridad eléctrica en un taller de microinformática?",
-    "options": [
-      "ISO 9001",
-      "ISO 14001",
-      "ISO 27001",
-      "Normativa UNE-EN 61010"
-    ],
-    "correct": 3,
-    "explanation": "La respuesta correcta es \"Normativa UNE-EN 61010\". La norma UNE-EN 61010 establece los requisitos de seguridad para equipos eléctricos de medida, control y laboratorio, incluyendo aspectos relevantes para la gestión de la seguridad eléctrica en talleres de microinformática.",
-    "source": "https://es.wikipedia.org/wiki/IEC_61010"
-  },
-  {
-    "id": 597,
-    "category": "Componentes Básicos",
-    "question": "¿Qué normativa regula las condiciones de seguridad en la manipulación de equipos de protección individual en un taller de microinformática?",
-    "options": [
-      "ISO 9001",
-      "ISO 14001",
-      "OHSAS 18001",
-      "Normativa UNE-EN 343"
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"OHSAS 18001\". La norma OHSAS 18001 (actualmente sustituida por ISO 45001) establece los requisitos para un sistema de gestión de la seguridad y salud en el trabajo, incluyendo la utilización adecuada de equipos de protección individual en talleres de microinformática.",
-    "source": "https://es.wikipedia.org/wiki/OHSAS_18001"
-  },
-  {
-    "id": 598,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la normativa clave para la gestión de la seguridad en la manipulación de productos químicos en un taller de microinformática?",
-    "options": [
-      "ISO 9001",
-      "ISO 14001",
-      "Normativa UNE-EN 14470-1",
-      "Normativa EN 61010"
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Normativa UNE-EN 14470-1\". La norma UNE-EN 14470-1 establece los requisitos para el almacenamiento seguro de productos inflamables, incluyendo aspectos relevantes para la manipulación segura de productos químicos en talleres de microinformática.",
-    "source": "https://es.wikipedia.org/wiki/Almacenamiento_de_productos_químicos"
-  },
-  {
-    "id": 599,
-    "category": "Componentes Básicos",
-    "question": "¿Qué normativa regula las condiciones de seguridad en la manipulación de productos químicos en un taller de microinformática?",
-    "options": [
-      "ISO 9001",
-      "ISO 14001",
-      "Normativa UNE-EN 14470-1",
-      "Normativa EN 61010"
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Normativa UNE-EN 14470-1\". La norma UNE-EN 14470-1 establece los requisitos para el almacenamiento seguro de productos inflamables, incluyendo aspectos relevantes para la manipulación segura de productos químicos en talleres de microinformática.",
-    "source": "https://es.wikipedia.org/wiki/Almacenamiento_de_productos_químicos"
-  },
-  {
-    "id": 600,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la recomendación estándar de luminosidad para un espacio de trabajo en un taller de microinformática según las normativas ergonómicas?",
-    "options": [
-      "Entre 100 y 200 lux",
-      "Menos de 50 lux",
-      "Más de 500 lux",
-      "Sin restricciones de luminosidad"
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Más de 500 lux\". Según las normativas ergonómicas y la UNE-EN 12464-1, para tareas que requieren lectura de documentos pequeños o trabajo detallado, como en un taller de microinformática, se recomienda una iluminancia de 500-750 lux.",
-    "source": "https://es.wikipedia.org/wiki/Iluminación"
-  },
-  {
-    "id": 601,
-    "category": "Conectores de Video",
-    "question": "¿Qué posición de la pantalla del monitor se considera ergonómicamente recomendada para evitar molestias visuales?",
-    "options": [
-      "A nivel de los ojos o ligeramente debajo",
-      "Por encima de la línea de visión",
-      "En un ángulo de 45 grados hacia abajo",
-      "En un ángulo de 90 grados hacia arriba"
+      "Portable Document Format.",
+      "Program Data File.",
+      "Personal Digital File.",
+      "Print Document File."
     ],
     "correct": 0,
-    "explanation": "\"A nivel de los ojos o ligeramente debajo\" es correcto. Según las directrices ergonómicas, la parte superior de la pantalla del monitor debe estar a nivel de los ojos o ligeramente por debajo, permitiendo una postura natural del cuello y reduciendo la fatiga visual.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
+    "explanation": "La respuesta correcta es \"Portable Document Format.\". Fue desarrollado por Adobe para presentar documentos de forma independiente del software, hardware o sistema operativo.",
+    "source": "https://es.wikipedia.org/wiki/Portable_Document_Format"
   },
   {
-    "id": 602,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la altura recomendada para la silla de trabajo en un taller de microinformática?",
+    "id": 222,
+    "category": "Extensiones de Archivo",
+    "question": "¿Cuál es la función principal de un archivo con extensión \".exe\"?",
     "options": [
-      "A nivel del suelo",
-      "Ajustada de manera que los pies toquen el suelo y las rodillas formen un ángulo de 90 grados",
-      "Más alta que la altura de la mesa",
-      "Sin restricciones de altura"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Ajustada de manera que los pies toquen el suelo y las rodillas formen un ángulo de 90 grados\". Según las directrices ergonómicas, la altura de la silla debe permitir que los pies descansen planos en el suelo y las rodillas formen un ángulo de aproximadamente 90 grados para garantizar una postura adecuada.",
-    "source": "https://es.wikipedia.org/wiki/Silla_(mueble)"
-  },
-  {
-    "id": 603,
-    "category": "Conectores de Video",
-    "question": "¿Qué distancia se sugiere entre los ojos y la pantalla del monitor para reducir la fatiga visual?",
-    "options": [
-      "Menos de 20 centímetros",
-      "Más de 1 metro",
-      "Entre 50 y 70 centímetros",
-      "Sin restricciones de distancia"
+      "Contiene datos de configuración.",
+      "Es un archivo de imagen.",
+      "Ejecuta un programa en Windows.",
+      "Almacena datos de audio."
     ],
     "correct": 2,
-    "explanation": "\"Entre 50 y 70 centímetros\" es correcto. Según las directrices ergonómicas, se recomienda mantener una distancia de aproximadamente un brazo (50-70 cm) entre los ojos y la pantalla del monitor para reducir la fatiga visual y permitir una visión cómoda de todo el contenido.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
+    "explanation": "La respuesta correcta es \"Ejecuta un programa en Windows.\". Los archivos .exe son ejecutables en sistemas Windows.",
+    "source": "https://es.wikipedia.org/wiki/Portable_Executable"
   },
   {
-    "id": 604,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la posición recomendada de los brazos al trabajar en un taller de microinformática?",
+    "id": 223,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué tipo de archivo suele tener la extensión \".xlsx\"?",
     "options": [
-      "Estirados completamente",
-      "En un ángulo de 180 grados",
-      "Formando un ángulo de 90 grados",
-      "Sin restricciones de posición"
+      "Un archivo de texto.",
+      "Una presentación.",
+      "Una hoja de cálculo de Microsoft Excel.",
+      "Un archivo de audio."
     ],
     "correct": 2,
-    "explanation": "La respuesta correcta es \"Formando un ángulo de 90 grados\". Según las directrices ergonómicas, los brazos deben formar un ángulo de aproximadamente 90 grados en los codos al trabajar con el teclado y el ratón, con los hombros relajados y los antebrazos apoyados en la mesa o en los reposabrazos de la silla.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
+    "explanation": "La respuesta correcta es \"Una hoja de cálculo de Microsoft Excel.\". Es el formato predeterminado desde Excel 2007.",
+    "source": "https://es.wikipedia.org/wiki/Office_Open_XML"
   },
   {
-    "id": 605,
-    "category": "Componentes Básicos",
-    "question": "¿Qué se recomienda para evitar la fatiga visual en un espacio de trabajo con computadora?",
+    "id": 224,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo comprimido con extensión \".zip\"?",
     "options": [
-      "Pantallas de baja resolución",
-      "Fuentes de luz intensa directa sobre la pantalla",
-      "Descansar los ojos mirando al horizonte cada 2 horas",
-      "Sin restricciones en las condiciones visuales"
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Descansar los ojos mirando al horizonte cada 2 horas\". Según las directrices ergonómicas, se recomienda seguir la regla 20-20-20: cada 20 minutos, descansar la vista mirando algo a 20 pies (aproximadamente 6 metros) durante 20 segundos para reducir la fatiga visual.",
-    "source": "https://es.wikipedia.org/wiki/Síndrome_visual_informático"
-  },
-  {
-    "id": 606,
-    "category": "Conectores de Placa Base",
-    "question": "¿Cuál es la posición ideal del teclado y el ratón para prevenir problemas musculoesqueléticos?",
-    "options": [
-      "En un nivel inferior al de los codos",
-      "A la altura del pecho",
-      "A la altura de los hombros",
-      "Sin restricciones de posición"
+      "Un archivo que contiene varios archivos y/o carpetas comprimidos.",
+      "Un archivo de imagen.",
+      "Un documento de texto.",
+      "Un archivo de audio."
     ],
     "correct": 0,
-    "explanation": "La respuesta correcta es \"En un nivel inferior al de los codos\". Según las directrices ergonómicas, el teclado y el ratón deben colocarse a una altura que permita mantener los hombros relajados y los codos formando un ángulo de aproximadamente 90 grados, con los antebrazos paralelos al suelo.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
+    "explanation": "La respuesta correcta es \"Un archivo que contiene varios archivos y/o carpetas comprimidos.\". ZIP es un formato estándar de compresión sin pérdida.",
+    "source": "https://es.wikipedia.org/wiki/ZIP_(formato_de_compresi%C3%B3n)"
   },
   {
-    "id": 607,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la postura recomendada para evitar molestias en la espalda al estar sentado en una silla durante largos periodos?",
+    "id": 225,
+    "category": "Permisos de Archivo",
+    "question": "¿Qué significan los permisos de archivo \"lectura\", \"escritura\" y \"ejecución\" en un sistema operativo?",
     "options": [
-      "Inclinarse hacia adelante",
-      "Mantener la espalda recta y apoyada en el respaldo de la silla",
-      "Cruzar las piernas",
-      "Sin restricciones de postura"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Mantener la espalda recta y apoyada en el respaldo de la silla\". Según las directrices ergonómicas, es importante mantener la espalda recta y bien apoyada en el respaldo de la silla, con las curvas naturales de la columna vertebral alineadas, para evitar molestias y lesiones.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
-  },
-  {
-    "id": 608,
-    "category": "Componentes Básicos",
-    "question": "¿Qué se recomienda para prevenir la fatiga visual en un taller de microinformática?",
-    "options": [
-      "Monitores de baja resolución",
-      "Iluminación intensa directa sobre la pantalla",
-      "Tomar descansos cortos cada hora",
-      "Sin restricciones en las condiciones visuales"
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Tomar descansos cortos cada hora\". Según las directrices ergonómicas, se recomienda tomar descansos cortos y frecuentes para descansar la vista y estirar el cuerpo. La regla 20-20-20 sugiere descansar la vista cada 20 minutos mirando algo a 20 pies durante 20 segundos.",
-    "source": "https://es.wikipedia.org/wiki/Síndrome_visual_informático"
-  },
-  {
-    "id": 609,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la posición ergonómicamente correcta para los pies al estar sentado en un espacio de trabajo de microinformática?",
-    "options": [
-      "Cruzar las piernas",
-      "Mantener los pies en el suelo o apoyados en un reposapiés",
-      "Colocar los pies sobre la silla",
-      "Sin restricciones de posición de los pies"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Mantener los pies en el suelo o apoyados en un reposapiés\". Según las directrices ergonómicas, los pies deben descansar planos en el suelo o sobre un reposapiés para mantener una postura adecuada y reducir la presión en la espalda y las piernas.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
-  },
-  {
-    "id": 610,
-    "category": "Componentes Básicos",
-    "question": "¿Qué se recomienda para reducir la exposición a ruidos en un taller de microinformática?",
-    "options": [
-      "Trabajar en un entorno completamente silencioso",
-      "Utilizar auriculares con cancelación de ruido",
-      "Mantener la puerta cerrada para bloquear el ruido exterior",
-      "Sin restricciones en la exposición al ruido"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Utilizar auriculares con cancelación de ruido\". Aunque es ideal trabajar en un entorno silencioso, en un taller de microinformática esto puede no ser siempre posible. El uso de auriculares con cancelación de ruido puede ayudar a reducir la exposición a ruidos molestos y mejorar la concentración.",
-    "source": "https://es.wikipedia.org/wiki/Protección_auditiva"
-  },
-  {
-    "id": 611,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la temperatura recomendada para un espacio de trabajo en un taller de microinformática?",
-    "options": [
-      "Menos de 10 grados Celsius",
-      "Entre 20 y 22 grados Celsius",
-      "Más de 30 grados Celsius",
-      "Sin restricciones de temperatura"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Entre 20 y 22 grados Celsius\". Según las directrices ergonómicas y normativas como la UNE-EN 3382, se recomienda mantener una temperatura ambiente entre 20-22°C en los espacios de trabajo para garantizar el confort y la productividad de los trabajadores.",
-    "source": "https://es.wikipedia.org/wiki/Confort_térmico"
-  },
-  {
-    "id": 612,
-    "category": "Componentes Básicos",
-    "question": "¿Qué se recomienda para prevenir la fatiga ocular al trabajar en un taller de microinformática?",
-    "options": [
-      "Utilizar monitores de tubo de rayos catódicos (CRT)",
-      "Ajustar el brillo y contraste de la pantalla",
-      "Trabajar en un entorno oscuro",
-      "Sin restricciones en las condiciones visuales"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Ajustar el brillo y contraste de la pantalla\". Para prevenir la fatiga ocular, se recomienda ajustar el brillo y contraste de la pantalla a niveles cómodos, evitar reflejos y mantener una distancia adecuada entre los ojos y el monitor.",
-    "source": "https://es.wikipedia.org/wiki/Síndrome_visual_informático"
-  },
-  {
-    "id": 613,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la postura adecuada para evitar problemas musculoesqueléticos al trabajar en un taller de microinformática?",
-    "options": [
-      "Adoptar posturas estáticas durante largos periodos",
-      "Variar las posturas y realizar estiramientos cada cierto tiempo",
-      "Mantener la misma posición sin moverse",
-      "Sin restricciones en la postura"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Variar las posturas y realizar estiramientos cada cierto tiempo\". Según las directrices ergonómicas, es importante variar las posturas y realizar pausas activas con estiramientos regulares para evitar problemas musculoesqueléticos asociados con el trabajo sedentario.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
-  },
-  {
-    "id": 614,
-    "category": "Componentes Básicos",
-    "question": "¿Qué se recomienda para prevenir la fatiga visual al trabajar en un taller de microinformática?",
-    "options": [
-      "Utilizar fuentes de luz intensa directa sobre la pantalla",
-      "Ajustar la distancia entre los ojos y la pantalla",
-      "No tomar descansos visuales",
-      "Sin restricciones en las condiciones visuales"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Ajustar la distancia entre los ojos y la pantalla\". Para prevenir la fatiga visual, se recomienda mantener una distancia adecuada (aproximadamente un brazo, 50-70 cm) entre los ojos y la pantalla, además de seguir la regla 20-20-20: descansar la vista cada 20 minutos mirando algo a 20 pies durante 20 segundos.",
-    "source": "https://es.wikipedia.org/wiki/Síndrome_visual_informático"
-  },
-  {
-    "id": 615,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la importancia de adoptar pausas activas durante la jornada laboral en un taller de microinformática?",
-    "options": [
-      "Aumentar la exposición a factores de riesgo ergonómicos",
-      "Mejorar la concentración y reducir la fatiga física",
-      "Incrementar la velocidad de trabajo",
-      "Sin impacto en la salud laboral"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Mejorar la concentración y reducir la fatiga física\". Las pausas activas durante la jornada laboral ayudan a mejorar la concentración, reducir la fatiga física y mental, y prevenir problemas musculoesqueléticos asociados con el trabajo sedentario.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
-  },
-  {
-    "id": 616,
-    "category": "Componentes Básicos",
-    "question": "¿Qué medida contribuye a reducir la tensión en el cuello al trabajar en un taller de microinformática?",
-    "options": [
-      "Mantener la pantalla a una altura inferior a la línea de visión",
-      "Inclinarse hacia adelante mientras se trabaja",
-      "Limitar el uso de accesorios ergonómicos",
-      "Sin importancia en la posición de la pantalla"
+      "Lectura: ver el contenido del archivo, Escritura: modificar el contenido del archivo, Ejecución: ejecutar el archivo como un programa.",
+      "Escritura: ver el contenido del archivo, Lectura: modificar el contenido del archivo, Ejecución: ejecutar el archivo como un programa.",
+      "Lectura: modificar el contenido del archivo, Escritura: ver el contenido del archivo, Ejecución: ejecutar el archivo como un programa.",
+      "Ejecución: ver el contenido del archivo, Escritura: modificar el contenido del archivo, Lectura: ejecutar el archivo como un programa."
     ],
     "correct": 0,
-    "explanation": "La respuesta correcta es \"Mantener la pantalla a una altura inferior a la línea de visión\". Para reducir la tensión en el cuello, se recomienda colocar la parte superior de la pantalla a nivel de los ojos o ligeramente por debajo, permitiendo una postura natural del cuello y evitando la inclinación constante hacia arriba o hacia abajo.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
+    "explanation": "La respuesta correcta es \"Lectura: ver el contenido del archivo, Escritura: modificar el contenido del archivo, Ejecución: ejecutar el archivo como un programa.\". Estos son los permisos básicos en sistemas Unix/Linux y similares en Windows.",
+    "source": "https://es.wikipedia.org/wiki/Permisos_de_archivo"
   },
   {
-    "id": 617,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de un soporte para documentos en un espacio de trabajo de microinformática?",
+    "id": 226,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo con extensión \".txt\"?",
     "options": [
-      "Aumentar la distancia entre los ojos y la pantalla",
-      "Facilitar la lectura de documentos sin forzar el cuello",
-      "Limitar el espacio en el escritorio",
-      "Sin impacto en la organización del espacio"
+      "Un archivo de audio.",
+      "Un documento de texto sin formato.",
+      "Un archivo de imagen.",
+      "Un archivo ejecutable."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Facilitar la lectura de documentos sin forzar el cuello\". Un soporte para documentos permite mantener los documentos a una altura similar a la del monitor, facilitando la lectura sin necesidad de inclinar el cuello constantemente y reduciendo la fatiga visual y muscular.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
+    "explanation": "La respuesta correcta es \"Un documento de texto sin formato.\". No contiene formato de estilo, solo texto plano.",
+    "source": "https://es.wikipedia.org/wiki/Archivo_de_texto"
   },
   {
-    "id": 618,
-    "category": "Componentes Básicos",
-    "question": "¿Cómo se puede mejorar la postura al trabajar con un ordenador portátil en un taller de microinformática?",
+    "id": 227,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué tipo de archivo es comúnmente asociado con la extensión \".mp3\"?",
     "options": [
-      "Utilizarlo directamente sobre las piernas",
-      "Conectar un teclado y un ratón externo para ajustar la altura",
-      "No es necesario realizar ajustes, ya que los portátiles son ergonómicos",
-      "Sin importancia en la ergonomía del portátil"
+      "Un archivo de video.",
+      "Un archivo de audio.",
+      "Un documento de texto.",
+      "Un archivo de imagen."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Conectar un teclado y un ratón externo para ajustar la altura\". Para mejorar la postura al trabajar con un portátil, se recomienda conectar un teclado y un ratón externos y elevar la pantalla a una altura adecuada (a nivel de los ojos o ligeramente por debajo), permitiendo una postura ergonómica.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
+    "explanation": "La respuesta correcta es \"Un archivo de audio.\". MP3 es un formato de compresión de audio con pérdida.",
+    "source": "https://es.wikipedia.org/wiki/MP3"
   },
   {
-    "id": 619,
-    "category": "Componentes Básicos",
-    "question": "¿Qué recomendación es clave para prevenir problemas en la vista al trabajar en un taller de microinformática?",
+    "id": 228,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué significa la extensión \".html\"?",
     "options": [
-      "Utilizar gafas de sol mientras se trabaja en la computadora",
-      "Ajustar el brillo y contraste del monitor",
-      "No realizar pausas visuales durante la jornada laboral",
-      "Sin restricciones en el uso de la computadora"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Ajustar el brillo y contraste del monitor\". Para prevenir problemas en la vista, es fundamental ajustar el brillo y contraste del monitor a niveles cómodos, evitar reflejos, mantener una distancia adecuada y realizar pausas visuales regulares siguiendo la regla 20-20-20.",
-    "source": "https://es.wikipedia.org/wiki/Síndrome_visual_informático"
-  },
-  {
-    "id": 620,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la importancia de tener un espacio de trabajo organizado en un taller de microinformática?",
-    "options": [
-      "Incrementar la eficiencia en el trabajo",
-      "Favorecer la acumulación de objetos en el escritorio",
-      "Reducir la necesidad de pausas activas",
-      "Sin relación con la productividad laboral"
+      "Hyper Text Markup Language.",
+      "High-Tech Multimedia Link.",
+      "Home Tool Management Language.",
+      "Hybrid Text Mode Link."
     ],
     "correct": 0,
-    "explanation": "La respuesta correcta es \"Incrementar la eficiencia en el trabajo\". Un espacio de trabajo organizado facilita el acceso a herramientas y materiales, reduce el tiempo de búsqueda, minimiza distracciones y contribuye a incrementar la eficiencia y la productividad laboral.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
+    "explanation": "La respuesta correcta es \"Hyper Text Markup Language.\". Es el lenguaje estándar para crear páginas web.",
+    "source": "https://es.wikipedia.org/wiki/HTML"
   },
   {
-    "id": 621,
-    "category": "Componentes Básicos",
-    "question": "¿Por qué es esencial ajustar la altura de la silla y el escritorio en un taller de microinformática?",
+    "id": 229,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo con extensión \".csv\"?",
     "options": [
-      "Para limitar la movilidad y promover la rigidez",
-      "Para favorecer la adopción de posturas estáticas",
-      "Para adaptarse a la altura de la persona y prevenir problemas musculoesqueléticos",
-      "Sin impacto en la salud laboral"
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Para adaptarse a la altura de la persona y prevenir problemas musculoesqueléticos\". Ajustar la altura de la silla y el escritorio permite adaptar el puesto de trabajo a las características físicas de cada persona, promoviendo una postura adecuada y previniendo problemas musculoesqueléticos asociados con malas posturas.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
-  },
-  {
-    "id": 622,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función de un reposapiés en un espacio de trabajo de microinformática?",
-    "options": [
-      "Reducir la altura de la silla",
-      "Favorecer la adopción de posturas incómodas",
-      "Proporcionar apoyo a los pies y mejorar la postura",
-      "Sin importancia en la ergonomía de la silla"
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Proporcionar apoyo a los pies y mejorar la postura\". Un reposapiés permite mantener los pies apoyados cuando la altura de la silla no permite que lleguen al suelo, ayudando a mantener una postura adecuada, reducir la presión en la espalda y mejorar la circulación sanguínea en las piernas.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
-  },
-  {
-    "id": 623,
-    "category": "Componentes Básicos",
-    "question": "¿Cómo afecta el uso prolongado del ratón sin descansos en un taller de microinformática?",
-    "options": [
-      "Mejora la salud de la muñeca",
-      "Incrementa el riesgo de lesiones por esfuerzo repetitivo",
-      "No tiene impacto en la salud laboral",
-      "Sin importancia en la utilización del ratón"
+      "Un archivo de audio.",
+      "Un archivo de texto separado por comas.",
+      "Un archivo de imagen.",
+      "Un archivo ejecutable."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Incrementa el riesgo de lesiones por esfuerzo repetitivo\". El uso prolongado del ratón sin descansos puede incrementar el riesgo de desarrollar lesiones por esfuerzo repetitivo, como el síndrome del túnel carpiano o tendinitis, debido a los movimientos repetitivos y las posturas forzadas de la muñeca y la mano.",
-    "source": "https://es.wikipedia.org/wiki/Trastornos_musculoesqueléticos"
+    "explanation": "La respuesta correcta es \"Un archivo de texto separado por comas.\". Se usa comúnmente para intercambiar datos entre hojas de cálculo y bases de datos.",
+    "source": "https://es.wikipedia.org/wiki/Valores_separados_por_comas"
   },
   {
-    "id": 624,
-    "category": "Conectores de Video",
-    "question": "¿Qué impacto puede tener la falta de ajuste de la altura del monitor en un taller de microinformática?",
+    "id": 230,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué tipo de archivo es comúnmente asociado con la extensión \".pptx\"?",
     "options": [
-      "Mejora la postura y previene molestias físicas",
-      "Aumenta el riesgo de fatiga visual y problemas cervicales",
-      "No afecta la salud laboral",
-      "Sin importancia en la ergonomía del monitor"
+      "Una hoja de cálculo.",
+      "Una presentación de PowerPoint.",
+      "Un archivo de texto.",
+      "Un archivo de audio."
     ],
     "correct": 1,
-    "explanation": "\"Aumenta el riesgo de fatiga visual y problemas cervicales\" es correcto. La falta de ajuste adecuado de la altura del monitor puede provocar posturas forzadas del cuello y la espalda, así como fatiga visual, debido a que la pantalla está demasiado alta o demasiado baja respecto a la línea de visión.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
+    "explanation": "La respuesta correcta es \"Una presentación de PowerPoint.\". Es el formato desde Microsoft PowerPoint 2007.",
+    "source": "https://es.wikipedia.org/wiki/Office_Open_XML"
   },
   {
-    "id": 625,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la importancia de mantener los cables organizados en un espacio de trabajo de microinformática?",
+    "id": 231,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo con extensión \".gif\"?",
     "options": [
-      "Mejorar la movilidad y promover la rigidez",
-      "Reducir la eficiencia en el trabajo",
-      "Prevenir riesgos de tropiezos y facilitar el mantenimiento",
-      "Sin relación con la seguridad laboral"
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Prevenir riesgos de tropiezos y facilitar el mantenimiento\". Mantener los cables organizados previene riesgos de tropiezos y caídas, facilita la identificación y conexión de dispositivos, y simplifica las tareas de mantenimiento y limpieza del espacio de trabajo.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
-  },
-  {
-    "id": 626,
-    "category": "Componentes Básicos",
-    "question": "¿Por qué es crucial tener una silla con respaldo ajustable en un taller de microinformática?",
-    "options": [
-      "Para limitar la movilidad y favorecer la rigidez",
-      "Para adaptarse a la altura de la persona y mejorar la postura",
-      "No impacta en la salud laboral",
-      "Sin importancia en la ergonomía de la silla"
+      "Un archivo de audio.",
+      "Una imagen animada.",
+      "Un archivo de texto.",
+      "Un archivo ejecutable."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Para adaptarse a la altura de la persona y mejorar la postura\". Una silla con respaldo ajustable permite adaptar el apoyo lumbar a las características físicas de cada persona, promoviendo una postura adecuada que reduce la tensión en la espalda y previene problemas musculoesqueléticos.",
-    "source": "https://es.wikipedia.org/wiki/Silla_(mueble)"
+    "explanation": "La respuesta correcta es \"Una imagen animada.\". Aunque también puede ser estática, GIF soporta animación simple.",
+    "source": "https://es.wikipedia.org/wiki/GIF"
   },
   {
-    "id": 627,
-    "category": "Componentes Básicos",
-    "question": "¿Qué impacto puede tener el uso de una pantalla de baja resolución en la fatiga visual en un taller de microinformática?",
+    "id": 232,
+    "category": "Permisos de Archivo",
+    "question": "¿Qué significan los permisos de archivo \"lectura\" y \"escritura\" en un sistema operativo?",
     "options": [
-      "Mejora la comodidad visual",
-      "Aumenta el riesgo de fatiga ocular y molestias visuales",
-      "No afecta la salud laboral",
-      "Sin importancia en la calidad visual del monitor"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Aumenta el riesgo de fatiga ocular y molestias visuales\". El uso de una pantalla de baja resolución puede forzar a los ojos a esforzarse más para distinguir detalles, aumentando el riesgo de fatiga ocular, dolores de cabeza y molestias visuales, especialmente durante períodos prolongados de trabajo.",
-    "source": "https://es.wikipedia.org/wiki/Síndrome_visual_informático"
-  },
-  {
-    "id": 628,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la importancia de realizar ajustes ergonómicos en el espacio de trabajo de un taller de microinformática?",
-    "options": [
-      "Mejorar la salud laboral y prevenir problemas musculoesqueléticos",
-      "Reducir la eficiencia en el trabajo",
-      "No tiene impacto en la productividad",
-      "Sin relación con la ergonomía del espacio de trabajo"
+      "Lectura: ver el contenido del archivo, Escritura: modificar el contenido del archivo.",
+      "Escritura: ver el contenido del archivo, Lectura: modificar el contenido del archivo.",
+      "Lectura: modificar el contenido del archivo, Escritura: ver el contenido del archivo.",
+      "Ejecución: ver el contenido del archivo, Escritura: modificar el contenido del archivo."
     ],
     "correct": 0,
-    "explanation": "La respuesta correcta es \"Mejorar la salud laboral y prevenir problemas musculoesqueléticos\". Realizar ajustes ergonómicos en el espacio de trabajo mejora la salud laboral, previene problemas musculoesqueléticos, aumenta el confort y la satisfacción de los trabajadores, y puede incrementar la productividad.",
-    "source": "https://es.wikipedia.org/wiki/Ergonomía"
+    "explanation": "La respuesta correcta es \"Lectura: ver el contenido del archivo, Escritura: modificar el contenido del archivo.\".",
+    "source": "https://es.wikipedia.org/wiki/Permisos_de_archivo"
   },
   {
-    "id": 629,
-    "category": "Componentes Básicos",
-    "question": "¿Por qué es esencial utilizar iluminación adecuada en un taller de microinformática?",
+    "id": 233,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo con extensión \".png\"?",
     "options": [
-      "Para trabajar en un entorno completamente oscuro",
-      "Para favorecer la fatiga visual y prevenir problemas en la vista",
-      "Para mejorar la visibilidad y reducir la fatiga ocular",
-      "Sin importancia en las condiciones de iluminación del espacio de trabajo"
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Para mejorar la visibilidad y reducir la fatiga ocular\". Una iluminación adecuada mejora la visibilidad, reduce la fatiga ocular, previene errores y accidentes, y contribuye a crear un entorno de trabajo más confortable y productivo en un taller de microinformática.",
-    "source": "https://es.wikipedia.org/wiki/Iluminación"
-  },
-  {
-    "id": 630,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la importancia de verificar la integridad de los componentes antes de iniciar el montaje de un equipo informático?",
-    "options": [
-      "No es necesario realizar verificaciones previas",
-      "Asegurar que todos los componentes estén en buen estado y sin daños",
-      "Acelerar el proceso de montaje sin realizar comprobaciones",
-      "Sin importancia en la calidad del montaje"
+      "Un archivo de audio.",
+      "Una imagen sin pérdida de calidad.",
+      "Un archivo de texto.",
+      "Un archivo ejecutable."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Asegurar que todos los componentes estén en buen estado y sin daños\". Verificar la integridad de los componentes antes del montaje permite identificar posibles daños o defectos, evitando problemas durante la instalación y garantizando el correcto funcionamiento del equipo.",
-    "source": "https://es.wikipedia.org/wiki/Ensamblaje_de_computadoras"
+    "explanation": "La respuesta correcta es \"Una imagen sin pérdida de calidad.\". PNG usa compresión sin pérdida y soporta transparencia.",
+    "source": "https://es.wikipedia.org/wiki/Portable_Network_Graphics"
   },
   {
-    "id": 631,
-    "category": "Componentes Básicos",
-    "question": "¿Por qué es crucial comprobar la compatibilidad de los componentes durante el proceso de montaje?",
+    "id": 234,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo con extensión \".dll\"?",
     "options": [
-      "Para ignorar las posibles incompatibilidades y acelerar el proceso",
-      "Garantizar que todos los componentes se ajusten adecuadamente",
-      "No afecta el rendimiento del equipo",
-      "Sin importancia en la calidad del montaje"
+      "Un archivo de audio.",
+      "Una biblioteca de enlace dinámico.",
+      "Un archivo de texto.",
+      "Un archivo ejecutable."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Garantizar que todos los componentes se ajusten adecuadamente\". Comprobar la compatibilidad de los componentes es fundamental para asegurar que todos los elementos del sistema funcionen correctamente juntos, evitando problemas de rendimiento, inestabilidad o fallos en el equipo.",
-    "source": "https://es.wikipedia.org/wiki/Ensamblaje_de_computadoras"
+    "explanation": "La respuesta correcta es \"Una biblioteca de enlace dinámico.\". Contiene código y datos que pueden usarse por múltiples programas simultáneamente en Windows.",
+    "source": "https://es.wikipedia.org/wiki/Biblioteca_de_enlace_din%C3%A1mico"
   },
   {
-    "id": 632,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la recomendación clave al manipular componentes electrónicos durante el montaje de un equipo informático?",
+    "id": 235,
+    "category": "Permisos de Archivo",
+    "question": "¿Qué significan los permisos de archivo \"lectura\" y \"ejecución\" en un sistema operativo?",
     "options": [
-      "No es necesario tomar precauciones adicionales",
-      "Utilizar una pulsera antiestática y trabajar en una superficie conductora",
-      "Ignorar las medidas de seguridad",
-      "Sin importancia en la manipulación de componentes"
+      "Lectura: ver el contenido del archivo, Ejecución: ejecutar el archivo como un programa.",
+      "Ejecución: ver el contenido del archivo, Lectura: ejecutar el archivo como un programa.",
+      "Lectura: ejecutar el archivo como un programa, Ejecución: ver el contenido del archivo.",
+      "Escritura: ver el contenido del archivo, Ejecución: ejecutar el archivo como un programa."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Lectura: ver el contenido del archivo, Ejecución: ejecutar el archivo como un programa.\".",
+    "source": "https://es.wikipedia.org/wiki/Permisos_de_archivo"
+  },
+  {
+    "id": 236,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo con extensión \".avi\"?",
+    "options": [
+      "Un archivo de audio.",
+      "Un archivo de video.",
+      "Un archivo de texto.",
+      "Un archivo ejecutable."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Utilizar una pulsera antiestática y trabajar en una superficie conductora\". Al manipular componentes electrónicos, es fundamental utilizar una pulsera antiestática y trabajar sobre una superficie conductora para evitar la descarga de electricidad estática, que puede dañar los componentes sensibles.",
-    "source": "https://es.wikipedia.org/wiki/Electricidad_estática"
+    "explanation": "La respuesta correcta es \"Un archivo de video.\". AVI (Audio Video Interleave) es un contenedor multimedia desarrollado por Microsoft.",
+    "source": "https://es.wikipedia.org/wiki/Audio_Video_Interleave"
   },
   {
-    "id": 633,
-    "category": "Componentes Básicos",
-    "question": "¿Por qué es esencial seguir las instrucciones del fabricante al montar un equipo informático?",
+    "id": 237,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo con extensión \".zip\"?",
     "options": [
-      "Para ignorar las recomendaciones y acelerar el proceso de montaje",
-      "Asegurar que todos los componentes se instalen correctamente",
-      "No afecta la funcionalidad del equipo",
-      "Sin importancia en la calidad del montaje"
+      "Un archivo de audio.",
+      "Un archivo comprimido que puede contener múltiples archivos y carpetas.",
+      "Un archivo de texto.",
+      "Un archivo ejecutable."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Asegurar que todos los componentes se instalen correctamente\". Seguir las instrucciones del fabricante es esencial para asegurar que todos los componentes se instalen correctamente, evitando daños, garantizando el funcionamiento adecuado del equipo y manteniendo la validez de la garantía.",
-    "source": "https://es.wikipedia.org/wiki/Ensamblaje_de_computadoras"
+    "explanation": "La respuesta correcta es \"Un archivo comprimido que puede contener múltiples archivos y carpetas.\".",
+    "source": "https://es.wikipedia.org/wiki/ZIP_(formato_de_compresi%C3%B3n)"
   },
   {
-    "id": 634,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la importancia de verificar las conexiones de los cables durante el montaje de un equipo informático?",
+    "id": 238,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo con extensión \".bat\"?",
     "options": [
-      "No es necesario comprobar las conexiones",
-      "Evitar posibles problemas de conexión y asegurar un funcionamiento adecuado",
-      "Agilizar el proceso de montaje sin verificar las conexiones",
-      "Sin importancia en la calidad del montaje"
+      "Un archivo de audio.",
+      "Un script de procesamiento por lotes de Windows.",
+      "Un archivo de texto.",
+      "Un archivo ejecutable."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Evitar posibles problemas de conexión y asegurar un funcionamiento adecuado\". Verificar las conexiones de los cables durante el montaje es fundamental para evitar problemas de conexión, asegurar el correcto funcionamiento de todos los componentes y prevenir posibles daños por conexiones incorrectas.",
-    "source": "https://es.wikipedia.org/wiki/Ensamblaje_de_computadoras"
+    "explanation": "La respuesta correcta es \"Un script de procesamiento por lotes de Windows.\". Contiene comandos que se ejecutan secuencialmente en el intérprete de comandos.",
+    "source": "https://es.wikipedia.org/wiki/Archivo_batch"
   },
   {
-    "id": 635,
-    "category": "Componentes Básicos",
-    "question": "¿Por qué se debe realizar una prueba de encendido después de ensamblar un equipo informático?",
+    "id": 239,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo con extensión \".rar\"?",
     "options": [
-      "Para omitir la prueba y acelerar la finalización del montaje",
-      "Confirmar que todos los componentes funcionan correctamente",
-      "No afecta la operatividad del equipo",
-      "Sin importancia en la calidad del montaje"
+      "Un archivo de audio.",
+      "Un archivo comprimido similar al formato ZIP.",
+      "Un archivo de texto.",
+      "Un archivo ejecutable."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Confirmar que todos los componentes funcionan correctamente\". Realizar una prueba de encendido después de ensamblar un equipo permite verificar que todos los componentes funcionan correctamente, identificar posibles problemas de conexión o configuración y asegurar que el sistema operativo puede instalarse sin inconvenientes.",
-    "source": "https://es.wikipedia.org/wiki/Ensamblaje_de_computadoras"
+    "explanation": "La respuesta correcta es \"Un archivo comprimido similar al formato ZIP.\". RAR es un formato propietario con alta compresión.",
+    "source": "https://es.wikipedia.org/wiki/RAR"
   },
   {
-    "id": 636,
-    "category": "Tipos de Memoria",
-    "question": "¿Cuál es la recomendación clave al manejar herramientas durante el montaje de un equipo informático?",
+    "id": 240,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo con extensión \".mp4\"?",
     "options": [
-      "Utilizar cualquier herramienta disponible",
-      "Utilizar herramientas adecuadas y seguir las normas de seguridad",
-      "Ignorar las medidas de seguridad en la manipulación de herramientas",
-      "Sin importancia en la manipulación de herramientas durante el montaje"
+      "Un archivo de audio.",
+      "Un archivo de video.",
+      "Un archivo de texto.",
+      "Un archivo ejecutable."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Utilizar herramientas adecuadas y seguir las normas de seguridad\". Durante el montaje de un equipo informático, es fundamental utilizar las herramientas adecuadas para cada tarea y seguir las normas de seguridad para evitar daños a los componentes y lesiones personales.",
-    "source": "https://es.wikipedia.org/wiki/Ensamblaje_de_computadoras"
+    "explanation": "La respuesta correcta es \"Un archivo de video.\". MP4 es un contenedor multimedia estándar que puede incluir audio, video y subtítulos.",
+    "source": "https://es.wikipedia.org/wiki/MPEG-4_Part_14"
   },
   {
-    "id": 637,
-    "category": "Componentes Básicos",
-    "question": "¿Por qué es importante verificar la configuración de la BIOS después de montar un equipo informático?",
+    "id": 241,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo con extensión \".ini\"?",
     "options": [
-      "Para omitir la configuración y acelerar la finalización del montaje",
-      "Asegurar que la configuración sea la adecuada para el hardware instalado",
-      "No afecta el rendimiento del equipo",
-      "Sin importancia en la calidad del montaje"
+      "Un archivo de audio.",
+      "Un archivo de configuración utilizado por programas en Windows.",
+      "Un archivo de texto.",
+      "Un archivo ejecutable."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Asegurar que la configuración sea la adecuada para el hardware instalado\". Verificar la configuración de la BIOS después de montar un equipo es importante para asegurar que todos los componentes son reconocidos correctamente y que la configuración del sistema es la adecuada para el hardware instalado, optimizando el rendimiento y la estabilidad.",
-    "source": "https://es.wikipedia.org/wiki/BIOS"
+    "explanation": "La respuesta correcta es \"Un archivo de configuración utilizado por programas en Windows.\". Contiene pares clave-valor en secciones.",
+    "source": "https://es.wikipedia.org/wiki/Archivo_INI"
   },
   {
-    "id": 638,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la importancia de mantener un área de trabajo limpia durante el montaje de un equipo informático?",
+    "id": 242,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo con extensión \".xml\"?",
     "options": [
-      "Descuidar la limpieza para ahorrar tiempo",
-      "Evitar la acumulación de polvo y garantizar un entorno de trabajo seguro",
-      "No afecta la calidad del montaje",
-      "Sin importancia en el proceso de montaje"
+      "Un archivo de audio.",
+      "Un archivo utilizado para almacenar y transportar datos.",
+      "Un archivo de texto.",
+      "Un archivo ejecutable."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Evitar la acumulación de polvo y garantizar un entorno de trabajo seguro\". Mantener un área de trabajo limpia durante el montaje de un equipo informático evita la acumulación de polvo que podría afectar los componentes, reduce el riesgo de perder piezas pequeñas y garantiza un entorno de trabajo seguro y organizado.",
-    "source": "https://es.wikipedia.org/wiki/Ensamblaje_de_computadoras"
+    "explanation": "La respuesta correcta es \"Un archivo utilizado para almacenar y transportar datos.\". XML es legible por humanos y máquinas, y es ampliamente usado en configuraciones y APIs.",
+    "source": "https://es.wikipedia.org/wiki/Extensible_Markup_Language"
   },
   {
-    "id": 639,
-    "category": "Componentes Básicos",
-    "question": "¿Por qué es necesario realizar pruebas de rendimiento después del montaje de un equipo informático?",
+    "id": 243,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo con extensión \".ppt\"?",
     "options": [
-      "Para ignorar las pruebas y acelerar la finalización del montaje",
-      "Confirmar que el equipo funciona conforme a las expectativas",
-      "No afecta el rendimiento del equipo",
-      "Sin importancia en la calidad del montaje"
+      "Un archivo de audio.",
+      "Una presentación de PowerPoint anterior a la versión 2007.",
+      "Un archivo de texto.",
+      "Un archivo ejecutable."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Confirmar que el equipo funciona conforme a las expectativas\". Realizar pruebas de rendimiento después del montaje permite confirmar que el equipo funciona conforme a las expectativas, identificar posibles cuellos de botella o problemas de estabilidad y asegurar que todos los componentes trabajan en conjunto de manera óptima.",
-    "source": "https://es.wikipedia.org/wiki/Ensamblaje_de_computadoras"
+    "explanation": "La respuesta correcta es \"Una presentación de PowerPoint anterior a la versión 2007.\". El formato .ppt fue reemplazado por .pptx.",
+    "source": "https://es.wikipedia.org/wiki/Microsoft_PowerPoint"
   },
   {
-    "id": 640,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la recomendación clave al instalar el sistema operativo en un equipo recién montado?",
+    "id": 244,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo con extensión \".cfg\"?",
     "options": [
-      "No es necesario instalar un sistema operativo",
-      "Utilizar una versión pirata del sistema operativo",
-      "Instalar un sistema operativo auténtico y actualizar los controladores",
-      "Sin importancia en la instalación del sistema operativo"
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Instalar un sistema operativo auténtico y actualizar los controladores\". Se recomienda instalar un sistema operativo auténtico y mantenerlo actualizado, así como instalar los controladores más recientes para todos los componentes, para asegurar el correcto funcionamiento, la estabilidad y la seguridad del equipo.",
-    "source": "https://es.wikipedia.org/wiki/Sistema_operativo"
-  },
-  {
-    "id": 641,
-    "category": "Componentes Básicos",
-    "question": "¿Por qué es esencial asegurar una buena gestión del cableado durante el montaje de un equipo informático?",
-    "options": [
-      "Descuidar la gestión del cableado para ahorrar tiempo",
-      "Evitar posibles problemas de conexión y mejorar la refrigeración",
-      "No afecta la calidad del montaje",
-      "Sin importancia en el proceso de montaje"
+      "Un archivo de audio.",
+      "Un archivo de configuración utilizado por programas.",
+      "Un archivo de texto.",
+      "Un archivo ejecutable."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Evitar posibles problemas de conexión y mejorar la refrigeración\". Una buena gestión del cableado durante el montaje de un equipo informático evita posibles problemas de conexión, mejora el flujo de aire dentro del caso para una mejor refrigeración, facilita el mantenimiento y mejora la estética del equipo.",
-    "source": "https://es.wikipedia.org/wiki/Ensamblaje_de_computadoras"
+    "explanation": "La respuesta correcta es \"Un archivo de configuración utilizado por programas.\". Similar a .ini, pero sin una estructura estandarizada.",
+    "source": "https://es.wikipedia.org/wiki/Archivo_de_configuraci%C3%B3n"
   },
   {
-    "id": 642,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la importancia de realizar copias de seguridad antes de instalar el sistema operativo en un equipo recién montado?",
+    "id": 245,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo con extensión \".json\"?",
     "options": [
-      "No es necesario realizar copias de seguridad",
-      "Prevenir la pérdida de datos en caso de problemas durante la instalación",
-      "No afecta la instalación del sistema operativo",
-      "Sin importancia en la calidad del montaje"
+      "Un archivo de audio.",
+      "Un formato de archivo utilizado para el intercambio de datos estructurados.",
+      "Un archivo de texto.",
+      "Un archivo ejecutable."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Prevenir la pérdida de datos en caso de problemas durante la instalación\". Aunque en un equipo recién montado no debería haber datos importantes, si se están reutilizando componentes de almacenamiento, es recomendable realizar copias de seguridad antes de instalar el sistema operativo para prevenir la pérdida de datos en caso de problemas durante la instalación.",
+    "explanation": "La respuesta correcta es \"Un formato de archivo utilizado para el intercambio de datos estructurados.\". JSON es ligero y fácil de leer, común en APIs web.",
+    "source": "https://es.wikipedia.org/wiki/JSON"
+  },
+  {
+    "id": 246,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo con extensión \".xlsx\"?",
+    "options": [
+      "Un archivo de audio.",
+      "Una hoja de cálculo de Excel.",
+      "Un archivo de texto.",
+      "Un archivo ejecutable."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Una hoja de cálculo de Excel.\".",
+    "source": "https://es.wikipedia.org/wiki/Office_Open_XML"
+  },
+  {
+    "id": 247,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo con extensión \".log\"?",
+    "options": [
+      "Un archivo de audio.",
+      "Un archivo de registro que registra eventos y acciones.",
+      "Un archivo de texto.",
+      "Un archivo ejecutable."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un archivo de registro que registra eventos y acciones.\". Usado por sistemas operativos y aplicaciones para auditoría y diagnóstico.",
+    "source": "https://es.wikipedia.org/wiki/Archivo_de_registro"
+  },
+  {
+    "id": 248,
+    "category": "Extensiones de Archivo",
+    "question": "¿Qué es un archivo con extensión \".iso\"?",
+    "options": [
+      "Un archivo de audio.",
+      "Una imagen de disco que contiene una copia exacta de un CD o DVD.",
+      "Un archivo de texto.",
+      "Un archivo ejecutable."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Una imagen de disco que contiene una copia exacta de un CD o DVD.\". Se usa para distribuir sistemas operativos y software.",
+    "source": "https://es.wikipedia.org/wiki/Imagen_ISO"
+  },
+  {
+    "id": 249,
+    "category": "Copias de Seguridad",
+    "question": "¿Cuál de las siguientes opciones describe mejor el propósito de realizar copias de seguridad en sistemas Windows?",
+    "options": [
+      "Liberar espacio en disco.",
+      "Proteger los datos contra pérdidas.",
+      "Acelerar el rendimiento del sistema.",
+      "Incrementar el tamaño de la memoria RAM."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Proteger los datos contra pérdidas.\". Las copias de seguridad permiten recuperar información en caso de fallos, errores o ataques.",
     "source": "https://es.wikipedia.org/wiki/Copia_de_seguridad"
   },
   {
-    "id": 643,
-    "category": "Componentes Básicos",
-    "question": "¿Por qué se debe evitar trabajar en un entorno con electricidad estática durante el montaje de un equipo informático?",
+    "id": 250,
+    "category": "Copias de Seguridad",
+    "question": "¿Cuál es una herramienta integrada en Windows que se puede utilizar para realizar copias de seguridad?",
     "options": [
-      "La electricidad estática no afecta los componentes electrónicos",
-      "Evitar posibles daños en los componentes sensibles a la electricidad estática",
-      "No afecta la calidad del montaje",
-      "Sin importancia en la manipulación de componentes durante el montaje"
+      "Microsoft Word.",
+      "File Explorer.",
+      "Paint.",
+      "Windows Backup."
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Evitar posibles daños en los componentes sensibles a la electricidad estática\". La electricidad estática puede dañar permanentemente los componentes electrónicos sensibles, como la CPU, la RAM o la placa base. Por ello, es fundamental tomar medidas como utilizar una pulsera antiestática y trabajar sobre superficies conductoras.",
-    "source": "https://es.wikipedia.org/wiki/Electricidad_estática"
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Windows Backup.\". En versiones modernas, se usa \"Historial de archivos\" y \"Copia de seguridad y restauración\" (heredado).",
+    "source": "https://support.microsoft.com/es-es/windows"
   },
   {
-    "id": 644,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es el primer paso esencial al comenzar el montaje de un sistema informático?",
+    "id": 251,
+    "category": "Copias de Seguridad",
+    "question": "¿Qué tipo de archivo se utiliza comúnmente para almacenar una copia de seguridad en Windows?",
     "options": [
-      "Conectar todos los cables de alimentación",
-      "Verificar la integridad de los componentes",
-      "Encender el equipo sin realizar comprobaciones",
-      "Sin importancia en el inicio del montaje"
+      ".docx",
+      ".exe",
+      ".bak",
+      ".jpg"
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Verificar la integridad de los componentes\". El primer paso esencial al comenzar el montaje de un sistema informático es verificar la integridad de todos los componentes, asegurándose de que no presenten daños visibles y que se hayan recibido todos los elementos necesarios para el ensamblaje.",
-    "source": "https://es.wikipedia.org/wiki/Ensamblaje_de_computadoras"
+    "correct": 2,
+    "explanation": "La respuesta correcta es \".bak\". Muchas aplicaciones usan esta extensión para archivos de respaldo, aunque Windows no la usa exclusivamente.",
+    "source": "https://es.wikipedia.org/wiki/Extensi%C3%B3n_de_archivo"
   },
   {
-    "id": 645,
-    "category": "Fuentes de Alimentación",
-    "question": "¿Por qué es crucial asegurar que la fuente de alimentación esté apagada antes de iniciar el montaje?",
+    "id": 252,
+    "category": "Copias de Seguridad",
+    "question": "¿Qué opción de copia de seguridad en Windows 10/11 permite realizar copias de seguridad automáticas de archivos personales y de sistema?",
     "options": [
-      "No es necesario apagar la fuente de alimentación",
-      "Prevenir posibles descargas eléctricas durante el manejo de componentes",
-      "Agilizar el proceso de montaje sin apagar la fuente de alimentación",
-      "Sin importancia en el encendido del equipo"
+      "Windows Backup and Restore.",
+      "File History.",
+      "System Restore.",
+      "Disk Cleanup."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Prevenir posibles descargas eléctricas durante el manejo de componentes\". Es crucial asegurar que la fuente de alimentación esté completamente apagada y desconectada de la corriente antes de iniciar el montaje para prevenir posibles descargas eléctricas que podrían dañar los componentes o causar lesiones personales.",
-    "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentación"
+    "explanation": "La respuesta correcta es \"File History.\". Se enfoca en archivos personales y permite versiones anteriores.",
+    "source": "https://support.microsoft.com/es-es/windows"
   },
   {
-    "id": 646,
-    "category": "Chipsets y CPU",
-    "question": "¿Cuál es la importancia de instalar la CPU correctamente durante el montaje de un sistema informático?",
+    "id": 253,
+    "category": "Copias de Seguridad",
+    "question": "¿Qué es la característica \"File History\" en Windows 10/11?",
     "options": [
-      "No afecta el rendimiento del equipo",
-      "Asegurar el funcionamiento adecuado y evitar daños a la CPU",
-      "Omitir la instalación de la CPU para acelerar el montaje",
-      "Sin importancia en el montaje del sistema"
+      "Una función para cambiar el nombre de archivos.",
+      "Un sistema de cifrado de archivos.",
+      "Una herramienta para crear y mantener copias de seguridad de archivos.",
+      "Un programa de edición de imágenes."
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Asegurar el funcionamiento adecuado y evitar daños a la CPU\". Instalar la CPU correctamente es fundamental para asegurar el funcionamiento adecuado del sistema y evitar daños a este componente crítico. Una instalación incorrecta puede provocar mal contacto, sobrecalentamiento o daños permanentes en el procesador.",
-    "source": "https://es.wikipedia.org/wiki/Microprocesador"
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Una herramienta para crear y mantener copias de seguridad de archivos.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
   },
   {
-    "id": 647,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la precaución principal al instalar módulos de memoria RAM en una placa base?",
+    "id": 254,
+    "category": "Copias de Seguridad",
+    "question": "¿Qué tipo de dispositivos de almacenamiento se pueden utilizar para almacenar copias de seguridad en Windows?",
     "options": [
-      "No es necesario tomar precauciones especiales",
-      "Alinear correctamente las muescas y aplicar presión uniforme sin forzar",
-      "Instalar los módulos en cualquier ranura sin importar el orden",
-      "Sin importancia en la instalación de la memoria RAM"
+      "Solo discos duros externos.",
+      "Solo CDs y DVDs.",
+      "Discos duros externos, unidades de red, unidades flash USB, etc.",
+      "Solo en la nube."
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Alinear correctamente las muescas y aplicar presión uniforme sin forzar\". Al instalar módulos de memoria RAM, es fundamental alinear correctamente las muescas del módulo con las de la ranura y aplicar presión uniforme en los extremos hasta que los clips de sujeción se cierren por sí solos, evitando forzar para no dañar ni el módulo ni la placa base.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_de_acceso_aleatorio"
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Discos duros externos, unidades de red, unidades flash USB, etc.\". File History y otras herramientas admiten múltiples destinos.",
+    "source": "https://support.microsoft.com/es-es/windows"
   },
   {
-    "id": 648,
-    "category": "Placas Base",
-    "question": "¿Por qué es importante aplicar pasta térmica al instalar un disipador en la CPU?",
+    "id": 255,
+    "category": "Copias de Seguridad",
+    "question": "¿Cuál de las siguientes afirmaciones es cierta sobre las copias de seguridad en Windows?",
     "options": [
-      "No es necesario aplicar pasta térmica",
-      "Mejorar la transferencia de calor entre la CPU y el disipador",
-      "Reducir el rendimiento del procesador",
-      "Sin importancia en la refrigeración de la CPU"
+      "No es necesario comprobar regularmente si las copias de seguridad son exitosas.",
+      "Se deben realizar las copias de seguridad únicamente una vez al año.",
+      "Es importante almacenar las copias de seguridad en el mismo disco que el sistema operativo.",
+      "Las copias de seguridad deben ser probadas regularmente para asegurarse de que se puedan restaurar correctamente."
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Mejorar la transferencia de calor entre la CPU y el disipador\". La pasta térmica rellena las microscópicas imperfecciones entre la superficie de la CPU y la base del disipador, mejorando la transferencia de calor y ayudando a mantener el procesador a una temperatura adecuada para un funcionamiento óptimo.",
-    "source": "https://es.wikipedia.org/wiki/Pasta_térmica"
-  },
-  {
-    "id": 649,
-    "category": "Almacenamiento",
-    "question": "¿Cuál es la recomendación al instalar unidades de almacenamiento SATA en un equipo informático?",
-    "options": [
-      "No es necesario conectar los cables correctamente",
-      "Asegurar que los cables de datos y alimentación estén bien conectados",
-      "Utilizar cables IDE en lugar de SATA",
-      "Sin importancia en la instalación de unidades de almacenamiento"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Asegurar que los cables de datos y alimentación estén bien conectados\". Al instalar unidades de almacenamiento SATA, es fundamental asegurar que tanto el cable de datos como el de alimentación estén bien conectados y encajen correctamente para garantizar un funcionamiento adecuado y evitar problemas de detección o rendimiento.",
-    "source": "https://es.wikipedia.org/wiki/Serial_ATA"
-  },
-  {
-    "id": 650,
-    "category": "Tarjetas Gráficas",
-    "question": "¿Por qué es importante conectar la alimentación adicional a una tarjeta gráfica de alto rendimiento?",
-    "options": [
-      "No es necesario conectar alimentación adicional",
-      "Garantizar que la tarjeta reciba suficiente energía para funcionar correctamente",
-      "Reducir el rendimiento de la tarjeta gráfica",
-      "Sin importancia en el funcionamiento de la tarjeta gráfica"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Garantizar que la tarjeta reciba suficiente energía para funcionar correctamente\". Las tarjetas gráficas de alto rendimiento requieren alimentación adicional más allá de la proporcionada por el slot PCIe para funcionar correctamente. Conectar estos cables de alimentación es fundamental para garantizar un rendimiento óptimo y evitar problemas de estabilidad.",
-    "source": "https://es.wikipedia.org/wiki/Tarjeta_gráfica"
-  },
-  {
-    "id": 651,
-    "category": "Cajas y Chasis",
-    "question": "¿Cuál es la función de los espaciadores (standoffs) al instalar una placa base en el chasis?",
-    "options": [
-      "No tienen función alguna",
-      "Elevar la placa base para evitar contactos eléctricos con el chasis",
-      "Reducir la estabilidad de la placa base",
-      "Sin importancia en la instalación de la placa base"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Elevar la placa base para evitar contactos eléctricos con el chasis\". Los espaciadores o standoffs elevan la placa base del chasis, evitando contactos eléctricos que podrían causar cortocircuitos y daños. Además, proporcionan una base estable y segura para fijar correctamente la placa base.",
-    "source": "https://es.wikipedia.org/wiki/Placa_base"
-  },
-  {
-    "id": 652,
-    "category": "Fuentes de Alimentación",
-    "question": "¿Por qué es importante conectar todos los cables de alimentación necesarios durante el montaje?",
-    "options": [
-      "No es necesario conectar todos los cables",
-      "Asegurar que todos los componentes reciban la energía necesaria para funcionar",
-      "Reducir el consumo energético del equipo",
-      "Sin importancia en el funcionamiento del equipo"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Asegurar que todos los componentes reciban la energía necesaria para funcionar\". Conectar todos los cables de alimentación necesarios durante el montaje es fundamental para asegurar que todos los componentes reciban la energía adecuada para funcionar correctamente, evitando problemas de inestabilidad, rendimiento o fallos en el sistema.",
-    "source": "https://es.wikipedia.org/wiki/Fuente_de_alimentación"
-  },
-  {
-    "id": 653,
-    "category": "Refrigeración",
-    "question": "¿Cuál es la recomendación al instalar ventiladores adicionales en el chasis?",
-    "options": [
-      "No es necesario instalar ventiladores adicionales",
-      "Crear un flujo de aire adecuado (entrada por delante/salida por detrás/arriba)",
-      "Instalar todos los ventiladores como extractores de aire",
-      "Sin importancia en la refrigeración del sistema"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Crear un flujo de aire adecuado (entrada por delante/salida por detrás/arriba)\". Al instalar ventiladores adicionales en el chasis, es importante crear un flujo de aire adecuado, típicamente con ventiladores de entrada en la parte delantera e inferior y ventiladores de salida en la parte trasera y superior, para garantizar una refrigeración eficiente de todos los componentes.",
-    "source": "https://es.wikipedia.org/wiki/Refrigeración_por_liquido_(informática)"
-  },
-  {
-    "id": 654,
-    "category": "Almacenamiento",
-    "question": "¿Por qué es importante configurar correctamente las unidades de almacenamiento en la BIOS?",
-    "options": [
-      "No es necesario configurar las unidades en la BIOS",
-      "Asegurar que el sistema reconozca correctamente las unidades de almacenamiento",
-      "Reducir la capacidad de almacenamiento",
-      "Sin importancia en el funcionamiento del sistema"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Asegurar que el sistema reconozca correctamente las unidades de almacenamiento\". Configurar correctamente las unidades de almacenamiento en la BIOS es fundamental para asegurar que el sistema reconozca adecuadamente todos los dispositivos de almacenamiento, permitiendo la instalación del sistema operativo y el acceso correcto a los datos.",
-    "source": "https://es.wikipedia.org/wiki/BIOS"
-  },
-  {
-    "id": 655,
-    "category": "Software",
-    "question": "¿Cuál es la importancia de instalar los controladores actualizados después del montaje?",
-    "options": [
-      "No es necesario instalar controladores actualizados",
-      "Asegurar el correcto funcionamiento y rendimiento de todos los componentes",
-      "Reducir la compatibilidad del sistema",
-      "Sin importancia en el funcionamiento del equipo"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Asegurar el correcto funcionamiento y rendimiento de todos los componentes\". Instalar los controladores actualizados después del montaje es fundamental para asegurar el correcto funcionamiento y rendimiento óptimo de todos los componentes, ya que estos programas permiten que el sistema operativo se comunique adecuadamente con el hardware.",
-    "source": "https://es.wikipedia.org/wiki/Controlador_de_dispositivo"
-  },
-  {
-    "id": 656,
-    "category": "Software",
-    "question": "¿Por qué es importante realizar actualizaciones del sistema operativo después del montaje?",
-    "options": [
-      "No es necesario actualizar el sistema operativo",
-      "Corregir vulnerabilidades de seguridad y mejorar el funcionamiento del sistema",
-      "Reducir el rendimiento del equipo",
-      "Sin importancia en la seguridad del sistema"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Corregir vulnerabilidades de seguridad y mejorar el funcionamiento del sistema\". Realizar actualizaciones del sistema operativo después del montaje es fundamental para corregir vulnerabilidades de seguridad, mejorar el funcionamiento del sistema, añadir nuevas funcionalidades y asegurar la compatibilidad con los últimos software y hardware.",
-    "source": "https://es.wikipedia.org/wiki/Actualización_de_software"
-  },
-  {
-    "id": 657,
-    "category": "Software",
-    "question": "¿Cuál es la recomendación al instalar software adicional en un equipo recién montado?",
-    "options": [
-      "Instalar cualquier software sin verificar su compatibilidad",
-      "Instalar solo software necesario y de fuentes confiables",
-      "No instalar software adicional para mantener el sistema limpio",
-      "Sin importancia en el funcionamiento del equipo"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Instalar solo software necesario y de fuentes confiables\". Al instalar software adicional en un equipo recién montado, se recomienda instalar solo el software necesario y asegurarse de que provenga de fuentes confiables para evitar problemas de rendimiento, inestabilidad o seguridad en el sistema.",
-    "source": "https://es.wikipedia.org/wiki/Software"
-  },
-  {
-    "id": 658,
-    "category": "Redes",
-    "question": "¿Por qué es importante configurar correctamente la conexión de red después del montaje?",
-    "options": [
-      "No es necesario configurar la conexión de red",
-      "Asegurar el acceso a internet y recursos de red",
-      "Reducir la velocidad de conexión",
-      "Sin importancia en la conectividad del equipo"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Asegurar el acceso a internet y recursos de red\". Configurar correctamente la conexión de red después del montaje es fundamental para asegurar el acceso a internet y otros recursos de red, permitiendo la descarga de actualizaciones, el acceso a servicios en línea y la comunicación con otros dispositivos.",
-    "source": "https://es.wikipedia.org/wiki/Red_de_computadoras"
-  },
-  {
-    "id": 659,
-    "category": "Seguridad",
-    "question": "¿Cuál es la recomendación principal para proteger un equipo recién montado?",
-    "options": [
-      "No es necesario proteger el equipo",
-      "Instalar software antivirus y configurar un firewall",
-      "Compartir todos los archivos y carpetas sin restricciones",
-      "Sin importancia en la seguridad del sistema"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Instalar software antivirus y configurar un firewall\". Para proteger un equipo recién montado, es fundamental instalar software antivirus actualizado y configurar adecuadamente el firewall para proteger el sistema contra malware, ataques y accesos no autorizados, asegurando la integridad y confidencialidad de los datos.",
-    "source": "https://es.wikipedia.org/wiki/Software_antivirus"
-  },
-  {
-    "id": 660,
-    "category": "Mantenimiento",
-    "question": "¿Por qué es importante realizar copias de seguridad periódicas en un equipo recién montado?",
-    "options": [
-      "No es necesario realizar copias de seguridad",
-      "Prevenir la pérdida de datos ante fallos del sistema",
-      "Reducir el rendimiento del equipo",
-      "Sin importancia en la protección de datos"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Prevenir la pérdida de datos ante fallos del sistema\". Realizar copias de seguridad periódicas en un equipo recién montado es fundamental para prevenir la pérdida de datos importantes ante fallos del sistema, ataques de malware, errores humanos o desastres naturales, permitiendo recuperar la información en caso de incidentes.",
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Las copias de seguridad deben ser probadas regularmente para asegurarse de que se puedan restaurar correctamente.\". Una copia no verificada no es confiable.",
     "source": "https://es.wikipedia.org/wiki/Copia_de_seguridad"
   },
   {
-    "id": 661,
-    "category": "Mantenimiento",
-    "question": "¿Cuál es la recomendación para mantener limpio un equipo informático después del montaje?",
+    "id": 256,
+    "category": "Sistemas de Archivos",
+    "question": "¿Qué es el \"Sistema de Archivos de Resilient File System (ReFS)\" en Windows?",
     "options": [
-      "No es necesario limpiar el equipo",
-      "Realizar limpieza periódica de polvo y suciedad",
-      "Utilizar productos de limpieza agresivos",
-      "Sin importancia en el funcionamiento del equipo"
+      "Un sistema operativo alternativo a Windows.",
+      "Un sistema de archivos diseñado para mejorar la integridad de los datos y la resistencia contra fallos.",
+      "Un software de edición de video.",
+      "Una herramienta de limpieza de disco."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Realizar limpieza periódica de polvo y suciedad\". Mantener limpio un equipo informático después del montaje es fundamental para asegurar su correcto funcionamiento y prolongar su vida útil. Se recomienda realizar limpieza periódica de polvo y suciedad utilizando herramientas adecuadas y productos de limpieza suaves.",
-    "source": "https://es.wikipedia.org/wiki/Mantenimiento_de_computadoras"
+    "explanation": "La respuesta correcta es \"Un sistema de archivos diseñado para mejorar la integridad de los datos y la resistencia contra fallos.\". Desarrollado por Microsoft para entornos empresariales críticos.",
+    "source": "https://es.wikipedia.org/wiki/Resilient_File_System"
   },
   {
-    "id": 662,
-    "category": "Mantenimiento",
-    "question": "¿Por qué es importante monitorizar la temperatura de los componentes después del montaje?",
+    "id": 257,
+    "category": "Copias de Seguridad",
+    "question": "¿Qué característica de Windows 10/11 permite restaurar el sistema a un estado anterior en caso de problemas?",
     "options": [
-      "No es necesario monitorizar la temperatura",
-      "Detectar posibles problemas de refrigeración y evitar sobrecalentamiento",
-      "Aumentar la temperatura para mejorar el rendimiento",
-      "Sin importancia en el funcionamiento del equipo"
+      "System Backup.",
+      "System Restore.",
+      "File History.",
+      "Disk Cleanup."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Detectar posibles problemas de refrigeración y evitar sobrecalentamiento\". Monitorizar la temperatura de los componentes después del montaje es importante para detectar posibles problemas de refrigeración y evitar el sobrecalentamiento, que podría reducir el rendimiento, causar inestabilidad o dañar permanentemente los componentes.",
-    "source": "https://es.wikipedia.org/wiki/Temperatura_de_funcionamiento_de_un_microprocesador"
+    "explanation": "La respuesta correcta es \"System Restore.\". Crea puntos de restauración del sistema (no de archivos personales).",
+    "source": "https://support.microsoft.com/es-es/windows"
   },
   {
-    "id": 663,
-    "category": "Mantenimiento",
-    "question": "¿Cuál es la recomendación al realizar actualizaciones de hardware en un equipo montado?",
+    "id": 258,
+    "category": "Copias de Seguridad",
+    "question": "¿Cuál es una ventaja de usar un disco duro externo para almacenar copias de seguridad en comparación con la nube?",
     "options": [
-      "No es necesario realizar actualizaciones de hardware",
-      "Verificar la compatibilidad y seguir los procedimientos adecuados",
-      "Realizar actualizaciones sin verificar la compatibilidad",
-      "Sin importancia en el rendimiento del equipo"
+      "Mayor accesibilidad desde cualquier lugar con conexión a internet.",
+      "Mayor velocidad de transferencia de datos.",
+      "Menor riesgo de pérdida de datos debido a problemas de conexión a internet.",
+      "Mayor capacidad de almacenamiento."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Verificar la compatibilidad y seguir los procedimientos adecuados\". Al realizar actualizaciones de hardware en un equipo montado, es fundamental verificar la compatibilidad de los nuevos componentes con los existentes y seguir los procedimientos adecuados de instalación para asegurar un funcionamiento correcto y evitar daños.",
-    "source": "https://es.wikipedia.org/wiki/Actualización_de_hardware"
+    "explanation": "La respuesta correcta es \"Mayor velocidad de transferencia de datos.\". El acceso local es generalmente más rápido que la subida a la nube.",
+    "source": "https://es.wikipedia.org/wiki/Copia_de_seguridad"
   },
   {
-    "id": 664,
-    "category": "Diagnóstico",
-    "question": "¿Por qué es importante realizar pruebas de estrés después del montaje de un equipo?",
+    "id": 299,
+    "category": "Sistemas de Archivos",
+    "question": "¿Cuál de los siguientes sistemas de archivos es más apropiado para discos ópticos como CDs y DVDs?",
     "options": [
-      "No es necesario realizar pruebas de estrés",
-      "Verificar la estabilidad del sistema bajo condiciones de alto rendimiento",
-      "Reducir el rendimiento del equipo",
-      "Sin importancia en el funcionamiento del sistema"
+      "NTFS",
+      "FAT32",
+      "ISO 9660",
+      "HFS+"
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Verificar la estabilidad del sistema bajo condiciones de alto rendimiento\". Realizar pruebas de estrés después del montaje de un equipo es importante para verificar la estabilidad del sistema bajo condiciones de alto rendimiento, identificar posibles problemas de sobrecalentamiento o inestabilidad y asegurar que todos los componentes funcionan correctamente juntos.",
-    "source": "https://es.wikipedia.org/wiki/Prueba_de_esfuerzo_(informática)"
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"ISO 9660\". Es el estándar internacional para sistemas de archivos en discos ópticos como CD-ROM.",
+    "source": "https://es.wikipedia.org/wiki/ISO_9660"
   },
   {
-    "id": 665,
-    "category": "Diagnóstico",
-    "question": "¿Cuál es la recomendación al diagnosticar problemas de arranque en un equipo recién montado?",
+    "id": 300,
+    "category": "Sistemas de Archivos",
+    "question": "¿Qué es el \"filesystem defragmentation\" en sistemas de archivos como NTFS?",
     "options": [
-      "No es necesario diagnosticar problemas de arranque",
-      "Verificar conexiones, componentes y configuración paso a paso",
-      "Reemplazar todos los componentes sin diagnóstico previo",
-      "Sin importancia en el funcionamiento del equipo"
+      "Un proceso para eliminar archivos duplicados.",
+      "Un proceso para desfragmentar archivos individuales.",
+      "Un proceso para organizar y reordenar los datos en el disco para mejorar el rendimiento.",
+      "Un registro de todas las acciones realizadas en el sistema de archivos."
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Verificar conexiones, componentes y configuración paso a paso\". Al diagnosticar problemas de arranque en un equipo recién montado, se recomienda verificar sistemáticamente las conexiones, componentes y configuración paso a paso para identificar la causa del problema y aplicar la solución adecuada, evitando reemplazar innecesariamente componentes funcionales.",
-    "source": "https://es.wikipedia.org/wiki/Diagnóstico_de_fallos"
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Un proceso para organizar y reordenar los datos en el disco para mejorar el rendimiento.\". La desfragmentación reduce el tiempo de acceso al colocar fragmentos contiguos.",
+    "source": "https://es.wikipedia.org/wiki/Desfragmentaci%C3%B3n"
   },
   {
-    "id": 666,
-    "category": "Diagnóstico",
-    "question": "¿Por qué es importante documentar el proceso de montaje de un equipo informático?",
+    "id": 301,
+    "category": "Sistemas de Archivos",
+    "question": "¿Cuál de los siguientes sistemas de archivos es utilizado por defecto en sistemas operativos Linux?",
     "options": [
-      "No es necesario documentar el proceso de montaje",
-      "Facilitar futuras actualizaciones, reparaciones y mantenimiento",
-      "Dificultar el diagnóstico de problemas",
-      "Sin importancia en el mantenimiento del equipo"
+      "NTFS",
+      "FAT32",
+      "ext4",
+      "exFAT"
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Facilitar futuras actualizaciones, reparaciones y mantenimiento\". Documentar el proceso de montaje de un equipo informático es importante para facilitar futuras actualizaciones, reparaciones y mantenimiento, permitiendo recordar detalles específicos de la configuración, conexiones y componentes utilizados.",
-    "source": "https://es.wikipedia.org/wiki/Documentación"
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"ext4\". Es el sistema de archivos predeterminado en la mayoría de las distribuciones Linux modernas.",
+    "source": "https://es.wikipedia.org/wiki/Ext4"
   },
   {
-    "id": 667,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria caché en un procesador?",
+    "id": 302,
+    "category": "Sistemas de Archivos",
+    "question": "¿Qué es el \"cluster\" en un sistema de archivos?",
     "options": [
-      "Almacenar permanentemente datos del usuario",
-      "Reducir el tiempo de acceso a datos frecuentemente utilizados",
-      "Aumentar el consumo energético del procesador",
-      "Sin función relevante en el rendimiento del sistema"
+      "Un grupo de sectores contiguos en el disco.",
+      "Un tipo de archivo comprimido.",
+      "Un programa de edición de imágenes.",
+      "Un sistema de copia de seguridad."
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Reducir el tiempo de acceso a datos frecuentemente utilizados\". La memoria caché en un procesador es una memoria de alta velocidad que almacena datos e instrucciones frecuentemente utilizados, reduciendo el tiempo de acceso y mejorando el rendimiento general del sistema al evitar tener que recuperar estos datos desde la memoria principal más lenta.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_caché"
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Un grupo de sectores contiguos en el disco.\". Es la unidad mínima de asignación de espacio en disco.",
+    "source": "https://es.wikipedia.org/wiki/Unidad_de_asignaci%C3%B3n"
   },
   {
-    "id": 668,
-    "category": "Componentes Básicos",
-    "question": "¿Qué ventaja ofrece la tecnología SSD sobre los discos duros tradicionales?",
+    "id": 303,
+    "category": "Sistemas de Archivos",
+    "question": "¿Cuál es una característica del sistema de archivos HFS+ utilizado en macOS?",
     "options": [
-      "Mayor capacidad de almacenamiento por menor costo",
-      "Mayor velocidad de lectura/escritura y mayor resistencia a impactos",
-      "Menor consumo energético pero menor durabilidad",
-      "Sin ventajas significativas sobre los discos duros tradicionales"
+      "Journaling",
+      "Fragmentación de archivos",
+      "Soporte para archivos de gran tamaño",
+      "Incompatibilidad con discos duros externos"
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Mayor velocidad de lectura/escritura y mayor resistencia a impactos\". Los SSD (Solid State Drives) ofrecen ventajas significativas sobre los discos duros tradicionales, incluyendo mayor velocidad de lectura y escritura, tiempos de arranque más rápidos, menor consumo energético y mayor resistencia a impactos al no tener partes móviles.",
-    "source": "https://es.wikipedia.org/wiki/Disco_sólido"
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Journaling\". HFS+ incluye journaling para proteger la integridad del sistema de archivos tras fallos.",
+    "source": "https://es.wikipedia.org/wiki/HFS%2B"
   },
   {
-    "id": 669,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal del chipset en una placa base?",
+    "id": 304,
+    "category": "Sistemas de Archivos",
+    "question": "¿Qué es el \"inode\" en sistemas de archivos como ext4 en Linux?",
     "options": [
-      "Almacenar datos del sistema operativo",
-      "Gestionar la comunicación entre el procesador y otros componentes",
-      "Proveer energía a todos los componentes del sistema",
-      "Sin función relevante en el funcionamiento de la placa base"
+      "Una lista de todos los archivos en el disco.",
+      "Un registro de todas las acciones realizadas en el sistema.",
+      "Una estructura de datos que contiene información sobre un archivo o directorio.",
+      "Un sistema para ordenar los archivos en una carpeta."
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Gestionar la comunicación entre el procesador y otros componentes\". El chipset en una placa base es un conjunto de circuitos integrados que gestionan la comunicación entre el procesador y otros componentes como la memoria, tarjetas de expansión, dispositivos de almacenamiento y puertos de E/S, determinando las capacidades y características de la placa base.",
-    "source": "https://es.wikipedia.org/wiki/Chipset"
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Una estructura de datos que contiene información sobre un archivo o directorio.\". Incluye permisos, tamaño, fechas y punteros a los bloques de datos.",
+    "source": "https://es.wikipedia.org/wiki/Inodo"
   },
   {
-    "id": 670,
-    "category": "Componentes Básicos",
-    "question": "¿Qué factor determina la compatibilidad entre un procesador y una placa base?",
+    "id": 305,
+    "category": "Sistemas de Archivos",
+    "question": "¿Qué es el \"allocation unit size\" en sistemas de archivos como NTFS?",
     "options": [
-      "El diseño estético de ambos componentes",
-      "El zócalo (socket) y el chipset de la placa base",
-      "El color de la placa base",
-      "Sin factores de compatibilidad entre procesador y placa base"
+      "El tamaño máximo de un archivo en el disco.",
+      "El tamaño mínimo de un archivo en el disco.",
+      "El tamaño de un sector en el disco.",
+      "El tamaño de un cluster en el disco."
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"El zócalo (socket) y el chipset de la placa base\". La compatibilidad entre un procesador y una placa base está determinada principalmente por el tipo de zócalo (socket) físico y el chipset de la placa base, que deben ser compatibles entre sí para asegurar que el procesador pueda instalarse físicamente y funcionar correctamente.",
-    "source": "https://es.wikipedia.org/wiki/Zócalo_de_CPU"
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"El tamaño de un cluster en el disco.\". También se conoce como tamaño de unidad de asignación.",
+    "source": "https://es.wikipedia.org/wiki/Unidad_de_asignaci%C3%B3n"
   },
   {
-    "id": 671,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la BIOS/UEFI en un sistema informático?",
+    "id": 306,
+    "category": "Sistemas de Archivos",
+    "question": "¿Qué es el \"mount point\" en sistemas de archivos Unix/Linux?",
     "options": [
-      "Almacenar archivos del usuario",
-      "Realizar pruebas iniciales y cargar el sistema operativo",
-      "Procesar datos de aplicaciones",
-      "Sin función relevante en el arranque del sistema"
+      "Un punto de acceso al sistema de archivos.",
+      "Un registro de todas las acciones realizadas en el sistema.",
+      "Un sistema de compresión de archivos.",
+      "Un tipo de archivo especial."
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Realizar pruebas iniciales y cargar el sistema operativo\". La BIOS/UEFI (Basic Input/Output System / Unified Extensible Firmware Interface) es un firmware que realiza pruebas iniciales del hardware durante el arranque (POST), inicializa componentes y carga el sistema operativo desde el dispositivo de almacenamiento correspondiente.",
-    "source": "https://es.wikipedia.org/wiki/BIOS"
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Un punto de acceso al sistema de archivos.\". Es un directorio donde se monta un volumen o dispositivo de almacenamiento.",
+    "source": "https://es.wikipedia.org/wiki/Punto_de_montaje"
   },
   {
-    "id": 672,
-    "category": "Componentes Básicos",
-    "question": "¿Qué característica distingue a la memoria DDR4 de la DDR3?",
+    "id": 307,
+    "category": "Sistemas de Archivos",
+    "question": "¿Cuál de las siguientes afirmaciones sobre el sistema de archivos NTFS es verdadera?",
     "options": [
-      "Mayor consumo energético en DDR4",
-      "Mayor velocidad y menor voltaje en DDR4",
-      "Menor capacidad en DDR4",
-      "Sin diferencias significativas entre ambas tecnologías"
+      "Es incompatible con discos duros externos.",
+      "No soporta archivos de gran tamaño.",
+      "Permite la compresión de archivos.",
+      "No admite la fragmentación de archivos."
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Mayor velocidad y menor voltaje en DDR4\". La memoria DDR4 ofrece ventajas sobre DDR3, incluyendo mayores velocidades de transferencia, mayor capacidad por módulo y menor voltaje de funcionamiento (1.2V frente a 1.5V), lo que resulta en mayor rendimiento y menor consumo energético.",
-    "source": "https://es.wikipedia.org/wiki/DDR4_SDRAM"
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Permite la compresión de archivos.\". NTFS ofrece compresión transparente a nivel de archivo o carpeta.",
+    "source": "https://es.wikipedia.org/wiki/NTFS"
   },
   {
-    "id": 673,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de un puente norte en una placa base tradicional?",
+    "id": 308,
+    "category": "Sistemas de Archivos",
+    "question": "¿Qué es el \"root directory\" en un sistema de archivos?",
     "options": [
-      "Gestionar dispositivos de entrada/salida lentos",
-      "Conectar el procesador con componentes de alta velocidad como la RAM y gráficos",
-      "Proveer energía al sistema",
-      "Sin función relevante en la arquitectura de la placa base"
+      "El directorio principal que contiene todos los demás archivos y directorios.",
+      "Un directorio oculto utilizado por el sistema operativo.",
+      "Un registro de todas las acciones realizadas en el sistema de archivos.",
+      "Un directorio especial reservado para archivos de sistema."
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Conectar el procesador con componentes de alta velocidad como la RAM y gráficos\". En las placas base tradicionales con arquitectura de dos puentes, el puente norte (northbridge) se encarga de conectar el procesador con componentes de alta velocidad como la memoria RAM y, en algunos casos, las tarjetas gráficas, gestionando las comunicaciones más rápidas del sistema.",
-    "source": "https://es.wikipedia.org/wiki/Puente_norte"
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"El directorio principal que contiene todos los demás archivos y directorios.\". En Unix/Linux es `/`; en Windows, la raíz de una unidad (ej. `C:\\`).",
+    "source": "https://es.wikipedia.org/wiki/Directorio_ra%C3%ADz"
   },
   {
-    "id": 674,
-    "category": "Componentes Básicos",
-    "question": "¿Qué ventaja ofrece la tecnología Multi-Core en los procesadores modernos?",
+    "id": 309,
+    "category": "Particiones de Disco",
+    "question": "¿Qué es una partición en un disco duro?",
     "options": [
-      "Mayor consumo energético",
-      "Mayor capacidad para procesar múltiples tareas simultáneamente",
-      "Menor rendimiento en aplicaciones de un solo hilo",
-      "Sin ventajas significativas sobre los procesadores de un solo núcleo"
+      "Una unidad de almacenamiento óptico.",
+      "Un área reservada para el sistema operativo.",
+      "Una sección lógica del disco que se puede usar para almacenar datos.",
+      "Una herramienta de copia de seguridad."
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Mayor capacidad para procesar múltiples tareas simultáneamente\". La tecnología Multi-Core en los procesadores modernos permite integrar múltiples núcleos de procesamiento en un solo chip, ofreciendo mayor capacidad para procesar múltiples tareas simultáneamente, mejorando el rendimiento en aplicaciones multihilo y permitiendo una mayor eficiencia energética.",
-    "source": "https://es.wikipedia.org/wiki/Multiprocesamiento"
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Una sección lógica del disco que se puede usar para almacenar datos.\".",
+    "source": "https://es.wikipedia.org/wiki/Partici%C3%B3n_de_disco"
   },
   {
-    "id": 675,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de un puente sur en una placa base tradicional?",
+    "id": 310,
+    "category": "Particiones de Disco",
+    "question": "¿Cuál es el propósito principal de crear particiones en un disco duro?",
     "options": [
-      "Conectar el procesador con la memoria RAM",
-      "Gestionar dispositivos de entrada/salida más lentos como discos duros y puertos USB",
-      "Procesar datos gráficos",
-      "Sin función relevante en la arquitectura de la placa base"
+      "Aumentar la velocidad de lectura y escritura.",
+      "Facilitar la organización y gestión de datos.",
+      "Reducir el tamaño total del disco.",
+      "Mejorar la seguridad del sistema."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Gestionar dispositivos de entrada/salida más lentos como discos duros y puertos USB\". En las placas base tradicionales con arquitectura de dos puentes, el puente sur (southbridge) se encarga de gestionar dispositivos de entrada/salida más lentos como discos duros, puertos USB, audio, red y otros periféricos, comunicándose con el puente norte para integrar todos los componentes del sistema.",
-    "source": "https://es.wikipedia.org/wiki/Puente_sur"
+    "explanation": "La respuesta correcta es \"Facilitar la organización y gestión de datos.\". Permite separar sistema operativo, programas y datos de usuario.",
+    "source": "https://es.wikipedia.org/wiki/Partici%C3%B3n_de_disco"
   },
   {
-    "id": 676,
-    "category": "Componentes Básicos",
-    "question": "¿Qué característica define a la tecnología RAID en sistemas de almacenamiento?",
+    "id": 311,
+    "category": "Particiones de Disco",
+    "question": "¿Cuál de los siguientes no es un tipo común de partición en sistemas de Windows?",
     "options": [
-      "Reducción automática de la capacidad de almacenamiento",
-      "Combinación de múltiples discos para mejorar rendimiento o redundancia",
-      "Limitación a un solo tipo de disco duro",
-      "Sin ventajas significativas sobre los sistemas de almacenamiento tradicionales"
+      "FAT32",
+      "NTFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"ext4\". Es un sistema de archivos de Linux, no nativo de Windows.",
+    "source": "https://es.wikipedia.org/wiki/Ext4"
+  },
+  {
+    "id": 312,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Qué función de accesibilidad permite aumentar el tamaño del texto en Windows?",
+    "options": [
+      "Lupa",
+      "Alto contraste",
+      "Narrador",
+      "Ampliación de texto"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Ampliación de texto\". Aunque la Lupa también amplía, la opción específica para solo el texto es \"Ampliación de texto\" en Configuración > Accesibilidad.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 313,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Cuál es la herramienta de accesibilidad en Windows que lee en voz alta el texto en la pantalla?",
+    "options": [
+      "Lupa",
+      "Ampliación de texto",
+      "Narrador",
+      "Teclado en pantalla"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Narrador\". Es el lector de pantalla integrado en Windows.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 314,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Qué función de accesibilidad permite cambiar el color y el contraste del sistema operativo en Windows?",
+    "options": [
+      "Lupa",
+      "Ampliación de texto",
+      "Narrador",
+      "Alto contraste"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Alto contraste\". Mejora la visibilidad para personas con discapacidad visual.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 315,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Qué herramienta de accesibilidad en Windows permite controlar el mouse con el teclado?",
+    "options": [
+      "Lupa",
+      "Teclado en pantalla",
+      "Narrador",
+      "Ampliación de texto"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Lupa\". La Lupa incluye un modo de teclado para mover el puntero. También existe \"MouseKeys\" en opciones de accesibilidad.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 316,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Qué función de accesibilidad permite personalizar las combinaciones de teclas para facilitar su uso en Windows?",
+    "options": [
+      "Lupa",
+      "Ampliación de texto",
+      "Narrador",
+      "Teclas de filtro"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Teclas de filtro\". Ignora pulsaciones breves o repetidas, útil para usuarios con dificultades motoras.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 317,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Cuál es la herramienta de accesibilidad en Windows que proporciona una representación visual del sonido en la pantalla?",
+    "options": [
+      "Lupa",
+      "Narrador",
+      "Ampliación de texto",
+      "Indicador de sonido"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Indicador de sonido\". Muestra una animación en pantalla cuando suena una notificación.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 318,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Qué función de accesibilidad en Windows permite ajustar la sensibilidad del teclado y del ratón?",
+    "options": [
+      "Lupa",
+      "Ampliación de texto",
+      "Narrador",
+      "Filtros de entrada"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Filtros de entrada\". Incluye ajustes para teclas lentas, repetidas y de alternancia.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 319,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Cuál es la función de accesibilidad que permite activar un teclado virtual en la pantalla en Windows?",
+    "options": [
+      "Narrador",
+      "Ampliación de texto",
+      "Teclado en pantalla",
+      "Lupa"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Teclado en pantalla\". Permite escribir usando el puntero del mouse o dispositivos táctiles.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 320,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Qué herramienta de accesibilidad en Windows permite reemplazar el uso del mouse con movimientos de la cabeza?",
+    "options": [
+      "Lupa",
+      "Ampliación de texto",
+      "Narrador",
+      "Control de la cabeza"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Control de la cabeza\". Requiere una cámara compatible y se configura en Accesibilidad > Control ocular.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 321,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Cuál es la función de accesibilidad que permite ajustar la velocidad de respuesta del teclado en Windows?",
+    "options": [
+      "Ampliación de texto",
+      "Filtros de entrada",
+      "Lupa",
+      "Narrador"
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Combinación de múltiples discos para mejorar rendimiento o redundancia\". La tecnología RAID (Redundant Array of Independent Disks) combina múltiples discos duros en un solo sistema lógico para mejorar el rendimiento, la capacidad de almacenamiento o la redundancia de datos, dependiendo de la configuración específica (RAID 0, 1, 5, 10, etc.).",
+    "explanation": "La respuesta correcta es \"Filtros de entrada\". Permite ajustar la velocidad de repetición y el retardo de las teclas.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 322,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Qué herramienta de accesibilidad en Windows permite grabar y reproducir mensajes de voz?",
+    "options": [
+      "Narrador",
+      "Ampliación de texto",
+      "Reconocimiento de voz",
+      "Indicador de sonido"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Reconocimiento de voz\". Permite dictar texto y controlar el PC con comandos de voz.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 323,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Cuál es la función de accesibilidad que proporciona una descripción de voz de los eventos en la pantalla?",
+    "options": [
+      "Narrador",
+      "Ampliación de texto",
+      "Lupa",
+      "Control de la cabeza"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Narrador\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 324,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Qué función de accesibilidad en Windows permite ajustar el tamaño y la forma del puntero del mouse?",
+    "options": [
+      "Lupa",
+      "Ampliación de texto",
+      "Narrador",
+      "Punta del mouse"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Punta del mouse\". Permite cambiar el tamaño, color y efectos del cursor.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 325,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Cuál es la herramienta de accesibilidad en Windows que permite controlar la computadora mediante comandos de voz?",
+    "options": [
+      "Reconocimiento de voz",
+      "Ampliación de texto",
+      "Narrador",
+      "Lupa"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Reconocimiento de voz\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 326,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Qué función de accesibilidad en Windows permite filtrar pulsaciones de teclas repetidas en rápido sucesión?",
+    "options": [
+      "Filtros de entrada",
+      "Ampliación de texto",
+      "Narrador",
+      "Control de la cabeza"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Filtros de entrada\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 327,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Cuál es la herramienta de accesibilidad en Windows que proporciona una representación visual de las palabras pronunciadas?",
+    "options": [
+      "Subtítulos en vivo",
+      "Ampliación de texto",
+      "Narrador",
+      "Lupa"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Subtítulos en vivo\". Transcribe en tiempo real el audio del sistema y micrófono.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 328,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Qué función de accesibilidad en Windows permite ajustar el tiempo de espera para aceptar una pulsación de tecla?",
+    "options": [
+      "Ampliación de texto",
+      "Filtros de entrada",
+      "Narrador",
+      "Lupa"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Filtros de entrada\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 329,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Cuál es la herramienta de accesibilidad en Windows que proporciona una guía visual para mejorar la lectura en pantalla?",
+    "options": [
+      "Lupa",
+      "Ampliación de texto",
+      "Narrador",
+      "Leído en voz alta"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Leído en voz alta\". Destaca las palabras mientras las lee en voz alta.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 330,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Qué función de accesibilidad en Windows permite habilitar subtítulos en vivo para personas con problemas de audición?",
+    "options": [
+      "Narrador",
+      "Ampliación de texto",
+      "Subtítulos en vivo",
+      "Lupa"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Subtítulos en vivo\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 331,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Cuál es la herramienta de accesibilidad en Windows que permite marcar elementos en pantalla mediante sonidos?",
+    "options": [
+      "Indicador de sonido",
+      "Ampliación de texto",
+      "Narrador",
+      "Lupa"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Indicador de sonido\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 332,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Qué función de accesibilidad en Windows permite ajustar la velocidad de lectura de texto en voz alta?",
+    "options": [
+      "Ampliación de texto",
+      "Lupa",
+      "Narrador",
+      "Velocidad de voz"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Narrador\". La velocidad de lectura se configura dentro de la configuración del Narrador.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 333,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Cuál es la herramienta de accesibilidad en Windows que permite identificar visualmente las teclas presionadas en el teclado?",
+    "options": [
+      "Teclas de filtro",
+      "Ampliación de texto",
+      "Narrador",
+      "Teclado en pantalla"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Teclado en pantalla\". Muestra las teclas presionadas en la pantalla.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 334,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Qué función de accesibilidad en Windows permite ajustar el tamaño y la ubicación de la barra de tareas?",
+    "options": [
+      "Ampliación de texto",
+      "Narrador",
+      "Lupa",
+      "Configuración de la barra de tareas"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Configuración de la barra de tareas\". Se accede desde Configuración > Personalización > Barra de tareas.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 335,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Cuál es la herramienta de accesibilidad en Windows que proporciona una descripción verbal de lo que está sucediendo en la pantalla?",
+    "options": [
+      "Narrador",
+      "Ampliación de texto",
+      "Lupa",
+      "Indicador de sonido"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Narrador\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 336,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Qué función de accesibilidad en Windows permite ajustar el contraste de los elementos visuales en pantalla?",
+    "options": [
+      "Ampliación de texto",
+      "Alto contraste",
+      "Narrador",
+      "Lupa"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Alto contraste\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 337,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Cuál es la herramienta de accesibilidad en Windows que permite ajustar el tamaño y el color del cursor del mouse?",
+    "options": [
+      "Punta del mouse",
+      "Ampliación de texto",
+      "Narrador",
+      "Lupa"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Punta del mouse\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 338,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Qué función de accesibilidad en Windows permite habilitar un teclado virtual en pantalla?",
+    "options": [
+      "Teclado en pantalla",
+      "Ampliación de texto",
+      "Narrador",
+      "Lupa"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Teclado en pantalla\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 339,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Cuál es la herramienta de accesibilidad en Windows que proporciona una representación visual de los sonidos en la pantalla?",
+    "options": [
+      "Indicador de sonido",
+      "Ampliación de texto",
+      "Narrador",
+      "Lupa"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Indicador de sonido\". Muestra una animación en pantalla cuando se reproduce un sonido del sistema.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 340,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Qué función de accesibilidad en Windows permite personalizar los ajustes de color para mejorar la visibilidad en pantalla?",
+    "options": [
+      "Ampliación de texto",
+      "Filtros de color",
+      "Narrador",
+      "Lupa"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Filtros de color\". Ayuda a personas con daltonismo o sensibilidad a la luz ajustando los esquemas de color.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 341,
+    "category": "Accesibilidad en Windows",
+    "question": "¿Cuál es la herramienta de accesibilidad en Windows que proporciona una descripción de voz de los elementos en pantalla al mover el cursor?",
+    "options": [
+      "Narrador",
+      "Ampliación de texto",
+      "Lupa",
+      "Descripción de pantalla"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Narrador\". Es el lector de pantalla integrado que describe en voz alta lo que hay bajo el cursor.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 342,
+    "category": "UEFI/BIOS y Particiones",
+    "question": "¿Qué es UEFI (Unified Extensible Firmware Interface)?",
+    "options": [
+      "Un tipo de partición de disco.",
+      "Un estándar de firmware que reemplaza al BIOS tradicional.",
+      "Una herramienta de copia de seguridad.",
+      "Un sistema operativo alternativo a Windows."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un estándar de firmware que reemplaza al BIOS tradicional.\". Ofrece arranque más rápido, soporte para discos >2 TB y mayor seguridad.",
+    "source": "https://es.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface"
+  },
+  {
+    "id": 343,
+    "category": "UEFI/BIOS y Particiones",
+    "question": "¿Cuál es una ventaja de UEFI sobre el BIOS tradicional?",
+    "options": [
+      "Mayor velocidad de arranque.",
+      "Mayor compatibilidad con hardware antiguo.",
+      "Menor seguridad.",
+      "Menor soporte para sistemas operativos modernos."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Mayor velocidad de arranque.\". UEFI inicializa el hardware de forma más eficiente que el BIOS heredado.",
+    "source": "https://es.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface"
+  },
+  {
+    "id": 344,
+    "category": "UEFI/BIOS y Particiones",
+    "question": "¿Qué es MBR (Master Boot Record)?",
+    "options": [
+      "Un sistema de archivos.",
+      "Una herramienta de particionamiento de disco.",
+      "Una tabla de particiones y un pequeño programa de arranque.",
+      "Un tipo de disco duro."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Una tabla de particiones y un pequeño programa de arranque.\". Se ubica en el primer sector del disco y es compatible con BIOS.",
+    "source": "https://es.wikipedia.org/wiki/Master_Boot_Record"
+  },
+  {
+    "id": 345,
+    "category": "UEFI/BIOS y Particiones",
+    "question": "¿Cuál es la principal limitación de MBR en comparación con GPT?",
+    "options": [
+      "No admite discos duros de más de 2 TB.",
+      "No es compatible con sistemas operativos Windows.",
+      "No permite crear múltiples particiones en un disco.",
+      "No es compatible con sistemas operativos Unix/Linux."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"No admite discos duros de más de 2 TB.\". MBR también limita a 4 particiones primarias.",
+    "source": "https://es.wikipedia.org/wiki/GUID_Partition_Table"
+  },
+  {
+    "id": 346,
+    "category": "UEFI/BIOS y Particiones",
+    "question": "¿Qué es GPT (GUID Partition Table)?",
+    "options": [
+      "Un tipo de disco duro.",
+      "Una herramienta de copia de seguridad.",
+      "Una tabla de particiones que reemplaza a MBR.",
+      "Una versión antigua de UEFI."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Una tabla de particiones que reemplaza a MBR.\". Es el estándar moderno para particionamiento, especialmente con UEFI.",
+    "source": "https://es.wikipedia.org/wiki/GUID_Partition_Table"
+  },
+  {
+    "id": 347,
+    "category": "UEFI/BIOS y Particiones",
+    "question": "¿Cuál de las siguientes afirmaciones sobre GPT es verdadera?",
+    "options": [
+      "Admite discos duros de hasta 2 TB.",
+      "No admite más de cuatro particiones primarias.",
+      "Proporciona mayor protección contra la corrupción de datos.",
+      "Es compatible únicamente con sistemas operativos Windows."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Proporciona mayor protección contra la corrupción de datos.\". GPT incluye copias de respaldo de la tabla de particiones y CRC32 para verificación.",
+    "source": "https://es.wikipedia.org/wiki/GUID_Partition_Table"
+  },
+  {
+    "id": 348,
+    "category": "Discos Dinámicos y RAID",
+    "question": "¿Qué es un disco dinámico en Windows?",
+    "options": [
+      "Un disco que puede cambiar de tamaño automáticamente.",
+      "Un disco que no necesita ser particionado.",
+      "Un disco que utiliza un sistema de archivos dinámico.",
+      "Un disco que permite la creación de volúmenes dinámicos y es administrado por el Administrador de discos de Windows."
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Un disco que permite la creación de volúmenes dinámicos y es administrado por el Administrador de discos de Windows.\".",
+    "source": "https://docs.microsoft.com/es-es/windows-server/storage/disk-management/overview-of-disk-management"
+  },
+  {
+    "id": 349,
+    "category": "Discos Dinámicos y RAID",
+    "question": "¿Cuál es una característica de los discos dinámicos en Windows?",
+    "options": [
+      "Permiten la creación de un máximo de dos volúmenes.",
+      "No permiten la creación de volúmenes extendidos.",
+      "Pueden contener volúmenes extendidos, volúmenes lógicos y volúmenes simples.",
+      "No admiten la redimensión de volúmenes."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"No permiten la creación de volúmenes extendidos.\". Los discos dinámicos usan volúmenes simples, extendidos, distribuidos, seccionados o reflejados, pero no particiones extendidas como los discos básicos.",
+    "source": "https://docs.microsoft.com/es-es/windows-server/storage/disk-management/overview-of-disk-management"
+  },
+  {
+    "id": 350,
+    "category": "Discos Dinámicos y RAID",
+    "question": "¿Qué es un volumen dinámico en un disco dinámico de Windows?",
+    "options": [
+      "Una sección del disco asignada para archivos temporales.",
+      "Una partición que abarca múltiples discos físicos.",
+      "Una sección del disco que puede ser redimensionada fácilmente.",
+      "Una sección del disco que puede abarcar múltiples discos físicos."
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Una sección del disco que puede abarcar múltiples discos físicos.\". Ejemplos: volúmenes distribuidos o seccionados.",
+    "source": "https://docs.microsoft.com/es-es/windows-server/storage/disk-management/overview-of-disk-management"
+  },
+  {
+    "id": 351,
+    "category": "Discos Dinámicos y RAID",
+    "question": "¿Qué es el RAID (Redundant Array of Independent Disks)?",
+    "options": [
+      "Un tipo de disco duro.",
+      "Un sistema de copia de seguridad.",
+      "Un método para combinar múltiples discos duros para mejorar el rendimiento y/o la redundancia.",
+      "Un tipo de sistema de archivos."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Un método para combinar múltiples discos duros para mejorar el rendimiento y/o la redundancia.\".",
     "source": "https://es.wikipedia.org/wiki/RAID"
   },
   {
-    "id": 677,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la memoria virtual en un sistema operativo?",
+    "id": 352,
+    "category": "Discos Dinámicos y RAID",
+    "question": "¿Cuál es el propósito principal del RAID 0?",
     "options": [
-      "Aumentar físicamente la capacidad de la RAM",
-      "Utilizar espacio del disco duro como extensión de la RAM",
-      "Reducir el rendimiento del sistema",
-      "Sin función relevante en la gestión de memoria"
+      "Proporcionar redundancia de datos.",
+      "Aumentar la velocidad de lectura y escritura.",
+      "Mejorar la seguridad del sistema.",
+      "Reducir el tamaño total del disco."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Utilizar espacio del disco duro como extensión de la RAM\". La memoria virtual es una técnica que permite al sistema operativo utilizar espacio del disco duro como extensión de la memoria RAM física, moviendo páginas de memoria menos utilizadas al disco para liberar RAM para procesos activos, permitiendo ejecutar más aplicaciones de las que cabrían en la memoria física.",
-    "source": "https://es.wikipedia.org/wiki/Memoria_virtual"
+    "explanation": "La respuesta correcta es \"Aumentar la velocidad de lectura y escritura.\". Usa striping, pero no ofrece redundancia.",
+    "source": "https://es.wikipedia.org/wiki/RAID_0"
   },
   {
-    "id": 678,
-    "category": "Componentes Básicos",
-    "question": "¿Qué ventaja ofrece la tecnología Hyper-Threading en los procesadores Intel?",
+    "id": 353,
+    "category": "Discos Dinámicos y RAID",
+    "question": "¿Qué hace el RAID 1?",
     "options": [
-      "Duplicación física de los núcleos del procesador",
-      "Simulación de múltiples núcleos lógicos por cada núcleo físico",
-      "Reducción del rendimiento en aplicaciones multihilo",
-      "Sin ventajas significativas sobre los procesadores sin Hyper-Threading"
+      "Divide los datos en múltiples discos para aumentar el rendimiento.",
+      "Mantiene una copia exacta de todos los datos en dos o más discos.",
+      "Crea un disco de respaldo para restaurar datos en caso de fallo.",
+      "Combina múltiples discos en uno solo para aumentar la capacidad de almacenamiento."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Simulación de múltiples núcleos lógicos por cada núcleo físico\". La tecnología Hyper-Threading de Intel permite simular múltiples núcleos lógicos por cada núcleo físico, permitiendo que el procesador gestione más hilos de ejecución simultáneamente y mejore el rendimiento en aplicaciones optimizadas para multihilo, sin duplicar físicamente los núcleos.",
-    "source": "https://es.wikipedia.org/wiki/Hyper-Threading"
+    "explanation": "La respuesta correcta es \"Mantiene una copia exacta de todos los datos en dos o más discos.\". Se conoce como mirroring.",
+    "source": "https://es.wikipedia.org/wiki/RAID_1"
   },
   {
-    "id": 679,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal del controlador de memoria en un sistema informático?",
+    "id": 354,
+    "category": "Discos Dinámicos y RAID",
+    "question": "¿Qué tipo de RAID proporciona tanto rendimiento como redundancia de datos?",
     "options": [
-      "Almacenar datos permanentemente",
-      "Gestionar el flujo de datos entre el procesador y la memoria RAM",
-      "Procesar gráficos 3D",
-      "Sin función relevante en el rendimiento del sistema"
+      "RAID 0.",
+      "RAID 1.",
+      "RAID 5.",
+      "RAID 10."
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Gestionar el flujo de datos entre el procesador y la memoria RAM\". El controlador de memoria es un circuito que gestiona el flujo de datos entre el procesador y la memoria RAM, controlando el acceso a la memoria, la temporización y la transferencia de datos, influyendo significativamente en el rendimiento general del sistema.",
-    "source": "https://es.wikipedia.org/wiki/Controlador_de_memoria"
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"RAID 10.\". Combina striping (RAID 0) y mirroring (RAID 1).",
+    "source": "https://es.wikipedia.org/wiki/RAID_10"
   },
   {
-    "id": 680,
-    "category": "Componentes Básicos",
-    "question": "¿Qué característica distingue a los procesadores de la serie Xeon de Intel?",
+    "id": 355,
+    "category": "Discos Dinámicos y RAID",
+    "question": "¿Qué hace el RAID 5?",
     "options": [
-      "Están diseñados específicamente para sistemas de consumo",
-      "Están optimizados para servidores y estaciones de trabajo",
-      "Tienen menor rendimiento que los procesadores de consumo",
-      "Sin diferencias significativas con los procesadores de consumo"
+      "Mantiene una copia exacta de todos los datos en dos o más discos.",
+      "Divide los datos en múltiples discos para aumentar el rendimiento.",
+      "Distribuye datos y paridad a través de varios discos para tolerancia a fallos y rendimiento.",
+      "Crea un disco de respaldo para restaurar datos en caso de fallo."
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Están optimizados para servidores y estaciones de trabajo\". Los procesadores de la serie Xeon de Intel están diseñados y optimizados específicamente para servidores y estaciones de trabajo, ofreciendo características como mayor número de núcleos, mayor capacidad de memoria RAM soportada, tecnología ECC y mayor fiabilidad para cargas de trabajo profesionales.",
-    "source": "https://es.wikipedia.org/wiki/Xeon"
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Distribuye datos y paridad a través de varios discos para tolerancia a fallos y rendimiento.\".",
+    "source": "https://es.wikipedia.org/wiki/RAID_5"
   },
   {
-    "id": 681,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la tecnología ECC en memoria RAM?",
+    "id": 356,
+    "category": "Discos Dinámicos y RAID",
+    "question": "¿Cuál de las siguientes afirmaciones sobre RAID 0 es verdadera?",
     "options": [
-      "Aumentar la velocidad de la memoria",
-      "Detectar y corregir errores en los datos almacenados",
-      "Reducir el consumo energético de la memoria",
-      "Sin función relevante en la fiabilidad del sistema"
+      "Proporciona redundancia de datos.",
+      "Es el tipo de RAID más seguro.",
+      "Aumenta el rendimiento al dividir los datos entre varios discos.",
+      "Es adecuado para aplicaciones que requieren alta disponibilidad de datos."
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Detectar y corregir errores en los datos almacenados\". La tecnología ECC (Error-Correcting Code) en memoria RAM permite detectar y corregir errores en los datos almacenados, aumentando la fiabilidad del sistema y previniendo corrupción de datos, siendo especialmente importante en servidores y sistemas críticos donde la integridad de los datos es fundamental.",
-    "source": "https://es.wikipedia.org/wiki/Código_de_corrección_de_errores"
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Aumenta el rendimiento al dividir los datos entre varios discos.\". No tiene redundancia, por lo que no es seguro.",
+    "source": "https://es.wikipedia.org/wiki/RAID_0"
   },
   {
-    "id": 682,
-    "category": "Componentes Básicos",
-    "question": "¿Qué ventaja ofrece la tecnología NVMe sobre las interfaces SATA para SSD?",
+    "id": 357,
+    "category": "Discos Dinámicos y RAID",
+    "question": "¿Qué es el \"striping\" en RAID 0?",
     "options": [
-      "Menor velocidad de transferencia de datos",
-      "Mayor velocidad y menor latencia gracias a la conexión directa por PCIe",
-      "Mayor compatibilidad con sistemas antiguos",
-      "Sin ventajas significativas sobre las interfaces SATA"
+      "La creación de una copia exacta de todos los datos en dos o más discos.",
+      "La técnica de dividir los datos en trozos más pequeños y almacenarlos en varios discos.",
+      "El proceso de crear un disco de respaldo para restaurar datos en caso de fallo.",
+      "La técnica de distribuir datos y paridad a través de varios discos para tolerancia a fallos."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Mayor velocidad y menor latencia gracias a la conexión directa por PCIe\". La tecnología NVMe (Non-Volatile Memory Express) ofrece ventajas significativas sobre las interfaces SATA para SSD, incluyendo mayor velocidad de transferencia de datos, menor latencia y mayor eficiencia gracias a la conexión directa a través del bus PCIe, optimizada específicamente para unidades de estado sólido.",
-    "source": "https://es.wikipedia.org/wiki/NVM_Express"
+    "explanation": "La respuesta correcta es \"La técnica de dividir los datos en trozos más pequeños y almacenarlos en varios discos.\".",
+    "source": "https://es.wikipedia.org/wiki/RAID_0"
   },
   {
-    "id": 683,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la tecnología Turbo Boost en procesadores Intel?",
+    "id": 358,
+    "category": "Discos Dinámicos y RAID",
+    "question": "¿Qué es el \"mirroring\" en RAID 1?",
     "options": [
-      "Reducir permanentemente la velocidad del procesador",
-      "Aumentar dinámicamente la frecuencia de los núcleos activos cuando es necesario",
-      "Limitar el número de núcleos utilizables",
-      "Sin impacto en el rendimiento del procesador"
+      "La técnica de dividir los datos en trozos más pequeños y almacenarlos en varios discos.",
+      "El proceso de crear un disco de respaldo para restaurar datos en caso de fallo.",
+      "La creación de una copia exacta de todos los datos en dos o más discos.",
+      "La técnica de distribuir datos y paridad a través de varios discos para tolerancia a fallos."
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Aumentar dinámicamente la frecuencia de los núcleos activos cuando es necesario\". La tecnología Turbo Boost de Intel permite aumentar dinámicamente la frecuencia de los núcleos activos del procesador por encima de su frecuencia base cuando las condiciones térmicas y de consumo lo permiten, proporcionando un rendimiento adicional para cargas de trabajo exigentes.",
-    "source": "https://es.wikipedia.org/wiki/Intel_Turbo_Boost"
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"La creación de una copia exacta de todos los datos en dos o más discos.\".",
+    "source": "https://es.wikipedia.org/wiki/RAID_1"
   },
   {
-    "id": 684,
-    "category": "Componentes Básicos",
-    "question": "¿Qué característica define a la tecnología M.2 en unidades de almacenamiento?",
+    "id": 359,
+    "category": "Discos Dinámicos y RAID",
+    "question": "¿Cuál de las siguientes afirmaciones sobre el RAID 10 es verdadera?",
     "options": [
-      "Mayor tamaño físico que las unidades de 2.5 pulgadas",
-      "Formato compacto y conexión directa a la placa base",
-      "Limitación a interfaces SATA",
-      "Sin ventajas sobre los formatos de almacenamiento tradicionales"
+      "Proporciona tanto rendimiento como redundancia de datos.",
+      "Es el tipo de RAID más seguro.",
+      "No es adecuado para aplicaciones que requieren alta disponibilidad de datos.",
+      "Es más lento que el RAID 0."
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Formato compacto y conexión directa a la placa base\". La tecnología M.2 define un formato compacto para unidades de almacenamiento que se conectan directamente a la placa base, ahorrando espacio y permitiendo interfaces más rápidas como PCIe y NVMe, además de SATA, ofreciendo mayor rendimiento y flexibilidad en sistemas compactos.",
-    "source": "https://es.wikipedia.org/wiki/M.2"
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Proporciona tanto rendimiento como redundancia de datos.\".",
+    "source": "https://es.wikipedia.org/wiki/RAID_10"
   },
   {
-    "id": 685,
-    "category": "Componentes Básicos",
-    "question": "¿Cuál es la función principal de la tecnología Precision Boost en procesadores AMD?",
+    "id": 360,
+    "category": "Discos Dinámicos y RAID",
+    "question": "¿Qué es el \"striping with mirroring\" en RAID 10?",
     "options": [
-      "Reducir el rendimiento del procesador",
-      "Aumentar dinámicamente la frecuencia según la carga y temperatura",
-      "Limitar la compatibilidad con placas base",
-      "Sin impacto en el rendimiento del procesador"
+      "La técnica de dividir los datos en trozos más pequeños y almacenarlos en varios discos.",
+      "El proceso de crear un disco de respaldo para restaurar datos en caso de fallo.",
+      "La combinación de striping para aumentar el rendimiento y mirroring para redundancia de datos.",
+      "La creación de una copia exacta de todos los datos en dos o más discos."
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Aumentar dinámicamente la frecuencia según la carga y temperatura\". La tecnología Precision Boost de AMD es similar a Turbo Boost de Intel y permite aumentar dinámicamente la frecuencia del procesador según la carga de trabajo y las condiciones térmicas, optimizando el rendimiento para cada situación específica y manteniendo el consumo y la temperatura dentro de límites seguros.",
-    "source": "https://es.wikipedia.org/wiki/Precision_Boost"
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"La combinación de striping para aumentar el rendimiento y mirroring para redundancia de datos.\".",
+    "source": "https://es.wikipedia.org/wiki/RAID_10"
   },
   {
-    "id": 686,
-    "category": "Componentes Básicos",
-    "question": "¿Qué ventaja ofrece la tecnología PCIe 4.0 sobre la versión 3.0?",
+    "id": 361,
+    "category": "Discos Dinámicos y RAID",
+    "question": "¿Qué es la tolerancia a fallos en RAID?",
     "options": [
-      "Menor ancho de banda",
-      "Doble velocidad de transferencia respecto a PCIe 3.0",
-      "Menor compatibilidad con dispositivos",
-      "Sin mejoras significativas sobre la versión anterior"
+      "La capacidad de un sistema RAID para evitar fallos.",
+      "La capacidad de un sistema RAID para recuperarse automáticamente de un fallo de disco.",
+      "La capacidad de un sistema RAID para evitar el uso de discos duros con errores.",
+      "La capacidad de un sistema RAID para funcionar sin fallos."
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Doble velocidad de transferencia respecto a PCIe 3.0\". La tecnología PCIe 4.0 ofrece el doble de velocidad de transferencia que la versión 3.0 (aproximadamente 16 GT/s por carril frente a 8 GT/s), proporcionando mayor ancho de banda para tarjetas gráficas, SSD y otros dispositivos de alto rendimiento, manteniendo compatibilidad con dispositivos de versiones anteriores.",
-    "source": "https://es.wikipedia.org/wiki/PCI_Express"
+    "explanation": "La respuesta correcta es \"La capacidad de un sistema RAID para recuperarse automáticamente de un fallo de disco.\".",
+    "source": "https://es.wikipedia.org/wiki/RAID"
+  },
+  {
+    "id": 362,
+    "category": "Discos Dinámicos y RAID",
+    "question": "¿Cuál de las siguientes afirmaciones sobre el RAID 5 es verdadera?",
+    "options": [
+      "Proporciona redundancia de datos.",
+      "Es el tipo de RAID más seguro.",
+      "Requiere al menos tres discos para implementarse.",
+      "Es adecuado para aplicaciones que requieren alta disponibilidad de datos."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Requiere al menos tres discos para implementarse.\". Usa paridad distribuida.",
+    "source": "https://es.wikipedia.org/wiki/RAID_5"
+  },
+  {
+    "id": 363,
+    "category": "Discos Dinámicos y RAID",
+    "question": "¿Qué es el \"parity\" en RAID 5?",
+    "options": [
+      "La creación de una copia exacta de todos los datos en dos o más discos.",
+      "La técnica de dividir los datos en trozos más pequeños y almacenarlos en varios discos.",
+      "La información adicional utilizada para reconstruir datos perdidos en caso de fallo de disco.",
+      "La técnica de distribuir datos y paridad a través de varios discos para tolerancia a fallos."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"La información adicional utilizada para reconstruir datos perdidos en caso de fallo de disco.\".",
+    "source": "https://es.wikipedia.org/wiki/RAID_5"
+  },
+  {
+    "id": 364,
+    "category": "UEFI/BIOS y Particiones",
+    "question": "¿Cuál de las siguientes afirmaciones sobre los discos dinámicos en Windows es verdadera?",
+    "options": [
+      "Pueden convertirse en discos básicos sin perder datos.",
+      "No admiten la creación de volúmenes dinámicos.",
+      "No permiten la extensión o reducción de volúmenes.",
+      "No admiten la conversión de MBR a GPT."
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"No admiten la conversión de MBR a GPT.\". La conversión de estilo de partición requiere un disco básico.",
+    "source": "https://docs.microsoft.com/es-es/windows-server/storage/disk-management/overview-of-disk-management"
+  },
+  {
+    "id": 365,
+    "category": "UEFI/BIOS y Particiones",
+    "question": "¿Qué es la conversión de MBR a GPT?",
+    "options": [
+      "Un proceso para convertir discos dinámicos en discos básicos.",
+      "Un proceso para cambiar el tipo de partición de un disco de MBR a GPT.",
+      "Un proceso para eliminar todas las particiones de un disco y crear una nueva tabla de particiones.",
+      "Un proceso para eliminar un disco dinámico y convertirlo en un disco básico."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un proceso para cambiar el tipo de partición de un disco de MBR a GPT.\". Requiere que el disco esté vacío o se use una herramienta como MBR2GPT.",
+    "source": "https://docs.microsoft.com/es-es/windows/deployment/mbr-to-gpt"
+  },
+  {
+    "id": 366,
+    "category": "UEFI/BIOS y Particiones",
+    "question": "¿Qué es la conversión de GPT a MBR?",
+    "options": [
+      "Un proceso para cambiar el tipo de partición de un disco de GPT a MBR.",
+      "Un proceso para convertir discos básicos en discos dinámicos.",
+      "Un proceso para eliminar todas las particiones de un disco y crear una nueva tabla de particiones.",
+      "Un proceso para eliminar un disco dinámico y convertirlo en un disco básico."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Un proceso para cambiar el tipo de partición de un disco de GPT a MBR.\".",
+    "source": "https://docs.microsoft.com/es-es/windows-server/storage/disk-management/change-an-mbr-disk-into-a-gpt-disk"
+  },
+  {
+    "id": 367,
+    "category": "UEFI/BIOS y Particiones",
+    "question": "¿Cuál de las siguientes afirmaciones sobre los discos básicos en Windows es verdadera?",
+    "options": [
+      "No admiten la creación de volúmenes dinámicos.",
+      "No admiten la conversión de MBR a GPT.",
+      "No admiten la extensión o reducción de volúmenes.",
+      "No pueden convertirse en discos dinámicos sin perder datos."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"No admiten la creación de volúmenes dinámicos.\". Los discos básicos usan particiones primarias y extendidas.",
+    "source": "https://docs.microsoft.com/es-es/windows-server/storage/disk-management/overview-of-disk-management"
+  },
+  {
+    "id": 368,
+    "category": "UEFI/BIOS y Particiones",
+    "question": "¿Qué es la conversión de discos básicos a discos dinámicos?",
+    "options": [
+      "Un proceso para cambiar el tipo de partición de un disco de GPT a MBR.",
+      "Un proceso para eliminar todas las particiones de un disco y crear una nueva tabla de particiones.",
+      "Un proceso para convertir discos dinámicos en discos básicos.",
+      "Un proceso para permitir la creación de volúmenes dinámicos en un disco."
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Un proceso para permitir la creación de volúmenes dinámicos en un disco.\". No requiere reinicio y no borra datos.",
+    "source": "https://docs.microsoft.com/es-es/windows-server/storage/disk-management/overview-of-disk-management"
+  },
+  {
+    "id": 369,
+    "category": "Explorador de Archivos",
+    "question": "¿Qué es explorer.exe en un sistema Windows?",
+    "options": [
+      "Un programa para navegar por internet.",
+      "El proceso responsable de administrar el explorador de archivos.",
+      "Un antivirus integrado en Windows.",
+      "Una herramienta para limpiar el disco duro."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"El proceso responsable de administrar el explorador de archivos.\". También gestiona el escritorio y la barra de tareas.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 370,
+    "category": "Explorador de Archivos",
+    "question": "¿Cuál es la función principal del explorador de archivos en Windows?",
+    "options": [
+      "Navegar por internet.",
+      "Administrador archivos y carpetas en el sistema de archivos.",
+      "Realizar copias de seguridad automáticas.",
+      "Editar documentos de Microsoft Office."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Administrador archivos y carpetas en el sistema de archivos.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 371,
+    "category": "Explorador de Archivos",
+    "question": "¿Qué te permite hacer el explorador de archivos en relación con los archivos y carpetas?",
+    "options": [
+      "Crear, copiar, mover y eliminar.",
+      "Navegar por sitios web.",
+      "Escribir programas en lenguajes de programación.",
+      "Reproducir música y videos."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Crear, copiar, mover y eliminar.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 372,
+    "category": "Explorador de Archivos",
+    "question": "¿Cómo se puede abrir el explorador de archivos en Windows?",
+    "options": [
+      "Haciendo clic en el icono de Internet Explorer.",
+      "Escribiendo \"explorer.exe\" en el símbolo del sistema.",
+      "Presionando las teclas Windows + E.",
+      "Ejecutando un comando en PowerShell."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Presionando las teclas Windows + E.\". Es el atajo más rápido.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 373,
+    "category": "Explorador de Archivos",
+    "question": "¿Qué te permite hacer el explorador de archivos en relación con los archivos comprimidos?",
+    "options": [
+      "Comprimir y descomprimir archivos.",
+      "Editar archivos de texto.",
+      "Convertir archivos de un formato a otro.",
+      "Configurar la red Wi-Fi."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Comprimir y descomprimir archivos.\". Windows tiene soporte nativo para ZIP.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 374,
+    "category": "Explorador de Archivos",
+    "question": "¿Qué acción se realiza al hacer clic derecho en un archivo o carpeta en el explorador de archivos?",
+    "options": [
+      "Abrir el archivo en un editor de texto.",
+      "Eliminar permanentemente el archivo.",
+      "Acceder a un menú contextual con varias opciones, como copiar, pegar, eliminar, etc.",
+      "Enviar el archivo por correo electrónico."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Acceder a un menú contextual con varias opciones, como copiar, pegar, eliminar, etc.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 375,
+    "category": "Explorador de Archivos",
+    "question": "¿Cuál es la función del botón \"Copiar\" en el explorador de archivos?",
+    "options": [
+      "Mover un archivo a otra ubicación.",
+      "Crear una copia del archivo en la misma ubicación.",
+      "Transferir archivos a una unidad USB.",
+      "Copiar archivos seleccionados a otra ubicación."
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Copiar archivos seleccionados a otra ubicación.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 376,
+    "category": "Explorador de Archivos",
+    "question": "¿Cómo se puede cambiar el nombre de un archivo o carpeta en el explorador de archivos?",
+    "options": [
+      "Doble clic en el nombre del archivo.",
+      "Hacer clic derecho y seleccionar \"Cambiar nombre\".",
+      "Presionar la tecla F2.",
+      "Todas las anteriores."
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Todas las anteriores.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 377,
+    "category": "Explorador de Archivos",
+    "question": "¿Qué es el \"Panel de detalles\" en el explorador de archivos de Windows?",
+    "options": [
+      "Una lista de archivos y carpetas en una ubicación específica.",
+      "Una vista previa de imágenes y documentos.",
+      "Una barra lateral que muestra información detallada sobre los archivos seleccionados.",
+      "Una barra de herramientas para editar archivos."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Una barra lateral que muestra información detallada sobre los archivos seleccionados.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 378,
+    "category": "Explorador de Archivos",
+    "question": "¿Qué acción realiza el botón \"Eliminar\" en el explorador de archivos?",
+    "options": [
+      "Mover un archivo a la Papelera de reciclaje.",
+      "Crear una copia del archivo en otra ubicación.",
+      "Eliminar permanentemente un archivo sin enviarlo a la Papelera de reciclaje.",
+      "Convertir un archivo a un formato diferente."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Mover un archivo a la Papelera de reciclaje.\". Para eliminar permanentemente, se usa Shift+Supr.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 379,
+    "category": "Explorador de Archivos",
+    "question": "¿Qué es la Papelera de reciclaje en el explorador de archivos de Windows?",
+    "options": [
+      "Una carpeta donde se almacenan los archivos temporales.",
+      "Una ubicación donde se guardan temporalmente los archivos eliminados.",
+      "Un menú contextual para restaurar archivos eliminados.",
+      "Una barra de herramientas para cambiar la apariencia del explorador de archivos."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Una ubicación donde se guardan temporalmente los archivos eliminados.\". Permite recuperar archivos antes de que se eliminen permanentemente.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 380,
+    "category": "Explorador de Archivos",
+    "question": "¿Cómo se puede restaurar un archivo eliminado de la Papelera de reciclaje en Windows?",
+    "options": [
+      "Haciendo doble clic en el archivo.",
+      "Haciendo clic derecho y seleccionando \"Restaurar\".",
+      "Arrastrando y soltando el archivo en otra ubicación.",
+      "Todas las anteriores."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Haciendo clic derecho y seleccionando \"Restaurar\".\". Esta es la forma estándar y segura de restaurar un archivo a su ubicación original.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 381,
+    "category": "Explorador de Archivos",
+    "question": "¿Qué es la función de búsqueda en el explorador de archivos de Windows?",
+    "options": [
+      "Buscar archivos y carpetas por su nombre o contenido.",
+      "Navegar por internet.",
+      "Buscar actualizaciones del sistema operativo.",
+      "Realizar copias de seguridad automáticas."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Buscar archivos y carpetas por su nombre o contenido.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 382,
+    "category": "Explorador de Archivos",
+    "question": "¿Cómo se puede acceder al historial de archivos recientes en el explorador de archivos de Windows?",
+    "options": [
+      "Haciendo clic en el botón \"Historial\" en la barra de herramientas.",
+      "Escribiendo \"historial\" en la barra de direcciones.",
+      "Haciendo clic derecho en el escritorio y seleccionando \"Historial de archivos\".",
+      "Accediendo a la Papelera de reciclaje."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Haciendo clic en el botón \"Historial\" en la barra de herramientas.\". Muestra las ubicaciones visitadas recientemente.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 383,
+    "category": "Explorador de Archivos",
+    "question": "¿Qué es la \"vista previa\" en el explorador de archivos de Windows?",
+    "options": [
+      "Una vista de miniaturas de archivos y carpetas.",
+      "Una vista detallada que muestra información sobre archivos y carpetas.",
+      "Una vista que muestra el contenido de un archivo seleccionado.",
+      "Una lista de archivos abiertos recientemente."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Una vista que muestra el contenido de un archivo seleccionado.\". Se activa con el \"Panel de vista previa\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 384,
+    "category": "Explorador de Archivos",
+    "question": "¿Qué es el \"Grupo Hogar\" en el explorador de archivos de Windows?",
+    "options": [
+      "Una función para compartir archivos y dispositivos en una red doméstica.",
+      "Una herramienta de edición de documentos.",
+      "Una carpeta compartida en la nube.",
+      "Una barra de herramientas para cambiar el layout del explorador de archivos."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Una función para compartir archivos y dispositivos en una red doméstica.\". (Nota: esta función fue descontinuada en versiones recientes de Windows 10/11, pero existía en versiones anteriores).",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 385,
+    "category": "Explorador de Archivos",
+    "question": "¿Cuál de las siguientes acciones NO se puede realizar con el explorador de archivos de Windows?",
+    "options": [
+      "Crear una presentación de diapositivas con imágenes.",
+      "Editar archivos de texto.",
+      "Reproducir música.",
+      "Realizar cálculos matemáticos."
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Realizar cálculos matemáticos.\". El explorador no es una calculadora ni una hoja de cálculo.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 386,
+    "category": "Explorador de Archivos",
+    "question": "¿Qué es el \"Panel de navegación\" en el explorador de archivos de Windows?",
+    "options": [
+      "Una lista de archivos y carpetas en una ubicación específica.",
+      "Una barra lateral que muestra ubicaciones de carpetas y unidades de disco.",
+      "Una barra de herramientas para cambiar la apariencia del explorador.",
+      "Una barra de búsqueda para buscar archivos en el disco duro."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Una barra lateral que muestra ubicaciones de carpetas y unidades de disco.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 387,
+    "category": "Explorador de Archivos",
+    "question": "¿Qué es la función de compresión de archivos en el explorador de archivos de Windows?",
+    "options": [
+      "Reducir el tamaño de los archivos para ahorrar espacio en disco.",
+      "Convertir archivos a diferentes formatos.",
+      "Proteger los archivos con una contraseña.",
+      "Organizar archivos en carpetas comprimidas."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Reducir el tamaño de los archivos para ahorrar espacio en disco.\". Windows soporta compresión ZIP nativa.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 388,
+    "category": "Explorador de Archivos",
+    "question": "¿Qué es el \"Panel de vista previa\" en el explorador de archivos de Windows?",
+    "options": [
+      "Una lista de archivos y carpetas en una ubicación específica.",
+      "Una vista detallada que muestra información sobre archivos y carpetas.",
+      "Una vista que muestra el contenido de un archivo seleccionado.",
+      "Una vista previa de miniaturas de archivos y carpetas."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Una vista que muestra el contenido de un archivo seleccionado.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 389,
+    "category": "Explorador de Archivos",
+    "question": "¿Qué es el \"Panel de detalles\" en el explorador de archivos de Windows?",
+    "options": [
+      "Una barra de herramientas para cambiar el layout del explorador.",
+      "Una lista de archivos y carpetas en una ubicación específica.",
+      "Una barra lateral que muestra ubicaciones de carpetas y unidades de disco.",
+      "Una vista detallada que muestra información sobre archivos y carpetas."
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Una vista detallada que muestra información sobre archivos y carpetas.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 390,
+    "category": "Configuración de Windows",
+    "question": "¿Dónde se encuentra la configuración de pantalla en Windows 10 y Windows 11?",
+    "options": [
+      "En el Panel de control.",
+      "En el menú de inicio.",
+      "En la configuración del sistema.",
+      "En la aplicación de Configuración."
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"En la aplicación de Configuración.\". Se accede desde el menú Inicio o con la tecla Windows + I.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 391,
+    "category": "Configuración de Windows",
+    "question": "¿Qué opción de configuración permite cambiar el fondo de pantalla en Windows?",
+    "options": [
+      "Temas.",
+      "Pantalla.",
+      "Personalización.",
+      "Actualización y seguridad."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Personalización.\". Incluye fondo, color, tema y bloqueo de pantalla.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 392,
+    "category": "Configuración de Windows",
+    "question": "¿Dónde se puede ajustar la configuración de fecha y hora en Windows?",
+    "options": [
+      "En el Panel de control.",
+      "En la barra de tareas.",
+      "En la aplicación de Configuración.",
+      "En la aplicación de Microsoft Store."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"En la aplicación de Configuración.\". También se puede ajustar haciendo clic en la hora de la barra de tareas.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 393,
+    "category": "Configuración de Windows",
+    "question": "¿Qué opción de configuración permite cambiar el idioma del sistema en Windows?",
+    "options": [
+      "Idioma.",
+      "Región.",
+      "Personalización.",
+      "Cuentas."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Idioma.\". Se encuentra en Configuración > Hora e idioma > Idioma.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 394,
+    "category": "Configuración de Windows",
+    "question": "¿Dónde se encuentra la configuración de energía en Windows?",
+    "options": [
+      "En el Panel de control.",
+      "En la aplicación de Configuración.",
+      "En la barra de tareas.",
+      "En el menú de inicio."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"En la aplicación de Configuración.\". En Configuración > Sistema > Energía y batería (en portátiles).",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 395,
+    "category": "Configuración de Windows",
+    "question": "¿Qué opción de configuración permite ajustar la resolución de la pantalla en Windows?",
+    "options": [
+      "Pantalla.",
+      "Sistema.",
+      "Dispositivos.",
+      "Personalización."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Pantalla.\". Se encuentra en Configuración > Sistema > Pantalla.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 396,
+    "category": "Configuración de Windows",
+    "question": "¿Dónde se puede configurar el protector de pantalla en Windows?",
+    "options": [
+      "En el Panel de control.",
+      "En la aplicación de Configuración.",
+      "En la barra de tareas.",
+      "En la aplicación de Microsoft Store."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"En el Panel de control.\". Aunque la Configuración moderna no lo incluye directamente, sigue estando en Panel de control > Personalización > Protector de pantalla.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 397,
+    "category": "Configuración de Windows",
+    "question": "¿Qué opción de configuración permite personalizar el sonido del sistema en Windows?",
+    "options": [
+      "Sonido.",
+      "Sistema.",
+      "Personalización.",
+      "Dispositivos."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Sonido.\". En Configuración > Sistema > Sonido.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 398,
+    "category": "Configuración de Windows",
+    "question": "¿Dónde se puede ajustar la configuración del teclado en Windows?",
+    "options": [
+      "En la aplicación de Configuración.",
+      "En el menú de inicio.",
+      "En el Panel de control.",
+      "En la barra de tareas."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"En la aplicación de Configuración.\". En Configuración > Dispositivos > Teclado.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 399,
+    "category": "Configuración de Windows",
+    "question": "¿Qué opción de configuración permite cambiar la configuración de red en Windows?",
+    "options": [
+      "Red e Internet.",
+      "Dispositivos.",
+      "Sistema.",
+      "Cuentas."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Red e Internet.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 400,
+    "category": "Configuración de Windows",
+    "question": "¿Dónde se puede configurar el cortafuegos en Windows?",
+    "options": [
+      "En la aplicación de Configuración.",
+      "En el Panel de control.",
+      "En la barra de tareas.",
+      "En el menú de inicio."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"En la aplicación de Configuración.\". En Configuración > Privacidad y seguridad > Seguridad de Windows > Firewall y protección de red.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 401,
+    "category": "Configuración de Windows",
+    "question": "¿Qué opción de configuración permite administrar las cuentas de usuario en Windows?",
+    "options": [
+      "Cuentas.",
+      "Sistema.",
+      "Red e Internet.",
+      "Privacidad."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Cuentas.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 402,
+    "category": "Configuración de Windows",
+    "question": "¿Dónde se puede configurar el control parental en Windows?",
+    "options": [
+      "En la aplicación de Configuración.",
+      "En el Panel de control.",
+      "En la barra de tareas.",
+      "En el menú de inicio."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"En la aplicación de Configuración.\". En Configuración > Cuentas > Familia y otros usuarios.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 403,
+    "category": "Configuración de Windows",
+    "question": "¿Qué opción de configuración permite ajustar la configuración de privacidad en Windows?",
+    "options": [
+      "Privacidad.",
+      "Sistema.",
+      "Cuentas.",
+      "Red e Internet."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Privacidad.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 404,
+    "category": "Configuración de Windows",
+    "question": "¿Dónde se puede configurar la sincronización de archivos en Windows?",
+    "options": [
+      "En la aplicación de OneDrive.",
+      "En la aplicación de Configuración.",
+      "En la barra de tareas.",
+      "En el menú de inicio."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"En la aplicación de OneDrive.\". OneDrive es el servicio de sincronización nativo de Microsoft.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 405,
+    "category": "Configuración de Windows",
+    "question": "¿Qué opción de configuración permite ajustar la configuración de accesibilidad en Windows?",
+    "options": [
+      "Facilidad de acceso.",
+      "Sistema.",
+      "Cuentas.",
+      "Red e Internet."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Facilidad de acceso.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 406,
+    "category": "Configuración de Windows",
+    "question": "¿Dónde se puede configurar la impresora predeterminada en Windows?",
+    "options": [
+      "En la aplicación de Configuración.",
+      "En el Panel de control.",
+      "En la barra de tareas.",
+      "En el menú de inicio."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"En la aplicación de Configuración.\". En Configuración > Bluetooth y dispositivos > Impresoras y escáneres.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 407,
+    "category": "Configuración de Windows",
+    "question": "¿Qué opción de configuración permite ajustar la configuración de almacenamiento en Windows?",
+    "options": [
+      "Sistema.",
+      "Dispositivos.",
+      "Cuentas.",
+      "Red e Internet."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Sistema.\". En Configuración > Sistema > Almacenamiento.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 408,
+    "category": "Configuración de Windows",
+    "question": "¿Dónde se puede configurar la configuración de Bluetooth en Windows?",
+    "options": [
+      "En la aplicación de Configuración.",
+      "En el Panel de control.",
+      "En la barra de tareas.",
+      "En el menú de inicio."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"En la aplicación de Configuración.\". En Configuración > Bluetooth y dispositivos.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 409,
+    "category": "Configuración de Windows",
+    "question": "¿Qué opción de configuración permite ajustar la configuración de la batería en dispositivos portátiles con Windows?",
+    "options": [
+      "Batería.",
+      "Sistema.",
+      "Dispositivos.",
+      "Privacidad."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Sistema.\". En Configuración > Sistema > Energía y batería.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 410,
+    "category": "Configuración de Windows",
+    "question": "¿Dónde se puede configurar la configuración de la cámara en Windows?",
+    "options": [
+      "En la aplicación de Configuración.",
+      "En el Panel de control.",
+      "En la barra de tareas.",
+      "En el menú de inicio."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"En la aplicación de Configuración.\". En Configuración > Privacidad y seguridad > Cámara.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 411,
+    "category": "Configuración de Windows",
+    "question": "¿Qué opción de configuración permite ajustar la configuración de la pantalla táctil en Windows?",
+    "options": [
+      "Dispositivos.",
+      "Sistema.",
+      "Personalización.",
+      "Red e Internet."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Dispositivos.\". En Configuración > Bluetooth y dispositivos > Toque.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 412,
+    "category": "Configuración de Windows",
+    "question": "¿Dónde se puede configurar la configuración de la cuenta de correo electrónico en Windows?",
+    "options": [
+      "En la aplicación de Correo.",
+      "En la aplicación de Configuración.",
+      "En la barra de tareas.",
+      "En el menú de inicio."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"En la aplicación de Correo.\". Aunque se puede gestionar desde Configuración > Cuentas, la configuración detallada se hace en la app Correo.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 413,
+    "category": "Configuración de Windows",
+    "question": "¿Qué opción de configuración permite ajustar la configuración de la barra de tareas en Windows?",
+    "options": [
+      "Personalización.",
+      "Sistema.",
+      "Cuentas.",
+      "Red e Internet."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Personalización.\". En Configuración > Personalización > Barra de tareas.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 414,
+    "category": "Configuración de Windows",
+    "question": "¿Dónde se puede configurar la configuración de notificaciones en Windows?",
+    "options": [
+      "Privacidad.",
+      "Sistema.",
+      "Cuentas.",
+      "Red e Internet."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Sistema.\". En Configuración > Sistema > Notificaciones.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 415,
+    "category": "Configuración de Windows",
+    "question": "¿Qué opción de configuración permite ajustar la configuración de la reproducción automática en Windows?",
+    "options": [
+      "Dispositivos.",
+      "Sistema.",
+      "Cuentas.",
+      "Red e Internet."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Dispositivos.\". En Configuración > Bluetooth y dispositivos > Autoplay.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 416,
+    "category": "Configuración de Windows",
+    "question": "¿Qué opción de configuración permite ajustar la configuración de la seguridad en Windows?",
+    "options": [
+      "Actualización y seguridad.",
+      "Sistema.",
+      "Privacidad.",
+      "Red e Internet."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Actualización y seguridad.\". En versiones más recientes, se llama \"Privacidad y seguridad\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 417,
+    "category": "Configuración de Windows",
+    "question": "¿Dónde se puede configurar la configuración de la cuenta Microsoft en Windows?",
+    "options": [
+      "Cuentas.",
+      "Sistema.",
+      "Privacidad.",
+      "Red e Internet."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Cuentas.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 418,
+    "category": "Configuración de Windows",
+    "question": "¿Qué opción de configuración permite ajustar la configuración de la pantalla de bloqueo en Windows?",
+    "options": [
+      "Personalización.",
+      "Sistema.",
+      "Cuentas.",
+      "Red e Internet."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Personalización.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 419,
+    "category": "Instalación de Software",
+    "question": "¿Qué es el Windows Store?",
+    "options": [
+      "Una tienda de aplicaciones para dispositivos móviles.",
+      "Una tienda en línea para comprar hardware de Microsoft.",
+      "Una plataforma para descargar software y aplicaciones en Windows.",
+      "Una herramienta para personalizar el escritorio de Windows."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Una plataforma para descargar software y aplicaciones en Windows.\". Es la tienda oficial de aplicaciones de Microsoft para Windows 10 y 11.",
+    "source": "https://es.wikipedia.org/wiki/Microsoft_Store"
+  },
+  {
+    "id": 420,
+    "category": "Instalación de Software",
+    "question": "¿Qué tipo de software se puede encontrar comúnmente en el Windows Store?",
+    "options": [
+      "Software exclusivo para empresas.",
+      "Aplicaciones y juegos para consumidores.",
+      "Herramientas de administración de sistemas.",
+      "Programas de código abierto."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Aplicaciones y juegos para consumidores.\". Aunque también hay apps empresariales, el enfoque principal es el usuario final.",
+    "source": "https://es.wikipedia.org/wiki/Microsoft_Store"
+  },
+  {
+    "id": 421,
+    "category": "Instalación de Software",
+    "question": "¿Qué es la función \"Instalar y Actualizar\" en el Windows Store?",
+    "options": [
+      "Una función para descargar e instalar nuevas aplicaciones.",
+      "Una función para actualizar el sistema operativo.",
+      "Una herramienta para reparar errores en las aplicaciones.",
+      "Una función para personalizar la apariencia del Windows Store."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Una función para descargar e instalar nuevas aplicaciones.\". También gestiona las actualizaciones de las apps ya instaladas.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 422,
+    "category": "Instalación de Software",
+    "question": "¿Qué es un \"instalador\" de software en Windows?",
+    "options": [
+      "Una herramienta para desinstalar programas.",
+      "Un archivo ejecutable que instala un programa en el sistema.",
+      "Un programa antivirus integrado en Windows.",
+      "Un archivo de configuración del sistema operativo."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un archivo ejecutable que instala un programa en el sistema.\".",
+    "source": "https://es.wikipedia.org/wiki/Instalador_de_software"
+  },
+  {
+    "id": 423,
+    "category": "Instalación de Software",
+    "question": "¿Cuál es la extensión común de los archivos de instalador en Windows?",
+    "options": [
+      ".exe",
+      ".zip",
+      ".docx",
+      ".mp3"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \".exe\". Aunque también existen instaladores con extensión .msi.",
+    "source": "https://es.wikipedia.org/wiki/Portable_Executable"
+  },
+  {
+    "id": 424,
+    "category": "Instalación de Software",
+    "question": "¿Qué es el \"Centro de Software\" en Windows?",
+    "options": [
+      "Una herramienta para personalizar la configuración del sistema.",
+      "Una aplicación para descargar música y videos.",
+      "Una herramienta para administrar e instalar software en el sistema.",
+      "Un antivirus integrado en Windows."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Una herramienta para administrar e instalar software en el sistema.\". Aunque Windows no tiene un \"Centro de Software\" con ese nombre exacto, se refiere a la combinación de Tienda Microsoft y Configuración > Aplicaciones.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 425,
+    "category": "Actualizaciones de Software",
+    "question": "¿Qué es un \"servicio de actualización de software\" en Windows?",
+    "options": [
+      "Un servicio que actualiza automáticamente el hardware del sistema.",
+      "Un servicio que actualiza automáticamente el software del sistema.",
+      "Un servicio de suscripción para recibir actualizaciones de noticias.",
+      "Un servicio para compartir archivos entre dispositivos."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un servicio que actualiza automáticamente el software del sistema.\". Windows Update es el principal ejemplo.",
+    "source": "https://es.wikipedia.org/wiki/Windows_Update"
+  },
+  {
+    "id": 426,
+    "category": "Actualizaciones de Software",
+    "question": "¿Qué es el \"Administrador de actualizaciones\" en Windows?",
+    "options": [
+      "Una herramienta para gestionar las actualizaciones del sistema.",
+      "Un programa para realizar copias de seguridad de los archivos.",
+      "Un juego de entretenimiento.",
+      "Una herramienta de edición de imágenes."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Una herramienta para gestionar las actualizaciones del sistema.\". Se refiere a la configuración de Windows Update.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 427,
+    "category": "Instalación de Sistemas Operativos",
+    "question": "¿Qué es el \"Programa de instalación de Windows\"?",
+    "options": [
+      "Una herramienta para personalizar la apariencia del sistema operativo.",
+      "Un asistente que guía al usuario durante la instalación de Windows.",
+      "Un programa para desinstalar aplicaciones.",
+      "Un programa para reparar errores en el sistema."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un asistente que guía al usuario durante la instalación de Windows.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 428,
+    "category": "Administración de Hardware",
+    "question": "¿Cuál es el propósito del \"Administrador de dispositivos\" en Windows?",
+    "options": [
+      "Gestionar las actualizaciones del sistema.",
+      "Instalar controladores de hardware.",
+      "Realizar copias de seguridad del sistema.",
+      "Personalizar la configuración del sistema."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Instalar controladores de hardware.\". También permite deshabilitar, habilitar y solucionar problemas de dispositivos.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 429,
+    "category": "Instalación de Software",
+    "question": "¿Qué es el \"Instalador de Windows\"?",
+    "options": [
+      "Un asistente para instalar aplicaciones en Windows.",
+      "Un programa para desinstalar aplicaciones.",
+      "Una herramienta para personalizar la configuración del sistema.",
+      "Una aplicación para descargar música y videos."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Un asistente para instalar aplicaciones en Windows.\". Se refiere a los instaladores estándar del sistema.",
+    "source": "https://es.wikipedia.org/wiki/Instalador_de_software"
+  },
+  {
+    "id": 430,
+    "category": "Configuración de Windows",
+    "question": "¿Qué es el \"Panel de control\" en Windows?",
+    "options": [
+      "Una herramienta para gestionar la configuración del sistema.",
+      "Un juego de entretenimiento.",
+      "Un programa para desinstalar aplicaciones.",
+      "Un asistente para instalar actualizaciones del sistema."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Una herramienta para gestionar la configuración del sistema.\". Aunque está siendo reemplazado por la aplicación Configuración, sigue estando presente.",
+    "source": "https://es.wikipedia.org/wiki/Panel_de_control_(Windows)"
+  },
+  {
+    "id": 431,
+    "category": "Instalación de Software",
+    "question": "¿Qué es un \"reinstalador\" de software en Windows?",
+    "options": [
+      "Una herramienta para desinstalar aplicaciones.",
+      "Un programa antivirus integrado en Windows.",
+      "Un archivo ejecutable que reinstala un programa en el sistema.",
+      "Un archivo de configuración del sistema operativo."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Un archivo ejecutable que reinstala un programa en el sistema.\".",
+    "source": "https://es.wikipedia.org/wiki/Instalador_de_software"
+  },
+  {
+    "id": 432,
+    "category": "Instalación de Software",
+    "question": "¿Qué es el \"Asistente para instalación de software\" en Windows?",
+    "options": [
+      "Una herramienta para personalizar la configuración del sistema.",
+      "Un asistente que guía al usuario durante la instalación de software.",
+      "Un programa para desinstalar aplicaciones.",
+      "Una aplicación para descargar música y videos."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un asistente que guía al usuario durante la instalación de software.\".",
+    "source": "https://es.wikipedia.org/wiki/Instalador_de_software"
+  },
+  {
+    "id": 433,
+    "category": "Seguridad en Windows",
+    "question": "¿Qué es el \"Centro de seguridad\" en Windows?",
+    "options": [
+      "Una herramienta para gestionar las actualizaciones del sistema.",
+      "Un programa para realizar copias de seguridad de los archivos.",
+      "Una herramienta para proteger el sistema contra virus y malware.",
+      "Un juego de entretenimiento."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Una herramienta para proteger el sistema contra virus y malware.\". Se refiere a Seguridad de Windows.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 434,
+    "category": "Instalación de Software",
+    "question": "¿Qué es el \"Gestor de paquetes\" en Windows?",
+    "options": [
+      "Una herramienta para instalar y administrar programas.",
+      "Un programa para desinstalar aplicaciones.",
+      "Un antivirus integrado en Windows.",
+      "Una herramienta para personalizar la apariencia del sistema operativo."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Una herramienta para instalar y administrar programas.\". En Windows moderno, esto se refiere a `winget` (Windows Package Manager).",
+    "source": "https://docs.microsoft.com/es-es/windows/package-manager/"
+  },
+  {
+    "id": 435,
+    "category": "Instalación de Software",
+    "question": "¿Qué es un \"asistente de desinstalación\" en Windows?",
+    "options": [
+      "Una herramienta para instalar controladores de hardware.",
+      "Un programa para desinstalar aplicaciones.",
+      "Una herramienta para personalizar la configuración del sistema.",
+      "Una aplicación para descargar música y videos."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un programa para desinstalar aplicaciones.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 436,
+    "category": "Instalación de Software",
+    "question": "¿Qué es el \"Instalador MSI\" en Windows?",
+    "options": [
+      "Un archivo ejecutable que instala un programa en el sistema.",
+      "Un asistente que guía al usuario durante la instalación de software.",
+      "Un programa para realizar copias de seguridad de los archivos.",
+      "Un archivo de configuración del sistema operativo."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Un archivo ejecutable que instala un programa en el sistema.\". MSI es un formato de instalación estándar basado en bases de datos.",
+    "source": "https://es.wikipedia.org/wiki/Windows_Installer"
+  },
+  {
+    "id": 437,
+    "category": "Instalación de Sistemas Operativos",
+    "question": "¿Qué es el \"Asistente de configuración\" en Windows?",
+    "options": [
+      "Un programa para realizar copias de seguridad de los archivos.",
+      "Un asistente que guía al usuario durante la configuración inicial del sistema.",
+      "Una herramienta para instalar controladores de hardware.",
+      "Una aplicación para descargar música y videos."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un asistente que guía al usuario durante la configuración inicial del sistema.\". Se conoce como OOBE (Out-of-Box Experience).",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 438,
+    "category": "Instalación de Software",
+    "question": "¿Qué es el \"Instalador de aplicaciones\" en Windows?",
+    "options": [
+      "Un asistente que guía al usuario durante la instalación de aplicaciones.",
+      "Un programa para desinstalar aplicaciones.",
+      "Una herramienta para personalizar la configuración del sistema.",
+      "Una aplicación para descargar música y videos."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Un asistente que guía al usuario durante la instalación de aplicaciones.\".",
+    "source": "https://es.wikipedia.org/wiki/Instalador_de_software"
+  },
+  {
+    "id": 439,
+    "category": "Instalación de Software",
+    "question": "¿Qué es el \"Gestor de instalación\" en Windows?",
+    "options": [
+      "Una herramienta para instalar y administrar programas.",
+      "Un programa para desinstalar aplicaciones.",
+      "Un antivirus integrado en Windows.",
+      "Una herramienta para personalizar la apariencia del sistema operativo."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Una herramienta para instalar y administrar programas.\".",
+    "source": "https://es.wikipedia.org/wiki/Instalador_de_software"
+  },
+  {
+    "id": 440,
+    "category": "Actualizaciones de Software",
+    "question": "¿Qué es el \"Asistente de actualización\" en Windows?",
+    "options": [
+      "Un asistente que guía al usuario durante el proceso de actualización del sistema.",
+      "Un programa para realizar copias de seguridad de los archivos.",
+      "Una herramienta para instalar controladores de hardware.",
+      "Una aplicación para descargar música y videos."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Un asistente que guía al usuario durante el proceso de actualización del sistema.\". Microsoft ofrece un asistente para actualizar a nuevas versiones de Windows.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 441,
+    "category": "Instalación de Software",
+    "question": "¿Qué es el \"Administrador de programas\" en Windows?",
+    "options": [
+      "Una herramienta para instalar y administrar programas.",
+      "Un programa para desinstalar aplicaciones.",
+      "Un antivirus integrado en Windows.",
+      "Una herramienta para personalizar la apariencia del sistema operativo."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Una herramienta para instalar y administrar programas.\". Se refiere a la sección de Aplicaciones en Configuración o al Panel de control.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 442,
+    "category": "Instalación de Software",
+    "question": "¿Qué es el \"Asistente de instalación de software\" en Windows?",
+    "options": [
+      "Un asistente que guía al usuario durante la instalación de software.",
+      "Un programa para desinstalar aplicaciones.",
+      "Una herramienta para personalizar la configuración del sistema.",
+      "Una aplicación para descargar música y videos."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Un asistente que guía al usuario durante la instalación de software.\".",
+    "source": "https://es.wikipedia.org/wiki/Instalador_de_software"
+  },
+  {
+    "id": 443,
+    "category": "Instalación de Software",
+    "question": "¿Qué es el \"Instalador de programas\" en Windows?",
+    "options": [
+      "Una herramienta para instalar y administrar programas.",
+      "Un programa para desinstalar aplicaciones.",
+      "Un antivirus integrado en Windows.",
+      "Una herramienta para personalizar la apariencia del sistema operativo."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Una herramienta para instalar y administrar programas.\".",
+    "source": "https://es.wikipedia.org/wiki/Instalador_de_software"
+  },
+  {
+    "id": 444,
+    "category": "Instalación de Software",
+    "question": "¿Qué es el \"Asistente de desinstalación\" en Windows?",
+    "options": [
+      "Una herramienta para instalar y administrar programas.",
+      "Un programa para desinstalar aplicaciones.",
+      "Un antivirus integrado en Windows.",
+      "Una herramienta para personalizar la apariencia del sistema operativo."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un programa para desinstalar aplicaciones.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 445,
+    "category": "Instalación de Software",
+    "question": "¿Qué es el \"Instalador de software\" en Windows?",
+    "options": [
+      "Un asistente que guía al usuario durante la instalación de software.",
+      "Un programa para desinstalar aplicaciones.",
+      "Una herramienta para personalizar la configuración del sistema.",
+      "Una aplicación para descargar música y videos."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Un asistente que guía al usuario durante la instalación de software.\".",
+    "source": "https://es.wikipedia.org/wiki/Instalador_de_software"
+  },
+  {
+    "id": 446,
+    "category": "Actualizaciones de Software",
+    "question": "¿Qué es el \"Centro de actualizaciones\" en Windows?",
+    "options": [
+      "Una herramienta para gestionar las actualizaciones del sistema.",
+      "Un programa para realizar copias de seguridad de los archivos.",
+      "Una herramienta para proteger el sistema contra virus y malware.",
+      "Un juego de entretenimiento."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Una herramienta para gestionar las actualizaciones del sistema.\". Se refiere a Windows Update.",
+    "source": "https://es.wikipedia.org/wiki/Windows_Update"
+  },
+  {
+    "id": 447,
+    "category": "Instalación de Software",
+    "question": "¿Qué es el \"Administrador de aplicaciones\" en Windows?",
+    "options": [
+      "Una herramienta para instalar y administrar programas.",
+      "Un programa para desinstalar aplicaciones.",
+      "Un antivirus integrado en Windows.",
+      "Una herramienta para personalizar la apariencia del sistema operativo."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Una herramienta para instalar y administrar programas.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 448,
+    "category": "Instalación de Software",
+    "question": "¿Qué es el \"Asistente de instalación de aplicaciones\" en Windows?",
+    "options": [
+      "Un asistente que guía al usuario durante la instalación de aplicaciones.",
+      "Un programa para desinstalar aplicaciones.",
+      "Una herramienta para personalizar la configuración del sistema.",
+      "Una aplicación para descargar música y videos."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Un asistente que guía al usuario durante la instalación de aplicaciones.\".",
+    "source": "https://es.wikipedia.org/wiki/Instalador_de_software"
+  },
+  {
+    "id": 449,
+    "category": "Utilidades del Sistema",
+    "question": "¿Qué utilidad de Windows se utiliza para gestionar particiones de disco?",
+    "options": [
+      "Administrador de dispositivos.",
+      "Administrador de tareas.",
+      "Administración de discos.",
+      "Centro de seguridad de Windows."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Administración de discos.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 450,
+    "category": "Utilidades del Sistema",
+    "question": "¿Cuál es la herramienta de Windows que se utiliza para desfragmentar discos duros?",
+    "options": [
+      "Administrador de tareas.",
+      "Desfragmentador de disco.",
+      "Centro de seguridad de Windows.",
+      "Panel de control."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Desfragmentador de disco.\". En Windows 10/11, se llama \"Optimizar unidades\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 451,
+    "category": "Utilidades del Sistema",
+    "question": "¿Qué utilidad de Windows se utiliza para realizar copias de seguridad y restaurar archivos?",
+    "options": [
+      "Administrador de archivos.",
+      "Administrador de copias de seguridad.",
+      "Centro de seguridad de Windows.",
+      "Historial de archivos."
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Historial de archivos.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 452,
+    "category": "Utilidades del Sistema",
+    "question": "¿Cuál es la herramienta de Windows que se utiliza para grabar imágenes de disco?",
+    "options": [
+      "Grabador de discos de Windows.",
+      "Administrador de imágenes de disco.",
+      "Centro de seguridad de Windows.",
+      "Administrador de archivos."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Grabador de discos de Windows.\". Para crear imágenes ISO, se usa esta herramienta integrada.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 453,
+    "category": "Utilidades del Sistema",
+    "question": "¿Qué utilidad de Windows se utiliza para programar tareas automatizadas?",
+    "options": [
+      "Programador de tareas.",
+      "Planificador de eventos.",
+      "Centro de seguridad de Windows.",
+      "Administrador de tareas."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Programador de tareas.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 454,
+    "category": "Utilidades del Sistema",
+    "question": "¿Cuál es la herramienta de Windows que se utiliza para realizar capturas de pantalla?",
+    "options": [
+      "Capturador de pantalla.",
+      "Grabador de pantalla.",
+      "Centro de seguridad de Windows.",
+      "Recortes."
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Recortes.\". La herramienta moderna es \"Recortes y bosquejo\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 455,
+    "category": "Utilidades del Sistema",
+    "question": "¿Qué utilidad de Windows se utiliza para limpiar archivos innecesarios y temporales?",
+    "options": [
+      "Limpiador de disco.",
+      "Limpiador de archivos.",
+      "Centro de seguridad de Windows.",
+      "Optimizador de sistema."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Limpiador de disco.\". En inglés, Disk Cleanup.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 456,
+    "category": "Utilidades del Sistema",
+    "question": "¿Cuál es la herramienta de Windows que se utiliza para realizar videoconferencias y llamadas?",
+    "options": [
+      "Skype.",
+      "Teams.",
+      "Messenger.",
+      "Zoom."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Teams\". Es la herramienta de videoconferencia integrada y promovida por Microsoft en Windows 11.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 457,
+    "category": "Utilidades del Sistema",
+    "question": "¿Qué utilidad de Windows se utiliza para monitorizar el rendimiento del sistema?",
+    "options": [
+      "Monitor de rendimiento.",
+      "Centro de seguridad de Windows.",
+      "Administrador de tareas.",
+      "Panel de control."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Administrador de tareas\". Proporciona una vista en tiempo real del rendimiento de CPU, memoria, disco y red.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 458,
+    "category": "Utilidades del Sistema",
+    "question": "¿Cuál es la herramienta de Windows que se utiliza para configurar dispositivos conectados al equipo?",
+    "options": [
+      "Administrador de dispositivos.",
+      "Centro de dispositivos.",
+      "Configurador de dispositivos.",
+      "Panel de control."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Administrador de dispositivos.\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 459,
+    "category": "Utilidades del Sistema",
+    "question": "¿Qué utilidad de Windows se utiliza para cambiar la configuración de red y conexión?",
+    "options": [
+      "Configuración de red.",
+      "Panel de control.",
+      "Centro de seguridad de Windows.",
+      "Configurador de red."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Configuración de red.\". En Windows moderno, se accede desde Configuración > Red e Internet.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 460,
+    "category": "Utilidades del Sistema",
+    "question": "¿Cuál es la herramienta de Windows que se utiliza para gestionar cuentas de usuario?",
+    "options": [
+      "Configuración de cuentas.",
+      "Panel de control de usuarios.",
+      "Centro de seguridad de Windows.",
+      "Administrador de usuarios."
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Administrador de usuarios.\". Aunque en la interfaz moderna se usa Configuración > Cuentas, la herramienta clásica es `lusrmgr.msc` (Administrador de usuarios locales).",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 461,
+    "category": "Utilidades del Sistema",
+    "question": "¿Qué utilidad de Windows se utiliza para verificar y reparar errores en el sistema de archivos?",
+    "options": [
+      "Comprobador de archivos del sistema.",
+      "Reparador de archivos.",
+      "Centro de seguridad de Windows.",
+      "Panel de control de archivos."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Comprobador de archivos del sistema.\". Se refiere a la herramienta `chkdsk` (Check Disk).",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 462,
+    "category": "Utilidades del Sistema",
+    "question": "¿Cuál es la herramienta de Windows que se utiliza para configurar el firewall y la seguridad de red?",
+    "options": [
+      "Firewall de Windows.",
+      "Centro de seguridad de Windows.",
+      "Configuración de red.",
+      "Panel de control de seguridad."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Centro de seguridad de Windows.\". Incluye la configuración del firewall en Seguridad de Windows > Firewall y protección de red.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 463,
+    "category": "Utilidades del Sistema",
+    "question": "¿Qué utilidad de Windows se utiliza para cambiar la configuración de energía y la administración de la batería en dispositivos portátiles?",
+    "options": [
+      "Configuración de energía.",
+      "Panel de control de energía.",
+      "Centro de seguridad de Windows.",
+      "Administrador de energía."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Configuración de energía.\". En Configuración > Sistema > Energía y batería.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 464,
+    "category": "Utilidades del Sistema",
+    "question": "¿Cuál es la herramienta de Windows que se utiliza para realizar videojuegos y grabar sesiones de juego?",
+    "options": [
+      "Game Bar.",
+      "Game Mode.",
+      "Centro de juegos de Windows.",
+      "Grabador de juegos."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Game Bar.\". Se activa con Win+G y permite grabar, tomar capturas y transmitir.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 465,
+    "category": "Utilidades del Sistema",
+    "question": "¿Qué utilidad de Windows se utiliza para conectar de forma remota a otros equipos?",
+    "options": [
+      "Escritorio remoto.",
+      "Conexión a distancia.",
+      "Centro de seguridad de Windows.",
+      "Administrador de equipos."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Escritorio remoto.\". La herramienta se llama \"Conexión a Escritorio remoto\" (`mstsc.exe`).",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 466,
+    "category": "Utilidades del Sistema",
+    "question": "¿Cuál es la herramienta de Windows que se utiliza para cambiar la configuración de fecha y hora?",
+    "options": [
+      "Configuración de fecha y hora.",
+      "Reloj y calendario.",
+      "Centro de seguridad de Windows.",
+      "Panel de control de fecha y hora."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Configuración de fecha y hora.\". En Configuración > Hora e idioma > Fecha y hora.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 467,
+    "category": "Utilidades del Sistema",
+    "question": "¿Qué utilidad de Windows se utiliza para cambiar la configuración de idioma y región?",
+    "options": [
+      "Configuración de idioma.",
+      "Panel de control de idioma.",
+      "Centro de seguridad de Windows.",
+      "Configurador de región."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Configuración de idioma.\". En Configuración > Hora e idioma > Idioma y Región.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 468,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de los siguientes es un ejemplo de software de ofimática?",
+    "options": [
+      "Adobe Photoshop.",
+      "Microsoft Word.",
+      "AutoCAD.",
+      "Adobe Premiere."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Microsoft Word.\". Es parte de la suite de ofimática Microsoft Office.",
+    "source": "https://es.wikipedia.org/wiki/Ofim%C3%A1tica"
+  },
+  {
+    "id": 469,
+    "category": "Tipos de Software",
+    "question": "¿Para qué se utiliza comúnmente el software de hojas de cálculo?",
+    "options": [
+      "Para editar imágenes.",
+      "Para crear presentaciones.",
+      "Para organizar y manipular datos numéricos.",
+      "Para diseñar páginas web."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Para organizar y manipular datos numéricos.\". Ejemplo: Microsoft Excel.",
+    "source": "https://es.wikipedia.org/wiki/Hoja_de_c%C3%A1lculo"
+  },
+  {
+    "id": 470,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de las siguientes opciones describe mejor el software de diseño gráfico?",
+    "options": [
+      "Se utiliza para escribir código de programación.",
+      "Se utiliza para crear y editar imágenes y gráficos.",
+      "Se utiliza para administrar bases de datos.",
+      "Se utiliza para crear presentaciones."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Se utiliza para crear y editar imágenes y gráficos.\". Ejemplo: Adobe Illustrator, Photoshop.",
+    "source": "https://es.wikipedia.org/wiki/Dise%C3%B1o_gr%C3%A1fico"
+  },
+  {
+    "id": 471,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de las siguientes aplicaciones es un software de gestión de proyectos?",
+    "options": [
+      "Microsoft Excel.",
+      "Adobe Illustrator.",
+      "Microsoft Project.",
+      "Adobe InDesign."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Microsoft Project.\". Es una herramienta específica para planificación y seguimiento de proyectos.",
+    "source": "https://es.wikipedia.org/wiki/Microsoft_Project"
+  },
+  {
+    "id": 472,
+    "category": "Tipos de Software",
+    "question": "¿Para qué se utiliza comúnmente el software de edición de video?",
+    "options": [
+      "Para escribir documentos.",
+      "Para crear y editar videos.",
+      "Para diseñar gráficos vectoriales.",
+      "Para gestionar tareas y proyectos."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Para crear y editar videos.\". Ejemplo: Adobe Premiere, DaVinci Resolve.",
+    "source": "https://es.wikipedia.org/wiki/Edici%C3%B3n_de_v%C3%ADdeo"
+  },
+  {
+    "id": 473,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de las siguientes opciones describe mejor el software de modelado 3D?",
+    "options": [
+      "Se utiliza para editar música.",
+      "Se utiliza para crear y visualizar modelos tridimensionales.",
+      "Se utiliza para escribir código de programación.",
+      "Se utiliza para gestionar bases de datos."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Se utiliza para crear y visualizar modelos tridimensionales.\". Ejemplo: Blender, Autodesk Maya.",
+    "source": "https://es.wikipedia.org/wiki/Modelado_3D"
+  },
+  {
+    "id": 474,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de las siguientes aplicaciones es un software de edición de audio?",
+    "options": [
+      "Adobe After Effects.",
+      "Audacity.",
+      "Autodesk Maya.",
+      "Microsoft Excel."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Audacity.\". Es un editor de audio de código abierto muy popular.",
+    "source": "https://es.wikipedia.org/wiki/Audacity_(software)"
+  },
+  {
+    "id": 475,
+    "category": "Tipos de Software",
+    "question": "¿Para qué se utiliza comúnmente el software de procesamiento de texto?",
+    "options": [
+      "Para editar imágenes.",
+      "Para crear y editar documentos de texto.",
+      "Para diseñar animaciones.",
+      "Para gestionar proyectos."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Para crear y editar documentos de texto.\". Ejemplo: Microsoft Word, Google Docs.",
+    "source": "https://es.wikipedia.org/wiki/Procesador_de_textos"
+  },
+  {
+    "id": 476,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de las siguientes opciones describe mejor el software de gestión de bases de datos?",
+    "options": [
+      "Se utiliza para crear presentaciones.",
+      "Se utiliza para editar videos.",
+      "Se utiliza para almacenar, organizar y recuperar datos.",
+      "Se utiliza para diseñar páginas web."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Se utiliza para almacenar, organizar y recuperar datos.\". Ejemplo: Microsoft Access, MySQL.",
+    "source": "https://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_bases_de_datos"
+  },
+  {
+    "id": 477,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de las siguientes aplicaciones es un software de navegación web?",
+    "options": [
+      "Microsoft Word.",
+      "Google Chrome.",
+      "Adobe Photoshop.",
+      "AutoCAD."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Google Chrome.\".",
+    "source": "https://es.wikipedia.org/wiki/Navegador_web"
+  },
+  {
+    "id": 478,
+    "category": "Tipos de Software",
+    "question": "¿Para qué se utiliza comúnmente el software de antivirus?",
+    "options": [
+      "Para crear y editar documentos de texto.",
+      "Para proteger el sistema contra virus y malware.",
+      "Para diseñar gráficos vectoriales.",
+      "Para gestionar proyectos."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Para proteger el sistema contra virus y malware.\".",
+    "source": "https://es.wikipedia.org/wiki/Antivirus"
+  },
+  {
+    "id": 479,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de las siguientes opciones describe mejor el software de gestión de contenido?",
+    "options": [
+      "Se utiliza para crear y editar imágenes.",
+      "Se utiliza para escribir código de programación.",
+      "Se utiliza para administrar y publicar contenido en línea.",
+      "Se utiliza para editar videos."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Se utiliza para administrar y publicar contenido en línea.\". Ejemplo: WordPress, Drupal.",
+    "source": "https://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_contenidos"
+  },
+  {
+    "id": 480,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de las siguientes aplicaciones es un software de correo electrónico?",
+    "options": [
+      "Microsoft Excel.",
+      "Outlook.",
+      "Adobe InDesign.",
+      "Blender."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Outlook.\". Es el cliente de correo de Microsoft.",
+    "source": "https://es.wikipedia.org/wiki/Microsoft_Outlook"
+  },
+  {
+    "id": 481,
+    "category": "Tipos de Software",
+    "question": "¿Para qué se utiliza comúnmente el software de presentaciones?",
+    "options": [
+      "Para editar música.",
+      "Para crear y presentar diapositivas.",
+      "Para diseñar gráficos vectoriales.",
+      "Para gestionar proyectos."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Para crear y presentar diapositivas.\". Ejemplo: Microsoft PowerPoint, Google Slides.",
+    "source": "https://es.wikipedia.org/wiki/Programa_de_presentaci%C3%B3n"
+  },
+  {
+    "id": 482,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de las siguientes opciones describe mejor el software de gestión de recursos humanos?",
+    "options": [
+      "Se utiliza para crear y editar documentos de texto.",
+      "Se utiliza para administrar tareas y proyectos.",
+      "Se utiliza para gestionar información sobre empleados y personal.",
+      "Se utiliza para diseñar animaciones."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Se utiliza para gestionar información sobre empleados y personal.\". Ejemplo: SAP SuccessFactors, BambooHR.",
+    "source": "https://es.wikipedia.org/wiki/Software_de_gesti%C3%B3n_de_recursos_humanos"
+  },
+  {
+    "id": 483,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de las siguientes aplicaciones es un software de edición de fotos?",
+    "options": [
+      "Microsoft Word.",
+      "Adobe Photoshop.",
+      "AutoCAD.",
+      "Google Chrome."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Adobe Photoshop.\".",
+    "source": "https://es.wikipedia.org/wiki/Adobe_Photoshop"
+  },
+  {
+    "id": 484,
+    "category": "Tipos de Software",
+    "question": "¿Para qué se utiliza comúnmente el software de gestión financiera?",
+    "options": [
+      "Para crear y editar videos.",
+      "Para proteger el sistema contra virus y malware.",
+      "Para administrar y controlar las finanzas personales o empresariales.",
+      "Para diseñar páginas web."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Para administrar y controlar las finanzas personales o empresariales.\". Ejemplo: QuickBooks, Contpaqi.",
+    "source": "https://es.wikipedia.org/wiki/Software_contable"
+  },
+  {
+    "id": 485,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de las siguientes opciones describe mejor el software de planificación de recursos empresariales (ERP)?",
+    "options": [
+      "Se utiliza para crear y editar documentos de texto.",
+      "Se utiliza para gestionar y automatizar procesos empresariales como la contabilidad, la logística y el inventario.",
+      "Se utiliza para diseñar gráficos vectoriales.",
+      "Se utiliza para administrar tareas y proyectos."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Se utiliza para gestionar y automatizar procesos empresariales como la contabilidad, la logística y el inventario.\". Ejemplo: SAP, Oracle ERP.",
+    "source": "https://es.wikipedia.org/wiki/Planificaci%C3%B3n_de_recursos_empresariales"
+  },
+  {
+    "id": 486,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de las siguientes aplicaciones es un software de mensajería instantánea?",
+    "options": [
+      "Microsoft Excel.",
+      "WhatsApp.",
+      "Adobe InDesign.",
+      "Audacity."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"WhatsApp.\".",
+    "source": "https://es.wikipedia.org/wiki/WhatsApp"
+  },
+  {
+    "id": 487,
+    "category": "Tipos de Software",
+    "question": "¿Para qué se utiliza comúnmente el software de gestión de relaciones con los clientes (CRM)?",
+    "options": [
+      "Para crear y editar imágenes.",
+      "Para administrar y gestionar las relaciones con los clientes.",
+      "Para almacenar y organizar datos numéricos.",
+      "Para diseñar animaciones."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Para administrar y gestionar las relaciones con los clientes.\". Ejemplo: Salesforce, HubSpot.",
+    "source": "https://es.wikipedia.org/wiki/Gesti%C3%B3n_de_relaciones_con_clientes"
+  },
+  {
+    "id": 488,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de las siguientes opciones describe mejor el software de gestión de proyectos?",
+    "options": [
+      "Se utiliza para crear y editar documentos de texto.",
+      "Se utiliza para administrar tareas y proyectos.",
+      "Se utiliza para diseñar gráficos vectoriales.",
+      "Se utiliza para proteger el sistema contra virus y malware."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Se utiliza para administrar tareas y proyectos.\".",
+    "source": "https://es.wikipedia.org/wiki/Software_de_gesti%C3%B3n_de_proyectos"
+  },
+  {
+    "id": 489,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de las siguientes aplicaciones es un software de videoconferencia?",
+    "options": [
+      "Microsoft Word.",
+      "Zoom.",
+      "AutoCAD.",
+      "Adobe Premiere."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Zoom.\".",
+    "source": "https://es.wikipedia.org/wiki/Zoom_Video_Communications"
+  },
+  {
+    "id": 490,
+    "category": "Tipos de Software",
+    "question": "¿Para qué se utiliza comúnmente el software de gestión de inventario?",
+    "options": [
+      "Para editar música.",
+      "Para administrar y controlar el inventario de productos.",
+      "Para diseñar gráficos vectoriales.",
+      "Para gestionar proyectos."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Para administrar y controlar el inventario de productos.\".",
+    "source": "https://es.wikipedia.org/wiki/Gesti%C3%B3n_de_inventario"
+  },
+  {
+    "id": 491,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de las siguientes opciones describe mejor el software de gestión de activos?",
+    "options": [
+      "Se utiliza para crear y editar imágenes.",
+      "Se utiliza para administrar y controlar los activos de una empresa.",
+      "Se utiliza para escribir código de programación.",
+      "Se utiliza para administrar tareas y proyectos."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Se utiliza para administrar y controlar los activos de una empresa.\". Ejemplo: activos fijos, IT assets.",
+    "source": "https://es.wikipedia.org/wiki/Gesti%C3%B3n_de_activos"
+  },
+  {
+    "id": 492,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de las siguientes aplicaciones es un software de gestión de contenido empresarial (ECM)?",
+    "options": [
+      "Microsoft Excel.",
+      "SharePoint.",
+      "Adobe InDesign.",
+      "Blender."
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"SharePoint.\". Es una plataforma de Microsoft para gestión documental y colaboración.",
+    "source": "https://es.wikipedia.org/wiki/Microsoft_SharePoint"
+  },
+  {
+    "id": 493,
+    "category": "Tipos de Software",
+    "question": "¿Para qué se utiliza comúnmente el software de gestión de proyectos de código abierto?",
+    "options": [
+      "Para crear y editar videos.",
+      "Para administrar tareas y proyectos sin costo.",
+      "Para proteger el sistema contra virus y malware.",
+      "Para diseñar páginas web."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Para administrar tareas y proyectos sin costo.\". Ejemplo: OpenProject, Taiga.",
+    "source": "https://es.wikipedia.org/wiki/Software_de_gesti%C3%B3n_de_proyectos"
+  },
+  {
+    "id": 494,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de las siguientes opciones describe mejor el software de colaboración en línea?",
+    "options": [
+      "Se utiliza para crear y editar documentos de texto.",
+      "Se utiliza para colaborar en tiempo real en proyectos y documentos.",
+      "Se utiliza para diseñar gráficos vectoriales.",
+      "Se utiliza para administrar tareas y proyectos."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Se utiliza para colaborar en tiempo real en proyectos y documentos.\". Ejemplo: Microsoft Teams, Google Workspace.",
+    "source": "https://es.wikipedia.org/wiki/Colaboraci%C3%B3n_en_l%C3%ADnea"
+  },
+  {
+    "id": 495,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de las siguientes aplicaciones es un software de gestión de flotas?",
+    "options": [
+      "Microsoft Word.",
+      "Fleetio.",
+      "AutoCAD.",
+      "Adobe Premiere."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Fleetio.\". Es una plataforma especializada en gestión de vehículos y flotas.",
+    "source": "https://es.wikipedia.org/wiki/Gesti%C3%B3n_de_flotas"
+  },
+  {
+    "id": 496,
+    "category": "Tipos de Software",
+    "question": "¿Para qué se utiliza comúnmente el software de planificación de recursos humanos (HRP)?",
+    "options": [
+      "Para editar música.",
+      "Para administrar y planificar las actividades relacionadas con los recursos humanos.",
+      "Para diseñar gráficos vectoriales.",
+      "Para gestionar proyectos."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Para administrar y planificar las actividades relacionadas con los recursos humanos.\".",
+    "source": "https://es.wikipedia.org/wiki/Planificaci%C3%B3n_de_recursos_humanos"
+  },
+  {
+    "id": 497,
+    "category": "Tipos de Software",
+    "question": "¿Cuál de las siguientes opciones describe mejor el software de gestión de cadena de suministro (SCM)?",
+    "options": [
+      "Se utiliza para crear y editar imágenes.",
+      "Se utiliza para administrar y optimizar la cadena de suministro de una empresa.",
+      "Se utiliza para almacenar y organizar datos numéricos.",
+      "Se utiliza para diseñar animaciones."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Se utiliza para administrar y optimizar la cadena de suministro de una empresa.\". Ejemplo: SAP SCM, Oracle SCM.",
+    "source": "https://es.wikipedia.org/wiki/Gesti%C3%B3n_de_la_cadena_de_suministro"
+  },
+  {
+    "id": 498,
+    "category": "Registro de Windows",
+    "question": "¿Qué es el registro de Windows?",
+    "options": [
+      "Una carpeta donde se almacenan los archivos del sistema operativo.",
+      "Una base de datos centralizada que almacena la configuración y opciones del sistema operativo Windows.",
+      "Un sistema de archivos utilizado para almacenar datos temporales.",
+      "Una herramienta para desfragmentar el disco duro."
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Una base de datos centralizada que almacena la configuración y opciones del sistema operativo Windows.\".",
+    "source": "https://es.wikipedia.org/wiki/Registro_de_Windows"
+  },
+  {
+    "id": 499,
+    "category": "Registro de Windows",
+    "question": "¿Qué extensión tienen los archivos que contienen copias de seguridad del registro de Windows?",
+    "options": [
+      ".regbackup",
+      ".reg",
+      ".dat",
+      ".bak"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \".regbackup\". Windows crea archivos con esta extensión al realizar una copia de seguridad del registro durante ciertas operaciones del sistema.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 500,
+    "category": "Registro de Windows",
+    "question": "¿Qué herramienta de Windows se utiliza para editar el registro?",
+    "options": [
+      "Panel de control",
+      "Editor de registros",
+      "Regedit",
+      "Explorador de archivos"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Regedit\". Es el nombre del ejecutable (`regedit.exe`) del Editor del Registro de Windows.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 501,
+    "category": "Registro de Windows",
+    "question": "¿Qué tipo de datos almacena el registro de Windows principalmente?",
+    "options": [
+      "Datos de usuario",
+      "Configuraciones del sistema y aplicaciones",
+      "Archivos multimedia",
+      "Documentos de texto"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Configuraciones del sistema y aplicaciones\". El registro es una base de datos jerárquica que almacena ajustes de bajo nivel para el sistema operativo y software.",
+    "source": "https://es.wikipedia.org/wiki/Registro_de_Windows"
+  },
+  {
+    "id": 502,
+    "category": "Registro de Windows",
+    "question": "¿Cuál de las siguientes claves del registro almacena la configuración de hardware del equipo?",
+    "options": [
+      "HKEY_LOCAL_MACHINE\\Software",
+      "HKEY_CURRENT_USER\\Software",
+      "HKEY_CLASSES_ROOT",
+      "HKEY_LOCAL_MACHINE\\Hardware"
+    ],
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"HKEY_LOCAL_MACHINE\\Hardware\". Esta rama contiene información sobre el hardware detectado y los controladores.",
+    "source": "https://es.wikipedia.org/wiki/Registro_de_Windows"
+  },
+  {
+    "id": 503,
+    "category": "Registro de Windows",
+    "question": "¿Qué extensión tienen los archivos que contienen datos del registro exportados?",
+    "options": [
+      ".dat",
+      ".reg",
+      ".backup",
+      ".regedit"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \".reg\". Los archivos `.reg` son archivos de texto que contienen instrucciones para importar claves y valores al registro.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 504,
+    "category": "Registro de Windows",
+    "question": "¿Qué tipo de datos almacena un archivo con extensión .dat en el contexto del registro de Windows?",
+    "options": [
+      "Configuraciones del sistema",
+      "Copias de seguridad del registro",
+      "Datos temporales de aplicaciones",
+      "Claves del registro exportadas"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Copias de seguridad del registro\". Algunos archivos del sistema, como `SYSTEM.dat` o `SOFTWARE.dat` en versiones antiguas, eran las copias físicas del registro.",
+    "source": "https://es.wikipedia.org/wiki/Registro_de_Windows"
+  },
+  {
+    "id": 505,
+    "category": "Registro de Windows",
+    "question": "¿Qué herramienta se utiliza para importar claves y valores al registro desde un archivo .reg?",
+    "options": [
+      "Regedit",
+      "Explorador de archivos",
+      "Editor de registros",
+      "Símbolo del sistema"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Regedit\". Al hacer doble clic en un archivo `.reg`, se abre Regedit para importar su contenido.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 506,
+    "category": "Registro de Windows",
+    "question": "¿Qué tipo de datos almacena un archivo .reg?",
+    "options": [
+      "Configuraciones de red",
+      "Claves del registro y sus valores",
+      "Imágenes del sistema",
+      "Documentos de texto"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Claves del registro y sus valores\". Es un formato de texto legible que puede ser editado con un editor de texto.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 507,
+    "category": "Registro de Windows",
+    "question": "¿Cuál es el propósito principal del registro de Windows?",
+    "options": [
+      "Almacenar archivos de sistema",
+      "Almacenar configuraciones del sistema y aplicaciones",
+      "Realizar copias de seguridad automáticas",
+      "Gestionar el espacio en disco"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Almacenar configuraciones del sistema y aplicaciones\".",
+    "source": "https://es.wikipedia.org/wiki/Registro_de_Windows"
+  },
+  {
+    "id": 508,
+    "category": "Registro de Windows",
+    "question": "¿Qué herramienta de Windows se utiliza para crear copias de seguridad del registro?",
+    "options": [
+      "Regedit",
+      "Panel de control",
+      "Restaurador de sistema",
+      "Editor de registros"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Restaurador de sistema\". Crea puntos de restauración que incluyen una copia del registro.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 509,
+    "category": "Registro de Windows",
+    "question": "¿Qué extensión tienen los archivos que contienen datos del registro exportados en formato binario?",
+    "options": [
+      ".reg",
+      ".bin",
+      ".dat",
+      ".bkp"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \".dat\". Los archivos de registro del sistema (como `SAM`, `SECURITY`, `SOFTWARE`) se almacenan en la carpeta `System32\\config` con extensión `.dat`.",
+    "source": "https://es.wikipedia.org/wiki/Registro_de_Windows"
+  },
+  {
+    "id": 510,
+    "category": "Registro de Windows",
+    "question": "¿Cuál es el nombre de la clave del registro que contiene la configuración del usuario actual?",
+    "options": [
+      "HKEY_LOCAL_MACHINE",
+      "HKEY_CURRENT_USER",
+      "HKEY_CLASSES_ROOT",
+      "HKEY_USERS"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"HKEY_CURRENT_USER\". Es un enlace a la rama correspondiente dentro de `HKEY_USERS` para el usuario que ha iniciado sesión.",
+    "source": "https://es.wikipedia.org/wiki/Registro_de_Windows"
+  },
+  {
+    "id": 511,
+    "category": "Registro de Windows",
+    "question": "¿Qué tipo de datos almacena un archivo .dat en el contexto del registro de Windows?",
+    "options": [
+      "Claves del registro y sus valores",
+      "Copias de seguridad del registro",
+      "Datos temporales de aplicaciones",
+      "Documentos de texto"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Copias de seguridad del registro\".",
+    "source": "https://es.wikipedia.org/wiki/Registro_de_Windows"
+  },
+  {
+    "id": 512,
+    "category": "Registro de Windows",
+    "question": "¿Qué extensión tienen los archivos que contienen una copia del registro de Windows?",
+    "options": [
+      ".backup",
+      ".reg",
+      ".dat",
+      ".regbackup"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \".dat\". Los archivos del registro del sistema se almacenan con esta extensión.",
+    "source": "https://es.wikipedia.org/wiki/Registro_de_Windows"
+  },
+  {
+    "id": 513,
+    "category": "Registro de Windows",
+    "question": "¿Qué herramienta de Windows se utiliza para restaurar el sistema a un estado anterior mediante el registro?",
+    "options": [
+      "Regedit",
+      "Restaurador de sistema",
+      "Editor de registros",
+      "Explorador de archivos"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Restaurador de sistema\". Utiliza los puntos de restauración que incluyen una copia del registro para revertir cambios del sistema.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 514,
+    "category": "Registro de Windows",
+    "question": "¿Qué tipo de datos almacena un archivo .reg en el contexto del registro de Windows?",
+    "options": [
+      "Configuraciones del sistema",
+      "Copias de seguridad del registro",
+      "Claves del registro y sus valores",
+      "Documentos de texto"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Claves del registro y sus valores\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 515,
+    "category": "Registro de Windows",
+    "question": "¿Qué extensión tienen los archivos que contienen claves y valores exportados del registro?",
+    "options": [
+      ".regedit",
+      ".export",
+      ".reg",
+      ".key"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \".reg\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 516,
+    "category": "Registro de Windows",
+    "question": "¿Qué herramienta se utiliza para exportar claves y valores del registro a un archivo .reg?",
+    "options": [
+      "Regedit",
+      "Editor de registros",
+      "Símbolo del sistema",
+      "Explorador de archivos"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Regedit\". Desde el menú Archivo > Exportar, se puede guardar una rama del registro en un archivo `.reg`.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 517,
+    "category": "Registro de Windows",
+    "question": "¿Cuál es la función principal de la herramienta Regedit en Windows?",
+    "options": [
+      "Desfragmentar el registro",
+      "Editar y visualizar el contenido del registro",
+      "Realizar copias de seguridad del sistema",
+      "Restaurar el sistema a un estado anterior"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Editar y visualizar el contenido del registro\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 518,
+    "category": "Registro de Windows",
+    "question": "¿Qué tipo de datos almacena un archivo .dat en el contexto del registro de Windows?",
+    "options": [
+      "Configuraciones del sistema",
+      "Copias de seguridad del registro",
+      "Datos temporales de aplicaciones",
+      "Claves del registro y sus valores"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Copias de seguridad del registro\".",
+    "source": "https://es.wikipedia.org/wiki/Registro_de_Windows"
+  },
+  {
+    "id": 519,
+    "category": "Registro de Windows",
+    "question": "¿Qué extensión tienen los archivos que contienen una copia del registro de Windows?",
+    "options": [
+      ".backup",
+      ".reg",
+      ".dat",
+      ".regbackup"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \".dat\".",
+    "source": "https://es.wikipedia.org/wiki/Registro_de_Windows"
+  },
+  {
+    "id": 520,
+    "category": "Registro de Windows",
+    "question": "¿Qué herramienta de Windows se utiliza para restaurar el sistema a un estado anterior mediante el registro?",
+    "options": [
+      "Regedit",
+      "Restaurador de sistema",
+      "Editor de registros",
+      "Explorador de archivos"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Restaurador de sistema\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 521,
+    "category": "Registro de Windows",
+    "question": "¿Qué tipo de datos almacena un archivo .reg en el contexto del registro de Windows?",
+    "options": [
+      "Configuraciones del sistema",
+      "Copias de seguridad del registro",
+      "Claves del registro y sus valores",
+      "Documentos de texto"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Claves del registro y sus valores\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 522,
+    "category": "Registro de Windows",
+    "question": "¿Qué extensión tienen los archivos que contienen claves y valores exportados del registro?",
+    "options": [
+      ".regedit",
+      ".export",
+      ".reg",
+      ".key"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \".reg\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 523,
+    "category": "Registro de Windows",
+    "question": "¿Qué herramienta se utiliza para exportar claves y valores del registro a un archivo .reg?",
+    "options": [
+      "Regedit",
+      "Editor de registros",
+      "Símbolo del sistema",
+      "Explorador de archivos"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Regedit\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 524,
+    "category": "Registro de Windows",
+    "question": "¿Cuál es la función principal de la herramienta Regedit en Windows?",
+    "options": [
+      "Desfragmentar el registro",
+      "Editar y visualizar el contenido del registro",
+      "Realizar copias de seguridad del sistema",
+      "Restaurar el sistema a un estado anterior"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Editar y visualizar el contenido del registro\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 525,
+    "category": "Registro de Windows",
+    "question": "¿Qué tipo de datos almacena un archivo .dat en el contexto del registro de Windows?",
+    "options": [
+      "Configuraciones del sistema",
+      "Copias de seguridad del registro",
+      "Datos temporales de aplicaciones",
+      "Claves del registro y sus valores"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Copias de seguridad del registro\".",
+    "source": "https://es.wikipedia.org/wiki/Registro_de_Windows"
+  },
+  {
+    "id": 526,
+    "category": "Registro de Windows",
+    "question": "¿Qué extensión tienen los archivos que contienen una copia del registro de Windows?",
+    "options": [
+      ".backup",
+      ".reg",
+      ".dat",
+      ".regbackup"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \".dat\".",
+    "source": "https://es.wikipedia.org/wiki/Registro_de_Windows"
+  },
+  {
+    "id": 527,
+    "category": "Registro de Windows",
+    "question": "¿Qué herramienta de Windows se utiliza para restaurar el sistema a un estado anterior mediante el registro?",
+    "options": [
+      "Regedit",
+      "Restaurador de sistema",
+      "Editor de registros",
+      "Explorador de archivos"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Restaurador de sistema\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 528,
+    "category": "Registro de Windows",
+    "question": "¿Qué tipo de datos almacena un archivo .reg en el contexto del registro de Windows?",
+    "options": [
+      "Configuraciones del sistema",
+      "Copias de seguridad del registro",
+      "Claves del registro y sus valores",
+      "Documentos de texto"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Claves del registro y sus valores\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 529,
+    "category": "Registro de Windows",
+    "question": "¿Qué extensión tienen los archivos que contienen claves y valores exportados del registro?",
+    "options": [
+      ".regedit",
+      ".export",
+      ".reg",
+      ".key"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \".reg\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 530,
+    "category": "Registro de Windows",
+    "question": "¿Qué herramienta se utiliza para exportar claves y valores del registro a un archivo .reg?",
+    "options": [
+      "Regedit",
+      "Editor de registros",
+      "Símbolo del sistema",
+      "Explorador de archivos"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Regedit\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 531,
+    "category": "Registro de Windows",
+    "question": "¿Cuál es la función principal de la herramienta Regedit en Windows?",
+    "options": [
+      "Desfragmentar el registro",
+      "Editar y visualizar el contenido del registro",
+      "Realizar copias de seguridad del sistema",
+      "Restaurar el sistema a un estado anterior"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Editar y visualizar el contenido del registro\".",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 532,
+    "category": "Registro de Windows",
+    "question": "¿Cuál de las siguientes claves del registro contiene la configuración de los tipos de archivo y sus asociaciones?",
+    "options": [
+      "HKEY_LOCAL_MACHINE\\Software",
+      "HKEY_CURRENT_USER\\Software",
+      "HKEY_CLASSES_ROOT",
+      "HKEY_USERS"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"HKEY_CLASSES_ROOT\". Define cómo se asocian las extensiones de archivo con los programas que las abren.",
+    "source": "https://es.wikipedia.org/wiki/Registro_de_Windows"
+  },
+  {
+    "id": 533,
+    "question": "¿Qué sucede si se modifica incorrectamente el registro de Windows?",
+    "options": [
+      "El sistema se vuelve más rápido",
+      "Puede provocar inestabilidad o impedir el arranque del sistema",
+      "Se crean automáticamente copias de seguridad de las copias de seguridad",
+      "No tiene ningún efecto"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Puede provocar inestabilidad o impedir el arranque del sistema\". Por eso se recomienda hacer una copia de seguridad antes de realizar cambios.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 534,
+    "category": "Registro de Windows",
+    "question": "¿Qué utilidad tiene el archivo `NTUSER.DAT` en Windows?",
+    "options": [
+      "Almacena la configuración del sistema global",
+      "Almacena la configuración del hardware",
+      "Almacena la configuración del perfil de usuario",
+      "Almacena las asociaciones de tipos de archivo y sus asociaciones"
+    ],
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Almacena la configuración del perfil de usuario\". Se encuentra en la carpeta de cada usuario y se carga en `HKEY_CURRENT_USER` al iniciar sesión.",
+    "source": "https://es.wikipedia.org/wiki/Registro_de_Windows"
+  },
+  {
+    "id": 535,
+    "category": "Registro de Windows",
+    "question": "¿Qué comando se puede usar en el símbolo del sistema para abrir el Editor del Registro?",
+    "options": [
+      "regedit",
+      "registry",
+      "reg",
+      "editreg"
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"regedit\". Ejecutar `regedit` en el símbolo del sistema o en Ejecutar abre el Editor del Registro.",
+    "source": "https://support.microsoft.com/es-es/windows"
+  },
+  {
+    "id": 536,
+    "category": "Registro de Windows",
+    "question": "¿Qué es una 'clave' en el registro de Windows?",
+    "options": [
+      "Un valor numérico",
+      "Un contenedor que puede contener subclaves y valores",
+      "Un identificador único para cada entrada en el registro",
+      "Una contraseña del sistema"
+    ],
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Un contenedor que puede contener subclaves y valores\". Es análogo a una carpeta en el sistema de archivos.",
+    "source": "https://es.wikipedia.org/wiki/Registro_de_Windows"
+  },
+  {
+    "id": 537,
+    "category": "Registro de Windows",
+    "question": "¿Qué es un 'valor' en el registro de Windows?",
+    "options": [
+      "Un par nombre-dato que almacena información específica sobre un archivo o directorio.",
+      "Un subclave del registro del registro.",
+      "Un tipo de archivo de sistema de sistema.",
+      "Un tipo de archivo de sistema de archivo."
+    ],
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Un par nombre-dato que almacena información específica sobre un archivo o directorio.\". Es análogo a un archivo dentro de una carpeta.",
+    "source": "https://es.wikipedia.org/wiki/Registro_de_Windows"
   }
-];
+]
 
 // Funciones de utilidad
 function getAllQuestions() {
@@ -9646,5 +6999,3 @@ if (typeof module !== 'undefined' && module.exports) {
     generateRandomTest
   };
 }
-
-
