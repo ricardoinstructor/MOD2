@@ -1,10 +1,10 @@
 # MF0953_2 Test Application
 
-Aplicación web completa para la preparación del certificado MF0953_2 - Montaje de Equipos Microinformáticos.
+Aplicación web completa para la preparación del certificado MF0953_2 - Instalación y configuración de sistemas operativos.
 
 ## 🌐 Acceso a la Aplicación
 
-**URL:** [https://ricardoinstructor.github.io/MOD1/](https://ricardoinstructor.github.io/MOD1/)
+**URL:** [https://ricardoinstructor.github.io/MOD1/](https://ricardoinstructor.github.io/MOD2/)
 
 > ⚠️ **Nota**: Las preguntas han sido verificadas y actualizadas. Aunque se ha realizado un proceso de revisión exhaustivo, pueden existir algunos errores. Si encuentras alguna inconsistencia, por favor repórtala.
 
@@ -72,7 +72,7 @@ npx serve .
 ## Cómo Usar la Aplicación
 
 ### Iniciar un Test
-1. **Modo Test Completo**: 686 preguntas (todas las disponibles) con tiempo ilimitado
+1. **Modo Test Completo**: 497 preguntas (todas las disponibles) con tiempo ilimitado
 2. **Modo Reducido**: 100 preguntas aleatorias - ideal para repasos rápidos
 3. **Modo Práctica**: 20 preguntas aleatorias con retroalimentación inmediata
 
@@ -88,67 +88,35 @@ npx serve .
 
 ## Categorías de Preguntas
 
-La aplicación incluye **686 preguntas** organizadas en 12 categorías temáticas:
-
-1. **Componentes Básicos** (247 preguntas - 36%)
-   - Conceptos generales de hardware
-   - Dispositivos y periféricos
-   - Componentes fundamentales
-
-2. **Conectores de Placa Base** (111 preguntas - 16%)
-   - SATA, IDE, ATX
-   - Conectores de panel frontal
-   - Conectores de expansión
-
-3. **Tarjetas de Expansión** (92 preguntas - 13%)
-   - PCI, PCIe, AGP, ISA
-   - Ranuras de expansión
-   - Compatibilidad y características
-
-4. **Chipsets y CPU** (70 preguntas - 10%)
-   - Procesadores Intel y AMD
-   - Northbridge y Southbridge
-   - Arquitecturas y tecnologías
-
-5. **Conectores de Video** (51 preguntas - 7%)
-   - VGA, HDMI, DisplayPort
-   - USB-C para video
-   - Características técnicas
-
-6. **USB y Conectores** (40 preguntas - 6%)
-   - Estándares USB 2.0, 3.0, 3.1, 3.2
-   - Tipos de conectores USB
-   - USB Power Delivery
-
-7. **Tipos de Memoria** (25 preguntas - 4%)
-   - DDR, DDR2, DDR3, DDR4
-   - DIMM y SO-DIMM
-   - SRAM y DRAM
-
-8. **Tarjetas Gráficas** (18 preguntas - 3%)
-   - GPU NVIDIA y AMD
-   - CUDA y tecnologías
-   - VRAM y rendimiento
-
-9. **Almacenamiento** (16 preguntas - 2%)
-   - HDD y SSD
-   - Interfaces SATA y NVMe
-   - M.2 y RAID
-
-10. **Puertos y Conectividad** (9 preguntas - 1%)
-    - PS/2, COM, LPT
-    - IEEE 1394 (FireWire)
-    - Thunderbolt
-
-11. **Fuentes de Alimentación** (6 preguntas - 1%)
-    - ATX y voltajes
-    - Conectores de alimentación
-    - Eficiencia energética
-
-12. **Arquitectura de Sistema** (1 pregunta)
-    - Buses de sistema
-    - Arquitecturas de comunicación
-
+La aplicación incluye **497 preguntas** organizadas en categorías temáticas:
+**1.** **Subsistemas del Sistema Operativo**  
+**2.** **Planificación de Procesos**  
+**3.** **Gestión de Memoria**  
+**4.** **Sistemas de Archivos**  
+**5.** **Seguridad en Sistemas Operativos**  
+**6.** **Comunicación Interprocesos (IPC)**  
+**7.** **Historia de Windows**  
+**8.** **Sistemas Operativos**  
+**9.** **Licencias de Software**  
+**10.** **Instalación de Sistemas Operativos**  
+**11.** **Gestores de Arranque**  
+**12.** **USB y Conectores**  
+**13.** **Extensiones de Archivo**  
+**14.** **Permisos de Archivo**  
+**15.** **Copias de Seguridad**  
+**16.** **Particiones de Disco**  
+**17.** **Accesibilidad en Windows**  
+**18.** **UEFI/BIOS y Particiones**  
+**19.** **Discos Dinámicos y RAID**  
+**20.** **Explorador de Archivos**  
+**21.** **Configuración de Windows**  
+**22.** **Instalación de Software**  
+**23.** **Actualizaciones de Software**  
+**24.** **Administración de Hardware**  
+**25.** **Seguridad en Windows**  
+**26.** **Utilidades del Sistema**  
+**27.** **Tipos de Software**  
+**28.** **Registro de Windows**
 ## Fuentes y Referencias
 
 Todas las preguntas incluyen:
@@ -220,7 +188,7 @@ Las contribuciones son bienvenidas:
 
 ## Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT.
+Este proyecto está licenciado bajo la Licencia GPLv3.
 
 ## Agradecimientos
 

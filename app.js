@@ -342,6 +342,8 @@ class TestApplication {
         this.testCompleted = true;
         this.testStarted = false;
         this.calculateResults();
+        this.calculateCategoryPerformance(); // <-- Añadir esta línea
+        this.updateGlobalStats(); // <-- Añadir esta línea
         this.showResults();
         this.clearState();
     }
@@ -366,6 +368,102 @@ class TestApplication {
             score: score
         };
     }
+
+    // --- NUEVO MÉTODO: Calcular rendimiento por categoría para este test ---
+    calculateCategoryPerformance() {
+        // Inicializar objeto para almacenar el rendimiento de este test específico
+        this.categoryPerformanceForTest = {};
+
+        // Iterar sobre las preguntas del test actual
+        this.questions.forEach((question, index) => {
+            const category = question.category; // <-- Asegurarse que la categoría aquí coincide con questions.js
+            const userAnswer = this.userAnswers[index];
+            const isCorrect = userAnswer === question.correct;
+
+            // Inicializar la categoría si no existe
+            if (!this.categoryPerformanceForTest[category]) {
+                this.categoryPerformanceForTest[category] = { correct: 0, total: 0 };
+            }
+
+            // Aumentar el contador total para la categoría
+            this.categoryPerformanceForTest[category].total++;
+
+            // Aumentar el contador de correctas si la respuesta fue correcta
+            if (isCorrect) {
+                this.categoryPerformanceForTest[category].correct++;
+            }
+        });
+    }
+    // --- FIN NUEVO MÉTODO ---
+
+
+    // --- NUEVO MÉTODO: Actualizar las estadísticas globales ---
+    updateGlobalStats() {
+        // Calcular tiempo estimado (puedes ajustarlo)
+        // Por ahora, usaremos 0 o un valor simulado, ya que no hay timer global activo
+        const timeSpent = 0; 
+
+        // Intentar llamar a la función de estadisticas.js si está disponible
+        if (window.statsManager && typeof window.statsManager.updateAfterTest === 'function') {
+            // console.log("Llamando a statsManager.updateAfterTest con:", this.results.score, timeSpent, this.categoryPerformanceForTest);
+            window.statsManager.updateAfterTest(this.results.score, timeSpent, this.categoryPerformanceForTest);
+        } else {
+            // console.warn("statsManager no está disponible o updateAfterTest no es una función.");
+            // Opcional: Actualizar localStorage directamente aquí si statsManager no está disponible
+            // o manejar la situación de otra manera.
+            // --- OPCIÓN A: Actualizar localStorage directamente ---
+            const savedStats = localStorage.getItem('testStats');
+            let stats = savedStats ? JSON.parse(savedStats) : {
+                bestScore: 0,
+                testsCompleted: 0,
+                totalTime: 0,
+                currentStreak: 0,
+                categoryPerformance: {},
+                testHistory: [],
+                lastTestDate: null
+            };
+
+            // Actualizar métricas generales
+            stats.testsCompleted++;
+            stats.totalTime += timeSpent;
+            stats.lastTestDate = new Date().toISOString();
+            if (this.results.score > stats.bestScore) {
+                stats.bestScore = this.results.score;
+            }
+            // Actualizar streak (simplificado)
+            if (this.results.score > 0) {
+                stats.currentStreak++;
+            } else {
+                stats.currentStreak = 0;
+            }
+
+            // Acumular categoryPerformance para este test
+            if (this.categoryPerformanceForTest) {
+                Object.entries(this.categoryPerformanceForTest).forEach(([category, data]) => {
+                    if (!stats.categoryPerformance[category]) {
+                        stats.categoryPerformance[category] = { correct: 0, total: 0 };
+                    }
+                    stats.categoryPerformance[category].correct += data.correct;
+                    stats.categoryPerformance[category].total += data.total;
+                });
+            }
+
+            // Añadir al historial (opcional)
+            stats.testHistory.push({
+                score: this.results.score,
+                time: timeSpent,
+                date: stats.lastTestDate,
+                // Puedes incluir categoryPerformance aquí también si es necesario
+            });
+
+            // Guardar estadísticas actualizadas en localStorage
+            localStorage.setItem('testStats', JSON.stringify(stats));
+            // console.log("Estadísticas actualizadas en localStorage:", stats);
+            // --- FIN OPCIÓN A ---
+        }
+    }
+    // --- FIN NUEVO MÉTODO ---
+
 
     showResults() {
         this.testInterface.classList.add('hidden');
