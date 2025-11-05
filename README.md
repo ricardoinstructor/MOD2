@@ -4,7 +4,7 @@ Aplicación web completa para la preparación del certificado MF0953_2 - Instala
 
 ## 🌐 Acceso a la Aplicación
 
-**URL:** [https://ricardoinstructor.github.io/MOD1/](https://ricardoinstructor.github.io/MOD2/)
+**URL:** [https://ricardoinstructor.github.io/MOD2/](https://ricardoinstructor.github.io/MOD2/)
 
 > ⚠️ **Nota**: Las preguntas han sido verificadas y actualizadas. Aunque se ha realizado un proceso de revisión exhaustivo, pueden existir algunos errores. Si encuentras alguna inconsistencia, por favor repórtala.
 
