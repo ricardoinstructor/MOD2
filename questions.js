@@ -2786,20 +2786,7 @@ const questionsDatabase = [
     "explanation": "La respuesta correcta es \"Conectar dispositivos para la transferencia de datos y energía.\". USB es un estándar de comunicación que permite la transferencia de datos y energía entre dispositivos.",
     "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus"
   },
-  {
-    "id": 200,
-    "category": "USB y Conectores",
-    "question": "¿Qué versión de USB introdujo por primera vez la característica de conectores reversibles (USB-C)?",
-    "options": [
-      "USB 2.0",
-      "USB 3.0",
-      "USB 3.1",
-      "USB 3.2"
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"USB 3.1\". La especificación USB 3.1, publicada en 2014, introdujo el conector USB Tipo-C, que es reversible y soporta mayores velocidades y potencia.",
-    "source": "https://es.wikipedia.org/wiki/USB-C"
-  },
+
   {
     "id": 201,
     "category": "USB y Conectores",
@@ -2828,20 +2815,7 @@ const questionsDatabase = [
     "explanation": "La respuesta correcta es \"Monitor VGA tradicional\". Los monitores VGA usan conectores analógicos dedicados; aunque existen monitores USB modernos, los VGA clásicos no usan USB.",
     "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus"
   },
-  {
-    "id": 203,
-    "category": "USB y Conectores",
-    "question": "¿Qué significa que un conector USB-C sea 'reversible'?",
-    "options": [
-      "Que puede transmitir datos en ambas direcciones simultáneamente",
-      "Que puede insertarse en el puerto en cualquier orientación",
-      "Que permite carga y descarga al mismo tiempo",
-      "Que es compatible solo con dispositivos móviles"
-    ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"Que puede insertarse en el puerto en cualquier orientación\". Esta característica mejora la usabilidad del conector.",
-    "source": "https://es.wikipedia.org/wiki/USB-C"
-  },
+
   {
     "id": 204,
     "category": "USB y Conectores",
@@ -2926,20 +2900,7 @@ const questionsDatabase = [
     "explanation": "La respuesta correcta es \"ID\". En USB OTG, el pin ID determina el rol: conectado a tierra (Tipo-A) = host; flotante (Tipo-B) = periférico.",
     "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#Distribuci%C3%B3n_de_pines_de_los_tipos_%C2%ABmini%C2%BB_y_%C2%ABmicro%C2%BB"
   },
-  {
-    "id": 210,
-    "category": "USB y Conectores",
-    "question": "¿Qué estándar reemplazará progresivamente a los conectores USB Tipo-A y Tipo-B según la especificación USB-IF?",
-    "options": [
-      "Lightning",
-      "HDMI",
-      "USB Tipo-C",
-      "Thunderbolt 2"
-    ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"USB Tipo-C\". Fue diseñado como conector universal para todos los dispositivos futuros.",
-    "source": "https://es.wikipedia.org/wiki/USB-C"
-  },
+
   {
     "id": 211,
     "category": "USB y Conectores",
