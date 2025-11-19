@@ -39,15 +39,23 @@ class StatisticsManager {
         // Si categoryPerformance está vacío o tiene categorías diferentes, inicializarlo
         if (Object.keys(this.stats.categoryPerformance).length === 0) {
             categoriesFromDB.forEach(category => {
-                this.stats.categoryPerformance[category] = { correct: 0, total: 0 };
-            });
-        } else {
-            // Si ya tiene datos, asegurarse de que todas las categorías actuales estén presentes
-            categoriesFromDB.forEach(category => {
-                if (!this.stats.categoryPerformance.hasOwnProperty(category)) {
+                // Filtrar categoría USB
+                if (category !== 'USB y Conectores') {
                     this.stats.categoryPerformance[category] = { correct: 0, total: 0 };
                 }
             });
+        } else {
+            // Si ya tiene datos, asegurarse de que todas las categorías actuales estén presentes (menos USB)
+            categoriesFromDB.forEach(category => {
+                if (category !== 'USB y Conectores' && !this.stats.categoryPerformance.hasOwnProperty(category)) {
+                    this.stats.categoryPerformance[category] = { correct: 0, total: 0 };
+                }
+            });
+
+            // Limpiar si existe la categoría USB en los datos guardados
+            if (this.stats.categoryPerformance['USB y Conectores']) {
+                delete this.stats.categoryPerformance['USB y Conectores'];
+            }
         }
         this.saveStats(); // Guardar cambios si se añadieron nuevas categorías
     }
@@ -195,7 +203,7 @@ class StatisticsManager {
     exportStats() {
         // Lógica existente
         const dataStr = JSON.stringify(this.stats, null, 2);
-        const dataBlob = new Blob([dataStr], {type: 'application/json'});
+        const dataBlob = new Blob([dataStr], { type: 'application/json' });
         const url = URL.createObjectURL(dataBlob);
         const link = document.createElement('a');
         link.href = url;

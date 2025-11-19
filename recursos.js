@@ -31,7 +31,7 @@ class ResourcesManager {
         // Cargar progreso del usuario para personalizar recomendaciones
         const stats = JSON.parse(localStorage.getItem('testStats') || '{}');
         const testState = JSON.parse(localStorage.getItem('testState') || '{}');
-        
+
         // Personalizar consejos basados en el progreso
         this.customizeRecommendations(stats, testState);
     }
@@ -41,7 +41,7 @@ class ResourcesManager {
         if (stats.categoryPerformance) {
             const weakCategories = Object.keys(stats.categoryPerformance)
                 .filter(category => stats.categoryPerformance[category].average < 60);
-            
+
             if (weakCategories.length > 0) {
                 this.highlightResourcesForCategories(weakCategories);
             }
@@ -52,26 +52,28 @@ class ResourcesManager {
         // Destacar recursos específicos para las categorías débiles
         categories.forEach(category => {
             let resourceSection;
-            
-            switch(category) {
-                case 'Fuentes de Alimentación':
-                    resourceSection = document.querySelector('[href*="grupoindustronic"]');
+
+            switch (category) {
+                case 'Subsistemas del Sistema Operativo':
+                    resourceSection = document.querySelector('[href*="kernel.org"]');
                     break;
-                case 'Sistemas de Refrigeración':
-                    resourceSection = document.querySelector('[href*="eniun"]');
+                case 'Sistemas Operativos':
+                case 'Configuración de Windows':
+                    resourceSection = document.querySelector('[href*="microsoft.com"]');
                     break;
-                case 'Conectores y Puertos':
-                    resourceSection = document.querySelector('[href*="hardzone"]');
+                case 'Licencias de Software':
+                case 'Tipos de Software':
+                    resourceSection = document.querySelector('[href*="fsf.org"]');
                     break;
                 default:
                     resourceSection = null;
             }
-            
+
             if (resourceSection) {
                 const parent = resourceSection.closest('.resource-link');
                 if (parent) {
                     parent.classList.add('ring-2', 'ring-yellow-400', 'bg-yellow-50');
-                    
+
                     // Añadir etiqueta de recomendado
                     const badge = document.createElement('span');
                     badge.className = 'ml-2 px-2 py-1 bg-yellow-400 text-yellow-900 text-xs rounded-full';
@@ -110,17 +112,14 @@ class ResourcesManager {
 
     getResourcesForCategory(category) {
         const resources = {
-            'Componentes Básicos': [
-                { title: 'PCBasic - Placas Base', url: 'https://www.pcbasic.com/es/blog/what_does_a_motherboard_do.html' }
+            'Subsistemas del Sistema Operativo': [
+                { title: 'Linux Kernel Documentation', url: 'https://www.kernel.org/doc/html/latest/' }
             ],
-            'Fuentes de Alimentación': [
-                { title: 'Industronic - Fuentes de Poder', url: 'https://grupoindustronic.com/potencia-tu-pc-guia-sobre-fuentes-de-poder-para-pc/' }
+            'Sistemas Operativos': [
+                { title: 'Microsoft Learn - Windows Client', url: 'https://learn.microsoft.com/es-es/troubleshoot/windows-client/' }
             ],
-            'Sistemas de Refrigeración': [
-                { title: 'Eniun - Sistemas de Refrigeración', url: 'https://www.eniun.com/sistemas-de-refrigeracion-ordenador/' }
-            ],
-            'Conectores y Puertos': [
-                { title: 'HardZone - Puertos y Conectores', url: 'https://hardzone.es/tutoriales/componentes/puertos-placa-base/' }
+            'Licencias de Software': [
+                { title: 'Free Software Foundation', url: 'https://www.fsf.org/' }
             ]
         };
 
@@ -132,10 +131,10 @@ class ResourcesManager {
         const plan = {
             week: 1,
             days: [
-                { day: 'Lunes', topic: 'Componentes Básicos', duration: '2 horas', activity: 'Leer documentación y practicar' },
-                { day: 'Martes', topic: 'Fuentes de Alimentación', duration: '1.5 horas', activity: 'Estudiar especificaciones' },
-                { day: 'Miércoles', topic: 'Sistemas de Refrigeración', duration: '2 horas', activity: 'Ver videos y practicar' },
-                { day: 'Jueves', topic: 'Conectores y Puertos', duration: '1.5 horas', activity: 'Estudiar tipos de conectores' },
+                { day: 'Lunes', topic: 'Sistemas Operativos', duration: '2 horas', activity: 'Leer documentación de Microsoft Learn' },
+                { day: 'Martes', topic: 'Subsistemas del SO', duration: '1.5 horas', activity: 'Estudiar gestión de procesos y memoria' },
+                { day: 'Miércoles', topic: 'Licencias y Software Libre', duration: '2 horas', activity: 'Revisar filosofía GNU y licencias' },
+                { day: 'Jueves', topic: 'Gestión de Archivos', duration: '1.5 horas', activity: 'Practicar con sistemas de archivos' },
                 { day: 'Viernes', topic: 'Revisión General', duration: '1 hora', activity: 'Test de práctica' },
                 { day: 'Sábado', topic: 'Áreas Débiles', duration: '2 horas', activity: 'Enfocarse en temas difíciles' },
                 { day: 'Domingo', topic: 'Descanso', duration: '0 horas', activity: 'Repaso ligero si se desea' }
@@ -149,14 +148,14 @@ class ResourcesManager {
     exportFavoriteResources() {
         const favorites = JSON.parse(localStorage.getItem('favoriteResources') || '[]');
         const dataStr = JSON.stringify(favorites, null, 2);
-        const dataBlob = new Blob([dataStr], {type: 'application/json'});
+        const dataBlob = new Blob([dataStr], { type: 'application/json' });
         const url = URL.createObjectURL(dataBlob);
-        
+
         const link = document.createElement('a');
         link.href = url;
         link.download = 'recursos_favoritos_mf0953_2.json';
         link.click();
-        
+
         URL.revokeObjectURL(url);
     }
 
@@ -180,14 +179,13 @@ class ResourcesManager {
     // Método para mostrar notificaciones
     showNotification(message, type = 'info') {
         const notification = document.createElement('div');
-        notification.className = `fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg ${
-            type === 'success' ? 'bg-green-500' : 
+        notification.className = `fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg ${type === 'success' ? 'bg-green-500' :
             type === 'error' ? 'bg-red-500' : 'bg-blue-500'
-        } text-white`;
+            } text-white`;
         notification.textContent = message;
-        
+
         document.body.appendChild(notification);
-        
+
         // Animación de entrada
         anime({
             targets: notification,
@@ -196,7 +194,7 @@ class ResourcesManager {
             duration: 300,
             easing: 'easeOutQuad'
         });
-        
+
         // Eliminar después de 3 segundos
         setTimeout(() => {
             anime({
@@ -224,41 +222,41 @@ Esta guía está diseñada para ayudarte a preparar la certificación MF0953_2 e
 
 ## Temas Principales
 
-### 1. Componentes Básicos
-- Placas base y sus funciones
-- Tipos de memoria RAM
-- Procesadores y sockets
-- Chipsets
+            ### 1. Sistemas Operativos
+            - Funciones principales
+            - Gestión de procesos
+            - Gestión de memoria
+            - Sistemas de archivos
 
-### 2. Fuentes de Alimentación
-- Tipos AT y ATX
-- Certificaciones 80 Plus
-- Conectores y especificaciones
-- Cálculo de potencia necesaria
+            ### 2. Software Libre y Licencias
+            - Definición de Software Libre
+            - Licencias GNU GPL, BSD, MIT
+            - Copyleft vs Copyright
+            - Free Software Foundation
 
-### 3. Sistemas de Refrigeración
-- Refrigeración por aire
-- Refrigeración líquida
-- Ventiladores y disipadores
-- Mantenimiento térmico
+            ### 3. Administración de Windows
+            - Panel de control
+            - Herramientas administrativas
+            - Gestión de usuarios
+            - Seguridad básica
 
-### 4. Conectores y Puertos
-- Conectores internos
-- Puertos de expansión
-- USB y otros puertos
-- Audio y video
+            ### 4. Linux y Comandos
+            - Estructura de directorios
+            - Comandos básicos de terminal
+            - Permisos de archivos
+            - Gestión de paquetes
 
-### 5. Almacenamiento
-- Discos duros HDD
-- Unidades SSD
-- Interfaces SATA y M.2
-- Configuración RAID
+            ### 5. Redes y Seguridad
+            - Protocolos básicos
+            - Configuración IP
+            - Firewalls
+            - Antivirus y malware
 
-### 6. Tarjetas de Expansión
-- PCI Express
-- Tarjetas gráficas
-- Tarjetas de sonido
-- Tarjetas de red
+            ### 6. Mantenimiento de Software
+            - Actualizaciones
+            - Copias de seguridad
+            - Restauración del sistema
+            - Solución de problemas
 
 ## Consejos de Estudio
 1. Practica regularmente con el test
@@ -349,7 +347,7 @@ function showContactForm() {
     `;
 
     document.body.appendChild(modal);
-    
+
     // Animación de entrada
     anime({
         targets: modal.querySelector('.bg-white'),
@@ -362,12 +360,12 @@ function showContactForm() {
     // Manejar envío del formulario
     modal.querySelector('form').addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         // Simular envío
         if (window.resourcesManager) {
             window.resourcesManager.showNotification('Mensaje enviado correctamente', 'success');
         }
-        
+
         closeModal();
     });
 }
@@ -420,7 +418,7 @@ function reportError() {
     `;
 
     document.body.appendChild(modal);
-    
+
     // Animación de entrada
     anime({
         targets: modal.querySelector('.bg-white'),
@@ -433,12 +431,12 @@ function reportError() {
     // Manejar envío del formulario
     modal.querySelector('form').addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         // Simular envío
         if (window.resourcesManager) {
             window.resourcesManager.showNotification('Error reportado correctamente', 'success');
         }
-        
+
         closeModal();
     });
 }
