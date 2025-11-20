@@ -4,18 +4,18 @@ Aplicación web completa para la preparación del certificado MF0953_2 - Instala
 
 ## 🌐 Acceso a la Aplicación
 
-**URL:** [https://ricardoinstructor.github.io/MOD1/](https://ricardoinstructor.github.io/MOD2/)
+**URL:** [https://ricardoinstructor.github.io/MOD2/](https://ricardoinstructor.github.io/MOD2/)
 
 > ⚠️ **Nota**: Las preguntas han sido verificadas y actualizadas. Aunque se ha realizado un proceso de revisión exhaustivo, pueden existir algunos errores. Si encuentras alguna inconsistencia, por favor repórtala.
 
 ## Características
 
 ### 🎯 Funcionalidades Principales
-- **686 preguntas** de nivel medio sobre microinformática
+- **Alrededor de 400 preguntas** de nivel medio sobre SSOO
 - **Formato test** con 4-5 respuestas posibles (una correcta)
 - **Preguntas reales** basadas en contenido técnico verificado
 - **Retroalimentación fundamentada** con fuentes verificadas oficiales
-- **Tres modos de uso**: Test completo (686), Modo reducido (100) y Modo práctica (20)
+- **Cuatro modos de uso**: Test completo, Modo reducido, Modo práctica y personalizado
 - **Estadísticas detalladas** de rendimiento
 - **Interfaz moderna** y responsive
 - **12 categorías** temáticas bien organizadas
@@ -100,7 +100,6 @@ La aplicación incluye **497 preguntas** organizadas en categorías temáticas:
 **9.** **Licencias de Software**  
 **10.** **Instalación de Sistemas Operativos**  
 **11.** **Gestores de Arranque**  
-**12.** **USB y Conectores**  
 **13.** **Extensiones de Archivo**  
 **14.** **Permisos de Archivo**  
 **15.** **Copias de Seguridad**  
