@@ -2313,16 +2313,16 @@ const questionsDatabase = [
   {
     "id": 166,
     "category": "Licencias de Software",
-    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar, modificar y distribuir el software de forma gratuita, pero con restricciones adicionales, como la atribución al autor original?",
+    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar, modificar y distribuir el software de forma gratuita, pero con la condición de que los derivados también se distribuyan bajo la misma licencia?",
     "options": [
       "Licencia Propietaria",
       "Licencia Freeware",
-      "Licencia Creative Commons",
+      "Licencia Copyleft",
       "Licencia Shareware"
     ],
     "correct": 2,
-    "explanation": "La respuesta correcta es \"Licencia Creative Commons\". Aunque más común en contenido creativo, algunas variantes (como CC BY-SA) se usan en software y exigen atribución.",
-    "source": "https://es.wikipedia.org/wiki/Licencia_Creative_Commons"
+    "explanation": "La respuesta correcta es \"Licencia Copyleft\". Es una estrategia legal usada en licencias como la GPL para garantizar que las modificaciones también permanezcan libres y se distribuyan bajo los mismos términos.",
+    "source": "https://www.gnu.org/licenses/copyleft.html"
   },
   {
     "id": 167,
@@ -2369,16 +2369,16 @@ const questionsDatabase = [
   {
     "id": 170,
     "category": "Licencias de Software",
-    "question": "¿Qué tipo de licencia de software permite a los usuarios utilizar el software de forma gratuita, pero con restricciones en su uso, como la prohibición de uso comercial?",
+    "question": "¿Qué tipo de licencia permite a los usuarios utilizar contenido o software de forma gratuita, pero con restricciones en su uso, como la prohibición de uso comercial?",
     "options": [
       "Licencia Propietaria",
       "Licencia Freeware",
-      "Licencia Open Source",
+      "Licencia Creative Commons",
       "Licencia Shareware"
     ],
     "correct": 2,
-    "explanation": "La respuesta correcta es \"Licencia Open Source\". Sin embargo, **ninguna licencia OSI aprobada prohíbe el uso comercial**. Esta pregunta contiene un error conceptual. Las licencias que prohíben uso comercial **no son consideradas Open Source**. La opción más cercana es una licencia Creative Commons no comercial, pero entre las dadas, ninguna es técnicamente correcta. Por coherencia con el texto fuente, se selecciona \"Licencia Open Source\" como la intención probable, aunque es técnicamente incorrecta.",
-    "source": "https://es.wikipedia.org/wiki/Definici%C3%B3n_de_software_de_c%C3%B3digo_abierto"
+    "explanation": "La respuesta correcta es \"Licencia Creative Commons\". Las licencias Creative Commons, especialmente las variantes con restricción NC (No Comercial), permiten el uso gratuito pero prohíben el uso comercial del contenido o software.",
+    "source": "https://creativecommons.org/licenses/by-nc/4.0/deed.es"
   },
   {
     "id": 171,
