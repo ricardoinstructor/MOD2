@@ -6285,7 +6285,7 @@ const questionsDatabase = [
       "Adobe InDesign.",
       "Blender."
     ],
-    "correct": 2,
+    "correct": 1,
     "explanation": "La respuesta correcta es \"SharePoint.\". Es una plataforma de Microsoft para gestión documental y colaboración.",
     "source": "https://es.wikipedia.org/wiki/Microsoft_SharePoint"
   },
