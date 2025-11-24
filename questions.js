@@ -2774,244 +2774,241 @@ const questionsDatabase = [
   },
   {
     "id": 199,
-    "category": "USB y Conectores",
-    "question": "¿Cuál es la función principal de un conector USB?",
+    "category": "Clonación de Discos",
+    "question": "¿Cuál es la función principal de Clonezilla?",
     "options": [
-      "Transmitir señales de radio.",
-      "Conectar dispositivos para la transferencia de datos y energía.",
-      "Reproducir audio en altavoces.",
-      "Capturar imágenes con una cámara."
+      "Desfragmentar discos duros",
+      "Clonar y restaurar particiones o discos completos",
+      "Analizar sectores defectuosos",
+      "Comprimir archivos para ahorrar espacio"
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Conectar dispositivos para la transferencia de datos y energía.\". USB es un estándar de comunicación que permite la transferencia de datos y energía entre dispositivos.",
-    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus"
+    "explanation": "La respuesta correcta es \"Clonar y restaurar particiones o discos completos\". Clonezilla es una herramienta de código abierto especializada en la clonación y restauración de sistemas.",
+    "source": "https://clonezilla.org/"
   },
-
   {
     "id": 201,
-    "category": "USB y Conectores",
-    "question": "¿Qué función principal cumple el estándar USB en los sistemas informáticos modernos?",
+    "category": "Clonación de Discos",
+    "question": "¿Qué tipo de software es Clonezilla?",
     "options": [
-      "Permitir la conexión exclusiva de impresoras",
-      "Proporcionar energía solo a dispositivos móviles",
-      "Conectar, comunicar y alimentar eléctricamente dispositivos periféricos",
-      "Reemplazar únicamente a los puertos serie antiguos"
+      "Software propietario de pago",
+      "Software de código abierto y gratuito",
+      "Exclusivo para sistemas Windows",
+      "Una aplicación móvil"
     ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Conectar, comunicar y alimentar eléctricamente dispositivos periféricos\". USB es un estándar universal que combina transferencia de datos y suministro de energía.",
-    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus"
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Software de código abierto y gratuito\". Clonezilla está basado en DRBL, Partition Image, ntfsclone y dd, y se distribuye bajo licencia GPL.",
+    "source": "https://clonezilla.org/clonezilla-live.php"
   },
   {
     "id": 202,
-    "category": "USB y Conectores",
-    "question": "¿Cuál de los siguientes dispositivos NO suele conectarse mediante un puerto USB?",
+    "category": "Clonación de Discos",
+    "question": "¿Cuál de las siguientes NO es una versión de Clonezilla?",
     "options": [
-      "Teclado",
-      "Disco duro externo",
-      "Monitor VGA tradicional",
-      "Memoria USB"
+      "Clonezilla Live",
+      "Clonezilla SE (Server Edition)",
+      "Clonezilla Pro Enterprise",
+      "Clonezilla Lite"
     ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Monitor VGA tradicional\". Los monitores VGA usan conectores analógicos dedicados; aunque existen monitores USB modernos, los VGA clásicos no usan USB.",
-    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus"
+    "correct": 3,
+    "explanation": "La respuesta correcta es \"Clonezilla Lite\". Las versiones oficiales son Clonezilla Live (para uso individual) y Clonezilla SE (para clonación masiva en red).",
+    "source": "https://clonezilla.org/downloads.php"
   },
-
   {
     "id": 204,
-    "category": "USB y Conectores",
-    "question": "¿Qué versión de USB duplicó la velocidad máxima de transferencia a 10 Gbit/s respecto a USB 3.0?",
+    "category": "Clonación de Discos",
+    "question": "¿Qué sistemas de archivos soporta Clonezilla para clonación?",
     "options": [
-      "USB 2.0",
-      "USB 3.0",
-      "USB 3.1 Gen 2",
-      "USB 3.2"
+      "Solo NTFS y FAT32",
+      "Solo ext4 y Btrfs",
+      "ext2, ext3, ext4, NTFS, FAT32, XFS, Btrfs y muchos otros",
+      "Únicamente sistemas de archivos de Windows"
     ],
     "correct": 2,
-    "explanation": "La respuesta correcta es \"USB 3.1 Gen 2\". USB 3.0 alcanzaba 5 Gbit/s, y USB 3.1 Gen 2 elevó la velocidad a 10 Gbit/s.",
-    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#USB_3.1_con_conectores_Tipo-C_reversibles"
+    "explanation": "La respuesta correcta es \"ext2, ext3, ext4, NTFS, FAT32, XFS, Btrfs y muchos otros\". Clonezilla soporta una amplia variedad de sistemas de archivos tanto de Linux como de Windows.",
+    "source": "https://clonezilla.org/features.php"
   },
   {
     "id": 205,
-    "category": "USB y Conectores",
-    "question": "¿Cuál es la velocidad máxima teórica del estándar USB 2.0?",
+    "category": "Clonación de Discos",
+    "question": "¿Qué modo de clonación permite Clonezilla Live?",
     "options": [
-      "12 Mbit/s",
-      "480 Mbit/s",
-      "5 Gbit/s",
-      "10 Gbit/s"
+      "Solo clonación disco a disco local",
+      "Solo clonación a imagen",
+      "Disco a disco local y disco/partición a imagen",
+      "Únicamente clonación en red"
     ],
-    "correct": 1,
-    "explanation": "La respuesta correcta es \"480 Mbit/s\". Esta velocidad corresponde al modo 'High-Speed' de USB 2.0.",
-    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#Velocidades_de_transmisi%C3%B3n"
+    "correct": 2,
+    "explanation": "La respuesta correcta es \"Disco a disco local y disco/partición a imagen\". Clonezilla Live permite tanto clonar directamente de un disco a otro como crear imágenes para restauración posterior.",
+    "source": "https://clonezilla.org/clonezilla-live.php"
   },
   {
     "id": 206,
-    "category": "USB y Conectores",
-    "question": "¿Qué característica introdujo USB 3.0 respecto a USB 2.0 en términos de comunicación?",
+    "category": "Clonación de Discos",
+    "question": "¿Qué herramienta utiliza Clonezilla internamente para clonar sectores a nivel bajo?",
     "options": [
-      "Comunicación half-duplex",
-      "Comunicación full-duplex",
-      "Solo carga eléctrica sin datos",
-      "Compatibilidad exclusiva con Windows"
+      "rsync",
+      "dd (disk dump)",
+      "tar",
+      "cp (copy)"
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Comunicación full-duplex\". USB 3.0 permite enviar y recibir datos simultáneamente, a diferencia del half-duplex de USB 2.0.",
-    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#USB_3.0"
+    "explanation": "La respuesta correcta es \"dd (disk dump)\". Clonezilla utiliza dd junto con otras herramientas como partclone, partimage y ntfsclone para realizar clonaciones eficientes.",
+    "source": "https://clonezilla.org/show-live-doc-content.php?topic=clonezilla-live/doc/01_Save_disk_image"
   },
   {
     "id": 207,
-    "category": "USB y Conectores",
-    "question": "¿Qué función permite la especificación USB On-The-Go (OTG)?",
+    "category": "Clonación de Discos",
+    "question": "¿Qué ventaja ofrece la clonación basada en particiones sobre la clonación sector por sector?",
     "options": [
-      "Cargar baterías más rápido",
-      "Permitir que un dispositivo actúe como host o periférico",
-      "Conectar múltiples monitores simultáneamente",
-      "Aumentar la velocidad de Internet"
+      "Mayor compatibilidad con hardware antiguo",
+      "Solo copia los bloques utilizados, ahorrando tiempo y espacio",
+      "Permite clonar discos de diferentes tamaños sin restricciones",
+      "No requiere permisos de administrador"
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Permitir que un dispositivo actúe como host o periférico\". Por ejemplo, un teléfono puede leer una memoria USB directamente.",
-    "source": "https://es.wikipedia.org/wiki/USB_On-The-Go"
+    "explanation": "La respuesta correcta es \"Solo copia los bloques utilizados, ahorrando tiempo y espacio\". La clonación inteligente (partclone) solo copia los sectores que contienen datos, mientras que dd copia todos los sectores.",
+    "source": "https://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/advanced/09-advanced-param.php"
   },
   {
     "id": 208,
-    "category": "USB y Conectores",
-    "question": "¿Cuál de los siguientes conectores USB es el más común en computadoras de escritorio para conectar periféricos?",
+    "category": "Clonación de Discos",
+    "question": "¿Cuál es la diferencia principal entre Clonezilla Live y Clonezilla SE?",
     "options": [
-      "USB-C",
-      "Micro-USB",
-      "USB Tipo-A",
-      "Mini-USB"
+      "Clonezilla SE permite clonar múltiples equipos simultáneamente en red",
+      "Clonezilla Live es de pago y SE es gratuito",
+      "Clonezilla SE solo funciona en Windows Server",
+      "No hay diferencias significativas"
     ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"USB Tipo-A\". Es el conector rectangular estándar en hosts como PCs y laptops.",
-    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#Conectores_tipo_A_y_B"
+    "correct": 0,
+    "explanation": "La respuesta correcta es \"Clonezilla SE permite clonar múltiples equipos simultáneamente en red\". Clonezilla Server Edition (SE) está diseñado para despliegues masivos mediante multicast.",
+    "source": "https://clonezilla.org/clonezilla-SE/"
   },
   {
     "id": 209,
-    "category": "USB y Conectores",
-    "question": "¿Qué pin en el conector micro-USB permite identificar si el dispositivo actúa como host o periférico en USB OTG?",
+    "category": "Clonación de Discos",
+    "question": "¿Qué protocolo utiliza Clonezilla SE para la clonación masiva en red?",
     "options": [
-      "VCC",
-      "D+",
-      "ID",
-      "GND"
+      "FTP",
+      "HTTP",
+      "Multicast UDP",
+      "SMB/CIFS"
     ],
     "correct": 2,
-    "explanation": "La respuesta correcta es \"ID\". En USB OTG, el pin ID determina el rol: conectado a tierra (Tipo-A) = host; flotante (Tipo-B) = periférico.",
-    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#Distribuci%C3%B3n_de_pines_de_los_tipos_%C2%ABmini%C2%BB_y_%C2%ABmicro%C2%BB"
+    "explanation": "La respuesta correcta es \"Multicast UDP\". Clonezilla SE utiliza multicast para transmitir la misma imagen a múltiples clientes simultáneamente, optimizando el ancho de banda.",
+    "source": "https://clonezilla.org/clonezilla-SE/doc/DRBL_Clonezilla_server.php"
   },
-
   {
     "id": 211,
-    "category": "USB y Conectores",
-    "question": "¿Cuál es la corriente máxima que puede suministrar un puerto USB 2.0 estándar?",
+    "category": "Clonación de Discos",
+    "question": "¿Qué herramienta alternativa a Clonezilla es desarrollada por Symantec (ahora Broadcom)?",
     "options": [
-      "100 mA",
-      "500 mA",
-      "900 mA",
-      "3 A"
+      "Acronis True Image",
+      "Norton Ghost",
+      "Macrium Reflect",
+      "EaseUS Todo Backup"
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"500 mA\". Esto equivale a 2.5 W a 5 V, suficiente para muchos periféricos de bajo consumo.",
-    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#USB_3.0"
+    "explanation": "La respuesta correcta es \"Norton Ghost\". Fue una de las herramientas de clonación más populares, aunque fue descontinuada en 2013. Symantec la reemplazó con Norton Backup.",
+    "source": "https://es.wikipedia.org/wiki/Norton_Ghost"
   },
   {
     "id": 212,
-    "category": "USB y Conectores",
-    "question": "¿Qué permite la especificación USB Power Delivery (USB-PD)?",
+    "category": "Clonación de Discos",
+    "question": "¿Qué formato de compresión puede utilizar Clonezilla para las imágenes de disco?",
     "options": [
-      "Transmitir video sin compresión",
-      "Negociar voltajes y corrientes más altos para carga rápida",
-      "Conectar redes Ethernet directamente",
-      "Reemplazar completamente a los adaptadores de corriente"
+      "Solo ZIP",
+      "gzip, bzip2, xz y sin compresión",
+      "Únicamente RAR",
+      "Solo compresión propietaria"
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Negociar voltajes y corrientes más altos para carga rápida\". USB-PD puede entregar hasta 100 W (20 V / 5 A).",
-    "source": "https://es.wikipedia.org/wiki/USB-C#USB_Power_Delivery"
+    "explanation": "La respuesta correcta es \"gzip, bzip2, xz y sin compresión\". Clonezilla ofrece múltiples opciones de compresión, siendo gzip el predeterminado por su balance entre velocidad y ratio de compresión.",
+    "source": "https://clonezilla.org/show-live-doc-content.php?topic=clonezilla-live/doc/01_Save_disk_image"
   },
   {
     "id": 213,
-    "category": "USB y Conectores",
-    "question": "¿Qué tipo de señal utilizan los pares de datos D+ y D- en USB 2.0?",
+    "category": "Clonación de Discos",
+    "question": "¿Qué debe verificarse antes de restaurar una imagen de Clonezilla en un disco destino?",
     "options": [
-      "Señal diferencial",
-      "Señal analógica",
-      "Señal de radiofrecuencia",
-      "Señal de corriente continua"
+      "Que el disco destino tenga exactamente el mismo modelo",
+      "Que el disco destino sea igual o mayor que el tamaño de los datos clonados",
+      "Que ambos discos sean de la misma marca",
+      "Que el disco destino esté formateado en NTFS"
     ],
-    "correct": 0,
-    "explanation": "La respuesta correcta es \"Señal diferencial\". Esta técnica reduce el ruido electromagnético y mejora la integridad de la señal.",
-    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#Velocidades_de_transmisi%C3%B3n"
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Que el disco destino sea igual o mayor que el tamaño de los datos clonados\". El disco destino debe tener capacidad suficiente para albergar la imagen restaurada.",
+    "source": "https://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/"
   },
   {
     "id": 214,
-    "category": "USB y Conectores",
-    "question": "¿Cuál de los siguientes NO es un tipo de conector USB definido en las especificaciones oficiales?",
+    "category": "Clonación de Discos",
+    "question": "¿Cuál de las siguientes NO es una herramienta de clonación de discos?",
     "options": [
-      "USB Tipo-A",
-      "USB Tipo-B",
-      "USB Tipo-D",
-      "USB Tipo-C"
+      "Macrium Reflect",
+      "Acronis True Image",
+      "GParted",
+      "AOMEI Backupper"
     ],
     "correct": 2,
-    "explanation": "La respuesta correcta es \"USB Tipo-D\". No existe en las especificaciones oficiales del USB-IF.",
-    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#Compatibilidad_y_conectores"
+    "explanation": "La respuesta correcta es \"GParted\". GParted es un editor de particiones, no una herramienta de clonación completa. Aunque puede copiar particiones, su función principal es gestionar y redimensionar particiones.",
+    "source": "https://gparted.org/"
   },
   {
     "id": 215,
-    "category": "USB y Conectores",
-    "question": "¿Qué ventaja ofrece el uso de un hub USB con fuente de alimentación externa?",
+    "category": "Clonación de Discos",
+    "question": "¿Qué ventaja ofrece usar Clonezilla desde un medio Live (USB/CD) en lugar de instalarlo?",
     "options": [
-      "Aumenta la velocidad de transferencia de datos",
-      "Permite conectar más dispositivos sin sobrecargar el puerto host",
-      "Convierte automáticamente USB 2.0 en USB 3.0",
-      "Elimina la necesidad de drivers"
+      "Mayor velocidad de clonación",
+      "Permite clonar el disco del sistema operativo en uso sin conflictos",
+      "Mejor compresión de imágenes",
+      "Soporte para más sistemas de archivos"
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Permite conectar más dispositivos sin sobrecargar el puerto host\". La fuente externa suministra energía adicional a los periféricos.",
-    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#Uso"
+    "explanation": "La respuesta correcta es \"Permite clonar el disco del sistema operativo en uso sin conflictos\". Al arrancar desde un medio externo, el disco del sistema no está montado, evitando problemas de archivos bloqueados.",
+    "source": "https://clonezilla.org/clonezilla-live.php"
   },
   {
     "id": 216,
-    "category": "USB y Conectores",
-    "question": "¿Qué significa la retrocompatibilidad en el contexto de USB?",
+    "category": "Clonación de Discos",
+    "question": "¿Qué comando de Linux realiza una copia bit a bit de un disco completo?",
     "options": [
-      "Que los dispositivos nuevos no funcionan con sistemas antiguos",
-      "Que los dispositivos USB más antiguos pueden funcionar en puertos más nuevos",
-      "Que solo se pueden usar cables del mismo estándar",
-      "Que la velocidad siempre se mantiene constante"
+      "cp /dev/sda /dev/sdb",
+      "dd if=/dev/sda of=/dev/sdb",
+      "rsync -a /dev/sda /dev/sdb",
+      "clone --source=/dev/sda --dest=/dev/sdb"
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"Que los dispositivos USB más antiguos pueden funcionar en puertos más nuevos\". La velocidad se limitará al estándar más lento.",
-    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#USB_3.1_con_conectores_Tipo-C_reversibles"
+    "explanation": "La respuesta correcta es \"dd if=/dev/sda of=/dev/sdb\". El comando dd (disk dump) copia bloques de datos a bajo nivel, siendo 'if' (input file) el origen y 'of' (output file) el destino.",
+    "source": "https://es.wikipedia.org/wiki/Dd_(Unix)"
   },
   {
     "id": 217,
-    "category": "USB y Conectores",
-    "question": "¿Qué color suele tener el aislante del cable D+ en un cable USB estándar?",
+    "category": "Clonación de Discos",
+    "question": "¿Qué herramienta incluida en Clonezilla se especializa en clonar particiones NTFS?",
     "options": [
-      "Rojo",
-      "Blanco",
-      "Verde",
-      "Negro"
+      "ext4clone",
+      "ntfsclone",
+      "fatclone",
+      "winclone"
     ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Verde\". Según la especificación, D+ es verde y D− es blanco.",
-    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#Distribuci%C3%B3n_de_pines_de_los_tipos_A_y_B"
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"ntfsclone\". Es parte del paquete ntfs-3g y permite clonar, crear imágenes y restaurar particiones NTFS de forma eficiente, copiando solo los datos utilizados.",
+    "source": "https://linux.die.net/man/8/ntfsclone"
   },
   {
     "id": 218,
-    "category": "USB y Conectores",
-    "question": "¿Qué función cumple el pin VCC en un conector USB?",
+    "category": "Clonación de Discos",
+    "question": "¿Qué precaución es fundamental al realizar una clonación disco a disco directa?",
     "options": [
-      "Transmitir datos positivos",
-      "Transmitir datos negativos",
-      "Suministrar +5 V de alimentación",
-      "Actuar como tierra de referencia"
+      "Tener conexión a Internet activa",
+      "Asegurarse de que el disco destino esté vacío o sus datos no sean necesarios",
+      "Usar solo cables SATA de color azul",
+      "Ejecutar el proceso en modo seguro de Windows"
     ],
-    "correct": 2,
-    "explanation": "La respuesta correcta es \"Suministrar +5 V de alimentación\". Es la fuente de energía para periféricos de bajo consumo.",
-    "source": "https://es.wikipedia.org/wiki/Universal_Serial_Bus#Distribuci%C3%B3n_de_pines_de_los_tipos_A_y_B"
+    "correct": 1,
+    "explanation": "La respuesta correcta es \"Asegurarse de que el disco destino esté vacío o sus datos no sean necesarios\". La clonación directa sobrescribe completamente el disco destino, eliminando todos los datos previos de forma irreversible.",
+    "source": "https://clonezilla.org/clonezilla-live/doc/03_Disk_to_disk_clone/"
   },
   {
     "id": 219,
