@@ -577,7 +577,7 @@ const questionsDatabase = [
   {
     "id": 42,
     "category": "Planificación de Procesos",
-    "question": "¿Qué tipo de algoritmo de planificación prioriza los procesos con mayor tiempo restante de ejecución?",
+    "question": "¿Qué tipo de algoritmo de planificación prioriza los procesos con menor tiempo restante de ejecución?",
     "options": [
       "FIFO (First In, First Out)",
       "SJF (Shortest Job First)",
@@ -585,7 +585,7 @@ const questionsDatabase = [
       "Prioridad"
     ],
     "correct": 1,
-    "explanation": "La respuesta correcta es \"SJF (Shortest Job First)\". SJF prioriza los procesos con menor tiempo de ejecución restante (no mayor). Nota: la pregunta contiene un error conceptual; sin embargo, entre las opciones, SJF es el único que se basa en la duración del trabajo, y se interpreta que la intención era \"menor tiempo\".",
+    "explanation": "La respuesta correcta es \"SJF (Shortest Job First)\". SJF prioriza los procesos con menor tiempo de ejecución restante (no mayor). ",
     "source": "https://es.wikipedia.org/wiki/Shortest_Job_Next"
   },
   {
@@ -4934,12 +4934,12 @@ const questionsDatabase = [
     "question": "¿Dónde se puede configurar el protector de pantalla en Windows?",
     "options": [
       "En el Panel de control.",
-      "En la aplicación de Configuración.",
+      "En la aplicación de Configuración de pantalla.",
       "En la barra de tareas.",
       "En la aplicación de Microsoft Store."
     ],
     "correct": 0,
-    "explanation": "La respuesta correcta es \"En el Panel de control.\". Aunque la Configuración moderna no lo incluye directamente, sigue estando en Panel de control > Personalización > Protector de pantalla.",
+    "explanation": "La respuesta correcta es \"En el Panel de control.\". Aunque la Configuración moderna no lo incluye directamente, sigue estando en Panel de control > Buscar > Protector de pantalla.",
     "source": "https://support.microsoft.com/es-es/windows"
   },
   {
